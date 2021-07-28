@@ -3,7 +3,7 @@
 
 - [ ] Finální **redesign** *(Affinity)*
 - [ ] MARGINSSSSSSSSSSSS!!!!!!!!!!!!!!!!!
-- [ ] Fix Footer :(
+- [ ] Fix Footer :( a language do toho
 
 ## **images**
 
