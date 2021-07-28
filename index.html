@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<!--
+This is an original work by Studio Denali (David Brzý, Jakub Klapka).
+Any unauthorized copying of our works can and will be prosecuted.
+We also used Bootstrap, Real Icon Generator and GitHub <3
+Also, spam bots, do not send me your offers, thank you.
+-->
+
+<head>
+    <!--Basics-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Studio Denali</title>
+    <meta name="author" content="David Brzý & Jakub Klapka">
+    <meta name="description"
+        content="Jsme studio, které pro vás vytvoří webové stránky a postará se o ně, ukážeme vám jak na sociální sítě, zařídíme, abyste byli v mapách a mnoho dalšího.">
+    <meta name="keywords"
+        content="webové, webová, jak na webové stránky, wordpress stránky, webové stránky wordpress, wordpress weby">
+    <link rel="stylesheet" type="text/css" href="dist/style.css">
+    <meta name="theme-color" content="#ffffff">
+    <!--Favicon-->
+    <meta name="msapplication-TileColor" content="#4f54ff">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#4f54ff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta property="og:url" content="https://www.studiodenali.cz/">
+    <!--Open Graph Protocol-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Postaráme se o vaši přítomnost na internetu">
+    <meta property="og:description"
+        content="Jsme studio, které pro vás vytvoří webové stránky a postará se o ně, ukážeme vám jak na sociální sítě, zařídíme, abyste byli v mapách a mnoho dalšího. To vše za jeden měsíční poplatek včetně domény a hostingu.">
+    <meta property="og:image" content="https://www.studiodenali.cz/misc/og-preview.png">
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="studiodenali.cz">
+    <meta property="twitter:url" content="https://www.studiodenali.cz/">
+    <meta name="twitter:title" content="Postaráme se o vaši přítomnost na internetu">
+    <meta name="twitter:description"
+        content="Jsme studio, které pro vás vytvoří webové stránky a postará se o ně, ukážeme vám jak na sociální sítě, zařídíme, abyste byli v mapách a mnoho dalšího. To vše za jeden měsíční poplatek včetně domény a hostingu.">
+    <meta name="twitter:image" content="https://www.studiodenali.cz/misc/og-preview.png">
+    <!-- Safari -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: dark)">
+</head>
+
+<body onload="onLoad()">
+    <div class="container-fluid">
+        <header>
+            <div class="header-logo" style="margin-top: 96px;">
+                <a href="https://www.studiodenali.cz">
+                    <svg width="100%" height="100%" viewBox="0 0 387 59">
+                        <rect x="0" y="0" width="387" height="58.281" style="fill:#4f54ff;" />
+                        <text x="10.82px" y="45.549px"
+                            style="font-family:'Roboto', sans-serif;font-weight:900;font-size:46.203px;fill:#fff;">STUDIO
+                            DENALI</text>
+                        <path d="M364.737,12.739l9.97,16.194l-19.939,0l9.969,-16.194Z" style="fill:#fff;" />
+                    </svg>
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="row row-cols-1 row-cols-md-2 hero">
+                <div class="col hero-left">
+                    <h1 id="1.1" class="text-uppercase"></h1>
+                    <p id="1.2"></p>
+                    <a href="#kontakt">
+                        <h5 class="text-nowrap text-uppercase"><mark id="1.3" class="contact-btn"></mark></h5>
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center hero-right">
+                    <img src="img\1.svg" class="img-fluid">
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4" style="margin-top: 24px;">
+                <div class="col">
+                    <img src="img\2.svg" class="img-fluid">
+                    <h2 class="text-nowrap text-uppercase"><mark id="2.1" class="mark-black"></mark></h2>
+                    <p id="2.2" style="margin-top: 12px;"></p>
+                </div>
+                <div class="col">
+                    <img src="img\3.svg" class="img-fluid">
+                    <h2 class="text-nowrap text-uppercase"><mark id="3.1" class="mark-black"></mark></h2>
+                    <p id="3.2" style="margin-top: 12px;"><span id="coming" style="color: #4f54ff;"></span></p>
+                </div>
+                <div class="col">
+                    <img src="img\4.svg" class="img-fluid">
+                    <h2 class="text-nowrap text-uppercase"><mark id="4.1" class="mark-black"></mark></h2>
+                    <p id="4.2" style="margin-top: 12px;"></p>
+                </div>
+                <div class="col">
+                    <img src="img\5.svg" class="img-fluid">
+                    <h2 class="text-nowrap text-uppercase"><mark id="5.1" class="mark-black"></mark></h2>
+                    <p id="5.2" style="margin-top: 12px;"></p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-xl-2" style="margin-top: 24px;">
+                <div class="col">
+                    <img src="img\6.svg" class="img-fluid">
+                    <h2 class="text-nowrap text-uppercase"><mark id="6.1" class="mark-black"></mark></h2>
+                    <p id="6.2" style="margin-top: 12px;"></p>
+                </div>
+                <div class="col">
+                    <img src="img\7.svg" class="img-fluid">
+                    <h2 class="text-nowrap text-uppercase"><mark id="7.1" class="mark-black"></mark></h2>
+                    <p id="7.2" style="margin-top: 12px;"></p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4" style="margin-top: 24px; margin-bottom: 48px;">
+                <div class="col">
+                    <img src="img\8.svg" class="img-fluid">
+                    <h2 class="text-nowrap text-uppercase"><mark id="8.1" class="mark-black"></mark></h2>
+                    <p id="8.2" style="margin-top: 12px;"></p>
+                </div>
+                <div class="col">
+                    <img src="img\9.svg" class="img-fluid">
+                    <h2 class="text-nowrap text-uppercase"><mark id="9.1" class="mark-black"></mark></h2>
+                    <p id="9.2" style="margin-top: 12px;"></p>
+                </div>
+                <div class="col">
+                    <img src="img\10.svg" title="Grafické práce" alt="Grafické práce" class="img-fluid">
+                    <h2 class="text-nowrap text-uppercase"><mark id="10.1" class="mark-black"></mark></h2>
+                    <p id="10.2" style="margin-top: 12px;"></p>
+                </div>
+                <div class="col">
+                    <img src="img\11.svg" title="Sociální sítě" alt="Sociální sítě" class="img-fluid">
+                    <h2 class="text-nowrap text-uppercase"><mark id="11.1" class="mark-black"></mark></h2>
+                    <p id="11.2" style="margin-top: 12px;"></p>
+                </div>
+            </div>
+            <div class="row pricing">
+                <div class="col hero-left">
+                    <h1 id="12.1" class="text-uppercase"></h1>
+                    <p id="12.2"></p>
+                    <a href="#kontakt">
+                        <h5 class="text-nowrap text-uppercase"><mark id="12.3" class="contact-btn"></mark></h5>
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center hero-right">
+                    <img src="img\12.png" class="img-fluid">
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4" style="margin-top: 24px; margin-bottom: 48px;">
+                <div class="col">
+                    <a href="http://caffeclubelektra.cz/" target="_blank">
+                        <img src="img\misc\ele.png" class="img-fluid">
+                        <h2 class="text-nowrap text-uppercase"><mark id="ele.1" class="mark-black"></mark></h2>
+                    </a>
+                    <p id="ele.2" style="margin-top: 12px;"></p>
+                </div>
+                <div class="col">
+                    <a href="http://pivonkykarvina.cz/" target="_blank">
+                        <img src="img\misc\piv.png" class="img-fluid">
+                        <h2 class="text-nowrap text-uppercase"><mark id="piv.1" class="mark-black"></mark></h2>
+                    </a>
+                    <p id="piv.2" style="margin-top: 12px;"></p>
+                </div>
+            </div>
+            <div class="row contact">
+                <div class="col-12 d-flex justify-content-center" style="margin-bottom: 28px;">
+                    <h1 class="text-nowrap text-uppercase text-center"><mark id="13.1" class="mark-white"></mark></h1>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4 class="text-nowrap text-uppercase"><mark id="13.2" class="mark-white"></mark></h4>
+                    <a href="mailto:jakubklapka@studiodenali.cz">
+                        <h6>jakubklapka@studiodenali.cz</h6>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4 class="text-nowrap text-uppercase"><mark id="13.3" class="mark-white"></mark></h4>
+                    <a href="tel:+420736285455">
+                        <h6>+420 736 285 455</h6>
+                    </a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4 class="text-nowrap text-uppercase"><mark id="13.4" class="mark-white"></mark></h4>
+                    <a href="https://www.facebook.com/Studio-Denali-108396014744044" target="_blank">
+                        <h6>facebook.com/Studio-Denali-108396014744044</h6>
+                    </a>
+                </div>
+            </div>
+            <select style="width: 65px;margin-top: 24px;" name="listlanguages" onchange="langSelectChange(this)"></select>
+            <footer>
+                <div class="container-fluid">
+                    <div class="row row-cols-1 row-cols-lg-2">
+                        <div class="col d-flex justify-content-center justify-content-lg-start">
+                            <a href="https://www.studiodenali.cz">
+                                <div class="footer-logo">
+                                    <svg width="100%" height="100%" viewBox="0 0 253 39">
+                                        <rect x="0.049" y="0.039" width="253" height="38.101" style="fill:#fff;" />
+                                        <text x="7.123px" y="29.816px"
+                                    style="font-family:'Roboto', sans-serif;font-weight:900;font-size:30.205px;">STUDIO
+                                    DENALI</text>
+                                        <path d="M238.495,8.367l6.518,10.586l-13.035,0l6.517,-10.586Z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col d-flex flex-column justify-content-center justify-content-lg-end">
+                            <p class="text-uppercase"><a style="color:white"
+                                    href="https://cs.wikipedia.org/wiki/Autorsk%C3%A9_pr%C3%A1vo"
+                                    target="_blank">&copy</a>
+                                <script>document.write(new Date().getFullYear())</script> Jakub Klapka & David Brzý
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+</body>
+<script>
+    var multilang;
+    function onLoad() {
+        multilang = new MultiLang('languages.json', null, this.initList);
+    }
+    function langSelectChange(sel) {
+        multilang.setLanguage(sel.value);
+
+        refreshLabels();
+    }
+    function initList() {
+        var list = document.getElementsByName("listlanguages")[0];
+        list.options.length = 0;
+
+        for (var key in multilang.phrases) {
+            var lang = document.createElement("option");
+            lang.value = key;
+            lang.innerHTML = multilang.phrases[key]['langdesc'];
+
+            list.appendChild(lang);
+        }
+        refreshLabels();
+    }
+    function refreshLabels() {
+        var allnodes = document.body.getElementsByTagName("*");
+        for (var i = 0, max = allnodes.length; i < max; i++) {
+            var idname = allnodes[i].id;
+            if (idname != '') {
+                allnodes[i].textContent = multilang.get(idname);
+            };
+        };
+    }
+</script>
+<script>
+    var MultiLang = function (url, lang, onload) {
+        this.phrases = {};
+        this.selectedLanguage = (lang || navigator.language || navigator.userLanguage).substring(0, 2);;
+        this.onLoad = onload;
+        if (typeof url !== 'undefined') {
+            var obj = this;
+            var req = new XMLHttpRequest();
+            req.open("GET", url, true);
+            req.onreadystatechange = function (evt) {
+                if (evt.target.readyState == 4 && evt.target.status == 200) {
+                    this.phrases = JSON.parse(evt.target.responseText);
+                    this.setLanguage(this.selectedLanguage);
+                    if (this.onLoad) {
+                        this.onLoad();
+                    }
+                };
+            }.bind(obj);
+            req.addEventListener("error", function (e) {
+                console.log('MultiLang.js: Error reading json file.');
+            }, false);
+
+            req.send(null);
+        };
+        this.setLanguage = function (langcode) {
+            if (!this.phrases.hasOwnProperty(langcode)) {
+                for (var key in this.phrases) {
+                    if (this.phrases.hasOwnProperty(key)) {
+                        langcode = key;
+                        break;
+                    };
+                };
+            };
+            this.selectedLanguage = langcode;
+        };
+        this.get = function (key) {
+            var str;
+            if (this.phrases[this.selectedLanguage]) str = this.phrases[this.selectedLanguage][key];
+            str = (str || key);
+            return str;
+        };
+    }
+</script>
+
+</html>
