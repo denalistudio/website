@@ -3,20 +3,32 @@
 
 - [ ] Finální **redesign** *(Affinity)*
 - [ ] MARGINSSSSSSSSSSSS!!!!!!!!!!!!!!!!!
-- [ ] Chci sekce *Wordpress* a *Envato Elements* v **svg**, ale neumím dobře rasterizovat obrázek uvnitř -kuba
-- [ ] Optimalizace pro **Safari 15** *(Menu barvy, search bar)*
-- [ ] Remove Overlay for now
 - [ ] Fix Footer :(
-- [ ] E-mail, domena a grafické práce nejsou **good**
 
-<br>
+## **images**
 
-# **things to implement**
+- [ ] rasterize properly
+
+>Trying to rasterize images in affinity didn't work, we need fix.
+
+- [ ] e-mail
+
+<img style="width:200px;" src="img/8.svg">
+
+- [ ] domain
+
+>Some of the images are not so... *great*. I need to fix them.
+
+<img style="width:200px;" src="img/9.svg">
+
+- [ ] graphic works
+
+<img style="width:200px;" src="img/10.svg">
 
 ## **Safari 15 optimalisation**
 
-> These atttributes are used for Android for a long time, but Safari with their horrible new bar and color on the top bar in iPadOS and MacOS implemented it too
-> 
+> These atttributes are used for Android for a long time, but Safari with their horrible new bar and color on the top bar in iPadOS and MacOS implemented it too.
+
 - [x] ~~theme-color~~
 
 ```html
@@ -33,7 +45,7 @@ body{margin-bottom: env(safe-area-inset-bottom);}
 
 ## ~~**social media**~~
 
-> This is an importnat part of any website, it makes sharing a whole more appealing
+> This is an importnat part of any website, it makes sharing a whole more appealing.
 
 - [x] ~~twitter:card~~
 
@@ -47,7 +59,7 @@ body{margin-bottom: env(safe-area-inset-bottom);}
 ```
 - [x] ~~open graph (facebook)~~
 
-Open Graph is a standart implemented by Facebook, for example also used by iMessage
+>Open Graph is a standart implemented by Facebook, for example also used by iMessage.
 
 ```html
 <meta property="og:url" content="https://www.studiodenali.cz/">
@@ -58,7 +70,7 @@ Open Graph is a standart implemented by Facebook, for example also used by iMess
 
 ## **overlay**
 
->A flawed overlay system used for displaying more information about a project without another page
+>A flawed overlay system used for displaying more information about a project without another page.
 
 - [ ] css
 
@@ -141,7 +153,7 @@ Open Graph is a standart implemented by Facebook, for example also used by iMess
 
 - [ ] javascript
 
-> Used for finding and replacing content
+> Used for finding and replacing content.
 
 ```javascript
 document.getElementById("over-elektra.on").onclick = function elektraon() { document.getElementById("over-elektra").style.display = "block"; }
