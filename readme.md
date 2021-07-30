@@ -3,7 +3,18 @@
 
 - [ ] Finální **redesign** *(Affinity)*
 - [ ] MARGINSSSSSSSSSSSS!!!!!!!!!!!!!!!!!
-- [ ] Fix Footer :( a language do toho
+
+## **html**
+
+- [ ] fix the margins
+
+>THEY ARE LITERALLY ALL OVER THE PLACE!
+
+- [ ] language toggle
+
+```html
+<select style="width: 65px;margin-top: 24px;" name="listlanguages" onclick="langSelectChange(this)"></select>
+```
 
 ## **images**
 
