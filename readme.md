@@ -10,7 +10,7 @@
 
 >THEY ARE LITERALLY ALL OVER THE PLACE!
 
-- [ ] language toggle
+- [ ] language toggle in footer
 
 ```html
 <select style="width: 65px;margin-top: 24px;" name="listlanguages" onclick="langSelectChange(this)"></select>
