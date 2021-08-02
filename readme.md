@@ -3,6 +3,7 @@
 
 - [ ] Finální **redesign** *(Affinity)*
 - [ ] MARGINSSSSSSSSSSSS!!!!!!!!!!!!!!!!!
+- [ ] Prodloužit některé odstavce
 
 ## **html**
 
