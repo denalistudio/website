@@ -10909,16 +10909,19 @@ header {
 }
 
 /* Main */
+.hero {
+  margin: 0;
+  background-color: #e5e5e5;
+}
+
 .hero-left {
   padding-top: 68.5px;
   padding-left: 68.5px;
-  background-color: #e5e5e5;
 }
 
 .hero-right {
   padding-top: 68.5px;
   padding-left: 68.5px;
-  background-color: #e5e5e5;
 }
 
 .contact-btn {

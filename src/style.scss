@@ -77,15 +77,17 @@ header {
 }
 
 /* Main */
+.hero {
+    margin: 0;
+    background-color: $grey;
+}
 .hero-left {
     padding-top: 68.5px;
     padding-left: 68.5px;
-    background-color: $grey;
 }
 .hero-right {
     padding-top: 68.5px;
     padding-left: 68.5px;
-    background-color: $grey;
 }
 .contact-btn {
     background-color: $violet;
