@@ -10845,6 +10845,7 @@ body {
 p {
   font-weight: 400;
   font-size: 1rem;
+  margin: 0;
 }
 
 h1, .h1 {
@@ -10856,6 +10857,7 @@ h2, .h2 {
   font-weight: 700;
   font-size: 1.5rem;
   margin-top: 28.8px;
+  margin-bottom: 16.8px;
 }
 
 h4, .h4 {
