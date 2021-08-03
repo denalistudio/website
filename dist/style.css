@@ -10915,6 +10915,12 @@ header {
   background-color: #e5e5e5;
 }
 
+.hero-right {
+  padding-top: 68.5px;
+  padding-left: 68.5px;
+  background-color: #e5e5e5;
+}
+
 .contact-btn {
   background-color: #4f54ff;
   color: #ffffff;
