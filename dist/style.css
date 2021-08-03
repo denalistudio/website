@@ -10885,6 +10885,7 @@ a, a:link, a:visited, a:hover {
 .mark-black {
   background-color: #000000;
   color: #ffffff;
+  margin-top: 24px;
 }
 
 .mark-white {
