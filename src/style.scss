@@ -92,23 +92,26 @@ header {
 .hero-right {
     padding: 68.5px 68.5px 0 24px;
 }
-.contact-btn {
-    background-color: $violet;
-    color: $white;
-}
-.contact-btn:hover {
-    background-color: $black;
-    color: $white;
-}
 .pricing {
-    margin: 0px;
-    padding: 40px 15px;
+    margin: 0 0 12px 0;
     background-color: $violet;
+    color: $white;
+}
+.pricing-left {
+    padding: 68.5px 24px 0 68.5px;
+}
+.pricing-right {
+    padding: 68.5px 68.5px 0 24px;
 }
 .contact {
-    margin: 0px;
-    padding: 40px 15px;
-    background-color: $violet;
+    margin: 0 0 12px 0;
+    background-color: $grey;
+}
+.contact-left {
+    padding: 68.5px 24px 0 68.5px;
+}
+.contact-right {
+    padding: 68.5px 68.5px 0 24px;
 }
 
 /* Footer */
@@ -119,12 +122,18 @@ footer {
     color: $white;
 }
 .footer-logo {
-    width: 200px;
+    width: 319px;
 }
 footer p {
-    margin: 8px 0px;
-    text-align: center;
+    margin: 9px 0;
+    text-align: right;
     font-weight: 500;
+}
+footer a {
+    color: $white;
+}
+footer .col {
+    padding: 0;
 }
 
 /* Overlay */

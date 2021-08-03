@@ -10928,26 +10928,31 @@ header {
   padding: 68.5px 68.5px 0 24px;
 }
 
-.contact-btn {
-  background-color: #4f54ff;
-  color: #ffffff;
-}
-
-.contact-btn:hover {
-  background-color: #000000;
-  color: #ffffff;
-}
-
 .pricing {
-  margin: 0px;
-  padding: 40px 15px;
+  margin: 0 0 12px 0;
   background-color: #4f54ff;
+  color: #ffffff;
+}
+
+.pricing-left {
+  padding: 68.5px 24px 0 68.5px;
+}
+
+.pricing-right {
+  padding: 68.5px 68.5px 0 24px;
 }
 
 .contact {
-  margin: 0px;
-  padding: 40px 15px;
-  background-color: #4f54ff;
+  margin: 0 0 12px 0;
+  background-color: #e5e5e5;
+}
+
+.contact-left {
+  padding: 68.5px 24px 0 68.5px;
+}
+
+.contact-right {
+  padding: 68.5px 68.5px 0 24px;
 }
 
 /* Footer */
@@ -10959,13 +10964,21 @@ footer {
 }
 
 .footer-logo {
-  width: 200px;
+  width: 319px;
 }
 
 footer p {
-  margin: 8px 0px;
-  text-align: center;
+  margin: 9px 0;
+  text-align: right;
   font-weight: 500;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer .col {
+  padding: 0;
 }
 
 /* Overlay */
