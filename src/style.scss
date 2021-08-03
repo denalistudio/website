@@ -82,14 +82,10 @@ header {
     background-color: $grey;
 }
 .hero-left {
-    padding-top: 68.5px;
-    padding-left: 68.5px;
-    padding-right: 36px;
+    padding: 68.5px 36px 0 68.5px;
 }
 .hero-right {
-    padding-top: 68.5px;
-    padding-left: 36px;
-    padding-right: 68.5px;
+    padding: 68.5px 68.5px 0 36px;
 }
 .contact-btn {
     background-color: $violet;
