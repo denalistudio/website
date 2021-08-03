@@ -10836,6 +10836,10 @@ body {
   text-decoration: none;
 }
 
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  padding: 150px 0px;
+}
+
 /* Text */
 p {
   font-weight: 400;
