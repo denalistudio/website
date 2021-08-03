@@ -13,10 +13,12 @@ body {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
-
 .container-fluid {
     padding-left: 150px;
     padding-right: 150px;
+}
+.col {
+    padding: 12px;
 }
 
 /* Text */

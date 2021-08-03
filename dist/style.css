@@ -10841,6 +10841,10 @@ body {
   padding-right: 150px;
 }
 
+.col {
+  padding: 12px;
+}
+
 /* Text */
 p {
   font-weight: 400;
