@@ -10977,6 +10977,10 @@ footer a {
   color: #ffffff;
 }
 
+footer .row {
+  margin: 0;
+}
+
 footer .col {
   padding: 0;
 }
