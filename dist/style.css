@@ -10837,7 +10837,8 @@ body {
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-  padding: 150px 0px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 /* Text */
