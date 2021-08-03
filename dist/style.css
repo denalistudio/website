@@ -10885,15 +10885,12 @@ a, a:link, a:visited, a:hover {
 .mark-black {
   background-color: #000000;
   color: #ffffff;
+  margin-top: 28.8px;
 }
 
 .mark-white {
   background-color: #ffffff;
   color: #4f54ff;
-}
-
-.h2mark {
-  padding-top: 24px;
 }
 
 /* Header */
