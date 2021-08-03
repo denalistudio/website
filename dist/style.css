@@ -10837,8 +10837,7 @@ body {
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-  padding-left: 150px;
-  padding-right: 150px;
+  padding: 0 100px;
 }
 
 .col {
@@ -10989,4 +10988,10 @@ footer .col {
 .close-btn {
   width: 45.73px;
   height: 45.73px;
+}
+
+@media (min-width: 1600px) {
+  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    padding: 0 150px;
+  }
 }

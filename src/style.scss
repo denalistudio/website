@@ -14,8 +14,7 @@ body {
     text-decoration: none;
 }
 .container-fluid {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding: 0 100px;
 }
 .col {
     padding: 12px;
@@ -143,4 +142,10 @@ footer .col {
 .close-btn {
     width: 45.73px;
     height: 45.73px;
+}
+
+@media (min-width: 1600px) {
+    .container-fluid {
+        padding: 0 150px;
+    }
 }
