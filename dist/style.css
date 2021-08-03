@@ -10909,9 +10909,9 @@ header {
 }
 
 /* Main */
-.hero {
-  margin: 0px;
-  padding: 40px 15px;
+.hero-left {
+  padding-top: 68.5px;
+  padding-left: 68.5px;
   background-color: #e5e5e5;
 }
 
