@@ -10907,11 +10907,11 @@ header {
 }
 
 .hero-left, .pricing-left, .contact-left {
-  padding: 36px 16px;
+  padding: 36px 24px;
 }
 
 .hero-right, .pricing-right, .contact-right {
-  padding: 0 16px;
+  padding: 0 24px;
 }
 
 .pricing {
