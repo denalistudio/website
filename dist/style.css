@@ -10879,10 +10879,6 @@ a, a:link, a:visited, a:hover {
   text-decoration: none;
 }
 
-.container-h2 {
-  width: 70%;
-}
-
 /* Mark */
 .mark-black {
   background-color: #000000;
@@ -10910,12 +10906,12 @@ header {
   background-color: #e5e5e5;
 }
 
-.hero-left {
-  padding: 68.5px 24px 68.5px 68.5px;
+.hero-left, .pricing-left, .contact-left {
+  padding: 36px 16px;
 }
 
-.hero-right {
-  padding: 68.5px 68.5px 0 24px;
+.hero-right, .pricing-right, .contact-right {
+  padding: 0 16px;
 }
 
 .pricing {
@@ -10924,27 +10920,20 @@ header {
   color: #ffffff;
 }
 
-.pricing-left {
-  padding: 68.5px 24px 0 68.5px;
-}
-
-.pricing-right {
-  padding: 68.5px 68.5px 0 24px;
-}
-
 .contact {
   margin: 0 0 0.75rem 0;
   background-color: #e5e5e5;
 }
 
-.contact-left {
-  padding: 4.28125rem 1.5rem 0 4.28125rem;
-}
+@media (min-width: 1200px) {
+  .hero-left, .pricing-left, .contact-left {
+    padding: 68.5px 24px 68.5px 68.5px;
+  }
 
-.contact-right {
-  padding: 4.28125rem 4.28125rem 0 1.5rem;
+  .hero-right, .pricing-right, .contact-right {
+    padding: 68.5px 68.5px 0 24px;
+  }
 }
-
 /* Footer */
 footer {
   background-color: #000000;
