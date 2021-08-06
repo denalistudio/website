@@ -10859,43 +10859,28 @@ p {
 
 h1, .h1 {
   font-weight: 900;
-  font-size: 3rem;
+  font-size: clamp(28px, 2.5vw, 52px);
 }
 
 h2, .h2 {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: clamp(24px, 2vw, 36px);
   margin-top: 1.8rem;
   margin-bottom: 1.05rem;
 }
 
 h3, .h3 {
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: clamp(20px, 1vw, 28px);
   margin: 0;
-}
-
-h4, .h4 {
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin: 1.25rem 0 0.625rem;
-}
-
-h5, .h5 {
-  font-weight: 700;
-  font-size: 1.25rem;
-  text-align: center;
-  margin: 1.875rem 0;
-}
-
-h6, .h6 {
-  font-weight: 500;
-  font-size: 1rem;
-  color: #ffffff;
 }
 
 a, a:link, a:visited, a:hover {
   text-decoration: none;
+}
+
+.container-h2 {
+  width: 70%;
 }
 
 /* Mark */
@@ -10916,7 +10901,7 @@ header {
 }
 
 .header-logo {
-  width: 445px;
+  width: clamp(250px, 40%, 445px);
 }
 
 /* Main */
@@ -10926,7 +10911,7 @@ header {
 }
 
 .hero-left {
-  padding: 68.5px 24px 0 68.5px;
+  padding: 68.5px 24px 68.5px 68.5px;
 }
 
 .hero-right {
