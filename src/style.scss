@@ -9,15 +9,21 @@ $white: #ffffff;
 $grey: #e5e5e5;
 $violet: #4f54ff;
 
+html {
+    max-width: 1920px;
+    margin: auto;
+    font-size: 16px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
 .container-fluid {
-    padding: 0 100px;
+    padding: 0 7.8125%;
 }
 .col {
-    padding: 12px;
+    padding: 0.75rem;
 }
 
 /* Text */
@@ -28,13 +34,13 @@ p {
 }
 h1 {
     font-weight: 900;
-    font-size: 3.125rem;
+    font-size: 3rem;
 }
 h2 {
     font-weight: 700;
-    font-size: 2.25rem;
-    margin-top: 28.8px;
-    margin-bottom: 16.8px;
+    font-size: 2rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.05rem;
 }
 h3 {
     font-weight: 400;
@@ -44,13 +50,13 @@ h3 {
 h4 {
     font-weight: 700;
     font-size: 1.5rem;
-    margin: 20px 0px 10px;
+    margin: 1.25rem 0 0.625rem;
 }  
 h5 {
     font-weight: 700;
     font-size: 1.25rem;
     text-align: center;
-    margin: 30px 0px;
+    margin: 1.875rem 0;
 }  
 h6 {
     font-weight: 500;
@@ -73,8 +79,8 @@ a, a:link, a:visited, a:hover {
 
 /* Header */
 header {
-    margin-top: 96px;
-    margin-bottom: 48px;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
 }
 .header-logo {
     width: 445px;
@@ -82,7 +88,7 @@ header {
 
 /* Main */
 .hero {
-    margin: 0 0 12px 0;
+    margin: 0 0 0.75rem 0;
     background-color: $grey;
 }
 .hero-left {
@@ -92,7 +98,7 @@ header {
     padding: 68.5px 68.5px 0 24px;
 }
 .pricing {
-    margin: 0 0 12px 0;
+    margin: 0 0 0.75rem 0;
     background-color: $violet;
     color: $white;
 }
@@ -103,21 +109,21 @@ header {
     padding: 68.5px 68.5px 0 24px;
 }
 .contact {
-    margin: 0 0 12px 0;
+    margin: 0 0 0.75rem 0;
     background-color: $grey;
 }
 .contact-left {
-    padding: 68.5px 24px 0 68.5px;
+    padding: 4.28125rem 1.5rem 0 4.28125rem;
 }
 .contact-right {
-    padding: 68.5px 68.5px 0 24px;
+    padding: 4.28125rem 4.28125rem 0 1.5rem;
 }
 
 /* Footer */
 footer {
     background-color: $black;
-    margin-top: 30px;
-    padding: 24px 0px;
+    margin-top: 1.875rem;
+    padding: 1.4rem 0px;
     color: $white;
 }
 .footer-logo {
@@ -142,10 +148,4 @@ footer .col {
 .close-btn {
     width: 45.73px;
     height: 45.73px;
-}
-
-@media (min-width: 1600px) {
-    .container-fluid {
-        padding: 0 150px;
-    }
 }
