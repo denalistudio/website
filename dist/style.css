@@ -10865,11 +10865,16 @@ h1, .h1 {
 
 h2, .h2 {
   font-weight: 700;
-  font-size: clamp(1.25rem, 1.875vw, 2.25rem);
+  font-size: 1.625rem;
   margin-top: 1.8rem;
   margin-bottom: 1.05rem;
 }
 
+@media (min-width: 992px) {
+  h2, .h2 {
+    font-size: clamp(1.25rem, 1.875vw, 2.25rem);
+  }
+}
 h3, .h3 {
   font-weight: 400;
   font-size: clamp(1.25rem, 1.45vw, 1.75rem);
