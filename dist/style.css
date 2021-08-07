@@ -10865,7 +10865,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-weight: 700;
-  font-size: clamp(1.5rem, 1.875vw, 2.25rem);
+  font-size: clamp(1.25rem, 1.875vw, 2.25rem);
   margin-top: 1.8rem;
   margin-bottom: 1.05rem;
 }
@@ -10915,13 +10915,19 @@ header {
   padding: 0 1.5rem;
 }
 
+.img-hero {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
 .pricing {
   margin: 0 0 0.75rem 0;
   background-color: #4f54ff;
   color: #ffffff;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .hero-left, .pricing-left, .contact-left {
     padding: 4.28125rem 1.5rem 4.28125rem 4.28125rem;
   }
