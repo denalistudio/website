@@ -10920,6 +10920,19 @@ header {
   height: 100%;
 }
 
+.img-wordpress-2 {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .img-wordpress-1 {
+    display: none;
+  }
+
+  .img-wordpress-2 {
+    display: block;
+  }
+}
 .pricing {
   margin: 0 0 0.75rem 0;
   background-color: #4f54ff;
