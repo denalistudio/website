@@ -10,9 +10,9 @@ $grey: #e5e5e5;
 $violet: #4f54ff;
 
 html {
-    max-width: 1920px;
     margin: auto;
-    font-size: 100%;
+    max-width: 1920px;
+    font-size: 16px;
 }
 
 body {
@@ -40,8 +40,7 @@ h1 {
 h2 {
     font-weight: 700;
     font-size: 1.625rem;
-    margin-top: 1.8rem;
-    margin-bottom: 1.05rem;
+    margin: 1.8rem 0 1.05rem 0;
 }
 @media (min-width: 992px) {
     h2 {
@@ -69,11 +68,10 @@ a, a:link, a:visited, a:hover {
 
 /* Header */
 header {
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+    margin: 6rem 0 3rem 0;
 }
 .header-logo {
-    width: clamp(250px, 40%, 445px);
+    width: clamp(15.625rem, 40%, 27.8125rem);
 }
 
 /* Main */
@@ -119,7 +117,7 @@ footer .col {
     padding: 0;
 }
 .footer-logo {
-    width: 230px;
+    width: 14.375rem;
 }
 footer a {
     color: $white;
@@ -135,6 +133,6 @@ footer p {
         text-align: right;
     }
     .footer-logo {
-        width: 319px;
+        width: 19.9375rem;
     }
 }
