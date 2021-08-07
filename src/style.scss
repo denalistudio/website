@@ -12,10 +12,11 @@ $violet: #4f54ff;
 html {
     max-width: 1920px;
     margin: auto;
-    font-size: 16px;
+    font-size: 100%;
 }
 
 body {
+    font-size: 1.25rem;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
@@ -34,17 +35,17 @@ p {
 }
 h1 {
     font-weight: 900;
-    font-size: clamp(28px, 2.5vw, 52px);
+    font-size: clamp(1.75rem, 2.5vw, 3.25rem);
 }
 h2 {
     font-weight: 700;
-    font-size: clamp(24px, 2vw, 36px);
+    font-size: clamp(1.5rem, 2vw, 2.25rem);
     margin-top: 1.8rem;
     margin-bottom: 1.05rem;
 }
 h3 {
     font-weight: 400;
-    font-size: clamp(20px, 1vw, 28px);
+    font-size: clamp(1.25rem, 1vw, 1.75rem);
     margin: 0;
 }
 a, a:link, a:visited, a:hover {
@@ -71,31 +72,27 @@ header {
 }
 
 /* Main */
-.hero {
+.hero, .contact {
     margin: 0 0 0.75rem 0;
     background-color: $grey;
 }
 .hero-left, .pricing-left, .contact-left {
-    padding: 36px 24px;
+    padding: 2.25rem 1.5rem;
 }
 .hero-right, .pricing-right, .contact-right {
-    padding: 0 24px;
+    padding: 0 1.5rem;
 }
 .pricing {
     margin: 0 0 0.75rem 0;
     background-color: $violet;
     color: $white;
 }
-.contact {
-    margin: 0 0 0.75rem 0;
-    background-color: $grey;
-}
 @media (min-width: 1200px) {
     .hero-left, .pricing-left, .contact-left {
-        padding: 68.5px 24px 68.5px 68.5px;
+        padding: 4.28125rem 1.5rem 4.28125rem 4.28125rem;
     }
     .hero-right, .pricing-right, .contact-right {
-        padding: 68.5px 68.5px 0 24px;
+        padding: 4.28125rem 4.28125rem 0 1.5rem;
     }
 }
 
@@ -103,19 +100,7 @@ header {
 footer {
     background-color: $black;
     margin-top: 1.875rem;
-    padding: 1.4rem 0px;
-    color: $white;
-}
-.footer-logo {
-    width: 319px;
-}
-footer p {
-    margin: 9px 0;
-    text-align: right;
-    font-weight: 500;
-}
-footer a {
-    color: $white;
+    padding: 1.4rem 0;
 }
 footer .row {
     margin: 0;
@@ -123,9 +108,23 @@ footer .row {
 footer .col {
     padding: 0;
 }
-
-/* Overlay */
-.close-btn {
-    width: 45.73px;
-    height: 45.73px;
+.footer-logo {
+    width: 230px;
+}
+footer a {
+    color: $white;
+}
+footer p {
+    margin: 0.5625rem 0;
+    font-weight: 500;
+    text-align: center;
+    color: $white;
+}
+@media (min-width: 992px) {
+    footer p {
+        text-align: right;
+    }
+    .footer-logo {
+        width: 319px;
+    }
 }
