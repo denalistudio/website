@@ -10851,7 +10851,6 @@ body {
   padding: 0.75rem;
 }
 
-/* Text */
 p {
   font-weight: 400;
   font-size: 1.25rem;
@@ -10884,7 +10883,6 @@ a, a:link, a:visited, a:hover {
   text-decoration: none;
 }
 
-/* Mark */
 .mark-black {
   background-color: #000000;
   color: #ffffff;
@@ -10895,7 +10893,6 @@ a, a:link, a:visited, a:hover {
   color: #4f54ff;
 }
 
-/* Header */
 header {
   margin: 6rem 0 3rem 0;
 }
@@ -10904,7 +10901,6 @@ header {
   width: clamp(15.625rem, 40%, 27.8125rem);
 }
 
-/* Main */
 .hero, .contact {
   margin: 0 0 0.75rem 0;
   background-color: #e5e5e5;
@@ -10939,7 +10935,6 @@ header {
     padding: 4.28125rem 4.28125rem 0 1.5rem;
   }
 }
-/* Footer */
 footer {
   background-color: #000000;
   margin-top: 1.875rem;

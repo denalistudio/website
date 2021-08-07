@@ -26,8 +26,6 @@ body {
 .col {
     padding: 0.75rem;
 }
-
-/* Text */
 p {
     font-weight: 400;
     font-size: 1.25rem;
@@ -55,8 +53,6 @@ h3 {
 a, a:link, a:visited, a:hover {
     text-decoration: none;
 }
-
-/* Mark */
 .mark-black {
     background-color: $black;
     color: $white;
@@ -65,16 +61,12 @@ a, a:link, a:visited, a:hover {
     background-color: $white;
     color: $violet;
 }
-
-/* Header */
 header {
     margin: 6rem 0 3rem 0;
 }
 .header-logo {
     width: clamp(15.625rem, 40%, 27.8125rem);
 }
-
-/* Main */
 .hero, .contact {
     margin: 0 0 0.75rem 0;
     background-color: $grey;
@@ -103,8 +95,6 @@ header {
         padding: 4.28125rem 4.28125rem 0 1.5rem;
     }
 }
-
-/* Footer */
 footer {
     background-color: $black;
     margin-top: 1.875rem;
