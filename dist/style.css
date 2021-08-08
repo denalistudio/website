@@ -10838,7 +10838,6 @@ html {
 }
 
 body {
-  font-size: 1.25rem;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
@@ -10860,12 +10859,14 @@ p {
 h1, .h1 {
   font-weight: 900;
   font-size: clamp(1.75rem, 2.7vw, 3.25rem);
+  margin: 0;
 }
 
 h2, .h2 {
   font-weight: 700;
   font-size: 1.625rem;
-  margin: 1.8rem 0 1.05rem 0;
+  margin: 24px 0 12px 0;
+  padding: 0.2em 0;
 }
 
 @media (min-width: 992px) {
@@ -10934,7 +10935,7 @@ header {
   }
 }
 .pricing {
-  margin: 0 0 0.75rem 0;
+  margin: 0.75rem 0;
   background-color: #4f54ff;
   color: #ffffff;
 }
