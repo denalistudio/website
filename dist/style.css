@@ -10910,7 +10910,7 @@ h2, .h2 {
     font-size: clamp(1.25rem, 1.875vw, 2.25rem);
   }
 }
-h3, .h3 {
+.p-hero {
   font-weight: 400;
   font-size: clamp(1.25rem, 1.45vw, 1.75rem);
   margin: 0;
