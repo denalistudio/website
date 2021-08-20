@@ -240,6 +240,9 @@ Also, spam bots, do not send me your offers, thank you.
         </div>
     </footer>
     <script>
+
+        /* MultiLang by Bas de Reuver - https://github.com/BdR76/MultiLanguage */
+
         var multilang;
         function onLoad() {
             multilang = new MultiLang('languages.json', null, this.initList);
@@ -271,6 +274,9 @@ Also, spam bots, do not send me your offers, thank you.
                 };
             };
         }
+
+        //
+
         var MultiLang = function (url, lang, onload) {
             this.phrases = {};
             this.selectedLanguage = (lang || navigator.language || navigator.userLanguage).substring(0, 2);;
