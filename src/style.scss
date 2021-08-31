@@ -133,14 +133,14 @@ header {
     width: 100%;
     height: 100%;
 }
-.img-service-wide {
+.img-wide {
     display: none;
 }
 @media (min-width: 576px) {
-    .img-service-small {
+    .img-small {
         display: none;
     }
-    .img-service-wide {
+    .img-wide {
         display: block;
     }
 }
