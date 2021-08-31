@@ -10962,16 +10962,16 @@ header {
   height: 100%;
 }
 
-.img-wordpress-2 {
+.img-service-wide {
   display: none;
 }
 
 @media (min-width: 576px) {
-  .img-wordpress-1 {
+  .img-service-small {
     display: none;
   }
 
-  .img-wordpress-2 {
+  .img-service-wide {
     display: block;
   }
 }
