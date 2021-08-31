@@ -296,8 +296,7 @@ Also, spam bots, do not send me your offers, thank you.
 
                 req.open("GET", url, true);
                 req.onreadystatechange = function (evt) {
-                    if (evt.target.readyState == 4 && evt.target.status == 200)
-                    {
+                    if (evt.target.readyState == 4 && evt.target.status == 200) {
                         this.phrases = JSON.parse(evt.target.responseText);
 
                         this.setLanguage(this.selectedLanguage);
