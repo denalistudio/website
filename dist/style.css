@@ -10948,11 +10948,11 @@ header {
   background-color: #e5e5e5;
 }
 
-.hero-left, .pricing-left, .contact-left {
+.hero-left, .pricing-left {
   padding: 2.25rem 1.5rem;
 }
 
-.hero-right, .pricing-right, .contact-right {
+.hero-right, .pricing-right {
   padding: 0 1.5rem;
 }
 
@@ -10981,13 +10981,37 @@ header {
   color: #ffffff;
 }
 
+.contact-left, .contact-right {
+  padding: 2.25rem 1.5rem;
+}
+
+.contact-left p {
+  font-size: 1.75rem;
+}
+
+.mt-32 {
+  margin-top: 2rem;
+}
+
+.mt-64 {
+  margin-top: 4rem;
+}
+
 @media (min-width: 992px) {
-  .hero-left, .pricing-left, .contact-left {
+  .hero-left, .pricing-left {
     padding: 4.28125rem 1.5rem 4.28125rem 4.28125rem;
   }
 
-  .hero-right, .pricing-right, .contact-right {
+  .hero-right, .pricing-right {
     padding: 4.28125rem 4.28125rem 0 1.5rem;
+  }
+
+  .contact-left {
+    padding: 4.28125rem 1.5rem 4.28125rem 4.28125rem;
+  }
+
+  .contact-right {
+    padding: 4.28125rem 4.28125rem 4.28125rem 1.5rem;
   }
 }
 footer {
