@@ -189,8 +189,11 @@ footer .col {
 .footer-logo {
     width: 14.375rem;
 }
-footer a {
+.copyright {
     color: $white;
+}
+.copyright:hover {
+    color: $grey;
 }
 footer p {
     margin: 0.5625rem 0;

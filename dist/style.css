@@ -11032,8 +11032,12 @@ footer .col {
   width: 14.375rem;
 }
 
-footer a {
+.copyright {
   color: #ffffff;
+}
+
+.copyright:hover {
+  color: #e5e5e5;
 }
 
 footer p {
