@@ -98,6 +98,11 @@ h2 {
 }
 h3 {
     font-weight: 400;
+    font-size: 1.75rem;
+    margin: 0;
+}
+.p-clamp {
+    font-weight: 400;
     font-size: clamp(1.25rem, 1.45vw, 1.75rem);
     margin: 0;
 }
@@ -151,9 +156,6 @@ header {
 }
 .contact-left, .contact-right {
     padding: 2.25rem 1.5rem;
-}
-.contact-left p {
-    font-size: 1.75rem;
 }
 .mt-32 {
     margin-top: 2rem;
