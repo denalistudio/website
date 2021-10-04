@@ -56,10 +56,21 @@
   font-size: 20px;
 }
 
+.l h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.l p {
+  font-size: 24px;
+}
+
 body {
+  /**/
   font-family: "Roboto", sans-serif;
   color: #212529;
-  /* Grid */
+  /**/
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 150px 387px 24px 387px 24px 387px 24px 387px 150px;
@@ -82,7 +93,9 @@ body {
 }
 
 .top {
+  /**/
   background-color: #e5e5e5;
+  /**/
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 68.5px 707.25px 68.5px 707.25px 68.5px;
@@ -490,7 +503,10 @@ body {
 }
 
 .pri {
+  /**/
+  color: white;
   background-color: #4f54ff;
+  /**/
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 68.5px 707.25px 68.5px 707.25px 68.5px;
