@@ -1,0 +1,19 @@
+{
+  "name": "help",
+  "version": "1.0.0",
+  "description": "Studio Denali Help",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": "David Brzý & Jakub Klapka",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
