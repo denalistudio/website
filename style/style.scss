@@ -1,0 +1,458 @@
+/* Senpai Jacob has a valuable saying to share with you: "If you're not mad, then fuck Bootstrap " */
+
+@import "./fonts";
+
+$denali: #4f54ff;
+$gray: #e5e5e5;
+$black: #212529;
+$link: #0d6efd;
+
+html {
+  color: $black;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  body {
+    margin: 0;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.s,
+.m {
+  h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    font-size: 20px;
+  }
+}
+
+.l {
+  h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  p {
+    font-size: 24px;
+  }
+}
+
+footer {
+  background-color: $black;
+  svg {
+    width: 300px;
+    justify-content: left;
+  }
+  select {
+    color: $black;
+    justify-content: right;
+    width: 40px;
+    height: 20px;
+  }
+}
+
+/* Grid */
+
+body {
+  display: grid;
+  grid-template-columns: 150px 387px 24px 387px 24px 387px 24px 387px 150px;
+  grid-template-rows: 96px 67px 48px 500px 24px 420px 24px 420px 24px 420px 24px 500px 24px 420px 24px 500px 48px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . . . . . ."
+    ". log log log log log log log ."
+    ". . . . . . . . ."
+    ". top top top top top top top ."
+    ". . . . . . . . ."
+    ". web . exp . upk . hos ."
+    ". . . . . . . . ."
+    ". wps wps wps . env env env ."
+    ". . . . . . . . ."
+    ". ema . dom . gra . soc ."
+    ". . . . . . . . ."
+    ". pri pri pri pri pri pri pri ."
+    ". . . . . . . . ."
+    ". elektr . pivonk . . . . ."
+    ". . . . . . . . ."
+    ". con con con con con con con ."
+    ". . . . . . . . ."
+    "ftr ftr ftr ftr ftr ftr ftr ftr ftr";
+}
+
+.log {
+  grid-area: log;
+  justify-self: left;
+}
+
+.top {
+  /**/
+  background-color: $gray;
+  /**/
+  display: grid;
+  grid-template-columns: 68.5px 707.25px 68.5px 707.25px 68.5px;
+  grid-template-rows: 68.5px 100px 24px 239px 68.5px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . ."
+    ". top-1 . top-img ."
+    ". . . top-img ."
+    ". top-2 . top-img ."
+    ". . . top-img .";
+  grid-area: top;
+}
+
+.top-img {
+  grid-area: top-img;
+}
+
+.top-1 {
+  grid-area: top-1;
+}
+
+.top-2 {
+  grid-area: top-2;
+}
+
+.web {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: web;
+}
+
+.web-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.web-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.web-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.exp {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: exp;
+}
+
+.exp-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.exp-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.exp-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.upk {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: upk;
+}
+
+.upk-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.upk-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.upk-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.hos {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: hos;
+}
+
+.hos-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.hos-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.hos-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.wps {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: wps;
+}
+
+.wps-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.wps-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.wps-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.env {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: env;
+}
+
+.env-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.env-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.env-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.ema {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: ema;
+}
+
+.ema-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.ema-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.ema-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.dom {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: dom;
+}
+
+.dom-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.dom-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.dom-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.gra {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: gra;
+}
+
+.gra-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.gra-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.gra-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.soc {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: soc;
+}
+
+.soc-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.soc-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.soc-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.pri {
+  /**/
+  color: white;
+  background-color: $denali;
+  /**/
+  display: grid;
+  grid-template-columns: 68.5px 707.25px 68.5px 707.25px 68.5px;
+  grid-template-rows: 68.5px 100px 24px 239px 68.5px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . ."
+    ". pri-1 . pri-img ."
+    ". . . pri-img ."
+    ". pri-2 . pri-img ."
+    ". . . . .";
+  grid-area: pri;
+}
+
+.pri-img {
+  grid-area: pri-img;
+}
+
+.pri-1 {
+  grid-area: pri-1;
+}
+
+.pri-2 {
+  grid-area: pri-2;
+}
+
+.elektr {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: elektr;
+}
+
+.elektr-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.elektr-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.elektr-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.pivonk {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: pivonk;
+}
+
+.pivonk-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.pivonk-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.pivonk-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.con {
+    /**/
+    background-color: $gray;
+    /**/
+    display: grid;
+    grid-template-columns: 68.5px 707.25px 68.5px 707.25px 68.5px;
+    grid-template-rows: 68.5px 100px 24px 239px 68.5px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . ."
+      ". con-1 . con-map ."
+      ". . . con-map ."
+      ". con-2 . con-map ."
+      ". . . . .";
+    grid-area: con;
+  }
+  
+  .con-map {
+    grid-area: con-map;
+  }
+  
+  .con-1 {
+    grid-area: con-1;
+  }
+  
+  .con-2 {
+    grid-area: con-2;
+  }
+
+footer {
+  display: grid;
+  grid-template-columns: 150px 810px 810px 150px;
+  grid-template-rows: 96px;
+  gap: 0px 0px;
+  grid-template-areas: ". footer-1 footer-2 .";
+  grid-area: ftr;
+}
+
+.footer-1 {
+  grid-area: footer-1;
+}
+
+.footer-2 {
+  grid-area: footer-2;
+}
