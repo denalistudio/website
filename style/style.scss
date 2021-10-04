@@ -19,8 +19,8 @@ html {
     max-height: 100%;
   }
   a {
+    color: inherit;
     text-decoration: none;
-    color: $black;
   }
 }
 
@@ -67,7 +67,7 @@ footer {
 body {
   display: grid;
   grid-template-columns: 150px 387px 24px 387px 24px 387px 24px 387px 150px;
-  grid-template-rows: 96px 67px 48px 500px 24px 420px 24px 420px 24px 420px 24px 500px 24px;
+  grid-template-rows: 96px 67px 48px 500px 24px 420px 24px 420px 24px 420px 24px 500px 24px 420px 24px 500px 48px 96px;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -87,7 +87,9 @@ body {
     ". . . . . . . . ."
     ". elektr . pivonk . . . . ."
     ". . . . . . . . ."
-    "footer footer footer footer footer footer footer footer footer";
+    ". con con con con con con con ."
+    ". . . . . . . . ."
+    "ftr ftr ftr ftr ftr ftr ftr ftr ftr";
 }
 
 .log {
@@ -408,13 +410,43 @@ body {
   grid-area: 5 / 1 / 6 / 2;
 }
 
+.con {
+    /**/
+    background-color: $gray;
+    /**/
+    display: grid;
+    grid-template-columns: 68.5px 707.25px 68.5px 707.25px 68.5px;
+    grid-template-rows: 68.5px 100px 24px 239px 68.5px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . ."
+      ". con-1 . con-map ."
+      ". . . con-map ."
+      ". con-2 . con-map ."
+      ". . . . .";
+    grid-area: con;
+  }
+  
+  .con-map {
+    grid-area: con-map;
+  }
+  
+  .con-1 {
+    grid-area: con-1;
+  }
+  
+  .con-2 {
+    grid-area: con-2;
+  }
+
 footer {
   display: grid;
   grid-template-columns: 150px 810px 810px 150px;
   grid-template-rows: 96px;
   gap: 0px 0px;
   grid-template-areas: ". footer-1 footer-2 .";
-  grid-area: footer;
+  grid-area: ftr;
 }
 
 .footer-1 {
