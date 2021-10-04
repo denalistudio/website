@@ -30,10 +30,10 @@
 		"con-2": "E-mail",
 		"con-3": "Telefonní číslo",
 		"con-4": "Uložit kontakt",
-		"ele-1": "kavárna elektra",
-		"ele-2": "Známá lokální kavárna, která nabízí vynikající kávu. Jejich nové webové stránky ale nechali na nás.",
-		"piv-1": "pivoňky",
-		"piv-2": "Již od samotného názvu jsme Pivoňkám pomáhali formovat jejich nápad, aby se stal realitou.",
+		"elektr-1": "kavárna elektra",
+		"elektr-2": "Známá lokální kavárna, která nabízí vynikající kávu. Jejich nové webové stránky ale nechali na nás.",
+		"pivonk-1": "pivoňky",
+		"pivonk-2": "Již od samotného názvu jsme Pivoňkám pomáhali formovat jejich nápad, aby se stal realitou.",
 		"x": "x"
 	},
 	"en": {
@@ -67,10 +67,10 @@
 		"con-2": "E-mail",
 		"con-3": "Phone number",
 		"con-4": "Save contact",
-		"ele-1": "café elektra",
-		"ele-2": "A well known local café, which serves excellent coffee. Their website was nonetheless left to us.",
-		"piv-1": "Pivonky",
-		"piv-2": "From the name itself, we helped Pivonky shape their idea so it can become reality.",
+		"elektr-1": "café elektra",
+		"elektr-2": "A well known local café, which serves excellent coffee. Their website was nonetheless left to us.",
+		"pivonk-1": "Pivonky",
+		"pivonk-2": "From the name itself, we helped Pivonky shape their idea so it can become reality.",
 		"x": "x"
 	}
 }

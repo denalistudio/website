@@ -7,6 +7,23 @@ $gray: #e5e5e5;
 $black: #212529;
 $link: #0d6efd;
 
+html {
+  color: $black;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  body {
+    margin: 0;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
 .s,
 .m {
   h1 {
@@ -31,11 +48,23 @@ $link: #0d6efd;
   }
 }
 
+footer {
+  background-color: $black;
+  svg {
+    width: 300px;
+    justify-content: left;
+  }
+  select {
+    color: $black;
+    justify-content: right;
+    width: 40px;
+    height: 20px;
+  }
+}
+
+/* Grid */
+
 body {
-  /**/
-  font-family: "Roboto", sans-serif;
-  color: $black;
-  /**/
   display: grid;
   grid-template-columns: 150px 387px 24px 387px 24px 387px 24px 387px 150px;
   grid-template-rows: 96px 67px 48px 500px 24px 420px 24px 420px 24px 420px 24px 500px 24px;
@@ -55,7 +84,10 @@ body {
     ". ema . dom . gra . soc ."
     ". . . . . . . . ."
     ". pri pri pri pri pri pri pri ."
-    ". . . . . . . . .";
+    ". . . . . . . . ."
+    ". elektr . pivonk . . . . ."
+    ". . . . . . . . ."
+    "footer footer footer footer footer footer footer footer footer";
 }
 
 .log {
@@ -332,4 +364,63 @@ body {
 
 .pri-2 {
   grid-area: pri-2;
+}
+
+.elektr {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: elektr;
+}
+
+.elektr-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.elektr-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.elektr-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.pivonk {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: pivonk;
+}
+
+.pivonk-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.pivonk-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.pivonk-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 150px 810px 810px 150px;
+  grid-template-rows: 96px;
+  gap: 0px 0px;
+  grid-template-areas: ". footer-1 footer-2 .";
+  grid-area: footer;
+}
+
+.footer-1 {
+  grid-area: footer-1;
+}
+
+.footer-2 {
+  grid-area: footer-2;
 }

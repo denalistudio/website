@@ -43,6 +43,26 @@
   /* Legacy iOS */
 }
 
+html {
+  color: #212529;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+html body {
+  margin: 0;
+}
+
+html img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+html a {
+  text-decoration: none;
+  color: #212529;
+}
+
 .s h1,
 .m h1 {
   text-transform: uppercase;
@@ -66,11 +86,28 @@
   font-size: 24px;
 }
 
-body {
-  /**/
-  font-family: "Roboto", sans-serif;
+footer {
+  background-color: #212529;
+}
+
+footer svg {
+  width: 300px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+footer select {
   color: #212529;
-  /**/
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  width: 40px;
+  height: 20px;
+}
+
+/* Grid */
+body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 150px 387px 24px 387px 24px 387px 24px 387px 150px;
@@ -80,7 +117,7 @@ body {
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-      grid-template-areas: ". . . . . . . . ." ". log log log log log log log ." ". . . . . . . . ." ". top top top top top top top ." ". . . . . . . . ." ". web . exp . upk . hos ." ". . . . . . . . ." ". wps wps wps . env env env ." ". . . . . . . . ." ". ema . dom . gra . soc ." ". . . . . . . . ." ". pri pri pri pri pri pri pri ." ". . . . . . . . .";
+      grid-template-areas: ". . . . . . . . ." ". log log log log log log log ." ". . . . . . . . ." ". top top top top top top top ." ". . . . . . . . ." ". web . exp . upk . hos ." ". . . . . . . . ." ". wps wps wps . env env env ." ". . . . . . . . ." ". ema . dom . gra . soc ." ". . . . . . . . ." ". pri pri pri pri pri pri pri ." ". . . . . . . . ." ". elektr . pivonk . . . . ." ". . . . . . . . ." "footer footer footer footer footer footer footer footer footer";
 }
 
 .log {
@@ -539,4 +576,105 @@ body {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: pri-2;
+}
+
+.elektr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 240px 24px 48px 12px 96px;
+      grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  -ms-grid-row: 14;
+  -ms-grid-column: 2;
+  grid-area: elektr;
+}
+
+.elektr-img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.elektr-1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.elektr-2 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.pivonk {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 240px 24px 48px 12px 96px;
+      grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  -ms-grid-row: 14;
+  -ms-grid-column: 4;
+  grid-area: pivonk;
+}
+
+.pivonk-img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.pivonk-1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.pivonk-2 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px 810px 810px 150px;
+      grid-template-columns: 150px 810px 810px 150px;
+  -ms-grid-rows: 96px;
+      grid-template-rows: 96px;
+  gap: 0px 0px;
+      grid-template-areas: ". footer-1 footer-2 .";
+  -ms-grid-row: 16;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 9;
+  grid-area: footer;
+}
+
+.footer-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footer-1;
+}
+
+.footer-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: footer-2;
 }
