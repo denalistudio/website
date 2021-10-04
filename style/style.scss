@@ -23,13 +23,15 @@ $link: #0d6efd;
     ". web . exp . upk . hos ."
     ". . . . . . . . ."
     ". wps wps wps . env env env ."
+    ". . . . . . . . ."
+    ". ema . dom . gra . soc ."
     ". . . . . . . . .";
 }
 
 .log {
-    grid-area: log;
-    justify-self: left;
-  }
+  grid-area: log;
+  justify-self: left;
+}
 
 .top {
   background-color: $gray;
@@ -184,3 +186,87 @@ $link: #0d6efd;
 .env-2 {
   grid-area: 5 / 1 / 6 / 2;
 }
+
+.ema {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: ema;
+}
+
+.ema-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.ema-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.ema-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.dom {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: dom;
+}
+
+.dom-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.dom-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.dom-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.gra {
+  display: grid;
+  grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: gra;
+}
+
+.gra-img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.gra-1 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.gra-2 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.soc {
+    display: grid;
+    grid-template-rows: 240px 24px 48px 12px 96px;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: soc;
+  }
+  
+  .soc-img {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  
+  .soc-1 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  
+  .soc-2 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
