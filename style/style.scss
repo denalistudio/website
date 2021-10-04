@@ -7,10 +7,31 @@ $gray: #e5e5e5;
 $black: #212529;
 $link: #0d6efd;
 
-.container {
+.s,
+.m {
+  h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    font-size: 20px;
+  }
+}
+
+.m {
+  img {
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $black;
+  /* Grid */
   display: grid;
   grid-template-columns: 150px 387px 24px 387px 24px 387px 24px 387px 150px;
-  grid-template-rows: 96px 67px 48px 500px 24px 420px 24px 420px 24px;
+  grid-template-rows: 96px 67px 48px 500px 24px 420px 24px 420px 24px 420px 24px 500px 24px;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -25,6 +46,8 @@ $link: #0d6efd;
     ". wps wps wps . env env env ."
     ". . . . . . . . ."
     ". ema . dom . gra . soc ."
+    ". . . . . . . . ."
+    ". pri pri pri pri pri pri pri ."
     ". . . . . . . . .";
 }
 
@@ -269,4 +292,32 @@ $link: #0d6efd;
 
 .soc-2 {
   grid-area: 5 / 1 / 6 / 2;
+}
+
+.pri {
+  background-color: $denali;
+  display: grid;
+  grid-template-columns: 68.5px 707.25px 68.5px 707.25px 68.5px;
+  grid-template-rows: 68.5px 100px 24px 239px 68.5px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . ."
+    ". pri-1 . pri-img ."
+    ". . . pri-img ."
+    ". pri-2 . pri-img ."
+    ". . . pri-img .";
+  grid-area: pri;
+}
+
+.pri-img {
+  grid-area: pri-img;
+}
+
+.pri-1 {
+  grid-area: pri-1;
+}
+
+.pri-2 {
+  grid-area: pri-2;
 }
