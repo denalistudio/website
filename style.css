@@ -552,7 +552,7 @@ body {
       grid-template-rows: 68.5px 100px 24px 239px 68.5px;
   gap: 0px 0px;
   grid-auto-flow: row;
-      grid-template-areas: ". . . . ." ". pri-1 . pri-img ." ". . . pri-img ." ". pri-2 . pri-img ." ". . . pri-img .";
+      grid-template-areas: ". . . . ." ". pri-1 . pri-img ." ". . . pri-img ." ". pri-2 . pri-img ." ". . . . .";
   -ms-grid-row: 12;
   -ms-grid-column: 2;
   -ms-grid-column-span: 7;
@@ -561,7 +561,7 @@ body {
 
 .pri-img {
   -ms-grid-row: 2;
-  -ms-grid-row-span: 4;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 4;
   grid-area: pri-img;
 }
