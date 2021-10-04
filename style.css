@@ -42,3 +42,285 @@
   src: local(""), url(/fonts/roboto-v27-latin-ext_latin-900.eot?07e09e4089e00ae3a473ef7f28dafb99) format("embedded-opentype"), url(/fonts/roboto-v27-latin-ext_latin-900.woff2?74c027146b60623153348001144cdc15) format("woff2"), url(/fonts/roboto-v27-latin-ext_latin-900.woff?a8f7983fafe21ba524c7a56ab1405dc7) format("woff"), url(/fonts/roboto-v27-latin-ext_latin-900.ttf?6bcc1332d58f80bb8783dde070c2f50e) format("truetype"), url(/fonts/roboto-v27-latin-ext_latin-900.svg?65e4130af17899facd7ef501165985a9) format("svg");
   /* Legacy iOS */
 }
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px 387px 24px 387px 24px 387px 24px 387px 150px;
+      grid-template-columns: 150px 387px 24px 387px 24px 387px 24px 387px 150px;
+  -ms-grid-rows: 96px 67px 48px 500px 24px 420px 24px 420px 24px;
+      grid-template-rows: 96px 67px 48px 500px 24px 420px 24px 420px 24px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+      grid-template-areas: ". . . . . . . . ." ". log log log log log log log ." ". . . . . . . . ." ". top top top top top top top ." ". . . . . . . . ." ". web . exp . upk . hos ." ". . . . . . . . ." ". wps wps wps . env env env ." ". . . . . . . . .";
+}
+
+.log {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 7;
+  grid-area: log;
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+.top {
+  background-color: #e5e5e5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 68.5px 707.25px 68.5px 707.25px 68.5px;
+      grid-template-columns: 68.5px 707.25px 68.5px 707.25px 68.5px;
+  -ms-grid-rows: 68.5px 100px 24px 239px 68.5px;
+      grid-template-rows: 68.5px 100px 24px 239px 68.5px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+      grid-template-areas: ". . . . ." ". top-1 . top-img ." ". . . top-img ." ". top-2 . top-img ." ". . . top-img .";
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 7;
+  grid-area: top;
+}
+
+.top-img {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 4;
+  grid-area: top-img;
+}
+
+.top-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: top-1;
+}
+
+.top-2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: top-2;
+}
+
+.web {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 240px 24px 48px 12px 96px;
+      grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: web;
+}
+
+.web-img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.web-1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.web-2 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.exp {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 240px 24px 48px 12px 96px;
+      grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: exp;
+}
+
+.exp-img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.exp-1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.exp-2 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.upk {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 240px 24px 48px 12px 96px;
+      grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  -ms-grid-row: 6;
+  -ms-grid-column: 6;
+  grid-area: upk;
+}
+
+.upk-img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.upk-1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.upk-2 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.hos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 240px 24px 48px 12px 96px;
+      grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  -ms-grid-row: 6;
+  -ms-grid-column: 8;
+  grid-area: hos;
+}
+
+.hos-img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.hos-1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.hos-2 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.wps {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 240px 24px 48px 12px 96px;
+      grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: wps;
+}
+
+.wps-img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.wps-1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.wps-2 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.env {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 240px 24px 48px 12px 96px;
+      grid-template-rows: 240px 24px 48px 12px 96px;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  -ms-grid-row: 8;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 3;
+  grid-area: env;
+}
+
+.env-img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.env-1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.env-2 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 5 / 1 / 6 / 2;
+}

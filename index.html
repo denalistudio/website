@@ -48,6 +48,56 @@ Also, spam bots, do not send me your offers, thank you.
 </head>
 
 <body onload="onLoad()" translate="no">
+    <select name="listlanguages" onchange="langSelectChange(this)">
+    </select>
+    <div class="container">
+        <a class="log" href="https://www.studiodenali.cz/">
+            <svg width="100%" height="100%" viewBox="0 0 445 67"
+                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                <rect x="-0" y="-0" width="444.933" height="67.006" style="fill:#4f54ff;" />
+                <text x="12.44px" y="52.368px"
+                style="font-family:'Roboto';font-weight:900;font-size:53.12px;fill:#fff;">STUDIO DENALI</text>
+                <path d="M419.338,14.646l11.461,18.618l-22.923,0l11.462,-18.618Z" style="fill:#fff;" />
+            </svg>
+        </a>
+        <div class="top">
+            <img class="top-img" src="img/top-img.svg">
+            <h1 class="top-1" id="top-1"></h1>
+            <p class="top-2" id="top-2"></p>
+        </div>
+        <div class="web">
+            <img class="web-img" src="img/web-img.svg">
+            <h1 class="web-1" id="web-1"></h1>
+            <p class="web-2" id="web-2"></p>
+        </div>
+        <div class="exp">
+            <img class="exp-img" src="img/exp-img.svg">
+            <h1 class="exp-1" id="exp-1"></h1>
+            <p class="exp-2" id="exp-2"></p>
+        </div>
+        <div class="upk">
+            <img class="upk-img" src="img/upk-img.svg">
+            <h1 class="upk-1" id="upk-1"></h1>
+            <p class="upk-2" id="upk-2"></p>
+        </div>
+        <div class="hos">
+            <img class="hos-img" src="img/hos-img.svg">
+            <h1 class="hos-1" id="hos-1"></h1>
+            <p class="hos-2" id="hos-2"></p>
+        </div>
+        <div class="wps">
+            <div class="wps-img"></div>
+            <div class="wps-1"></div>
+            <div class="wps-2"></div>
+        </div>
+        <div class="env">
+            <div class="env-img"></div>
+            <div class="env-1"></div>
+            <div class="env-2"></div>
+        </div>
+    </div>
+</body>
+<!--
     <noscript>
         Váš prohlížeč nemá povolený JavaScript, díky čemu může být stránka nefunkční.
     </noscript>
@@ -272,105 +322,106 @@ Also, spam bots, do not send me your offers, thank you.
             </div>
         </div>
     </footer>
-    <script> /* MultiLang by Bas de Reuver - https://github.com/BdR76/MultiLanguage */
-        var multilang;
+-->
+<script> /* MultiLang by Bas de Reuver - https://github.com/BdR76/MultiLanguage */
+    var multilang;
 
-        function onLoad() {
-            multilang = new MultiLang('languages.json', null, this.initList);
+    function onLoad() {
+        multilang = new MultiLang('languages.json', null, this.initList);
+    }
+
+    function langSelectChange(sel) {
+        multilang.setLanguage(sel.value);
+
+        refreshLabels();
+    }
+
+    function initList() {
+        var list = document.getElementsByName("listlanguages")[0];
+        list.options.length = 0;
+
+        for (var key in multilang.phrases) {
+            var lang = document.createElement("option");
+            lang.value = key;
+            lang.innerHTML = multilang.phrases[key]['langdesc'];
+
+            list.appendChild(lang);
         }
 
-        function langSelectChange(sel) {
-            multilang.setLanguage(sel.value);
+        refreshLabels();
+    }
 
-            refreshLabels();
-        }
+    function refreshLabels() {
 
-        function initList() {
-            var list = document.getElementsByName("listlanguages")[0];
-            list.options.length = 0;
+        var allnodes = document.body.getElementsByTagName("*");
 
-            for (var key in multilang.phrases) {
-                var lang = document.createElement("option");
-                lang.value = key;
-                lang.innerHTML = multilang.phrases[key]['langdesc'];
+        for (var i = 0, max = allnodes.length; i < max; i++) {
+            var idname = allnodes[i].id;
+            if (idname != '') {
+                allnodes[i].textContent = multilang.get(idname);
+            };
+        };
+    }
 
-                list.appendChild(lang);
-            }
+    //
 
-            refreshLabels();
-        }
+    var MultiLang = function (url, lang, onload) {
+        this.phrases = {};
 
-        function refreshLabels() {
+        this.selectedLanguage = (lang || navigator.language || navigator.userLanguage).substring(0, 2);
 
-            var allnodes = document.body.getElementsByTagName("*");
+        this.onLoad = onload;
 
-            for (var i = 0, max = allnodes.length; i < max; i++) {
-                var idname = allnodes[i].id;
-                if (idname != '') {
-                    allnodes[i].textContent = multilang.get(idname);
+        if (typeof url !== 'undefined') {
+            var obj = this;
+            var req = new XMLHttpRequest();
+
+            req.open("GET", url, true);
+            req.onreadystatechange = function (evt) {
+                if (evt.target.readyState == 4 && evt.target.status == 200) {
+                    this.phrases = JSON.parse(evt.target.responseText);
+
+                    this.setLanguage(this.selectedLanguage);
+
+                    if (this.onLoad) {
+                        this.onLoad();
+                    }
+
+                };
+            }.bind(obj);
+            req.addEventListener("error", function (e) {
+                console.log('MultiLang.js: Error reading json file.');
+            }, false);
+
+            req.send(null);
+        };
+
+        this.setLanguage = function (langcode) {
+
+            if (!this.phrases.hasOwnProperty(langcode)) {
+
+                for (var key in this.phrases) {
+                    if (this.phrases.hasOwnProperty(key)) {
+                        langcode = key;
+                        break;
+                    };
                 };
             };
-        }
 
-        //
+            this.selectedLanguage = langcode;
+        };
 
-        var MultiLang = function (url, lang, onload) {
-            this.phrases = {};
+        this.get = function (key) {
+            var str;
 
-            this.selectedLanguage = (lang || navigator.language || navigator.userLanguage).substring(0, 2);
+            if (this.phrases[this.selectedLanguage]) str = this.phrases[this.selectedLanguage][key];
 
-            this.onLoad = onload;
+            str = (str || key);
 
-            if (typeof url !== 'undefined') {
-                var obj = this;
-                var req = new XMLHttpRequest();
-
-                req.open("GET", url, true);
-                req.onreadystatechange = function (evt) {
-                    if (evt.target.readyState == 4 && evt.target.status == 200) {
-                        this.phrases = JSON.parse(evt.target.responseText);
-
-                        this.setLanguage(this.selectedLanguage);
-
-                        if (this.onLoad) {
-                            this.onLoad();
-                        }
-
-                    };
-                }.bind(obj);
-                req.addEventListener("error", function (e) {
-                    console.log('MultiLang.js: Error reading json file.');
-                }, false);
-
-                req.send(null);
-            };
-
-            this.setLanguage = function (langcode) {
-
-                if (!this.phrases.hasOwnProperty(langcode)) {
-
-                    for (var key in this.phrases) {
-                        if (this.phrases.hasOwnProperty(key)) {
-                            langcode = key;
-                            break;
-                        };
-                    };
-                };
-
-                this.selectedLanguage = langcode;
-            };
-
-            this.get = function (key) {
-                var str;
-
-                if (this.phrases[this.selectedLanguage]) str = this.phrases[this.selectedLanguage][key];
-
-                str = (str || key);
-
-                return str;
-            };
-        }
-    </script>
+            return str;
+        };
+    }
+</script>
 </body>
 
 </html>
