@@ -106,12 +106,11 @@ footer select {
   height: 20px;
 }
 
-/* Grid */
 body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 150px 387px 24px 387px 24px 387px 24px 387px 150px;
-      grid-template-columns: 150px 387px 24px 387px 24px 387px 24px 387px 150px;
+  -ms-grid-columns: 1fr 2fr 24px 2fr 24px 2fr 24px 2fr 1fr;
+      grid-template-columns: 1fr 2fr 24px 2fr 24px 2fr 24px 2fr 1fr;
   -ms-grid-rows: 96px 67px 48px 500px 24px 420px 24px 420px 24px 420px 24px 500px 24px 420px 24px 500px 48px 96px;
       grid-template-rows: 96px 67px 48px 500px 24px 420px 24px 420px 24px 420px 24px 500px 24px 420px 24px 500px 48px 96px;
   grid-auto-columns: 1fr;
