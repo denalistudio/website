@@ -4,7 +4,7 @@
 		"top-1": "postaráme se o vaši přítomnost na internetu",
 		"top-2": "Jsme studio, které pro vás vytvoří webové stránky a postará se o ně, ukážeme vám jak na sociální sítě, zařídíme, abyste byli v mapách a mnoho dalšího.",
 		"top-3": "kontaktujte nás",
-		"web-1": "webové stránky",
+		"web-1": "Webové stránky",
 		"web-2": "Vytvoříme pro vás moderně vypadající a responzivní webové stránky, založené na redakčním systému WordPress. Díky tomu jsme schopni vše stihnout do dvou týdnů.",
 		"exp-1": "vše vysvětlíme",
 		"exp-2": "Disponujeme kolekcí námi vytvořených materiálů, které vám vysvětlí vše ohledně vaší webové stránky. Také nám můžete kdykoli napsat nebo zavolat a na cokoliv se zeptat.",
@@ -34,6 +34,7 @@
 		"elektr-2": "Známá lokální kavárna, která nabízí vynikající kávu. Jejich nové webové stránky ale nechali na nás.",
 		"pivonk-1": "pivoňky",
 		"pivonk-2": "Již od samotného názvu jsme Pivoňkám pomáhali formovat jejich nápad, aby se stal realitou.",
+		"learn": "Zjistit více",
 		"x": "x"
 	},
 	"en": {
@@ -41,7 +42,7 @@
 		"top-1": "taking care of your internet presence",
 		"top-2": "We are a studio, that will create a website for you and take care of it, show you how to handle social media, put you on the map and much more.",
 		"top-3": "contact us",
-		"web-1": "websites",
+		"web-1": "Websites",
 		"web-2": "We will create a modern and responsive website, based on the WordPress content management system. Thanks to that we are able to deliver in two weeks.",
 		"exp-1": "explained",
 		"exp-2": "We offer a collection of learning materials created by us, that explain everything regarding your website. You can also call us and have a question anytime.",
@@ -71,6 +72,7 @@
 		"elektr-2": "A well known local café, which serves excellent coffee. Their website was nonetheless left to us.",
 		"pivonk-1": "Pivonky",
 		"pivonk-2": "From the name itself, we helped Pivonky shape their idea so it can become reality.",
+		"learn": "Learn more",
 		"x": "x"
 	}
 }

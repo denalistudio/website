@@ -13,6 +13,8 @@ html {
   overflow-x: hidden;
   body {
     margin: 0;
+    margin-top: 5%;
+    background-color: rgb(245, 245, 245);
   }
   img {
     max-width: 100%;
@@ -24,42 +26,87 @@ html {
   }
 }
 
-.s,
-.m {
-  h1 {
-    text-transform: uppercase;
-    font-size: 36px;
-    margin: 0;
+article{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+  width: 250px;
+  transition: transform .5s;
+  margin: 20px;
+  &:hover{
+    transform: scale(1.025);
   }
-  p {
-    margin: 0;
-    font-size: 20px;
-  }
-}
-
-.l {
-  h1 {
-    font-size: 48px;
-    text-transform: uppercase;
-    margin: 0;
-  }
-  p {
-    font-size: 24px;
+  a{
+    color: $link;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 
-footer {
-  background-color: $black;
-  svg {
-    width: 300px;
-    justify-content: left;
+nav {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 50px;
+  z-index: 1;
+  & img {
+    width: 24px;
+    margin-left: 8px;
   }
-  select {
-    color: $black;
-    justify-content: right;
-    width: 40px;
-    height: 20px;
+  & a {
+    float: left;
+    padding: 14px 16px;
   }
 }
 
-@import "./grid";
+.drop {
+  float: left;
+}
+
+.drop-button {
+  font-size: 1rem;
+  color: #000;
+  border: none;
+  outline: none;
+  padding: 0.875rem 1rem;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.drop-content {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 10rem;
+  border-radius: 10px;
+  margin-top: -0.625rem;
+  & a {
+    float: none;
+    color: #000;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  & a:hover {
+    display: block;
+  }
+}
+
+.drop:hover .drop-content {
+  display: block;
+}
+
+.drop-first {
+  border-radius: 5px 5px 0 0;
+}
+
+.drop-last {
+  border-radius: 0 0 5px 5px;
+}
