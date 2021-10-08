@@ -70,9 +70,9 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1200px 1fr;
       grid-template-columns: 1fr 1200px 1fr;
-  -ms-grid-rows: 100px 50px 300px 50px 50px 300px;
-      grid-template-rows: 100px 50px 300px 50px 50px 300px;
-      grid-template-areas: ". . ."  ". h11 ." "div1 div1 div1" ". . ." ". h12 ." ". div2 .";
+  -ms-grid-rows: 100px 50px 500px 50px 50px 500px 50px 500px;
+      grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 500px;
+      grid-template-areas: ". . ."  ". h11 ." "div1 div1 div1" ". . ." ". h12 ." ". div2 ." ". h13 ." ". div3 .";
 }
 
 article {
@@ -81,8 +81,8 @@ article {
   padding: 10px;
   border-radius: 15px;
   background-color: white;
-  width: 250px;
-  height: 300px;
+  width: 300px;
+  height: 350px;
   -webkit-transition: -webkit-transform .5s;
   transition: -webkit-transform .5s;
   transition: transform .5s;
@@ -104,6 +104,11 @@ article a {
 
 article a:hover {
   text-decoration: underline;
+}
+
+article h3 {
+  color: #4f54ff;
+  font-weight: 400;
 }
 
 nav {
@@ -179,8 +184,7 @@ nav a {
 }
 
 .container {
-  position: relative;
-  height: 350px;
+  height: 500px;
   width: 99%;
   margin: 2px auto;
   white-space: nowrap;
