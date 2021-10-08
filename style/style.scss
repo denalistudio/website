@@ -7,6 +7,10 @@ $gray: #e5e5e5;
 $black: #212529;
 $link: #0d6efd;
 
+@mixin shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 html {
   color: $black;
   font-family: "Roboto", sans-serif;
@@ -26,50 +30,48 @@ html {
   }
 }
 
-body{
+body {
   display: grid;
   grid-template-columns: 1fr 1200px 1fr;
   grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 500px;
   grid-template-areas:
-  ". . ." 
-  ". h11 ."
-  "div1 div1 div1"
-  ". . ."
-  ". h12 ."
-  ". div2 ."
-  ". h13 ."
-  ". div3 .";
+    ". . ."
+    ". h11 ."
+    "div1 div1 div1"
+    ". . ."
+    ". h12 ."
+    ". div2 ."
+    ". h13 ."
+    ". div3 .";
 }
 
-article{
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 10px;
-  border-radius: 15px;
-  background-color: white;
+article {
   width: 300px;
   height: 350px;
-  transition: transform .5s;
   margin: 20px;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: white;
   display: inline-block;
   white-space: normal;
   vertical-align: top;
-  &:hover{
+  transition: transform 0.5s;
+  @include shadow();
+  &:hover {
     transform: scale(1.025);
   }
-  a{
-    color: $link;
-    &:hover{
-      text-decoration: underline;
-    }
+  h1{
+    margin: 0;
+    color: $black;
   }
   h3 {
+    margin: 0;
     color: $denali;
     font-weight: 400;
   }
 }
 
 nav {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: white;
   width: 100%;
   position: fixed;
@@ -77,6 +79,7 @@ nav {
   top: 0;
   height: 50px;
   z-index: 1;
+  @include shadow();
   & img {
     width: 24px;
     margin-left: 8px;
@@ -102,13 +105,13 @@ nav {
 }
 
 .drop-content {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: none;
   position: absolute;
   background-color: #fff;
   min-width: 10rem;
   border-radius: 10px;
   margin-top: -0.625rem;
+  @include shadow();
   & a {
     float: none;
     color: #000;
@@ -135,7 +138,6 @@ nav {
 }
 
 .container {
-
   height: 500px;
   width: 99%;
   margin: 2px auto;
