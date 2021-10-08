@@ -48,8 +48,6 @@ Also, spam bots, do not send me your offers, thank you.
 </head>
 
 <body onload="onLoad()" translate="no">
-    <select name="listlanguages" onchange="langSelectChange(this)">
-    </select>
     <nav>
         <a href="index.html">
             <img src="triangle.svg">
@@ -63,11 +61,13 @@ Also, spam bots, do not send me your offers, thank you.
                 <a href="#">Odkaz 2</a>
                 <a class="drop-last" href="#">Odkaz 3</a>
             </div>
+            <select name="listlanguages" onchange="langSelectChange(this)">
+            </select>
         </div>
     </nav>
-    <h1>Co nabízíme</h1>
-    <div style="align-items: baseline; display: inline-flex;">
-        <article>
+    <h1 style="grid-area: h11;">Co nabízíme</h1>
+    <div class="container" style="align-items: baseline; grid-area: div1;">
+        <article style="margin-left: 20%;">
             <h1 id="web-1"></h1>
             <p id="web-2"></p>
             <a href="#" id="learn"></a>
@@ -92,41 +92,23 @@ Also, spam bots, do not send me your offers, thank you.
             <h1 class="dom-1" id="dom-1"></h1>
             <p class="dom-2" id="dom-2"></p>
         </article>
-        <article>
-            <h1 class="gra-1" id="gra-1"></h1>
-            <p class="gra-2" id="gra-2"></p>
-        </article>
-        <article>
-            <h1 class="soc-1" id="soc-1"></h1>
-            <p class="soc-2" id="soc-2"></p>
-        </article>
     </div>
-    <h1>Customer stories. Read about our satisfied customers and how we helped them.</h1>
-    <div style="align-items: baseline; display: inline-flex;">
-    <article onclick="on()" class="elektr s" href="https://www.elektrakarvina.cz/" target="_blank" rel="noopener noreferrer">
-        <img class="elektr-img" src="img/misc/elektr.webp">
-        <h1 class="elektr-1" id="elektr-1"></h1>
-        <p class="elektr-2" id="elektr-2"></p>
-    </article>
-    <article class="pivonk s" href="https://www.pivonkykarvina.cz/" target="_blank" rel="noopener noreferrer">
-        <img class="pivonk-img" src="img/misc/pivonk.webp">
-        <h1 class="pivonk-1" id="pivonk-1"></h1>
-        <p class="pivonk-2" id="pivonk-2"></p>
-    </article>
-    </div>
-    <div id="overlay-bich">
-        <div id="ol-text">Overlay Text</div>
+    <h1 style="grid-area: h12;">Customer stories.</h1>
+    <div style="align-items: baseline; display: inline-flex; grid-area: div2;">
+        <article onclick="on()" class="elektr s" href="https://www.elektrakarvina.cz/" target="_blank"
+            rel="noopener noreferrer">
+            <img class="elektr-img" src="img/misc/elektr.webp">
+            <h1 class="elektr-1" id="elektr-1"></h1>
+            <p class="elektr-2" id="elektr-2"></p>
+        </article>
+        <article class="pivonk s" href="https://www.pivonkykarvina.cz/" target="_blank" rel="noopener noreferrer">
+            <img class="pivonk-img" src="img/misc/pivonk.webp">
+            <h1 class="pivonk-1" id="pivonk-1"></h1>
+            <p class="pivonk-2" id="pivonk-2"></p>
+        </article>
     </div>
 
     <script>
-
-        function on() {
-            document.getElementById("overlay").style.display = "block";
-        }
-
-        function off() {
-            document.getElementById("overlay").style.display = "none";
-        }
 
         /* MultiLang by Bas de Reuver - https://github.com/BdR76/MultiLanguage */
 
