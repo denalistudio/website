@@ -45,42 +45,45 @@
 
 html {
   color: #212529;
-  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
 
-html body {
+body {
   margin: 0;
   margin-top: 5%;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   background-color: #fafafa;
-}
-
-html img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-html a {
-  color: inherit;
-  text-decoration: none;
-}
-
-body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1200px 1fr;
       grid-template-columns: 1fr 1200px 1fr;
   -ms-grid-rows: 100px 50px 300px 50px 50px 300px;
       grid-template-rows: 100px 50px 300px 50px 50px 300px;
-      grid-template-areas: ". . ."  ". h11 ." "div1 div1 div1" ". . ." ". h12 ." ". div2 .";
+      grid-template-areas: ". . ." 
+ ". h11 ."
+ "div1 div1 div1"
+ ". . ."
+ ". h12 ."
+ ". div2 .";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 article {
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: #959da533 0px 8px 24px;
+          box-shadow: #959da533 0px 8px 24px;
   padding: 10px;
   border-radius: 15px;
-  background-color: white;
+  background-color: #fff;
   width: 250px;
   height: 300px;
   -webkit-transition: -webkit-transform .5s;
@@ -107,9 +110,9 @@ article a:hover {
 }
 
 nav {
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  background-color: white;
+  -webkit-box-shadow: #959da533 0px 8px 24px;
+          box-shadow: #959da533 0px 8px 24px;
+  background-color: #fff;
   width: 100%;
   position: fixed;
   left: 0;
@@ -143,8 +146,8 @@ nav a {
 }
 
 .drop-content {
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: #959da533 0px 8px 24px;
+          box-shadow: #959da533 0px 8px 24px;
   display: none;
   position: absolute;
   background-color: #fff;
@@ -187,4 +190,5 @@ nav a {
   overflow-x: auto;
   overflow-y: hidden;
   vertical-align: top;
+  align-items: baseline;
 }
