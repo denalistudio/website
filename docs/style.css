@@ -189,12 +189,12 @@ article a:hover {
   cursor: pointer;
 }
 
-article a h1 {
+article h1 {
   margin: 0;
   color: #212529;
 }
 
-article a h3 {
+article h3 {
   margin: 0;
   color: #4f54ff;
   font-weight: 400;
