@@ -37,12 +37,14 @@ body {
   grid-template-areas:
     ". . ."
     ". h11 ."
-    ". div1 div1"
+    ". services services"
     ". . ."
+    ". h14 ."
+    ". contact ."
     ". h12 ."
     ". div2 ."
     ". h13 ."
-    ". div3 .";
+    ". . .";
 }
 
 nav {
@@ -111,7 +113,16 @@ nav {
   border-radius: 0 0 5px 5px;
 }
 
-article {
+.card {
+  border-radius: 15px;
+  transition: transform 0.5s;
+  @include shadow();
+  &:hover {
+    transform: scale(1.025);
+  }
+}
+
+.services {
   height: 500px;
   width: 99%;
   margin: 2px auto;
@@ -119,23 +130,19 @@ article {
   overflow-x: auto;
   overflow-y: hidden;
   vertical-align: top;
+  grid-area: services;
   a {
     width: 300px;
     height: 350px;
     margin: 20px;
     padding: 25px;
-    border-radius: 15px;
     background-color: white;
     display: inline-block;
     white-space: normal;
     vertical-align: top;
-    transition: transform 0.5s;
-    @include shadow();
-    &:hover {
-      transform: scale(1.025);
-    }
     h1 {
       margin: 0;
+      font-size: 25px;
       color: $black;
     }
     h3 {
@@ -146,3 +153,26 @@ article {
   }
 }
 
+.contact {
+  grid-area: contact;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    "as as map map"
+    "ab download map map";
+}
+.as {
+  grid-area: as;
+}
+.ab {
+  grid-area: ab;
+}
+
+.con-download{
+  grid-area: download;
+}
+.con-map {
+  grid-area: map;
+}
