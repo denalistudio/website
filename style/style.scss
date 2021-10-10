@@ -45,35 +45,6 @@ body {
     ". div3 .";
 }
 
-article {
-  width: 300px;
-  height: 350px;
-  margin: 20px;
-  padding: 25px;
-  border-radius: 15px;
-  background-color: white;
-  display: inline-block;
-  white-space: normal;
-  vertical-align: top;
-  transition: transform 0.5s;
-  @include shadow();
-  &:hover {
-    transform: scale(1.025);
-  }
-  h1 {
-    margin: 0;
-    color: $black;
-  }
-  h3 {
-    margin: 0;
-    color: $denali;
-    font-weight: 400;
-    h3 {
-      text-decoration: underline;
-    }
-  }
-}
-
 nav {
   background-color: white;
   width: 100%;
@@ -140,7 +111,7 @@ nav {
   border-radius: 0 0 5px 5px;
 }
 
-.container {
+article {
   height: 500px;
   width: 99%;
   margin: 2px auto;
@@ -148,4 +119,30 @@ nav {
   overflow-x: auto;
   overflow-y: hidden;
   vertical-align: top;
+  a {
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: white;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    transition: transform 0.5s;
+    @include shadow();
+    &:hover {
+      transform: scale(1.025);
+      cursor: pointer;
+    }
+    h1 {
+      margin: 0;
+      color: $black;
+    }
+    h3 {
+      margin: 0;
+      color: $denali;
+      font-weight: 400;
+    }
+  }
 }

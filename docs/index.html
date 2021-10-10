@@ -62,42 +62,46 @@
         </select>
         </div>
     </nav>
-    <h1 id="off" style="grid-area: h11;"></h1>
-    <div class="container" style="grid-area: div1;">
-        <article>
+    <h1 style="grid-area: h11;">Co nabizime</h1>
+    <article style="grid-area: div1;">
+        <a>
             <h3 id="web-1"></h3>
             <h1 id="web-2"></h1>
             <p id="web-3"></p>
-        </article>
-        <article>
+        </a>
+        <a>
             <h3 id="exp-1"></h3>
             <h1 id="exp-2"></h1>
             <p id="exp-3"></p>
-        </article>
-        <article>
+        </a>
+        <a>
             <h3 id="edi-1"></h3>
             <h1 id="edi-2"></h1>
             <p id="edi-3"></p>
-        </article>
-        <article>
+        </a>
+        <a>
             <h3 id="dom-1"></h3>
             <h1 id="dom-2"></h1>
             <p id="dom-3"></p>
-        </article>
-        <article>
+        </a>
+        <a>
             <h3 id="ema-1"></h3>
             <h1 id="ema-2"></h1>
-            <p id="ema-3"></p>
-        </article>
-        <article>
+            <p>
+                <span id="ema-3-1"></span><br>
+                <span id="ema-3-2"></span><br>
+                <span id="ema-3-3"></span>
+            </p>
+        </a>
+        <a>
             <h3 id="soc-1"></h3>
             <h1 id="soc-2"></h1>
             <p id="soc-3"></p>
-        </article>
-    </div>
+        </a>
+    </article>
     <h1 style="grid-area: h12;">Customer stories</h1>
-    <div style="align-items: baseline; display: inline-flex; grid-area: div2;">
-        <article onclick="on()" class="elektr s" href="https://www.elektrakarvina.cz/" target="_blank"
+    <article style="align-items: baseline; display: inline-flex; grid-area: div2;">
+        <a onclick="on()" class="elektr s" href="https://www.elektrakarvina.cz/" target="_blank"
             rel="noopener noreferrer">
             <picture>
                 <source srcset="img/misc/elektr.webp">
@@ -106,8 +110,8 @@
             </picture>
             <h1 class="elektr-1" id="elektr-1"></h1>
             <p class="elektr-2" id="elektr-2"></p>
-        </article>
-        <article class="pivonk s" href="https://www.pivonkykarvina.cz/" target="_blank" rel="noopener noreferrer">
+        </a>
+        <a class="pivonk s" href="https://www.pivonkykarvina.cz/" target="_blank" rel="noopener noreferrer">
             <picture>
                 <source srcset="img/misc/pivonk.webp">
                 <source srcset="img/misc/pivonk.png">
@@ -115,14 +119,14 @@
             </picture>
             <h1 class="pivonk-1" id="pivonk-1"></h1>
             <p class="pivonk-2" id="pivonk-2"></p>
-        </article>
-    </div>
+        </a>
+    </article>
     <h1 style="grid-area: h13;">Prajcing</h1>
+    <div><div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div></div>
 
     <script>
-
-        /* MultiLang by Bas de Reuver - https://github.com/BdR76/MultiLanguage */
-
         var multilang;
 
         function onLoad() {

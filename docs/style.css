@@ -76,44 +76,6 @@ body {
       grid-template-areas: ". . ." ". h11 ." ". div1 div1" ". . ." ". h12 ." ". div2 ." ". h13 ." ". div3 .";
 }
 
-article {
-  width: 300px;
-  height: 350px;
-  margin: 20px;
-  padding: 25px;
-  border-radius: 15px;
-  background-color: white;
-  display: inline-block;
-  white-space: normal;
-  vertical-align: top;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-article:hover {
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
-}
-
-article h1 {
-  margin: 0;
-  color: #212529;
-}
-
-article h3 {
-  margin: 0;
-  color: #4f54ff;
-  font-weight: 400;
-}
-
-article h3 h3 {
-  text-decoration: underline;
-}
-
 nav {
   background-color: white;
   width: 100%;
@@ -186,7 +148,7 @@ nav a {
   border-radius: 0 0 5px 5px;
 }
 
-.container {
+article {
   height: 500px;
   width: 99%;
   margin: 2px auto;
@@ -194,4 +156,39 @@ nav a {
   overflow-x: auto;
   overflow-y: hidden;
   vertical-align: top;
+}
+
+article a {
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: white;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+article a:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  cursor: pointer;
+}
+
+article a h1 {
+  margin: 0;
+  color: #212529;
+}
+
+article a h3 {
+  margin: 0;
+  color: #4f54ff;
+  font-weight: 400;
 }
