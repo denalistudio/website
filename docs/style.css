@@ -109,7 +109,7 @@ article h3 {
   font-weight: 400;
 }
 
-article h3:hover {
+article h3 h3 {
   text-decoration: underline;
 }
 
