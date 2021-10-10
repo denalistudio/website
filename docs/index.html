@@ -62,74 +62,95 @@
             </select>
         </div>
     </nav>
-        <h1 style="grid-area: h11;">Co nabizime</h1>
-        <article style="grid-area: div1;">
-            <a>
-                <h3 id="web-1"></h3>
-                <h1 id="web-2"></h1>
-                <p id="web-3"></p>
+    <h1 style="grid-area: h11;">Co nabízíme</h1>
+    <article style="grid-area: div1;">
+        <a>
+            <h3 id="web-1"></h3>
+            <h1 id="web-2"></h1>
+            <p id="web-3"></p>
+        </a>
+        <a>
+            <h3 id="exp-1"></h3>
+            <h1 id="exp-2"></h1>
+            <p id="exp-3"></p>
+        </a>
+        <a>
+            <h3 id="edi-1"></h3>
+            <h1 id="edi-2"></h1>
+            <p id="edi-3"></p>
+        </a>
+        <a>
+            <h3 id="dom-1"></h3>
+            <h1 id="dom-2"></h1>
+            <p id="dom-3"></p>
+        </a>
+        <a>
+            <h3 id="ema-1"></h3>
+            <h1 id="ema-2"></h1>
+            <p>
+                <span id="ema-3-1"></span><br>
+                <span id="ema-3-2"></span><br>
+                <span id="ema-3-3"></span>
+            </p>
+        </a>
+        <a>
+            <h3 id="soc-1"></h3>
+            <h1 id="soc-2"></h1>
+            <p id="soc-3"></p>
+        </a>
+    </article>
+    <h1 style="grid-area: h12;">Customer stories</h1>
+    <article style="align-items: baseline; display: inline-flex; grid-area: div2;">
+        <a onclick="on()" class="elektr s" href="https://www.elektrakarvina.cz/" target="_blank"
+            rel="noopener noreferrer">
+            <picture>
+                <source srcset="img/misc/elektr.webp" type="image/webp">
+                <source srcset="img/misc/elekta.png" type="image/png">
+                <img src="img/misc/elektra.png">
+            </picture>
+            <h1 class="elektr-1" id="elektr-1"></h1>
+            <p class="elektr-2" id="elektr-2"></p>
+        </a>
+        <a class="pivonk s" href="https://www.pivonkykarvina.cz/" target="_blank" rel="noopener noreferrer">
+            <picture>
+                <source srcset="img/misc/pivonk.webp" type="image/webp">
+                <source srcset="img/misc/pivonk.png" type="image/png">
+                <img src="img/misc/pivonky.png">
+            </picture>
+            <h1 class="pivonk-1" id="pivonk-1"></h1>
+            <p class="pivonk-2" id="pivonk-2"></p>
+        </a>
+    </article>
+    <h1 style="grid-area: h13;">Kontakt</h1>
+    <div class="contact" style="grid-area: div3;">
+        <div class="contact-card">
+            <h1>Jakub Klapka</h1>
+            <a href="mailto:jakubklapka@studiodenali.cz">
+                <h3>jakubklapka@studiodenali.cz</h3>
             </a>
-            <a>
-                <h3 id="exp-1"></h3>
-                <h1 id="exp-2"></h1>
-                <p id="exp-3"></p>
+            <a href="tel:+420736285455">
+                <h3>+420 736 285 455</h3>
             </a>
-            <a>
-                <h3 id="edi-1"></h3>
-                <h1 id="edi-2"></h1>
-                <p id="edi-3"></p>
-            </a>
-            <a>
-                <h3 id="dom-1"></h3>
-                <h1 id="dom-2"></h1>
-                <p id="dom-3"></p>
-            </a>
-            <a>
-                <h3 id="ema-1"></h3>
-                <h1 id="ema-2"></h1>
-                <p>
-                    <span id="ema-3-1"></span><br>
-                    <span id="ema-3-2"></span><br>
-                    <span id="ema-3-3"></span>
-                </p>
-            </a>
-            <a>
-                <h3 id="soc-1"></h3>
-                <h1 id="soc-2"></h1>
-                <p id="soc-3"></p>
-            </a>
-        </article>
-        <h1 style="grid-area: h12;">Customer stories</h1>
-        <article style="align-items: baseline; display: inline-flex; grid-area: div2;">
-            <a onclick="on()" class="elektr s" href="https://www.elektrakarvina.cz/" target="_blank"
-                rel="noopener noreferrer">
-                <picture>
-                    <source srcset="img/misc/elektr.webp">
-                    <source srcset="img/misc/elekta.png">
-                    <img src="img/misc/elektra.png">
-                </picture>
-                <h1 class="elektr-1" id="elektr-1"></h1>
-                <p class="elektr-2" id="elektr-2"></p>
-            </a>
-            <a class="pivonk s" href="https://www.pivonkykarvina.cz/" target="_blank" rel="noopener noreferrer">
-                <picture>
-                    <source srcset="img/misc/pivonk.webp">
-                    <source srcset="img/misc/pivonk.png">
-                    <img src="img/misc/pivonky.png">
-                </picture>
-                <h1 class="pivonk-1" id="pivonk-1"></h1>
-                <p class="pivonk-2" id="pivonk-2"></p>
-            </a>
-        </article>
-        <h1 style="grid-area: h13;">Pricing</h1>
-        <div class="pricing">
-            
+            <button class="btn-contact">Uložit kontakt</button>
         </div>
-        <div>
-            <div class="slidecontainer">
-                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-            </div>
+        <div class="contact-photo">
+            <picture>
+                <source srcset="" type="image/webp">
+                <source srcset="" type="image/png">
+                <img src="">
+            </picture>
         </div>
+        <div class="contact-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82345.3866281877!2d18.457739069232826!3d49.83694566887435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8bd3b80abd2e80a9%3A0x92ab1426e66238f8!2sStudio%20Denali!5e0!3m2!1scs!2scz!4v1629384930567!5m2!1scs!2scz"
+                width="100%" height="100%" style="border:0;" allowfullscreen="no" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+    </div>
 
     <script>
         var multilang;
