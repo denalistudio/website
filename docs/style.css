@@ -84,6 +84,17 @@ nav {
   z-index: 1;
   -webkit-box-shadow: #959da533 0 8px 24px;
           box-shadow: #959da533 0 8px 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8fr 1fr;
+      grid-template-columns: 1fr 8fr 1fr;
+      grid-template-areas: ". nav-content .";
+}
+
+nav .nav-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: nav-content;
 }
 
 nav img {
