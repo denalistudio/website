@@ -69,11 +69,12 @@ html a {
 body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1200px 1fr;
-      grid-template-columns: 1fr 1200px 1fr;
-  -ms-grid-rows: 100px 50px 500px 50px 50px 500px 50px 500px;
-      grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 500px;
-      grid-template-areas: ". . ." ". h11 ." ". services services" ". . ." ". h14 ." ". contact ." ". h12 ." ". div2 ." ". h13 ." ". . .";
+  -ms-grid-columns: 1fr 1400px 1fr;
+      grid-template-columns: 1fr 1400px 1fr;
+  -ms-grid-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
+      grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
+  gap: 25px 0;
+      grid-template-areas: ". . ." ". h11 ." ". services services" ". . ." ". h14 ." ". contact ." ". h12 ." ". clients ." ". h13 ." ". . .";
 }
 
 nav {
@@ -180,7 +181,7 @@ nav a {
 .services a {
   width: 300px;
   height: 350px;
-  margin: 20px;
+  margin: 10px;
   padding: 25px;
   background-color: white;
   display: inline-block;
@@ -214,29 +215,47 @@ nav a {
       grid-template-areas: "as as map map" "ab download map map";
 }
 
-.as {
+.contact .as {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: as;
 }
 
-.ab {
+.contact .ab {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: ab;
 }
 
-.con-download {
+.contact .con-download {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: download;
 }
 
-.con-map {
+.contact .con-map {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: map;
+}
+
+.clients {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
+  grid-area: clients;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 20px 20px;
+      grid-template-areas: "as as map map" "ab download map map";
+}
+
+.clients a {
+  padding: 25px;
 }

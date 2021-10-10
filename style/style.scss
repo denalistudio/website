@@ -32,8 +32,9 @@ html {
 
 body {
   display: grid;
-  grid-template-columns: 1fr 1200px 1fr;
-  grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 500px;
+  grid-template-columns: 1fr 1400px 1fr;
+  grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
+  gap: 25px 0;
   grid-template-areas:
     ". . ."
     ". h11 ."
@@ -42,7 +43,7 @@ body {
     ". h14 ."
     ". contact ."
     ". h12 ."
-    ". div2 ."
+    ". clients ."
     ". h13 ."
     ". . .";
 }
@@ -134,7 +135,7 @@ nav {
   a {
     width: 300px;
     height: 350px;
-    margin: 20px;
+    margin: 10px;
     padding: 25px;
     background-color: white;
     display: inline-block;
@@ -162,17 +163,31 @@ nav {
   grid-template-areas:
     "as as map map"
     "ab download map map";
-}
-.as {
-  grid-area: as;
-}
-.ab {
-  grid-area: ab;
+  .as {
+    grid-area: as;
+  }
+  .ab {
+    grid-area: ab;
+  }
+
+  .con-download {
+    grid-area: download;
+  }
+  .con-map {
+    grid-area: map;
+  }
 }
 
-.con-download{
-  grid-area: download;
-}
-.con-map {
-  grid-area: map;
+.clients {
+  grid-area: clients;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    "as as map map"
+    "ab download map map";
+    a{
+      padding: 25px;
+    }
 }
