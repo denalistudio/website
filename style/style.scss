@@ -133,7 +133,6 @@ article {
     @include shadow();
     &:hover {
       transform: scale(1.025);
-      cursor: pointer;
     }
     h1 {
       margin: 0;
@@ -145,4 +144,11 @@ article {
       font-weight: 400;
     }
   }
+}
+
+.overlayWeb {
+  display: none;
+  position: fixed;
+  left: 300px;
+  top: 300px;
 }
