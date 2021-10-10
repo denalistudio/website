@@ -186,7 +186,6 @@ article a {
 article a:hover {
   -webkit-transform: scale(1.025);
           transform: scale(1.025);
-  cursor: pointer;
 }
 
 article h1 {
@@ -269,4 +268,10 @@ article h3 {
   cursor: pointer;
   font-size: 20px;
   font-weight: 400;
+}
+.overlayWeb {
+  display: none;
+  position: fixed;
+  left: 300px;
+  top: 300px;
 }
