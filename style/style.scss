@@ -68,6 +68,9 @@ article {
     margin: 0;
     color: $denali;
     font-weight: 400;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 
