@@ -4,13 +4,16 @@
 
 $denali: #4f54ff;
 $grey: #e5e5e5;
-$dark: #212529;
+$dark: #272727;
 $link: #0d6efd;
 $black: #000000;
 $white: #ffffff;
 
 @mixin shadow {
   box-shadow: #959da533 0 8px 24px;
+  @media (prefers-color-scheme: dark) {
+    box-shadow: #00000033 0 8px 24px;
+  }
 }
 
 html {
@@ -39,22 +42,42 @@ body {
     ". clients ."
     ". h13 ."
     ". . .";
-}
-
-/*
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: rgb(32, 32, 32);
-    .card {
-      background-color: blue;
+    @media (prefers-color-scheme: dark) {
+      background-color: rgb(30, 30, 30);
     }
-  }
 }
-*/
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+p {
+  @media (prefers-color-scheme: dark) {
+    color: $white;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  @media (prefers-color-scheme: dark) {
+    color: $white;
+  }
+}
+
+h3 {
+  margin: 0;
+  font-size: 25px;
+  color: $dark;
+  @media (prefers-color-scheme: dark) {
+    color: $white;
+  }
+}
+
+h4 {
+  margin: 0;
+  color: $denali;
+  font-weight: 400;
 }
 
 img {
@@ -100,6 +123,9 @@ nav {
   border-radius: 20px;
   z-index: 1;
   @include shadow();
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+  }
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-areas: ". nav-content .";
@@ -111,9 +137,12 @@ nav {
     font-size: 18px;
     font-weight: 400;
     margin: 24px 16px;
+    @media (prefers-color-scheme: dark) {
+      color: $white;
+    }
   }
   a:hover {
-    color: $link;
+    color: $denali;
   }
 }
 
@@ -125,7 +154,7 @@ nav {
   float: right;
   padding: 4px 6px;
   margin: 20.725px 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -165,15 +194,8 @@ nav {
     display: inline-block;
     white-space: normal;
     vertical-align: top;
-    h1 {
-      margin: 0;
-      font-size: 25px;
-      color: $dark;
-    }
-    h3 {
-      margin: 0;
-      color: $denali;
-      font-weight: 400;
+    @media (prefers-color-scheme: dark) {
+      background-color: $dark;
     }
   }
 }
