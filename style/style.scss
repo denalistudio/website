@@ -38,6 +38,17 @@ body {
     ". . .";
 }
 
+/*
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(32, 32, 32);
+    .card {
+      background-color: blue;
+    }
+  }
+}
+*/
+
 a {
   color: inherit;
   text-decoration: none;
@@ -59,9 +70,8 @@ nav {
   @include shadow();
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
-  grid-template-areas:
-  ". nav-content .";
-  .nav-content{
+  grid-template-areas: ". nav-content .";
+  .nav-content {
     grid-area: nav-content;
   }
   & img {
@@ -146,7 +156,7 @@ nav {
   grid-template-areas:
     "as as map map"
     "ab download map map";
-    a{
-      padding: 25px;
-    }
+  a {
+    padding: 25px;
+  }
 }
