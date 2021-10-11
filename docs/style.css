@@ -82,13 +82,41 @@ img {
   max-height: 100%;
 }
 
-/* Nav */
+/* Nav
+
 nav {
-  background-color: #ffffff;
+  background-color: $white;
   width: 100%;
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 1;
+  @include shadow();
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: ". nav-content .";
+  svg {
+    width: 24px;
+  }
+  a {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 24px 16px;
+  }
+  a:hover {
+    color: $link;
+  }
+}
+
+*/
+nav {
+  background-color: #ffffff;
+  margin: auto;
+  width: 1600px;
+  position: fixed;
+  top: 20px;
+  border-radius: 20px;
   z-index: 1;
   box-shadow: #959da533 0 8px 24px;
   display: grid;
