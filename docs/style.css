@@ -342,3 +342,24 @@ nav a:hover {
 .clients a {
   padding: 25px;
 }
+
+@media (prefers-color-scheme: dark) {
+  .clients a {
+    background-color: #272727;
+  }
+}
+
+.client-img {
+  margin-left: 30px;
+  width: 80%;
+  margin-bottom: -29px;
+  -webkit-box-shadow: #959da533 0 8px 24px;
+          box-shadow: #959da533 0 8px 24px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .client-img {
+    -webkit-box-shadow: #00000033 0 8px 24px;
+            box-shadow: #00000033 0 8px 24px;
+  }
+}
