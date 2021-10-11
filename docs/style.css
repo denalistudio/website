@@ -53,6 +53,7 @@ html {
 body {
   margin: 0;
   margin-top: 5%;
+  font-size: 16px;
   background-color: #fafafa;
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
@@ -83,7 +84,7 @@ img {
 
 /* Nav */
 nav {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
   position: fixed;
   left: 0;
@@ -122,7 +123,7 @@ nav a:hover {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   background-color: #4f54ff;
   border: none;
   border-radius: 12px;
@@ -155,7 +156,7 @@ nav a:hover {
   height: 350px;
   margin: 10px;
   padding: 25px;
-  background-color: #fff;
+  background-color: #ffffff;
   display: inline-block;
   white-space: normal;
   vertical-align: top;
@@ -173,6 +174,7 @@ nav a:hover {
   font-weight: 400;
 }
 
+/* Contact */
 .contact {
   grid-area: contact;
   display: grid;
@@ -182,19 +184,19 @@ nav a:hover {
   grid-template-areas: "as as map map" "ab download map map";
 }
 
-.contact .as {
+.as {
   grid-area: as;
 }
 
-.contact .ab {
+.ab {
   grid-area: ab;
 }
 
-.contact .con-download {
+.con-download {
   grid-area: download;
 }
 
-.contact .con-map {
+.con-map {
   grid-area: map;
 }
 

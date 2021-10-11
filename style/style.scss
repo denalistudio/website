@@ -3,16 +3,18 @@
 @import "./fonts";
 
 $denali: #4f54ff;
-$gray: #e5e5e5;
-$black: #212529;
+$grey: #e5e5e5;
+$dark: #212529;
 $link: #0d6efd;
+$black: #000000;
+$white: #ffffff;
 
 @mixin shadow {
   box-shadow: #959da533 0 8px 24px;
 }
 
 html {
-  color: $black;
+  color: $dark;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
@@ -20,6 +22,7 @@ html {
 body {
   margin: 0;
   margin-top: 5%;
+  font-size: 16px;
   background-color: #fafafa;
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
@@ -62,7 +65,7 @@ img {
 /* Nav */
 
 nav {
-  background-color: #fff;
+  background-color: $white;
   width: 100%;
   position: fixed;
   left: 0;
@@ -98,7 +101,7 @@ nav {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #fff;
+  color: $white;
   background-color: $denali;
   border: none;
   border-radius: 12px;
@@ -130,14 +133,14 @@ nav {
     height: 350px;
     margin: 10px;
     padding: 25px;
-    background-color: #fff;
+    background-color: $white;
     display: inline-block;
     white-space: normal;
     vertical-align: top;
     h1 {
       margin: 0;
       font-size: 25px;
-      color: $black;
+      color: $dark;
     }
     h3 {
       margin: 0;
@@ -146,6 +149,8 @@ nav {
     }
   }
 }
+
+/* Contact */
 
 .contact {
   grid-area: contact;
@@ -156,19 +161,19 @@ nav {
   grid-template-areas:
     "as as map map"
     "ab download map map";
-  .as {
-    grid-area: as;
-  }
-  .ab {
-    grid-area: ab;
-  }
+}
+.as {
+  grid-area: as;
+}
+.ab {
+  grid-area: ab;
+}
 
-  .con-download {
-    grid-area: download;
-  }
-  .con-map {
-    grid-area: map;
-  }
+.con-download {
+  grid-area: download;
+}
+.con-map {
+  grid-area: map;
 }
 
 .clients {
