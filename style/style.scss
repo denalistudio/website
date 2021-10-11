@@ -59,6 +59,8 @@ img {
   max-height: 100%;
 }
 
+/* Nav */
+
 nav {
   background-color: #fff;
   width: 100%;
@@ -70,10 +72,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-areas: ". nav-content .";
-  .nav-content {
-    grid-area: nav-content;
-  }
-  img {
+  svg {
     width: 24px;
   }
   a {
@@ -81,32 +80,40 @@ nav {
     font-size: 18px;
     font-weight: 400;
     margin: 24px 16px;
-    :hover {
-      color: $link;
-    }
   }
-  .listlanguages {
-    float: right;
-    padding: 4px 6px;
-    margin: 20.725px 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: $denali;
-    border: none;
-    border-radius: 12px;
+  a:hover {
+    color: $link;
   }
 }
+
+.nav-content {
+  grid-area: nav-content;
+}
+
+.listlanguages {
+  float: right;
+  padding: 4px 6px;
+  margin: 20.725px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $denali;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Main */
 
 .card {
   border-radius: 15px;
   transition: transform 0.5s;
   @include shadow();
-  :hover {
-    transform: scale(1.025);
-  }
+}
+
+.card:hover {
+  transform: scale(1.025);
 }
 
 .services {

@@ -81,6 +81,7 @@ img {
   max-height: 100%;
 }
 
+/* Nav */
 nav {
   background-color: #fff;
   width: 100%;
@@ -94,11 +95,7 @@ nav {
   grid-template-areas: ". nav-content .";
 }
 
-nav .nav-content {
-  grid-area: nav-content;
-}
-
-nav img {
+nav svg {
   width: 24px;
 }
 
@@ -109,11 +106,15 @@ nav a {
   margin: 24px 16px;
 }
 
-nav a :hover {
+nav a:hover {
   color: #0d6efd;
 }
 
-nav .listlanguages {
+.nav-content {
+  grid-area: nav-content;
+}
+
+.listlanguages {
   float: right;
   padding: 4px 6px;
   margin: 20.725px 0;
@@ -127,13 +128,14 @@ nav .listlanguages {
   border-radius: 12px;
 }
 
+/* Main */
 .card {
   border-radius: 15px;
   transition: transform 0.5s;
   box-shadow: #959da533 0 8px 24px;
 }
 
-.card :hover {
+.card:hover {
   transform: scale(1.025);
 }
 
