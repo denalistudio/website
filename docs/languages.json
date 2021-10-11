@@ -1,6 +1,8 @@
 ﻿{
 	"cs": {
 		"langdesc": "cs",
+		"nav-1": "Kontaktujte nás",
+		"nav-2": "Znalostní báze",
 		"h1-serv": "Our services",
 		"web-1": "Webové stránky",
 		"web-2": "Spojujeme vás se zákazníky",
@@ -32,15 +34,17 @@
 		"con-2": "E-mail",
 		"con-3": "Telefonní číslo",
 		"con-4": "Uložit kontakt",
-		"elektr-1": "kavárna elektra",
+		"elektr-1": "Kavárna Elektra",
 		"elektr-2": "Známá lokální kavárna, která nabízí vynikající kávu. Jejich nové webové stránky ale nechali na nás.",
-		"pivonk-1": "pivoňky",
+		"pivonk-1": "Pivoňky",
 		"pivonk-2": "Již od samotného názvu jsme Pivoňkám pomáhali formovat jejich nápad, aby se stal realitou.",
 		"learn": "Zjistit více",
 		"x": "x"
 	},
 	"en": {
 		"langdesc": "en",
+		"nav-1": "Contact us",
+		"nav-2": "Knowledge base",
 		"off": "Our services",
 		"web-1": "Websites",
 		"web-2": "Connecting you with customers",
@@ -74,7 +78,7 @@
 		"con-4": "Save contact",
 		"elektr-1": "Café Elektra",
 		"elektr-2": "A well known local café, which serves excellent coffee. Their website was nonetheless left to us.",
-		"pivonk-1": "Pivonky",
+		"pivonk-1": "Pivoňky",
 		"pivonk-2": "From the name itself, we helped Pivonky shape their idea so it can become reality.",
 		"learn": "Learn more",
 		"x": "x"
