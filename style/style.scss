@@ -65,7 +65,6 @@ nav {
   position: fixed;
   left: 0;
   top: 0;
-  height: 50px;
   z-index: 1;
   @include shadow();
   display: grid;
@@ -74,12 +73,30 @@ nav {
   .nav-content {
     grid-area: nav-content;
   }
-  & img {
+  img {
     width: 24px;
   }
-  & a {
+  a {
     float: left;
-    padding: 14px 16px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 24px 16px;
+    :hover {
+      color: $link;
+    }
+  }
+  .listlanguages {
+    float: right;
+    padding: 4px 6px;
+    margin: 20.725px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $denali;
+    border: none;
+    border-radius: 12px;
   }
 }
 
@@ -87,7 +104,7 @@ nav {
   border-radius: 15px;
   transition: transform 0.5s;
   @include shadow();
-  &:hover {
+  :hover {
     transform: scale(1.025);
   }
 }

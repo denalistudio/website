@@ -54,14 +54,11 @@ body {
   margin: 0;
   margin-top: 5%;
   background-color: #fafafa;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 8fr 1fr;
-      grid-template-columns: 1fr 8fr 1fr;
-  -ms-grid-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
-      grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
   gap: 25px 0;
-      grid-template-areas: ". . ." ". h11 ." ". services services" ". . ." ". h14 ." ". contact ." ". h12 ." ". clients ." ". h13 ." ". . .";
+  grid-template-areas: ". . ." ". h11 ." ". services services" ". . ." ". h14 ." ". contact ." ". h12 ." ". clients ." ". h13 ." ". . .";
 }
 
 /*
@@ -90,20 +87,14 @@ nav {
   position: fixed;
   left: 0;
   top: 0;
-  height: 50px;
   z-index: 1;
-  -webkit-box-shadow: #959da533 0 8px 24px;
-          box-shadow: #959da533 0 8px 24px;
-  display: -ms-grid;
+  box-shadow: #959da533 0 8px 24px;
   display: grid;
-  -ms-grid-columns: 1fr 8fr 1fr;
-      grid-template-columns: 1fr 8fr 1fr;
-      grid-template-areas: ". nav-content .";
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: ". nav-content .";
 }
 
 nav .nav-content {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: nav-content;
 }
 
@@ -113,22 +104,37 @@ nav img {
 
 nav a {
   float: left;
-  padding: 14px 16px;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 24px 16px;
+}
+
+nav a :hover {
+  color: #0d6efd;
+}
+
+nav .listlanguages {
+  float: right;
+  padding: 4px 6px;
+  margin: 20.725px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #4f54ff;
+  border: none;
+  border-radius: 12px;
 }
 
 .card {
   border-radius: 15px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  -webkit-box-shadow: #959da533 0 8px 24px;
-          box-shadow: #959da533 0 8px 24px;
+  box-shadow: #959da533 0 8px 24px;
 }
 
-.card:hover {
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
+.card :hover {
+  transform: scale(1.025);
 }
 
 .services {
@@ -139,9 +145,6 @@ nav a {
   overflow-x: auto;
   overflow-y: hidden;
   vertical-align: top;
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-area: services;
 }
 
@@ -169,58 +172,37 @@ nav a {
 }
 
 .contact {
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
   grid-area: contact;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 20px 20px;
-      grid-template-areas: "as as map map" "ab download map map";
+  grid-template-areas: "as as map map" "ab download map map";
 }
 
 .contact .as {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: as;
 }
 
 .contact .ab {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: ab;
 }
 
 .contact .con-download {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: download;
 }
 
 .contact .con-map {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
   grid-area: map;
 }
 
 .clients {
-  -ms-grid-row: 8;
-  -ms-grid-column: 2;
   grid-area: clients;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 20px 20px;
-      grid-template-areas: "as as map map" "ab download map map";
+  grid-template-areas: "as as map map" "ab download map map";
 }
 
 .clients a {
