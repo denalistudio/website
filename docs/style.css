@@ -242,12 +242,6 @@ nav a:hover {
   vertical-align: top;
 }
 
-@media (prefers-color-scheme: dark) {
-  .services a {
-    background-color: #272727;
-  }
-}
-
 /* Contact */
 .contact {
   grid-area: contact;
@@ -259,8 +253,14 @@ nav a:hover {
 }
 
 .con-contact, .con-text {
-  background-color: #ffffff;
   padding: 25px;
+  background-color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .con-contact, .con-text {
+    background-color: #272727;
+  }
 }
 
 .con-contact {

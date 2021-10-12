@@ -191,9 +191,7 @@ nav {
     display: inline-block;
     white-space: normal;
     vertical-align: top;
-    @media (prefers-color-scheme: dark) {
-      background-color: $dark;
-    }
+    
   }
 }
 
@@ -211,8 +209,11 @@ nav {
 }
 
 .con-contact, .con-text {
-  background-color: $white;
   padding: 25px;
+  background-color: $white;
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+  }
 }
 
 .con-contact {
