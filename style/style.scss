@@ -213,23 +213,26 @@ nav {
     "con-contact con-text map map";
 }
 
-.con-text, .con-contact {
+.con-contact, .con-text {
   background-color: $white;
   padding: 25px;
 }
 
-.con-text {
-  grid-area: con-text;
-}
 .con-contact {
   grid-area: con-contact;
   p {
     font-size: 20px;
   }
-  a:hover {
-    color: $denali;
-  }
 }
+
+.con-download {
+  color: $denali;
+}
+
+.con-text {
+  grid-area: con-text;
+}
+
 .con-map {
   grid-area: map;
 }

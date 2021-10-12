@@ -260,13 +260,9 @@ nav a:hover {
   grid-template-areas: "con-contact con-text map map" "con-contact con-text map map";
 }
 
-.con-text, .con-contact {
+.con-contact, .con-text {
   background-color: #ffffff;
   padding: 25px;
-}
-
-.con-text {
-  grid-area: con-text;
 }
 
 .con-contact {
@@ -277,8 +273,12 @@ nav a:hover {
   font-size: 20px;
 }
 
-.con-contact a:hover {
+.con-download {
   color: #4f54ff;
+}
+
+.con-text {
+  grid-area: con-text;
 }
 
 .con-map {
