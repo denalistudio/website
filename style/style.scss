@@ -41,7 +41,9 @@ body {
     ". h12 ."
     ". clients ."
     ". h13 ."
-    ". . .";
+    ". . ."
+    ". h15 ."
+    ". pricing .";
     @media (prefers-color-scheme: dark) {
       background-color: rgb(30, 30, 30);
     }
@@ -238,4 +240,10 @@ nav {
   width: 80%;
   margin-bottom: -29px;
   @include shadow();
+}
+
+/* Pricing */
+
+.pricing {
+  grid-area: pricing;
 }

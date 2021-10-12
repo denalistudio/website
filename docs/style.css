@@ -59,7 +59,7 @@ body {
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
   gap: 25px 0;
-  grid-template-areas: ". . ." ". h11 ." ". services services" ". . ." ". h14 ." ". contact ." ". h12 ." ". clients ." ". h13 ." ". . .";
+  grid-template-areas: ". . ." ". h11 ." ". services services" ". . ." ". h14 ." ". contact ." ". h12 ." ". clients ." ". h13 ." ". . ." ". h15 ." ". pricing .";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -294,4 +294,9 @@ nav a:hover {
   .client-img {
     box-shadow: #00000033 0 8px 24px;
   }
+}
+
+/* Pricing */
+.pricing {
+  grid-area: pricing;
 }
