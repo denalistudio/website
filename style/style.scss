@@ -209,30 +209,25 @@ nav {
   grid-template-rows: 1fr 1fr;
   gap: 20px 20px;
   grid-template-areas:
-    "as as map map"
-    "ab download map map";
-}
-.as {
-  grid-area: as;
-  background-color: $white;
-}
-.ab {
-  grid-area: ab;
-  background-color: $white;
+    "con-contact con-text map map"
+    "con-contact con-text map map";
 }
 
-.con-download {
-  grid-area: download;
-  background-color: $denali;
-  h3 {
-    text-align: center;
+.con-text, .con-contact {
+  background-color: $white;
+  padding: 25px;
+}
+
+.con-text {
+  grid-area: con-text;
+}
+.con-contact {
+  grid-area: con-contact;
+  p {
     font-size: 20px;
   }
-  mark {
+  a:hover {
     color: $denali;
-    background-color: $white;
-    border-radius: 15px;
-    padding: 10px 15px;
   }
 }
 .con-map {

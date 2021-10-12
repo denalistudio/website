@@ -55,14 +55,11 @@ body {
   margin-top: 5%;
   font-size: 16px;
   background-color: #fafafa;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 8fr 1fr;
-      grid-template-columns: 1fr 8fr 1fr;
-  -ms-grid-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
-      grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
   gap: 25px 0;
-      grid-template-areas: ". . ." ". h11 ." ". services services" ". . ." ". h14 ." ". contact ." ". h12 ." ". clients ." ". h13 ." ". . .";
+  grid-template-areas: ". . ." ". h11 ." ". services services" ". . ." ". h14 ." ". contact ." ". h12 ." ". clients ." ". h13 ." ". . .";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -151,19 +148,15 @@ nav {
   top: 20px;
   border-radius: 20px;
   z-index: 1;
-  -webkit-box-shadow: #959da533 0 8px 24px;
-          box-shadow: #959da533 0 8px 24px;
-  display: -ms-grid;
+  box-shadow: #959da533 0 8px 24px;
   display: grid;
-  -ms-grid-columns: 1fr 8fr 1fr;
-      grid-template-columns: 1fr 8fr 1fr;
-      grid-template-areas: ". nav-content .";
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: ". nav-content .";
 }
 
 @media (prefers-color-scheme: dark) {
   nav {
-    -webkit-box-shadow: #00000033 0 8px 24px;
-            box-shadow: #00000033 0 8px 24px;
+    box-shadow: #00000033 0 8px 24px;
   }
 }
 
@@ -195,8 +188,6 @@ nav a:hover {
 }
 
 .nav-content {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: nav-content;
 }
 
@@ -217,24 +208,18 @@ nav a:hover {
 /* Main */
 .card {
   border-radius: 15px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  -webkit-box-shadow: #959da533 0 8px 24px;
-          box-shadow: #959da533 0 8px 24px;
+  box-shadow: #959da533 0 8px 24px;
 }
 
 @media (prefers-color-scheme: dark) {
   .card {
-    -webkit-box-shadow: #00000033 0 8px 24px;
-            box-shadow: #00000033 0 8px 24px;
+    box-shadow: #00000033 0 8px 24px;
   }
 }
 
 .card:hover {
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
+  transform: scale(1.025);
 }
 
 .services {
@@ -245,9 +230,6 @@ nav a:hover {
   overflow-x: auto;
   overflow-y: hidden;
   vertical-align: top;
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-area: services;
 }
 
@@ -270,73 +252,46 @@ nav a:hover {
 
 /* Contact */
 .contact {
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
   grid-area: contact;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 20px 20px;
-      grid-template-areas: "as as map map" "ab download map map";
+  grid-template-areas: "con-contact con-text map map" "con-contact con-text map map";
 }
 
-.as {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: as;
+.con-text, .con-contact {
   background-color: #ffffff;
+  padding: 25px;
 }
 
-.ab {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: ab;
-  background-color: #ffffff;
+.con-text {
+  grid-area: con-text;
 }
 
-.con-download {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: download;
-  background-color: #4f54ff;
+.con-contact {
+  grid-area: con-contact;
 }
 
-.con-download h3 {
-  text-align: center;
+.con-contact p {
   font-size: 20px;
 }
 
-.con-download mark {
+.con-contact a:hover {
   color: #4f54ff;
-  background-color: #ffffff;
-  border-radius: 15px;
-  padding: 10px 15px;
 }
 
 .con-map {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
   grid-area: map;
 }
 
 .clients {
-  -ms-grid-row: 8;
-  -ms-grid-column: 2;
   grid-area: clients;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 20px 20px;
-      grid-template-areas: "as as map map" "ab download map map";
+  grid-template-areas: "as as map map" "ab download map map";
 }
 
 .clients a {
