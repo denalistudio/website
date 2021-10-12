@@ -308,13 +308,11 @@ nav a:hover {
   margin-left: 10%;
   width: 80%;
   margin-bottom: -29px;
-  -webkit-box-shadow: #959da533 0 8px 24px;
-          box-shadow: #959da533 0 8px 24px;
+  box-shadow: #959da533 0 8px 24px;
 }
 
 @media (prefers-color-scheme: dark) {
   .client-img {
-    -webkit-box-shadow: #00000033 0 8px 24px;
-            box-shadow: #00000033 0 8px 24px;
+    box-shadow: #00000033 0 8px 24px;
   }
 }
