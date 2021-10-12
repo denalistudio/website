@@ -135,7 +135,6 @@ nav {
   a {
     float: left;
     font-size: 18px;
-    font-weight: 400;
     margin: 24px 16px;
     @media (prefers-color-scheme: dark) {
       color: $white;
@@ -227,6 +226,8 @@ nav {
 
 .con-download {
   color: $denali;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .con-text {

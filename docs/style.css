@@ -173,7 +173,6 @@ nav svg {
 nav a {
   float: left;
   font-size: 18px;
-  font-weight: 400;
   margin: 24px 16px;
 }
 
@@ -275,6 +274,8 @@ nav a:hover {
 
 .con-download {
   color: #4f54ff;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .con-text {
