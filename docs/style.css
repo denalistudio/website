@@ -55,11 +55,14 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #272727;
   background-color: #fafafa;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
+  -ms-grid-columns: 1fr 8fr 1fr;
+      grid-template-columns: 1fr 8fr 1fr;
+  -ms-grid-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
+      grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
   gap: 25px 0;
-  grid-template-areas: ". . ." ". h11 ." ". services services" ". . ." ". h14 ." ". contact ." ". h12 ." ". clients ." ". h13 ." ". . ." ". h15 ." ". pricing .";
+      grid-template-areas: ". . ." ". h11 ." ". services services" ". . ." ". h14 ." ". contact ." ". h12 ." ". clients ." ". h13 ." ". . ." ". h15 ." ". pricing .";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -120,15 +123,19 @@ nav {
   top: 20px;
   border-radius: 20px;
   z-index: 1;
-  box-shadow: #959da533 0 8px 24px;
+  -webkit-box-shadow: #959da533 0 8px 24px;
+          box-shadow: #959da533 0 8px 24px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-areas: ". nav-content .";
+  -ms-grid-columns: 1fr 8fr 1fr;
+      grid-template-columns: 1fr 8fr 1fr;
+      grid-template-areas: ". nav-content .";
 }
 
 @media (prefers-color-scheme: dark) {
   nav {
-    box-shadow: #00000033 0 8px 24px;
+    -webkit-box-shadow: #00000033 0 8px 24px;
+            box-shadow: #00000033 0 8px 24px;
   }
 }
 
@@ -159,6 +166,8 @@ nav a:hover {
 }
 
 .nav-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: nav-content;
 }
 
@@ -178,14 +187,19 @@ nav a:hover {
 
 .card {
   border-radius: 15px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  box-shadow: #959da533 0 8px 24px;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-box-shadow: #959da533 0 8px 24px;
+          box-shadow: #959da533 0 8px 24px;
   background-color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   .card {
-    box-shadow: #00000033 0 8px 24px;
+    -webkit-box-shadow: #00000033 0 8px 24px;
+            box-shadow: #00000033 0 8px 24px;
   }
 }
 
@@ -196,7 +210,8 @@ nav a:hover {
 }
 
 .card:hover {
-  transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
 }
 
 .services {
@@ -207,6 +222,9 @@ nav a:hover {
   overflow-x: auto;
   overflow-y: hidden;
   vertical-align: top;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: services;
 }
 
@@ -221,14 +239,25 @@ nav a:hover {
   vertical-align: top;
 }
 
+@media (prefers-color-scheme: dark) {
+  .services a {
+    background-color: #272727;
+  }
+}
+
 /* Contact */
 .contact {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
   grid-area: contact;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   gap: 20px 20px;
-  grid-template-areas: "con-contact con-text con-map con-map" "con-contact con-text con-map con-map";
+      grid-template-areas: "con-contact con-text con-map con-map" "con-contact con-text con-map con-map";
 }
 
 .con-contact, .con-text {
@@ -236,6 +265,9 @@ nav a:hover {
 }
 
 .con-contact {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
   grid-area: con-contact;
 }
 
@@ -256,20 +288,32 @@ nav a:hover {
 }
 
 .con-text {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
   grid-area: con-text;
 }
 
 .con-map {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-area: con-map;
 }
 
 .clients {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
   grid-area: clients;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   gap: 20px 20px;
-  grid-template-areas: "as as map map" "ab download map map";
+      grid-template-areas: "as as map map" "ab download map map";
 }
 
 .clients a {
@@ -287,16 +331,20 @@ nav a:hover {
   margin-left: 10%;
   width: 80%;
   margin-bottom: -29px;
-  box-shadow: #959da533 0 8px 24px;
+  -webkit-box-shadow: #959da533 0 8px 24px;
+          box-shadow: #959da533 0 8px 24px;
 }
 
 @media (prefers-color-scheme: dark) {
   .client-img {
-    box-shadow: #00000033 0 8px 24px;
+    -webkit-box-shadow: #00000033 0 8px 24px;
+            box-shadow: #00000033 0 8px 24px;
   }
 }
 
 /* Pricing */
 .pricing {
+  -ms-grid-row: 12;
+  -ms-grid-column: 2;
   grid-area: pricing;
 }

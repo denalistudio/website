@@ -168,7 +168,9 @@ nav {
     display: inline-block;
     white-space: normal;
     vertical-align: top;
-    
+    @media (prefers-color-scheme: dark) {
+      background-color: $dark;
+    }
   }
 }
 
