@@ -180,11 +180,18 @@ nav a:hover {
   border-radius: 15px;
   transition: transform 0.5s;
   box-shadow: #959da533 0 8px 24px;
+  background-color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   .card {
     box-shadow: #00000033 0 8px 24px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: #272727;
   }
 }
 
@@ -226,13 +233,6 @@ nav a:hover {
 
 .con-contact, .con-text {
   padding: 25px;
-  background-color: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  .con-contact, .con-text {
-    background-color: #272727;
-  }
 }
 
 .con-contact {

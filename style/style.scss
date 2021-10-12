@@ -138,6 +138,10 @@ nav {
   border-radius: 15px;
   transition: transform 0.5s;
   @include shadow();
+  background-color: $white;
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+  }
 }
 
 .card:hover {
@@ -181,10 +185,6 @@ nav {
 
 .con-contact, .con-text {
   padding: 25px;
-  background-color: $white;
-  @media (prefers-color-scheme: dark) {
-    background-color: $dark;
-  }
 }
 
 .con-contact {
