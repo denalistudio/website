@@ -233,16 +233,9 @@ nav a:hover {
   height: 350px;
   margin: 10px;
   padding: 25px;
-  background-color: #ffffff;
   display: inline-block;
   white-space: normal;
   vertical-align: top;
-}
-
-@media (prefers-color-scheme: dark) {
-  .services a {
-    background-color: #272727;
-  }
 }
 
 /* Contact */
