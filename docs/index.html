@@ -112,7 +112,9 @@
             <a href="tel:+420736285455">
                 <p class="con-mobile">+420 736 285 455</p>
             </a>
-            <a href="jakub_klapka.vcf"><p id="con-4" class="con-download"></p></a>
+            <a href="jakub_klapka.vcf">
+                <p id="con-4" class="con-download"></p>
+            </a>
         </div>
         <div class="card con-text">
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc auctor. Duis condimentum augue id magna
@@ -143,82 +145,81 @@
     <div class="slidecontainer">
         <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
     </div>
--->
-</body>
-
-<script>
-    var multilang;
-    function onLoad() {
-        multilang = new MultiLang('languages.json', null, this.initList);
-    }
-    function langSelectChange(sel) {
-        multilang.setLanguage(sel.value);
-
-        refreshLabels();
-    }
-    function initList() {
-        var list = document.getElementsByName("listlanguages")[0];
-        list.options.length = 0;
-        for (var key in multilang.phrases) {
-            var lang = document.createElement("option");
-            lang.value = key;
-            lang.innerHTML = multilang.phrases[key]['langdesc'];
-            list.appendChild(lang);
+    -->
+    <script>
+        var multilang;
+        function onLoad() {
+            multilang = new MultiLang('languages.json', null, this.initList);
         }
-        refreshLabels();
-    }
-    function refreshLabels() {
-        var allnodes = document.body.getElementsByTagName("*");
-        for (var i = 0, max = allnodes.length; i < max; i++) {
-            var idname = allnodes[i].id;
-            if (idname != '') {
-                allnodes[i].textContent = multilang.get(idname);
-            };
-        };
-    }
+        function langSelectChange(sel) {
+            multilang.setLanguage(sel.value);
 
-    //
-
-    var MultiLang = function (url, lang, onload) {
-        this.phrases = {};
-        this.selectedLanguage = (lang || navigator.language || navigator.userLanguage).substring(0, 2);
-        this.onLoad = onload;
-        if (typeof url !== 'undefined') {
-            var obj = this;
-            var req = new XMLHttpRequest();
-            req.open("GET", url, true);
-            req.onreadystatechange = function (evt) {
-                if (evt.target.readyState == 4 && evt.target.status == 200) {
-                    this.phrases = JSON.parse(evt.target.responseText);
-                    this.setLanguage(this.selectedLanguage);
-                    if (this.onLoad) {
-                        this.onLoad();
-                    }
-                }
-            }.bind(obj);
-            req.addEventListener("error", function (e) {
-                console.log('MultiLang.js: Error reading json file.');
-            }, false);
-            req.send(null);
+            refreshLabels();
         }
-        this.setLanguage = function (langcode) {
-            if (!this.phrases.hasOwnProperty(langcode)) {
-                for (var key in this.phrases) {
-                    if (this.phrases.hasOwnProperty(key)) {
-                        langcode = key;
-                        break;
-                    }
-                }
+        function initList() {
+            var list = document.getElementsByName("listlanguages")[0];
+            list.options.length = 0;
+            for (var key in multilang.phrases) {
+                var lang = document.createElement("option");
+                lang.value = key;
+                lang.innerHTML = multilang.phrases[key]['langdesc'];
+                list.appendChild(lang);
             }
-            this.selectedLanguage = langcode;
+            refreshLabels();
         }
-        this.get = function (key) {
-            var str;
-            if (this.phrases[this.selectedLanguage]) str = this.phrases[this.selectedLanguage][key];
-            str = (str || key);
-            return str;
+        function refreshLabels() {
+            var allnodes = document.body.getElementsByTagName("*");
+            for (var i = 0, max = allnodes.length; i < max; i++) {
+                var idname = allnodes[i].id;
+                if (idname != '') {
+                    allnodes[i].textContent = multilang.get(idname);
+                };
+            };
         }
-    }
-</script>
+
+        //
+
+        var MultiLang = function (url, lang, onload) {
+            this.phrases = {};
+            this.selectedLanguage = (lang || navigator.language || navigator.userLanguage).substring(0, 2);
+            this.onLoad = onload;
+            if (typeof url !== 'undefined') {
+                var obj = this;
+                var req = new XMLHttpRequest();
+                req.open("GET", url, true);
+                req.onreadystatechange = function (evt) {
+                    if (evt.target.readyState == 4 && evt.target.status == 200) {
+                        this.phrases = JSON.parse(evt.target.responseText);
+                        this.setLanguage(this.selectedLanguage);
+                        if (this.onLoad) {
+                            this.onLoad();
+                        }
+                    }
+                }.bind(obj);
+                req.addEventListener("error", function (e) {
+                    console.log('MultiLang.js: Error reading json file.');
+                }, false);
+                req.send(null);
+            }
+            this.setLanguage = function (langcode) {
+                if (!this.phrases.hasOwnProperty(langcode)) {
+                    for (var key in this.phrases) {
+                        if (this.phrases.hasOwnProperty(key)) {
+                            langcode = key;
+                            break;
+                        }
+                    }
+                }
+                this.selectedLanguage = langcode;
+            }
+            this.get = function (key) {
+                var str;
+                if (this.phrases[this.selectedLanguage]) str = this.phrases[this.selectedLanguage][key];
+                str = (str || key);
+                return str;
+            }
+        }
+    </script>
+</body>
 
 </html>
