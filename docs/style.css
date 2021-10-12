@@ -256,7 +256,7 @@ nav a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px 20px;
-  grid-template-areas: "con-contact con-text map map" "con-contact con-text map map";
+  grid-template-areas: "con-contact con-text con-map con-map" "con-contact con-text con-map con-map";
 }
 
 .con-contact, .con-text {
@@ -268,14 +268,20 @@ nav a:hover {
   grid-area: con-contact;
 }
 
-.con-contact p {
+.con-contact h3 {
+  margin-bottom: 16px;
+}
+
+.con-email, .con-mobile {
   font-size: 20px;
+  margin: 8px 0;
 }
 
 .con-download {
   color: #4f54ff;
   font-size: 18px;
   font-weight: 700;
+  margin: 16px 0;
 }
 
 .con-text {
@@ -283,7 +289,7 @@ nav a:hover {
 }
 
 .con-map {
-  grid-area: map;
+  grid-area: con-map;
 }
 
 .clients {

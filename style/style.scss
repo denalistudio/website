@@ -208,8 +208,8 @@ nav {
   grid-template-rows: 1fr 1fr;
   gap: 20px 20px;
   grid-template-areas:
-    "con-contact con-text map map"
-    "con-contact con-text map map";
+    "con-contact con-text con-map con-map"
+    "con-contact con-text con-map con-map";
 }
 
 .con-contact, .con-text {
@@ -219,15 +219,21 @@ nav {
 
 .con-contact {
   grid-area: con-contact;
-  p {
-    font-size: 20px;
+  h3 {
+    margin-bottom: 16px;
   }
+}
+
+.con-email, .con-mobile {
+  font-size: 20px;
+  margin: 8px 0;
 }
 
 .con-download {
   color: $denali;
   font-size: 18px;
   font-weight: 700;
+  margin: 16px 0;
 }
 
 .con-text {
@@ -235,7 +241,7 @@ nav {
 }
 
 .con-map {
-  grid-area: map;
+  grid-area: con-map;
 }
 
 .clients {
