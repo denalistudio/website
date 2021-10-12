@@ -245,5 +245,15 @@ nav {
     "ab download map map";
   a {
     padding: 25px;
+    @media (prefers-color-scheme: dark) {
+      background-color: $dark;
+    }
   }
+}
+
+.client-img {
+  margin-left: 10%;
+  width: 80%;
+  margin-bottom: -29px;
+  @include shadow();
 }
