@@ -350,7 +350,7 @@ nav a:hover {
 }
 
 .client-img {
-  margin: auto;
+  margin-left: 10%;
   width: 80%;
   margin-bottom: -29px;
   -webkit-box-shadow: #959da533 0 8px 24px;
