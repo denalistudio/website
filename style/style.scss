@@ -90,6 +90,41 @@ img {
 nav {
   background-color: $white;
   margin: auto;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  @include shadow();
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+  }
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: ". nav-content .";
+  svg {
+    width: 24px;
+  }
+  a {
+    float: left;
+    font-size: 18px;
+    margin: 24px 16px;
+    @media (prefers-color-scheme: dark) {
+      color: $white;
+    }
+  }
+  a:hover {
+    color: $denali;
+  }
+}
+
+.nav-content {
+  grid-area: nav-content;
+}
+
+/*
+nav {
+  background-color: $white;
+  margin: auto;
   width: 80%;
   position: fixed;
   top: 20px;
@@ -121,6 +156,7 @@ nav {
 .nav-content {
   grid-area: nav-content;
 }
+*/
 
 .listlanguages {
   float: right;
