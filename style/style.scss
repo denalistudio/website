@@ -181,6 +181,10 @@ nav {
   grid-template-areas:
     "con-contact con-text con-map con-map"
     "con-contact con-text con-map con-map";
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
 }
 
 .con-contact, .con-text {

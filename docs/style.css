@@ -253,6 +253,11 @@ nav a:hover {
       grid-template-areas: "con-contact con-text con-map con-map" "con-contact con-text con-map con-map";
 }
 
+.contact img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 .con-contact, .con-text {
   padding: 25px;
 }
