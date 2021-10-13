@@ -59,10 +59,11 @@
                     </g>
                 </svg>
             </a>
-            <a href="#con-1" id="nav-1">Kontaktujte nás</a>
-            <a href="#news" id="nav-2">Znalostní báze</a>
+            <a id="navigation-contact" href="#con-1"></a>
+            <a id="navigation-knowledgebase" href="#news"></a>
             <select class="listlanguages" name="listlanguages" onmouseup="langSelectChange(this)">
             </select>
+            <input type="text" id="search" onkeyup="search()" placeholder="Search">
         </div>
     </nav>
     <h2 id="services-heading" style="grid-area: h11"></h2>
@@ -149,7 +150,38 @@
         <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
     </div>
     -->
+    <ul id="myUL" style="position: fixed;">
+        <li><a href="#">Adele</a></li>
+        <li><a href="#">Agnes</a></li>
+
+        <li><a href="#">Billy</a></li>
+        <li><a href="#">Bob</a></li>
+
+        <li><a href="#">Calvin</a></li>
+        <li><a href="#">Christina</a></li>
+        <li><a href="#">Cindy</a></li>
+    </ul>
     <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+
         var multilang;
         function onLoad() {
             multilang = new MultiLang('languages.json', null, this.initList);

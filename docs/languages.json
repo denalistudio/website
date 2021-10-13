@@ -43,8 +43,8 @@
 	},
 	"en": {
 		"langdesc": "en",
-		"nav-1": "Contact us",
-		"nav-2": "Knowledge base",
+		"navigation-contact": "Contact us",
+		"navigation-knowledgebase": "Knowledge base",
 		"services-heading": "Our services",
 		"services-website-subtitle": "Websites",
 		"services-website-title": "Connecting you with customers",
@@ -73,5 +73,8 @@
 		"client-pivonky-text": "From the name itself, we helped the Pivonky beer hall shape their idea so it can become reality.",
 		"client-cafeelektra-title": "Café Elektra",
 		"client-cafeelektra-text": "A well known local café, which serves excellent coffee. Their website was nonetheless left to us."
+	},
+	"test": {
+		"langdesc": "test"
 	}
 }
