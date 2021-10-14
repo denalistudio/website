@@ -1,5 +1,5 @@
 import Header from '../components/Header'
-import '../styles/style.css'
+import '../styles/dist/style.css'
 
 function MyApp({ Component, pageProps }) {
     return (
