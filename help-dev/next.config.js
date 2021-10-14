@@ -1,5 +1,5 @@
 module.exports = {
-    assetPrefix: './',
+    assetPrefix: '/help/',
     trailingSlash: true,
     reactStrictMode: true
 }
