@@ -1,9 +1,9 @@
 ---
-title: 'React Crash Course'
-category: 'React'
-date: 'March 8, 2021'
-description: 'Crash course to learn the React JavaScript library. We will look at components, hooks and more'
-cover_image: '/images/posts/img5.jpg'
+title: 'Tailwind vs. Bootstrap'
+category: 'CSS'
+date: 'March 5, 2021'
+description: 'Both Tailwind and Bootstrap are very popular CSS frameworks. In this article, we will compare them'
+cover_image: './images/posts/img2.jpg'
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
