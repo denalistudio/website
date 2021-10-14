@@ -6,7 +6,8 @@ export default function Post({post}) {
             <img src={post.frontmatter.cover_image} />
             <div className='post-date'>Posted on {post.frontmatter.date}</div>
             <h3>{post.frontmatter.title}</h3>
-            <p>{post.frontmatter.excerpt}</p>
+            <p>{post.frontmatter.category}</p>
+            <p>{post.frontmatter.description}</p>
             <Link href={`/blog/${post.slug}`}>
                 <a className='btn'>Read more</a>
             </Link>

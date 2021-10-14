@@ -5,7 +5,7 @@ import marked from 'marked'
 import Link from 'next/Link'
 
 export default function PostPage({
-    frontmatter: {title, date, cover_image},
+    frontmatter: {title, date, cover_image, category},
     slug,
     content
 }) {
@@ -15,6 +15,7 @@ export default function PostPage({
     </Link>
     <div className='card card-page'>
         <h1 className='post-title'>{title}</h1>
+        <p className='post-category'>{category}</p>
         <div className='post-date'>Posted on {date}</div>
         <img src={cover_image} />
         <div className='post-body'>

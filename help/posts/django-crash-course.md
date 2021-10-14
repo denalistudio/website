@@ -1,10 +1,9 @@
 ---
 title: 'Django Crash Course'
+category: 'Django'
 date: 'March 5, 2021'
 description: 'Django is a very powerful, high level Python framework for building web applications'
 cover_image: '/images/posts/img3.jpg'
-category: 'Category 1'
-slug: 'django-course'
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat

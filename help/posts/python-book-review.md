@@ -1,5 +1,6 @@
 ---
 title: 'Python Book Review'
+category: 'Python'
 date: 'March 7, 2021'
 excerpt: 'In this review, we will be looking at the new Python book from Oriley'
 cover_image: '/images/posts/img6.jpg'
