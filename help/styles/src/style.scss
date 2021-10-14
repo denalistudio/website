@@ -22,13 +22,40 @@ body {
 }
 
 a {
+    color: $dark;
     text-decoration: none;
 }
 
 .container {
-    margin: auto;
+    margin: 100px auto 0 auto;
     max-width: 1600px;
 }
+
+nav {
+    background-color: $white;
+    margin: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    @include shadow();
+    @media (prefers-color-scheme: dark) {
+      background-color: $dark;
+    }
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    p {
+      float: left;
+      font-size: 18px;
+      margin: 24px 16px;
+      @media (prefers-color-scheme: dark) {
+        color: $white;
+      }
+    }
+    p:hover {
+      color: $denali;
+    }
+  }
 
 .posts {
     display: grid;
@@ -45,6 +72,19 @@ a {
     @media (prefers-color-scheme: dark) {
       background-color: $dark;
     }
+    h3 {
+        margin: 0;
+        font-size: 25px;
+    }
+    h4 {
+        margin: 0;
+        color: $denali;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .cover-image {
+        display: flex;
+    }
     img {
         width: 100%;
         border-radius: 10px;
@@ -53,4 +93,4 @@ a {
 
 .card:hover {
     transform: scale(1.025);
-  }
+}

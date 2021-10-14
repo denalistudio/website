@@ -1,12 +1,16 @@
 import Link from 'next/Link'
 
-export default function Post({post}) {
+export default function Post({ post }) {
     return (
         <div class='card'>
-            <p className='card-post-category'>{post.frontmatter.category}</p>
-            <h3 className='card-post-title'>{post.frontmatter.title}</h3>
-            <p className='card-post-description'>{post.frontmatter.description}</p>
-            <img className='card-cover-image' src={post.frontmatter.cover_image} /> 
+            <Link href={`/blog/${post.slug}`}>
+                <a>
+                    <h4>{post.frontmatter.category}</h4>
+                    <h3>{post.frontmatter.title}</h3>
+                    <p>{post.frontmatter.description}</p>
+                    <div class='cover-image'><img src={post.frontmatter.cover_image} /></div>
+                </a>
+            </Link>
         </div>
     )
 }

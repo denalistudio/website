@@ -7,12 +7,48 @@ body {
 }
 
 a {
+  color: #272727;
   text-decoration: none;
 }
 
 .container {
-  margin: auto;
+  margin: 100px auto 0 auto;
   max-width: 1600px;
+}
+
+nav {
+  background-color: #ffffff;
+  margin: auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-shadow: #959da533 0 8px 24px;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+@media (prefers-color-scheme: dark) {
+  nav {
+    box-shadow: #00000033 0 8px 24px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  nav {
+    background-color: #272727;
+  }
+}
+nav p {
+  float: left;
+  font-size: 18px;
+  margin: 24px 16px;
+}
+@media (prefers-color-scheme: dark) {
+  nav p {
+    color: #ffffff;
+  }
+}
+nav p:hover {
+  color: #4f54ff;
 }
 
 .posts {
@@ -37,6 +73,19 @@ a {
   .card {
     background-color: #272727;
   }
+}
+.card h3 {
+  margin: 0;
+  font-size: 25px;
+}
+.card h4 {
+  margin: 0;
+  color: #4f54ff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.card .cover-image {
+  display: flex;
 }
 .card img {
   width: 100%;
