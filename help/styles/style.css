@@ -21,30 +21,3 @@ img {
     gap: 30px;
     margin-top: 30px;
 }
-
-.card {
-    height: 350px;
-    margin: 10px;
-    padding: 25px;
-    border-radius: 15px;
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
-    -webkit-box-shadow: #959da533 0 8px 24px;
-            box-shadow: #959da533 0 8px 24px;
-    background-color: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-    .card {
-        background-color: #272727;
-        -webkit-box-shadow: #00000033 0 8px 24px;
-              box-shadow: #00000033 0 8px 24px;
-    }
-}
-
-.card:hover {
-    -webkit-transform: scale(1.025);
-            transform: scale(1.025);
-}
