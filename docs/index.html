@@ -42,6 +42,17 @@
     <meta name="twitter:image" content="https://www.studiodenali.cz/og-preview.png">
 </head>
 
+<ul id="myUL">
+    <h4 id="search-mainsite"></h4>
+    <li><a id="search-result-services" href="#services-heading"></a></li>
+    <li><a href="#">Agnes</a></li>
+    <li><a href="#">Billy</a></li>
+    <h4 id="search-knowledgebase"></h4>
+    <li><a href="#">Calvin</a></li>
+    <li><a href="#">Christina</a></l>
+    <li><a href="#">Cindy</a></li>
+</ul>
+
 <body onload="onLoad()" translate="no">
     <nav>
         <div class="nav-content">
@@ -63,7 +74,7 @@
             <a id="navigation-knowledgebase" href="https://dev.studiodenali.cz/help/"></a>
             <select class="listlanguages" name="listlanguages" onmouseup="langSelectChange(this)">
             </select>
-            <input type="text" id="search" onkeyup="search()" placeholder="Search">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
         </div>
     </nav>
     <h2 id="services-heading" style="grid-area: h11"></h2>
@@ -145,32 +156,15 @@
     </div>
     <h2 style="grid-area: h15;">Ceny služeb</h2>
     <div class="pricing">ceník</div>
-    <!--
-    <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-    </div>
-    -->
-    <ul id="myUL" style="position: fixed;">
-        <li><a href="#">Adele</a></li>
-        <li><a href="#">Agnes</a></li>
 
-        <li><a href="#">Billy</a></li>
-        <li><a href="#">Bob</a></li>
-
-        <li><a href="#">Calvin</a></li>
-        <li><a href="#">Christina</a></li>
-        <li><a href="#">Cindy</a></li>
-    </ul>
     <script>
         function myFunction() {
-            // Declare variables
             var input, filter, ul, li, a, i, txtValue;
             input = document.getElementById('myInput');
             filter = input.value.toUpperCase();
             ul = document.getElementById("myUL");
             li = ul.getElementsByTagName('li');
 
-            // Loop through all list items, and hide those who don't match the search query
             for (i = 0; i < li.length; i++) {
                 a = li[i].getElementsByTagName("a")[0];
                 txtValue = a.textContent || a.innerText;
@@ -181,6 +175,8 @@
                 }
             }
         }
+
+        //
 
         var multilang;
         function onLoad() {
@@ -203,7 +199,7 @@
             refreshLabels();
         }
         function refreshLabels() {
-            var allnodes = document.body.getElementsByTagName("*");
+            var allnodes = document.body.querySelectorAll("h1, h2, h3, h4, p, a, span");
             for (var i = 0, max = allnodes.length; i < max; i++) {
                 var idname = allnodes[i].id;
                 if (idname != '') {
@@ -255,6 +251,7 @@
             }
         }
     </script>
+
 </body>
 
 </html>

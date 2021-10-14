@@ -87,6 +87,13 @@ img {
   max-height: 100%;
 }
 
+li {
+  list-style-type: none;
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
 nav {
   background-color: $white;
   margin: auto;
