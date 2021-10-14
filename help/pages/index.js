@@ -9,7 +9,7 @@ export default function Home({ posts }) {
     return (
         <div>
             <Head>
-                <title>Dev Blog</title>
+                <title>Znalostní báze | Studio Denali</title>
             </Head>
             <div className='posts'>
                 {posts.map((post, index) => (
