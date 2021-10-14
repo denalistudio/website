@@ -3,7 +3,7 @@ import Link from 'next/Link'
 export default function Post({ post }) {
     return (
         <div class='card'>
-            <Link href={`./blog/${post.slug}`}>
+            <Link href={`https://dev.studiodenali.cz/help/blog/${post.slug}`}>
                 <a>
                     <img src={post.frontmatter.cover_image} />
                     <h4>{post.frontmatter.category}</h4>
