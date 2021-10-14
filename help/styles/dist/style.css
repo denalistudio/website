@@ -79,7 +79,7 @@ nav p:hover {
   font-size: 25px;
 }
 .card h4 {
-  margin: 0;
+  margin: 16px 0 0 0;
   color: #4f54ff;
   font-size: 16px;
   font-weight: 400;
