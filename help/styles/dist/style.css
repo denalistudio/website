@@ -57,6 +57,16 @@ nav p:hover {
   gap: 25px;
 }
 
+@media (min-width: 576px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .posts {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .card {
   height: 400px;
   padding: 25px;
