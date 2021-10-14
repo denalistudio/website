@@ -3,10 +3,10 @@ import Link from 'next/Link'
 export default function Post({post}) {
     return (
         <div class='card'>
-            <p>{post.frontmatter.category}</p>
-            <h3>{post.frontmatter.title}</h3>
-            <p>{post.frontmatter.description}</p>
-            <img src={post.frontmatter.cover_image} /> 
+            <p className='card-post-category'>{post.frontmatter.category}</p>
+            <h3 className='card-post-title'>{post.frontmatter.title}</h3>
+            <p className='card-post-description'>{post.frontmatter.description}</p>
+            <img className='card-cover-image' src={post.frontmatter.cover_image} /> 
         </div>
     )
 }
