@@ -19,6 +19,23 @@ img {
 
 .posts {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+
+.card {
+  border-radius: 15px;
+  transition: transform 0.5s;
+  box-shadow: #959da533 0 8px 24px;
+  background-color: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  .card {
+    box-shadow: #00000033 0 8px 24px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: #272727;
+  }
 }
