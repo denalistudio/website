@@ -26,6 +26,17 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  margin: 0;
+  font-size: 25px;
+}
+h4 {
+  margin: 16px 0 0 0;
+  color: $denali;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .container {
   margin: 100px auto 0 auto;
   max-width: 1600px;
@@ -85,16 +96,6 @@ nav {
   @media (prefers-color-scheme: dark) {
     background-color: $dark;
   }
-  h3 {
-    margin: 0;
-    font-size: 25px;
-  }
-  h4 {
-    margin: 16px 0 0 0;
-    color: $denali;
-    font-size: 16px;
-    font-weight: 400;
-  }
   .cover-image {
     display: flex;
   }
@@ -106,4 +107,8 @@ nav {
 
 .card:hover {
   transform: scale(1.025);
+}
+
+.post-body {
+  max-width: 800px;
 }

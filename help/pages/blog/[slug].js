@@ -10,20 +10,17 @@ export default function PostPage({
     content
 }) {
     return <>
-    <Link href='/'>
-        <a className='btn btn-back'>Go Back</a>
-    </Link>
-    <div className='card card-page'>
         <img src={cover_image} />
-        <h1 className='post-title'>{title}</h1>
-        <p className='post-category'>{category}</p>
+        <h4>{category}</h4>
+        <h1>{title}</h1>
         <div className='post-date'>Posted on {date}</div>
         <div className='post-body'>
             <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
-    </div>
     </>
 }
+
+// <Link href='/'><a className='btn btn-back'>Go Back</a></Link>
 
 export async function getStaticPaths() {
     const files = fs.readdirSync(path.join('posts'))

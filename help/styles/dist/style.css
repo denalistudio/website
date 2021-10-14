@@ -11,6 +11,18 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  margin: 0;
+  font-size: 25px;
+}
+
+h4 {
+  margin: 16px 0 0 0;
+  color: #4f54ff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .container {
   margin: 100px auto 0 auto;
   max-width: 1600px;
@@ -85,16 +97,6 @@ nav p:hover {
     background-color: #272727;
   }
 }
-.card h3 {
-  margin: 0;
-  font-size: 25px;
-}
-.card h4 {
-  margin: 16px 0 0 0;
-  color: #4f54ff;
-  font-size: 16px;
-  font-weight: 400;
-}
 .card .cover-image {
   display: flex;
 }
@@ -105,4 +107,8 @@ nav p:hover {
 
 .card:hover {
   transform: scale(1.025);
+}
+
+.post-body {
+  max-width: 800px;
 }
