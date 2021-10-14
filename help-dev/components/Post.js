@@ -3,7 +3,7 @@ import Link from 'next/Link'
 export default function Post({ post }) {
     return (
         <div class='card'>
-            <Link href={`./blog/${post.slug}/index.html`}>
+            <Link href={`./blog/${post.slug}`}>
                 <a>
                     <img src={post.frontmatter.cover_image} />
                     <h4>{post.frontmatter.category}</h4>
@@ -16,4 +16,3 @@ export default function Post({ post }) {
 }
 
 // <div className='post-date'>Posted on {post.frontmatter.date}</div>
-// <Link href={`/blog/${post.slug}`}><a className='btn'>Read more</a></Link>
