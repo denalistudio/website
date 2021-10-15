@@ -1,5 +1,5 @@
 module.exports = {
-    assetPrefix: 'https://www.studiodenali.cz/help/',
+    assetPrefix: './',
     trailingSlash: true,
     reactStrictMode: true
 }

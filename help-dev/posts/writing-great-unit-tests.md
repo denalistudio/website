@@ -3,7 +3,7 @@ title: 'Writing Great Unit Tests'
 category: 'Writing'
 date: 'March 12, 2021'
 description: 'We will look at 10 simple tips and tricks on writing unit tests in JavaScript'
-cover_image: './images/posts/img7.jpg'
+cover_image: '/images/posts/img7.jpg'
 ---
 
 Lorem [markdownum](http://insunt.org/inpositaque), et sanguine rutilos dixit
