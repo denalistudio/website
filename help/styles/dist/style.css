@@ -106,17 +106,6 @@ nav p:hover {
   transform: scale(1.025);
 }
 
-.crop {
-  width: 1600px;
-  height: 1000px;
-  overflow: hidden;
-}
-.crop img {
-  width: 1600px;
-  height: 500px;
-  margin: -100px 0 0 -100px;
-}
-
 .post-body {
   max-width: 800px;
 }
