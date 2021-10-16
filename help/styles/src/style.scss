@@ -96,9 +96,6 @@ nav {
   @media (prefers-color-scheme: dark) {
     background-color: $dark;
   }
-  .cover-image {
-    display: flex;
-  }
   img {
     width: 100%;
     border-radius: 10px;
@@ -107,6 +104,15 @@ nav {
 
 .card:hover {
   transform: scale(1.025);
+}
+
+.crop {
+  width: 100%;
+  overflow: hidden;
+  img {
+    height: 200px;
+    margin: -75px 0 0 -100px;
+  }
 }
 
 .post-body {

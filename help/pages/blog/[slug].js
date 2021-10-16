@@ -10,7 +10,9 @@ export default function PostPage({
     content
 }) {
     return <>
-        <img src={`./../..${cover_image}`} />
+        <div className='crop'>
+            <img src={`./../..${cover_image}`} />
+        </div>
         <h4>{category}</h4>
         <h1>{title}</h1>
         <div className='post-date'>Posted on {date}</div>

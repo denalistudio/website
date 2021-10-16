@@ -97,9 +97,6 @@ nav p:hover {
     background-color: #272727;
   }
 }
-.card .cover-image {
-  display: flex;
-}
 .card img {
   width: 100%;
   border-radius: 10px;
@@ -107,6 +104,15 @@ nav p:hover {
 
 .card:hover {
   transform: scale(1.025);
+}
+
+.crop {
+  width: 100%;
+  overflow: hidden;
+}
+.crop img {
+  height: 200px;
+  margin: -75px 0 0 -100px;
 }
 
 .post-body {
