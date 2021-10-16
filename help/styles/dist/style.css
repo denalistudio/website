@@ -107,12 +107,14 @@ nav p:hover {
 }
 
 .crop {
-  width: 100%;
+  width: 1600px;
+  height: 1000px;
   overflow: hidden;
 }
 .crop img {
-  height: 200px;
-  margin: -75px 0 0 -100px;
+  width: 1600px;
+  height: 500px;
+  margin: -100px 0 0 -100px;
 }
 
 .post-body {
