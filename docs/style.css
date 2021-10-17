@@ -250,6 +250,15 @@ nav a:hover {
   }
 }
 
+@media (min-width: ) {
+  .contact {
+    grid-template-rows: 500px;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: "con-contact con-text con-map";
+    grid-column-gap: 20px;
+  }
+}
+
 .con-contact, .con-text {
   padding: 25px;
 }
