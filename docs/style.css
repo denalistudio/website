@@ -62,7 +62,7 @@ body {
   -ms-grid-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
       grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
   gap: 25px 0;
-      grid-template-areas: ". . ." ". h11 ." ". services ." ". . ." ". h14 ." ". contact ." ". h12 ." ". clients ." ". h13 ." ". . ." ". h15 ." ". pricing .";
+      grid-template-areas: ". . ." ". h11 ." ". services services" ". . ." ". h14 ." ". contact ." ". h12 ." ". clients ." ". h13 ." ". . ." ". h15 ." ". pricing .";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -224,6 +224,7 @@ nav a:hover {
 .services {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: services;
   display: -ms-grid;
   display: grid;
@@ -278,9 +279,11 @@ nav a:hover {
 
 @media (min-width: ) {
   .contact {
-    grid-template-rows: 500px;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-areas: "con-contact con-text con-map";
+    -ms-grid-rows: 500px;
+        grid-template-rows: 500px;
+    -ms-grid-columns: 1fr 1fr 2fr;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-areas: "con-contact con-text con-map";
     grid-column-gap: 20px;
   }
 }
