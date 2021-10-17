@@ -34,7 +34,7 @@ body {
   grid-template-areas:
     ". . ."
     ". h11 ."
-    "services services services"
+    "services-container services-container services-container"
     ". . ."
     ". h14 ."
     ". contact ."
@@ -156,22 +156,24 @@ nav {
   transform: scale(1.025);
 }
 
+.services-container {
+  grid-area: services-container;
+}
+
 .services {
-  grid-area: services;
-  display: grid;
-  grid-template-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
-  grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
-  gap: 20px;
   width: 100%;
   height: 500px;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
+  scroll-snap-type: inline;
   a {
     width: 300px;
     height: 350px;
+    margin: 10px;
     padding: 25px;
     white-space: normal;
+    display: inline;
   }
 }
 
@@ -199,7 +201,7 @@ nav {
   }
 }
 
-@media (min-width: ) {
+@media (min-width: 1200px) {
   .contact {
     grid-template-rows: 500px;
     grid-template-columns: 1fr 1fr 2fr;
