@@ -94,6 +94,18 @@ li {
   }
 }
 
+ul{
+  position: fixed;
+  padding: 25px;
+  border-radius: 15px;
+  z-index: 5;
+  @include shadow();
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+    color: $white;
+  }
+}
+
 nav {
   background-color: $white;
   margin: auto;
