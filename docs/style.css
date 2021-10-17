@@ -55,11 +55,14 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #272727;
   background-color: #fafafa;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
+  -ms-grid-columns: 1fr 1400px 1fr;
+      grid-template-columns: 1fr 1400px 1fr;
+  -ms-grid-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
+      grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
   gap: 25px 0;
-  grid-template-areas: ". . ." ". h11 ." ". services ." ". . ." ". h14 ." ". contact ." ". h12 ." ". clients ." ". h13 ." ". . ." ". h15 ." ". pricing .";
+      grid-template-areas: ". . ." ". h11 ." ". services ." ". . ." ". h14 ." ". contact ." ". h12 ." ". clients ." ". h13 ." ". . ." ". h15 ." ". pricing .";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -127,15 +130,19 @@ nav {
   position: fixed;
   top: 0px;
   z-index: 1;
-  box-shadow: #959da533 0 8px 24px;
+  -webkit-box-shadow: #959da533 0 8px 24px;
+          box-shadow: #959da533 0 8px 24px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-areas: ". nav-content .";
+  -ms-grid-columns: 1fr 8fr 1fr;
+      grid-template-columns: 1fr 8fr 1fr;
+      grid-template-areas: ". nav-content .";
 }
 
 @media (prefers-color-scheme: dark) {
   nav {
-    box-shadow: #00000033 0 8px 24px;
+    -webkit-box-shadow: #00000033 0 8px 24px;
+            box-shadow: #00000033 0 8px 24px;
   }
 }
 
@@ -166,6 +173,8 @@ nav a:hover {
 }
 
 .nav-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: nav-content;
 }
 
@@ -185,14 +194,19 @@ nav a:hover {
 
 .card {
   border-radius: 15px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  box-shadow: #959da533 0 8px 24px;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-box-shadow: #959da533 0 8px 24px;
+          box-shadow: #959da533 0 8px 24px;
   background-color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   .card {
-    box-shadow: #00000033 0 8px 24px;
+    -webkit-box-shadow: #00000033 0 8px 24px;
+            box-shadow: #00000033 0 8px 24px;
   }
 }
 
@@ -203,14 +217,19 @@ nav a:hover {
 }
 
 .card:hover {
-  transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
 }
 
 .services {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: services;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
-  grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
+  -ms-grid-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
+      grid-template-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
+      grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
   gap: 20px;
   width: 100%;
   height: 500px;
@@ -228,11 +247,16 @@ nav a:hover {
 
 /* Contact */
 .contact {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
   grid-area: contact;
+  display: -ms-grid;
   display: grid;
-  grid-template-rows: 500px 500px 500px;
-  grid-template-columns: 1fr;
-  grid-template-areas: "con-contact" "con-text" "con-map";
+  -ms-grid-rows: 500px 500px 500px;
+      grid-template-rows: 500px 500px 500px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "con-contact" "con-text" "con-map";
   grid-row-gap: 20px;
 }
 
@@ -243,9 +267,11 @@ nav a:hover {
 
 @media (min-width: 992px) {
   .contact {
-    grid-template-rows: 500px 500px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "con-contact con-text" "con-map";
+    -ms-grid-rows: 500px 500px;
+        grid-template-rows: 500px 500px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "con-contact con-text" "con-map";
     grid-column-gap: 20px;
   }
 }
@@ -255,6 +281,8 @@ nav a:hover {
 }
 
 .con-contact {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: con-contact;
 }
 
@@ -275,17 +303,25 @@ nav a:hover {
 }
 
 .con-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: con-text;
 }
 
 .con-map {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: con-map;
 }
 
 .clients {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
   grid-area: clients;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
 
@@ -304,16 +340,20 @@ nav a:hover {
   margin-left: 10%;
   width: 80%;
   margin-bottom: -29px;
-  box-shadow: #959da533 0 8px 24px;
+  -webkit-box-shadow: #959da533 0 8px 24px;
+          box-shadow: #959da533 0 8px 24px;
 }
 
 @media (prefers-color-scheme: dark) {
   .client-img {
-    box-shadow: #00000033 0 8px 24px;
+    -webkit-box-shadow: #00000033 0 8px 24px;
+            box-shadow: #00000033 0 8px 24px;
   }
 }
 
 /* Pricing */
 .pricing {
+  -ms-grid-row: 12;
+  -ms-grid-column: 2;
   grid-area: pricing;
 }
