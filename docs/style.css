@@ -245,13 +245,6 @@ nav {
 .services {
   grid-area: services;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "services-content";
-}
-
-.services-content {
-  grid-area: services-content;
-  display: grid;
   grid-template-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
   grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
   gap: 20px;
@@ -262,26 +255,35 @@ nav {
   overflow-y: hidden;
 }
 
-.services-content a {
+.services a {
   width: 300px;
   height: 350px;
   padding: 25px;
   white-space: normal;
-  vertical-align: top;
 }
 
 /* Contact */
 .contact {
   grid-area: contact;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px 20px;
-  grid-template-areas: "con-contact con-text con-map con-map";
+  grid-template-rows: 500px 500px 500px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "con-contact" "con-text" "con-map";
+  grid-row-gap: 20px;
 }
 
 .contact img {
   width: 100%;
   border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .contact {
+    grid-template-rows: 500px 500px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "con-contact con-text" "con-map";
+    grid-column-gap: 20px;
+  }
 }
 
 .con-contact, .con-text {
@@ -320,9 +322,7 @@ nav {
   grid-area: clients;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 20px 20px;
-  grid-template-areas: "as as map map" "ab download map map";
+  gap: 20px;
 }
 
 .clients a {
