@@ -55,25 +55,11 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #272727;
   background-color: #fafafa;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 8fr 1fr;
-      grid-template-columns: 1fr 8fr 1fr;
-  -ms-grid-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
-      grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
   gap: 25px 0;
-      grid-template-areas: ". . ."
- ". h11 ."
- ". services ."
- ". . ."
- ". h14 ."
- ". contact ."
- ". h12 ."
- ". clients ."
- ". h13 ."
- ". . ."
- ". h15 ."
- ". pricing .";
+  grid-template-areas: ". . ." ". h11 ." ". services ." ". . ." ". h14 ." ". contact ." ". h12 ." ". clients ." ". h13 ." ". . ." ". h15 ." ". pricing .";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -141,19 +127,15 @@ nav {
   position: fixed;
   top: 0px;
   z-index: 1;
-  -webkit-box-shadow: #959da533 0 8px 24px;
-          box-shadow: #959da533 0 8px 24px;
-  display: -ms-grid;
+  box-shadow: #959da533 0 8px 24px;
   display: grid;
-  -ms-grid-columns: 1fr 8fr 1fr;
-      grid-template-columns: 1fr 8fr 1fr;
-      grid-template-areas: ". nav-content .";
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: ". nav-content .";
 }
 
 @media (prefers-color-scheme: dark) {
   nav {
-    -webkit-box-shadow: #00000033 0 8px 24px;
-            box-shadow: #00000033 0 8px 24px;
+    box-shadow: #00000033 0 8px 24px;
   }
 }
 
@@ -184,47 +166,9 @@ nav a:hover {
 }
 
 .nav-content {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: nav-content;
 }
 
-/*
-nav {
-  background-color: $white;
-  margin: auto;
-  width: 80%;
-  position: fixed;
-  top: 20px;
-  border-radius: 20px;
-  z-index: 1;
-  @include shadow();
-  @media (prefers-color-scheme: dark) {
-    background-color: $dark;
-  }
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-areas: ". nav-content .";
-  svg {
-    width: 24px;
-  }
-  a {
-    float: left;
-    font-size: 18px;
-    margin: 24px 16px;
-    @media (prefers-color-scheme: dark) {
-      color: $white;
-    }
-  }
-  a:hover {
-    color: $denali;
-  }
-}
-
-.nav-content {
-  grid-area: nav-content;
-}
-*/
 .listlanguages {
   float: right;
   padding: 4px 6px;
@@ -241,19 +185,14 @@ nav {
 
 .card {
   border-radius: 15px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  -webkit-box-shadow: #959da533 0 8px 24px;
-          box-shadow: #959da533 0 8px 24px;
+  box-shadow: #959da533 0 8px 24px;
   background-color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   .card {
-    -webkit-box-shadow: #00000033 0 8px 24px;
-            box-shadow: #00000033 0 8px 24px;
+    box-shadow: #00000033 0 8px 24px;
   }
 }
 
@@ -264,15 +203,11 @@ nav {
 }
 
 .card:hover {
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
+  transform: scale(1.025);
 }
 
 .services {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
   grid-area: services;
-  display: -ms-grid;
   display: grid;
   grid-template-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
   grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
@@ -293,10 +228,7 @@ nav {
 
 /* Contact */
 .contact {
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
   grid-area: contact;
-  display: -ms-grid;
   display: grid;
   grid-template-rows: 500px 500px 500px;
   grid-template-columns: 1fr;
@@ -323,8 +255,6 @@ nav {
 }
 
 .con-contact {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: con-contact;
 }
 
@@ -345,23 +275,15 @@ nav {
 }
 
 .con-text {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: con-text;
 }
 
 .con-map {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
   grid-area: con-map;
 }
 
 .clients {
-  -ms-grid-row: 8;
-  -ms-grid-column: 2;
   grid-area: clients;
-  display: -ms-grid;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
@@ -382,20 +304,16 @@ nav {
   margin-left: 10%;
   width: 80%;
   margin-bottom: -29px;
-  -webkit-box-shadow: #959da533 0 8px 24px;
-          box-shadow: #959da533 0 8px 24px;
+  box-shadow: #959da533 0 8px 24px;
 }
 
 @media (prefers-color-scheme: dark) {
   .client-img {
-    -webkit-box-shadow: #00000033 0 8px 24px;
-            box-shadow: #00000033 0 8px 24px;
+    box-shadow: #00000033 0 8px 24px;
   }
 }
 
 /* Pricing */
 .pricing {
-  -ms-grid-row: 12;
-  -ms-grid-column: 2;
   grid-area: pricing;
 }
