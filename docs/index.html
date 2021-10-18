@@ -63,10 +63,10 @@
             <a id="navigation-knowledgebase" href="https://dev.studiodenali.cz/help/"></a>
             <select class="listlanguages" name="listlanguages" onmouseup="langSelectChange(this)">
             </select>
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+            <input type="text" id="search" onkeyup="search()" onclick="searchResults()" placeholder="Search for names..">
         </div>
     </nav>
-    <ul id="search">
+    <ul id="search-results">
         <h4 id="search-mainsite"></h4>
         <li><a id="search-mainsite-result-services" href="#services-heading"></a></li>
         <li><a id="search-mainsite-result-pricing" href="#pricing-heading"></a></li>
@@ -164,11 +164,11 @@
     <div class="pricing">ceník</div>
 
     <script>
-        function myFunction() {
+        function search() {
             var input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById('myInput');
+            input = document.getElementById('search');
             filter = input.value.toUpperCase();
-            ul = document.getElementById("myUL");
+            ul = document.getElementById("search-results");
             li = ul.getElementsByTagName('li');
 
             for (i = 0; i < li.length; i++) {
@@ -180,6 +180,10 @@
                     li[i].style.display = "none";
                 }
             }
+        }
+
+        function searchResults() {
+            document.getElementById("search-results").style.display = "fixed";
         }
 
         //
