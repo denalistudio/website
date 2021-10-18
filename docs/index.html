@@ -63,7 +63,7 @@
             <a id="navigation-knowledgebase" href="https://dev.studiodenali.cz/help/"></a>
             <select class="listlanguages" name="listlanguages" onmouseup="langSelectChange(this)">
             </select>
-            <input type="text" id="search" onkeyup="search()" onclick="searchResults()" placeholder="Search for names..">
+            <input type="text" id="search" onkeyup="search()" placeholder="Search">
         </div>
     </nav>
     <ul id="search-results">
@@ -182,9 +182,14 @@
             }
         }
 
-        function searchResults() {
-            document.getElementById("search-results").style.display = "fixed";
+        document.getElementById("search").onclick = function searchResults() {
+            document.getElementById("search-results").style.display = "block";
         }
+
+        document.getElementById("search").ondblclick = function searchResultsHide() {
+            document.getElementById("search-results").style.display = "none";
+        }
+
 
         //
 
