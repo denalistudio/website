@@ -27,7 +27,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: $dark;
   background-color: #fafafa;
-  display: grid;
+  /*display: grid;
   grid-template-columns: 1fr 1400px 1fr;
   grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
   gap: 25px 0;
@@ -43,10 +43,15 @@ body {
     ". h13 ."
     ". . ."
     ". h15 ."
-    ". pricing .";
+    ". pricing .";*/
     @media (prefers-color-scheme: dark) {
       background-color: rgb(30, 30, 30);
     }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1400px 1fr;
 }
 
 a {
@@ -106,6 +111,8 @@ ul{
   }
 }
 
+/* Nav */
+
 nav {
   background-color: $white;
   margin: auto;
@@ -154,6 +161,8 @@ nav {
   border-radius: 10px;
 }
 
+/* Card */
+
 .card {
   border-radius: 15px;
   transition: transform 0.5s;
@@ -168,8 +177,10 @@ nav {
   transform: scale(1.025);
 }
 
-.services-container {
-  grid-area: services-container;
+/* Services */
+
+#services-heading {
+  grid-area: h11;
 }
 
 .services {
@@ -180,7 +191,7 @@ nav {
   overflow-y: hidden;
   scroll-snap-type: inline;
   a {
-    width: 300px;
+    width: 340px;
     height: 350px;
     margin: 10px;
     padding: 25px;
@@ -190,6 +201,15 @@ nav {
 }
 
 /* Contact */
+
+.grid-contact {
+  grid-template-rows: 50px 500px;
+  grid-template-areas: ". h12 ." ". contact .";
+}
+
+#contact-heading {
+  grid-area: h12;
+}
 
 .contact {
   grid-area: contact;
@@ -223,6 +243,7 @@ nav {
 }
 
 .con-contact, .con-text {
+  width: 340px;
   padding: 25px;
 }
 
@@ -251,7 +272,10 @@ nav {
 
 .con-map {
   grid-area: con-map;
+  width: 680px;
 }
+
+/* Clients */
 
 .clients {
   grid-area: clients;
@@ -265,8 +289,6 @@ nav {
     }
   }
 }
-
-/* Clients */
 
 .client-img {
   margin-left: 10%;
