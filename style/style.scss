@@ -181,6 +181,11 @@ nav {
 
 /* Services */
 
+.grid-h11 {
+  grid-template-rows: 50px;
+  grid-template-areas: ". h11 .";
+}
+
 #services-heading {
   grid-area: h11;
 }
@@ -301,6 +306,15 @@ nav {
 }
 
 /* Clients */
+
+.grid-h13 {
+  grid-template-rows: 50px;
+  grid-template-areas: ". h13 .";
+}
+
+#clients-heading {
+  grid-area: h13;
+}
 
 .clients {
   grid-area: clients;
