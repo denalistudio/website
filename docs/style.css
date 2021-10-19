@@ -260,7 +260,7 @@ nav a:hover {
 
 .services {
   display: flex;
-  padding: 20px;
+  padding-left: calc(100% - 1400px);
   white-space: nowrap;
   overflow-x: scroll;
   overscroll-behavior: contain;
@@ -269,8 +269,8 @@ nav a:hover {
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
   touch-action: pan-x;
-  scroll-padding-left: 50px;
-  scroll-padding-inline-start: 50px;
+  scroll-padding-left: 20px;
+  scroll-padding-inline-start: 20px;
 }
 
 .services .card {
