@@ -163,7 +163,7 @@ li a:hover {
 /* Nav */
 nav {
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-columns: 1fr 1400px 1fr;
   grid-template-areas: ". nav-content .";
   width: 100%;
   margin: auto;
