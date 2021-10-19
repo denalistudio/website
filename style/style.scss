@@ -28,7 +28,7 @@ body {
   color: $dark;
   background-color: #fafafa;
   /*display: grid;
-  grid-template-columns: 1fr 1400px 1fr;
+  grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
   gap: 25px 0;
   grid-template-areas:
@@ -51,7 +51,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1400px 1fr;
+  grid-template-columns: 1fr 8fr 1fr;
 }
 
 a {
@@ -117,7 +117,7 @@ li {
 
 nav {
   display: grid;
-  grid-template-columns: 1fr 1400px 1fr;
+  grid-template-columns: 1fr 8fr 1fr;
   grid-template-areas: ". nav-content .";
   width: 100%;
   margin: auto;
@@ -192,8 +192,7 @@ nav {
 
 .services {
   display: flex;
-  padding-left: calc(100% - 1400px);
-  white-space: nowrap;
+  padding-left: 10vw;
   overflow-x: scroll;
   overscroll-behavior: contain;
   scroll-snap-type: x mandatory;
@@ -207,7 +206,6 @@ nav {
     width: 340px;
     height: 350px;
     padding: 25px;
-    white-space: normal;
     flex-shrink: 0;
   }
   .card:not(:last-child) {
@@ -273,7 +271,6 @@ nav {
 }
 
 .con-contact, .con-text {
-  width: 340px;
   padding: 25px;
 }
 
@@ -288,21 +285,12 @@ nav {
   font-size: 20px;
   margin: 8px 0;
 }
-
-.con-download {
-  color: $denali;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 16px 0;
-}
-
 .con-text {
   grid-area: con-text;
 }
 
 .con-map {
   grid-area: con-map;
-  width: 680px;
 }
 
 /* Clients */
