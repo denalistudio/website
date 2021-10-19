@@ -46,8 +46,7 @@
 
 * {
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -72,7 +71,7 @@ body {
     ". h13 ."
     ". . ."
     ". h15 ."
-    ". pricing .";*/
+    ". pricing ."*/
 }
 
 @media (prefers-color-scheme: dark) {
@@ -82,10 +81,8 @@ body {
 }
 
 .container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1400px 1fr;
-      grid-template-columns: 1fr 1400px 1fr;
+  grid-template-columns: 1fr 1400px 1fr;
 }
 
 a {
@@ -139,14 +136,12 @@ ul {
   border-radius: 15px;
   z-index: 5;
   background-color: white;
-  -webkit-box-shadow: #959da533 0 8px 24px;
-          box-shadow: #959da533 0 8px 24px;
+  box-shadow: #959da533 0 8px 24px;
 }
 
 @media (prefers-color-scheme: dark) {
   ul {
-    -webkit-box-shadow: #00000033 0 8px 24px;
-            box-shadow: #00000033 0 8px 24px;
+    box-shadow: #00000033 0 8px 24px;
   }
 }
 
@@ -167,25 +162,21 @@ li a:hover {
 
 /* Nav */
 nav {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 8fr 1fr;
-      grid-template-columns: 1fr 8fr 1fr;
-      grid-template-areas: ". nav-content .";
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: ". nav-content .";
   width: 100%;
   margin: auto;
   position: fixed;
   top: 0px;
   z-index: 1;
   background-color: #ffffff;
-  -webkit-box-shadow: #959da533 0 8px 24px;
-          box-shadow: #959da533 0 8px 24px;
+  box-shadow: #959da533 0 8px 24px;
 }
 
 @media (prefers-color-scheme: dark) {
   nav {
-    -webkit-box-shadow: #00000033 0 8px 24px;
-            box-shadow: #00000033 0 8px 24px;
+    box-shadow: #00000033 0 8px 24px;
   }
 }
 
@@ -216,8 +207,6 @@ nav a:hover {
 }
 
 .nav-content {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: nav-content;
 }
 
@@ -238,19 +227,14 @@ nav a:hover {
 /* Card */
 .card {
   border-radius: 15px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  -webkit-box-shadow: #959da533 0 8px 24px;
-          box-shadow: #959da533 0 8px 24px;
+  box-shadow: #959da533 0 8px 24px;
   background-color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   .card {
-    -webkit-box-shadow: #00000033 0 8px 24px;
-            box-shadow: #00000033 0 8px 24px;
+    box-shadow: #00000033 0 8px 24px;
   }
 }
 
@@ -261,38 +245,30 @@ nav a:hover {
 }
 
 .card:hover {
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
+  transform: scale(1.025);
 }
 
 /* Services */
 .grid-h11 {
-  -ms-grid-rows: 50px;
-      grid-template-rows: 50px;
-      grid-template-areas: ". h11 .";
+  grid-template-rows: 50px;
+  grid-template-areas: ". h11 .";
 }
 
 #services-heading {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: h11;
 }
 
 .services {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 20px;
   white-space: nowrap;
   overflow-x: scroll;
   overscroll-behavior: contain;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
   scrollbar-width: none;
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
-  -ms-touch-action: pan-x;
-      touch-action: pan-x;
+  touch-action: pan-x;
   scroll-padding-left: 50px;
   scroll-padding-inline-start: 50px;
 }
@@ -302,8 +278,7 @@ nav a:hover {
   height: 350px;
   padding: 25px;
   white-space: normal;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .services .card:not(:last-child) {
@@ -329,28 +304,20 @@ nav a:hover {
 
 /* Contact */
 .grid-contact {
-  -ms-grid-rows: 50px 500px;
-      grid-template-rows: 50px 500px;
-      grid-template-areas: ". h12 ." ". contact .";
+  grid-template-rows: 50px 500px;
+  grid-template-areas: ". h12 ." ". contact .";
 }
 
 #contact-heading {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: h12;
 }
 
 .contact {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: contact;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 500px 500px 500px;
-      grid-template-rows: 500px 500px 500px;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-      grid-template-areas: "con-contact" "con-text" "con-map";
+  grid-template-rows: 500px 500px 500px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "con-contact" "con-text" "con-map";
   grid-row-gap: 20px;
 }
 
@@ -361,22 +328,18 @@ nav a:hover {
 
 @media (min-width: 992px) {
   .contact {
-    -ms-grid-rows: 500px 500px;
-        grid-template-rows: 500px 500px;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "con-contact con-text" "con-map";
+    grid-template-rows: 500px 500px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "con-contact con-text" "con-map";
     grid-column-gap: 20px;
   }
 }
 
 @media (min-width: 1200px) {
   .contact {
-    -ms-grid-rows: 500px;
-        grid-template-rows: 500px;
-    -ms-grid-columns: 1fr 1fr 2fr;
-        grid-template-columns: 1fr 1fr 2fr;
-        grid-template-areas: "con-contact con-text con-map";
+    grid-template-rows: 500px;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: "con-contact con-text con-map";
     grid-column-gap: 20px;
   }
 }
@@ -387,8 +350,6 @@ nav a:hover {
 }
 
 .con-contact {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: con-contact;
 }
 
@@ -409,37 +370,28 @@ nav a:hover {
 }
 
 .con-text {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: con-text;
 }
 
 .con-map {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: con-map;
   width: 680px;
 }
 
 /* Clients */
 .grid-h13 {
-  -ms-grid-rows: 50px;
-      grid-template-rows: 50px;
-      grid-template-areas: ". h13 .";
+  grid-template-rows: 50px;
+  grid-template-areas: ". h13 .";
 }
 
 #clients-heading {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: h13;
 }
 
 .clients {
   grid-area: clients;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
 
@@ -457,14 +409,12 @@ nav a:hover {
   margin-left: 10%;
   width: 80%;
   margin-bottom: -29px;
-  -webkit-box-shadow: #959da533 0 8px 24px;
-          box-shadow: #959da533 0 8px 24px;
+  box-shadow: #959da533 0 8px 24px;
 }
 
 @media (prefers-color-scheme: dark) {
   .client-img {
-    -webkit-box-shadow: #00000033 0 8px 24px;
-            box-shadow: #00000033 0 8px 24px;
+    box-shadow: #00000033 0 8px 24px;
   }
 }
 
