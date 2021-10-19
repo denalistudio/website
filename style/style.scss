@@ -92,23 +92,24 @@ img {
   max-height: 100%;
 }
 
-li {
-  list-style-type: none;
-  a:hover{
-    text-decoration: underline;
-  }
-}
-
 ul{
   display: none;
   position: fixed;
   padding: 25px;
   border-radius: 15px;
   z-index: 5;
+  background-color: white;
   @include shadow();
   @media (prefers-color-scheme: dark) {
     background-color: $dark;
     color: $white;
+  }
+}
+
+li {
+  list-style-type: none;
+  a:hover{
+    text-decoration: underline;
   }
 }
 
