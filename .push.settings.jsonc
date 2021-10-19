@@ -19,7 +19,7 @@
 			// "password": "",
 			// "privateKey": "",
 			// "keyPassphrase": "",
-			"root": "/",
+			"root": "/docs",
 			// "keepaliveInterval": 3000,
 			// "debug": false,
 			// "fileMode": "",
