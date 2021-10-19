@@ -260,7 +260,7 @@ nav a:hover {
 
 .services {
   display: flex;
-  padding-left: calc(10vw - 2px);
+  padding: 20px 20px 20px calc(10vw - 2px);
   overflow-x: scroll;
   overscroll-behavior: contain;
   scroll-snap-type: x mandatory;
