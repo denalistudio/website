@@ -32,7 +32,8 @@
 		"client-pivonky-title": "Pivoňky",
 		"client-pivonky-text": "Již od samotného názvu jsme Pivoňkám pomáhali formovat jejich nápad, aby se stal realitou.",
 		"client-cafeelektra-title": "Kavárna Elektra",
-		"client-cafeelektra-text": "Známá lokální kavárna, která nabízí vynikající kávu. Jejich nové webové stránky ale nechali na nás."
+		"client-cafeelektra-text": "Známá lokální kavárna, která nabízí vynikající kávu. Jejich nové webové stránky ale nechali na nás.",
+		"pricing-heading": "Ceny služeb"
 	},
 	"en": {
 		"langdesc": "en",
@@ -70,7 +71,8 @@
 		"client-pivonky-title": "Pivonky",
 		"client-pivonky-text": "From the name itself, we helped the Pivonky beer hall shape their idea so it can become reality.",
 		"client-cafeelektra-title": "Café Elektra",
-		"client-cafeelektra-text": "A well known local café, which serves excellent coffee. Their website was nonetheless left to us."
+		"client-cafeelektra-text": "A well known local café, which serves excellent coffee. Their website was nonetheless left to us.",
+		"pricing-heading": "Pricing"
 	},
 	"test": {
 		"langdesc": "test"
