@@ -419,6 +419,15 @@ nav a:hover {
 }
 
 /* Pricing */
+.grid-pricing {
+  grid-template-rows: 50px 500px;
+  grid-template-areas: ". h14 ." ". pricing .";
+}
+
+#pricing-heading {
+  grid-area: h14;
+}
+
 .pricing {
   grid-area: pricing;
 }
