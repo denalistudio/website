@@ -192,7 +192,7 @@ nav {
 
 .services {
   display: flex;
-  padding-left: 10vw;
+  padding-left: calc(10vw - 2px);
   overflow-x: scroll;
   overscroll-behavior: contain;
   scroll-snap-type: x mandatory;
