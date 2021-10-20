@@ -200,10 +200,10 @@ nav {
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
   touch-action: pan-x;
-  scroll-padding-left: 20px;
-  scroll-padding-inline-start: 20px;
+  scroll-padding-left: calc(10vw - 2px);
+  scroll-padding-inline-start: calc(10vw - 2px);
   .card {
-    width: 340px;
+    width: 20vw;
     height: 350px;
     padding: 25px;
     flex-shrink: 0;
