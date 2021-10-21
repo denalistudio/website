@@ -251,7 +251,7 @@ nav {
     grid-template-rows: 500px 500px;
     grid-template-columns: 1fr;
     grid-template-areas: "con-contact con-text" "con-map";
-    grid-column-gap: 20px;
+    column-gap: 20px;
   }
 }
 
@@ -260,7 +260,7 @@ nav {
     grid-template-rows: 500px;
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-areas: "con-contact con-text con-map";
-    grid-column-gap: 20px;
+    column-gap: 20px;
   }
 }
 
