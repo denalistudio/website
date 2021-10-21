@@ -190,9 +190,20 @@ nav {
   grid-area: h11;
 }
 
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: "services services services";
+}
+
 .services {
-  display: flex;
-  padding: 20px calc(10vw - 2px) 20px calc(10vw - 2px);
+  grid-area: services;
+  display: grid;
+  grid-template-rows: 400px;
+  grid-template-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
+  grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
+  column-gap: 20px;
+  padding: 20px calc(10vw - 2px) 0;
   overflow-x: scroll;
   overscroll-behavior: contain;
   scroll-snap-type: x mandatory;
@@ -200,16 +211,10 @@ nav {
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
   touch-action: pan-x;
-  scroll-padding-left: calc(10vw - 2px);
-  scroll-padding-inline-start: calc(10vw - 2px);
   .card {
-    width: 20vw;
+    width: 19vw;
     height: 350px;
     padding: 25px;
-    flex-shrink: 0;
-  }
-  .card:not(:last-child) {
-    margin-right: 20px;
   }
 }
 
