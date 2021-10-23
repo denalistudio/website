@@ -42,8 +42,6 @@
     <meta name="twitter:image" content="https://www.studiodenali.cz/og-preview.png">
 </head>
 
-<script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
-
 <body onload="onLoad()" translate="no">
     <nav>
         <div class="nav-content">
@@ -172,38 +170,6 @@
     </div>
 
     <script>
-        /*
-        const slider = document.querySelector('.items');
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-
-        slider.addEventListener('mousedown', (e) => {
-            isDown = true;
-            slider.classList.add('active');
-            startX = e.pageX - slider.offsetLeft;
-            scrollLeft = slider.scrollLeft;
-        });
-        slider.addEventListener('mouseleave', () => {
-            isDown = false;
-            slider.classList.remove('active');
-        });
-        slider.addEventListener('mouseup', () => {
-            isDown = false;
-            slider.classList.remove('active');
-        });
-        slider.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - slider.offsetLeft;
-            const walk = (x - startX) * 3; //scroll-fast
-            slider.scrollLeft = scrollLeft - walk;
-            console.log(walk);
-        });
-        */
-
-        //
-
         function search() {
             var input, filter, ul, li, a, i, txtValue;
             input = document.getElementById('search');
@@ -229,9 +195,16 @@
         document.getElementById("search").ondblclick = function searchResultsHide() {
             document.getElementById("search-results").style.display = "none";
         }
+    </script>
+    <script>
+        /*
+        The MIT License (MIT)
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        */
 
-
-        //
+        // MultiLanguage, Copyright © 2015 Bas de Reuver, Provided under the MIT License, https://github.com/BdR76/MultiLanguage
 
         var multilang;
         function onLoad() {
@@ -262,8 +235,6 @@
                 };
             };
         }
-
-        //
 
         var MultiLang = function (url, lang, onload) {
             this.phrases = {};
@@ -305,6 +276,90 @@
                 return str;
             }
         }
+
+            // Dragscroll, Copyright © 2015 asvd, Provided under the MIT License, https://github.com/asvd/dragscroll
+
+            (function (root, factory) {
+                if (typeof define === 'function' && define.amd) {
+                    define(['exports'], factory);
+                } else if (typeof exports !== 'undefined') {
+                    factory(exports);
+                } else {
+                    factory((root.dragscroll = {}));
+                }
+            }(this, function (exports) {
+                var _window = window;
+                var _document = document;
+                var mousemove = 'mousemove';
+                var mouseup = 'mouseup';
+                var mousedown = 'mousedown';
+                var EventListener = 'EventListener';
+                var addEventListener = 'add' + EventListener;
+                var removeEventListener = 'remove' + EventListener;
+                var newScrollX, newScrollY;
+
+                var dragged = [];
+                var reset = function (i, el) {
+                    for (i = 0; i < dragged.length;) {
+                        el = dragged[i++];
+                        el = el.container || el;
+                        el[removeEventListener](mousedown, el.md, 0);
+                        _window[removeEventListener](mouseup, el.mu, 0);
+                        _window[removeEventListener](mousemove, el.mm, 0);
+                    }
+
+                    dragged = [].slice.call(_document.getElementsByClassName('dragscroll'));
+                    for (i = 0; i < dragged.length;) {
+                        (function (el, lastClientX, lastClientY, pushed, scroller, cont) {
+                            (cont = el.container || el)[addEventListener](
+                                mousedown,
+                                cont.md = function (e) {
+                                    if (!el.hasAttribute('nochilddrag') ||
+                                        _document.elementFromPoint(
+                                            e.pageX, e.pageY
+                                        ) == cont
+                                    ) {
+                                        pushed = 1;
+                                        lastClientX = e.clientX;
+                                        lastClientY = e.clientY;
+
+                                        e.preventDefault();
+                                    }
+                                }, 0
+                            );
+
+                            _window[addEventListener](
+                                mouseup, cont.mu = function () { pushed = 0; }, 0
+                            );
+
+                            _window[addEventListener](
+                                mousemove,
+                                cont.mm = function (e) {
+                                    if (pushed) {
+                                        (scroller = el.scroller || el).scrollLeft -=
+                                            newScrollX = (- lastClientX + (lastClientX = e.clientX));
+                                        scroller.scrollTop -=
+                                            newScrollY = (- lastClientY + (lastClientY = e.clientY));
+                                        if (el == _document.body) {
+                                            (scroller = _document.documentElement).scrollLeft -= newScrollX;
+                                            scroller.scrollTop -= newScrollY;
+                                        }
+                                    }
+                                }, 0
+                            );
+                        })(dragged[i++]);
+                    }
+                }
+
+
+                if (_document.readyState == 'complete') {
+                    reset();
+                } else {
+                    _window[addEventListener]('load', reset, 0);
+                }
+
+                exports.reset = reset;
+            }));
     </script>
 
 </body>
