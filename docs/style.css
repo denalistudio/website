@@ -318,6 +318,16 @@ nav a:hover {
   padding: 25px;
 }
 
+.services .card:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.services .card:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
 .services::-webkit-scrollbar {
   display: none;
 }

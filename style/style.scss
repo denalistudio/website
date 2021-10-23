@@ -215,6 +215,12 @@ nav {
     width: 19vw;
     height: 350px;
     padding: 25px;
+    &:hover{
+      cursor: grab;
+    }
+    &:active{
+      cursor: grabbing;
+    }
   }
 }
 
