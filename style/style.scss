@@ -190,12 +190,7 @@ nav {
   column-gap: 20px;
   padding: 20px;
   overflow-x: scroll;
-  overflow-y: scroll;
-  overscroll-behavior: contain;
   scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  -ms-overflow-scrolling: touch;
   touch-action: pan-x;
   .card {
     width: 80vw;
@@ -208,10 +203,6 @@ nav {
       cursor: grabbing;
     }
   }
-}
-
-.services::-webkit-scrollbar {
-  display: none;
 }
 
 /* Contact */
