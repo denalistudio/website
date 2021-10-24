@@ -177,11 +177,6 @@ nav {
 
 /* Services */
 
-.services-container {
-  display: grid;
-  grid-template-columns: 15px 1fr 15px;
-  grid-template-areas: "services services services";
-
 .services {
   grid-area: services;
   display: grid;

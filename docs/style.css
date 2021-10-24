@@ -58,7 +58,7 @@ body {
   display: grid;
   grid-template-columns: 15px 1fr 15px;
   grid-template-rows: 50px 50px 325px 50px 500px 500px 500px 50px;
-  grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map";
+  grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map .";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -235,11 +235,6 @@ nav a:hover {
 }
 
 /* Services */
-/*.services-container {
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-areas: "services services services";
-
 .services {
   grid-area: services;
   display: grid;
@@ -247,7 +242,7 @@ nav a:hover {
   grid-template-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
   grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
   column-gap: 20px;
-  padding: 20px calc(10vw - 2px) 0;
+  padding: 15px 0;
   overflow-x: scroll;
   overscroll-behavior: contain;
   scroll-snap-type: x mandatory;
@@ -255,17 +250,20 @@ nav a:hover {
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
   touch-action: pan-x;
-  .card {
-    width: 19vw;
-    height: 350px;
-    padding: 25px;
-    &:hover{
-      cursor: grab;
-    }
-    &:active{
-      cursor: grabbing;
-    }
-  }
+}
+
+.services .card {
+  width: 19vw;
+  height: 350px;
+  padding: 25px;
+}
+
+.services .card:hover {
+  cursor: grab;
+}
+
+.services .card:active {
+  cursor: grabbing;
 }
 
 .services::-webkit-scrollbar {
