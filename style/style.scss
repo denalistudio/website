@@ -30,7 +30,7 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: 50px 50px 390px 50px 350px 350px 350px 50px;
+  grid-template-rows: 50px 50px 390px 50px 200px 350px 350px 50px;
   grid-template-areas:
   "nav nav nav"
   ". services-heading ."
@@ -191,6 +191,9 @@ nav {
   padding: 20px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -ms-overflow-scrolling: touch;
   touch-action: pan-x;
   .card {
     width: 80vw;
@@ -203,6 +206,10 @@ nav {
       cursor: grabbing;
     }
   }
+}
+
+.services::-webkit-scrollbar {
+  display: none;
 }
 
 /* Contact */
@@ -242,7 +249,7 @@ nav {
   height: 350px;
 }
 
-/* Clients
+/* Clients */
 
 .clients {
   grid-area: clients;
@@ -262,15 +269,4 @@ nav {
   width: 80%;
   margin-bottom: -29px;
   @include shadow();
-}*/
-
-/* Pricing
-
-.grid-pricing {
-  grid-template-rows: 50px 500px;
-  grid-template-areas: ". h14 ." ". pricing .";
 }
-
-.pricing {
-  grid-area: pricing;
-}*/

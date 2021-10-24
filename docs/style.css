@@ -58,7 +58,7 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: 50px 50px 390px 50px 350px 350px 350px 50px;
+  grid-template-rows: 50px 50px 390px 50px 200px 350px 350px 50px;
   grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map .";
 }
 
@@ -249,6 +249,9 @@ nav a:hover {
   padding: 20px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -ms-overflow-scrolling: touch;
   touch-action: pan-x;
 }
 
@@ -264,6 +267,10 @@ nav a:hover {
 
 .services .card:active {
   cursor: grabbing;
+}
+
+.services::-webkit-scrollbar {
+  display: none;
 }
 
 /* Contact */
@@ -304,18 +311,21 @@ nav a:hover {
   height: 350px;
 }
 
-/* Clients
-
+/* Clients */
 .clients {
   grid-area: clients;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-  a {
-    padding: 25px;
-    @media (prefers-color-scheme: dark) {
-      background-color: $dark;
-    }
+  gap: 20px;
+}
+
+.clients a {
+  padding: 25px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .clients a {
+    background-color: #272727;
   }
 }
 
@@ -323,15 +333,11 @@ nav a:hover {
   margin-left: 10%;
   width: 80%;
   margin-bottom: -29px;
-  @include shadow();
-}*/
-/* Pricing
-
-.grid-pricing {
-  grid-template-rows: 50px 500px;
-  grid-template-areas: ". h14 ." ". pricing .";
+  box-shadow: #959da533 0 8px 24px;
 }
 
-.pricing {
-  grid-area: pricing;
-}*/
+@media (prefers-color-scheme: dark) {
+  .client-img {
+    box-shadow: #00000033 0 8px 24px;
+  }
+}
