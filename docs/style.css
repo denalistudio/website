@@ -247,6 +247,8 @@ nav a:hover {
   grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
   column-gap: 20px;
   padding: 20px;
+  overflow-x: scroll;
+  overflow-y: scroll;
   overscroll-behavior: contain;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
