@@ -281,7 +281,6 @@ nav a:hover {
 }
 
 .con-contact {
-  height: 200px;
   grid-area: con-contact;
 }
 
@@ -292,6 +291,12 @@ nav a:hover {
 .con-email, .con-mobile {
   font-size: 20px;
   margin: 8px 0;
+}
+
+.con-download {
+  color: #4f54ff;
+  font-size: 20px;
+  margin: 0;
 }
 
 .con-text {
