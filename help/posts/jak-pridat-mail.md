@@ -10,10 +10,7 @@ lang-check: 'no'
 # Jak přidat vaši e-mailovou adresu do poštovních klientů
 Poštovní klient je ve zkratce program, který slouží k příjmání, odesílání a správě elektronické pošty. Nesmíme si ale plést poštovní klienty s tzv. "webmailem," což je velice podobný program, jen zcela umístěn na webu a je většinou operovaný samotnou společností provozující vaši e-mailovou službu (Google = Gmail, Forpsi = Forpsi Webmail). Pokud máte vaši mailovou adresu zařízenou s námi u Forpsi a nechcete využívat Forpsi Webmail ale například poštovní klienty od Apple a Microsoft, dozvíte se v tomto článku jak.
 
-**Obsah**
-<a href="# Microsoft Outlook 365">Microsoft Outlook 365</a>
 [# Microsoft Outlook 365]
-[[#Mozilla Thunderbird]]
 [[#Apple Pošta (Mac)]] 
 [[#Gmail pro telefon]]
 [[#Outlook pro telefon]]
@@ -78,7 +75,7 @@ Apple Pošta pro iPhone a iPad je předinstalovaný poštovní klient od společ
 <img src="https://src.studiodenali.cz/jak-pridat-mail/ios-mail/9.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/ios-mail/10.png">
 
-1) V nasstavení vašeho iPhonu/iPadu klikněte na **vyhledávací pole**.
+1) V nastavení vašeho iPhonu/iPadu klikněte na **Vyhledávací pole**.
 2) Vyhledejte termín *"Pošta"* a klikněte na možnost **Pošta** s modrou ikonkou pošty.
 3) Vyberte možnost **Účty**.
 4) Vyberte možnost **Přidat účet**.
