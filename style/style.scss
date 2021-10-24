@@ -30,7 +30,7 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: 50px 50px 390px 50px 200px 350px 350px 50px;
+  grid-template-rows: 50px 50px 390px 50px 200px 350px 350px 50px 390px 20px;
   grid-template-areas:
   "nav nav nav"
   ". services-heading ."
@@ -38,7 +38,10 @@ body {
   ". contact-heading ."
   ". con-contact ."
   ". con-text ."
-  ". con-map .";
+  ". con-map ."
+  ". clients-heading ."
+  "clients clients clients"
+  ". lang .";
     @media (prefers-color-scheme: dark) {
       background-color: #1e1e1e;
     }
@@ -251,17 +254,38 @@ nav {
 
 /* Clients */
 
+#clients-heading {
+  grid-area: clients-heading;
+}
+
 .clients {
   grid-area: clients;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-  a {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "pivonky elektra";
+  column-gap: 20px;
+  padding: 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -ms-overflow-scrolling: touch;
+  touch-action: pan-x;
+  .card {
+    width: 80vw;
+    height: 350px;
     padding: 25px;
-    @media (prefers-color-scheme: dark) {
-      background-color: $dark;
+    &:hover{
+      cursor: grab;
+    }
+    &:active{
+      cursor: grabbing;
     }
   }
+}
+
+.clients::-webkit-scrollbar {
+  display: none;
 }
 
 .client-img {
@@ -269,4 +293,18 @@ nav {
   width: 80%;
   margin-bottom: -29px;
   @include shadow();
+}
+
+.pivonky {
+  grid-area: pivonky;
+}
+
+.elektra {
+  grid-area: elektra;
+}
+
+/* Languages */
+
+.listlanguages {
+  grid-area: lang;
 }

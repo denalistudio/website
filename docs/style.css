@@ -58,8 +58,8 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: 50px 50px 390px 50px 200px 350px 350px 50px;
-  grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map .";
+  grid-template-rows: 50px 50px 390px 50px 200px 350px 350px 50px 390px 20px;
+  grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map ." ". clients-heading ." "clients clients clients" ". lang .";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -312,21 +312,41 @@ nav a:hover {
 }
 
 /* Clients */
+#clients-heading {
+  grid-area: clients-heading;
+}
+
 .clients {
   grid-area: clients;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "pivonky elektra";
+  column-gap: 20px;
+  padding: 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -ms-overflow-scrolling: touch;
+  touch-action: pan-x;
 }
 
-.clients a {
+.clients .card {
+  width: 80vw;
+  height: 350px;
   padding: 25px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .clients a {
-    background-color: #272727;
-  }
+.clients .card:hover {
+  cursor: grab;
+}
+
+.clients .card:active {
+  cursor: grabbing;
+}
+
+.clients::-webkit-scrollbar {
+  display: none;
 }
 
 .client-img {
@@ -340,4 +360,17 @@ nav a:hover {
   .client-img {
     box-shadow: #00000033 0 8px 24px;
   }
+}
+
+.pivonky {
+  grid-area: pivonky;
+}
+
+.elektra {
+  grid-area: elektra;
+}
+
+/* Languages */
+.listlanguages {
+  grid-area: lang;
 }
