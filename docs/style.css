@@ -280,11 +280,11 @@ nav a:hover {
 }
 
 .con-contact, .con-text {
-  height: 350px;
   padding: 25px;
 }
 
 .con-contact {
+  height: 200px;
   grid-area: con-contact;
 }
 
@@ -299,6 +299,7 @@ nav a:hover {
 
 .con-text {
   grid-area: con-text;
+  height: 350px;
 }
 
 .con-text img {
