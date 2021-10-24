@@ -35,13 +35,8 @@ Windows Pošta je výchozím poštovním klientem pro operační systém Windows
 Microsoft Outlook je skvělým poštovním klientem, který je součástí služby Microsoft 365. Proto funguje skvěle s ostatními aplikacemi Office, jako například Word, Excel a PowerPoint.
 
 <img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/1.png">
-<img src="https://www.studiodenali.cz/image/jak-pridat-mail/outlook/2.png">
-<img src="https://www.studiodenali.cz/image/jak-pridat-mail/outlook/3.png">
-<img src="https://www.studiodenali.cz/image/jak-pridat-mail/outlook/4.png">
-<img src="https://www.studiodenali.cz/image/jak-pridat-mail/outlook/5.png">
-<img src="https://www.studiodenali.cz/image/jak-pridat-mail/outlook/6.png">
-<img src="https://www.studiodenali.cz/image/jak-pridat-mail/outlook/7.png">
-<img src="https://www.studiodenali.cz/image/jak-pridat-mail/outlook/8.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/2.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/2.png">
 
 1) 
 
