@@ -276,12 +276,9 @@ nav a:hover {
   grid-area: contact-heading;
 }
 
-.con-contact, .con-text {
-  padding: 25px;
-}
-
 .con-contact {
   grid-area: con-contact;
+  padding: 25px;
 }
 
 .con-contact h3 {
@@ -302,6 +299,7 @@ nav a:hover {
 .con-text {
   grid-area: con-text;
   height: 350px;
+  padding: 25px;
 }
 
 .con-text img {
