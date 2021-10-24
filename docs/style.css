@@ -319,17 +319,34 @@ nav a:hover {
 .clients {
   grid-area: clients;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "pivonky elektra";
+  column-gap: 20px;
+  padding: 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -ms-overflow-scrolling: touch;
+  touch-action: pan-x;
 }
 
 .clients .card {
+  width: 80vw;
+  height: 350px;
   padding: 25px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .clients .card {
-    background-color: #272727;
-  }
+.clients .card:hover {
+  cursor: grab;
+}
+
+.clients .card:active {
+  cursor: grabbing;
+}
+
+.clients::-webkit-scrollbar {
+  display: none;
 }
 
 .client-img {
@@ -343,6 +360,14 @@ nav a:hover {
   .client-img {
     box-shadow: #00000033 0 8px 24px;
   }
+}
+
+.pivonky {
+  grid-area: pivonky;
+}
+
+.elektra {
+  grid-area: elektra;
 }
 
 /* Languages */
