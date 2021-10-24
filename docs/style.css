@@ -302,6 +302,30 @@ nav a:hover {
   display: none;
 }
 
+.service-1 {
+  grid-area: service-1;
+}
+
+.service-2 {
+  grid-area: service-2;
+}
+
+.service-3 {
+  grid-area: service-3;
+}
+
+.service-4 {
+  grid-area: service-4;
+}
+
+.service-5 {
+  grid-area: service-5;
+}
+
+.service-6 {
+  grid-area: service-6;
+}
+
 /* Contact */
 #contact-heading {
   -ms-grid-row: 4;
