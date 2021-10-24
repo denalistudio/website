@@ -37,7 +37,7 @@ body {
   ". contact-heading ."
   ". con-contact ."
   ". con-text ."
-  ". con-map";
+  ". con-map .";
     @media (prefers-color-scheme: dark) {
       background-color: rgb(30, 30, 30);
     }
@@ -189,7 +189,7 @@ nav {
   grid-template-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
   grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
   column-gap: 20px;
-  padding: 20px calc(10vw - 2px) 0;
+  padding: 15px 0;
   overflow-x: scroll;
   overscroll-behavior: contain;
   scroll-snap-type: x mandatory;
