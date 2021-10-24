@@ -58,13 +58,14 @@ Poštovní klient Mozilla Thunderbird je open-source projektem tvůrce prohlíž
 <img src="https://src.studiodenali.cz/jak-pridat-mail/thunderbird/6.png">
 
 1) Při otevření aplikace Mozilla Thunderbird se vám načte uvítací obrazovka, klikněte na **Menu (&#9776;)** v pravém horním rohu.
-2) V nově zobrazeném menu klikněte na možnost **Nastavení ůčtu**.
+2) V menu klikněte na možnost **Nastavení ůčtu**.
 3) Vyberte v levém dolním rohu menu **Akce účtu** > možnost **Přidat poštovní účet**.
 4) Do pole **Vaše jméno** vyplňte vaše jméno/název firmy, pod kterým uvidí příjemci vaše e-maily. Do pole **E-mailová adresa** vyplňte vaši novou e-mailovou adresu s vaší doménou a do pole **Heslo** vaše heslo. Nezapomeňte odškrtnout možnost **Pamatovat si heslo** a klikněte na možnost **Pokračovat** v pravém dolním rohu. (Klient Mozilla Thunderbird umí nastavit servery příchozi a odchozí pošty sám, ve vyjímečných případech ale může nastat chyba a je potřeba tyto detaily nastavit manuálně. Do pole **Server příchozí pošty** vyplňte `imap.forpsi.com` a do pole **Server odchozí pošty** `smtp.forpsi.com`.)
 5) Vyberte možnost **IMAP** z pole **Protokol** a klikněte na tlačítko **Hotovo**.
 6) **Hotovo!** Vyzkoušejte si na vaši novou adresu poslat pro radost e-mail z jiného účtu.
 
 ## Apple Pošta (iPhone, iPad)
+Apple Pošta pro iPhone a iPad je předinstalovaný poštovní klient od společnosti Apple, který je skvěle zabudovaný do každého iPhonu a iPadu.
 
 <img src="https://src.studiodenali.cz/jak-pridat-mail/ios-mail/1.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/ios-mail/2.png">
@@ -76,3 +77,14 @@ Poštovní klient Mozilla Thunderbird je open-source projektem tvůrce prohlíž
 <img src="https://src.studiodenali.cz/jak-pridat-mail/ios-mail/8.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/ios-mail/9.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/ios-mail/10.png">
+
+1) V nasstavení vašeho iPhonu/iPadu klikněte na **vyhledávací pole**.
+2) Vyhledejte termín *"Pošta"* a klikněte na možnost **Pošta** s modrou ikonkou pošty.
+3) Vyberte možnost **Účty**.
+4) Vyberte možnost **Přidat účet**.
+5) Vyberte možnost **Jiný**.
+6) Vyberte možnost **Přidat poštovní účet**.
+7) Do pole **Jméno** vyplňte vaše jméno/název firmy, pod kterým uvidí příjemci vaše e-maily. Do pole **E-mail** vyplňte vaši novou e-mailovou adresu s vaší doménou a do pole **Heslo** vaše heslo. Do pole **Popis** vyplňte název, pod kterým se vám e-mailová adresa bude v aplikaci zobrazovat. Zkontrolujte pro jistotu své informace a klikněte na **Další** v pravém horním rohu.
+8) Zobrazí se dvě nové sekce: **Server příchozí pošty** a **Server odchozí pošty**, některé pole již budou vyplněné z minulého kroku. V sekci **Server příchozí pošty** vyplňte do pole **Hostitel** doménu `imap.forpsi.com`, do pole **Uživatel** vaši e-mailovou adresu a do pole **Heslo** vaše heslo. V sekci **Server odchozí pošty** vyplňte do pole **Hostitel** doménu `smtp.forpsi.com`, do pole **Uživatel** vaši e-mailovou adresu a do pole **Heslo** vaše heslo. Znova pro jistotu znova zkontrolujte vyplněné informace a klikněte na **Další**.
+9) Zkontrolujte zda je zaškrtnutá možnost **Pošta** a klikněte na **Uložit** v pravém horním rohu.
+10) **Hotovo!** Vyzkoušejte si na vaši novou adresu poslat pro radost e-mail z jiného účtu.
