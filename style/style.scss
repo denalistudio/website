@@ -28,9 +28,11 @@ body {
   color: $dark;
   background-color: #fafafa;
   display: grid;
+  row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: 50px 390px 50px 500px 500px 500px 50px;
+  grid-template-rows: 50px 50px 390px 50px 350px 350px 350px 50px;
   grid-template-areas:
+  "nav nav nav"
   ". services-heading ."
   "services services services"
   ". contact-heading ."
@@ -123,9 +125,10 @@ li {
   }
 }
 
-/* Nav
+/* Nav */
 
 nav {
+  grid-area: nav;
   display: grid;
   grid-template-columns: 15px 1fr 15px;
   grid-template-areas: ". nav-content .";
@@ -171,7 +174,7 @@ nav {
   background-color: $denali;
   border: none;
   border-radius: 10px;
-}*/
+}
 
 /* Services */
 
@@ -194,7 +197,7 @@ nav {
   -ms-overflow-scrolling: touch;
   touch-action: pan-x;
   .card {
-    width: 300px;
+    width: 80vw;
     height: 350px;
     padding: 25px;
     &:hover{
@@ -210,31 +213,14 @@ nav {
   display: none;
 }
 
-/* Contact
-
-.grid-contact {
-  grid-template-rows: 50px 500px;
-  grid-template-areas: ". h12 ." ". contact .";
-}
+/* Contact */
 
 #contact-heading {
-  grid-area: h12;
-}
-
-.contact {
-  grid-area: contact;
-  display: grid;
-  grid-template-rows: 500px 500px 500px;
-  grid-template-columns: 1fr;
-  grid-template-areas: "con-contact" "con-text" "con-map";
-  grid-row-gap: 20px;
-    img{
-      width: 100%;
-      border-radius: 10px;
-    }
+  grid-area: contact-heading;
 }
 
 .con-contact, .con-text {
+  height: 350px;
   padding: 25px;
 }
 
@@ -249,13 +235,19 @@ nav {
   font-size: 20px;
   margin: 8px 0;
 }
+
 .con-text {
   grid-area: con-text;
+  img{
+    width: 100%;
+    border-radius: 10px;
+  }
 }
 
 .con-map {
   grid-area: con-map;
-}*/
+  height: 350px;
+}
 
 /* Clients
 
