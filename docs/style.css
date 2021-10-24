@@ -58,7 +58,7 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: 50px 50px 390px 50px 200px 350px 350px 50px 390px 20px;
+  grid-template-rows: 50px 50px 390px 50px 179px 350px 350px 50px 390px 20px;
   grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map ." ". clients-heading ." "clients clients clients" ". lang .";
 }
 
@@ -286,17 +286,22 @@ nav a:hover {
   line-height: 1;
 }
 
-.con-email, .con-mobile {
+.con-email {
   font-size: 20px;
-  margin: 8px 0;
   line-height: 1;
+}
+
+.con-mobile {
+  font-size: 20px;
+  line-height: 1;
+  margin: 12px 0 0 0;
 }
 
 #contact-savebutton {
   color: #4f54ff;
   font-size: 20px;
   line-height: 1;
-  margin: 0;
+  margin: 16px 0 0 0;
 }
 
 .con-text {
