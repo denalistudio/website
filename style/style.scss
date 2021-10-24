@@ -27,32 +27,24 @@ body {
   font-family: 'Roboto', sans-serif;
   color: $dark;
   background-color: #fafafa;
-  /*display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
-  gap: 25px 0;
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-rows: 50px 50px 390px 50px 350px 350px 350px 50px;
   grid-template-areas:
-    ". . ."
-    ". h11 ."
-    "services-container services-container services-container"
-    ". . ."
-    ". h14 ."
-    ". contact ."
-    ". h12 ."
-    ". clients ."
-    ". h13 ."
-    ". . ."
-    ". h15 ."
-    ". pricing ."*/
+  "nav nav nav"
+  ". services-heading ."
+  "services services services"
+  ". contact-heading ."
+  ". con-contact ."
+  ". con-text ."
+  ". con-map .";
     @media (prefers-color-scheme: dark) {
-      background-color: rgb(30, 30, 30);
+      background-color: #1e1e1e;
     }
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-}
+/* Text */
 
 a {
   color: inherit;
@@ -87,12 +79,32 @@ h4 {
   font-weight: 400;
 }
 
+/* Images */
+
 img {
   max-width: 100%;
   max-height: 100%;
 }
 
-ul{
+/* Card */
+
+.card {
+  border-radius: 15px;
+  transition: transform 0.5s;
+  @include shadow();
+  background-color: $white;
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+  }
+}
+
+.card:hover {
+  transform: scale(1.025);
+}
+
+/* List */
+
+ul {
   display: none;
   position: fixed;
   padding: 25px;
@@ -116,8 +128,9 @@ li {
 /* Nav */
 
 nav {
+  grid-area: nav;
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-columns: 15px 1fr 15px;
   grid-template-areas: ". nav-content .";
   width: 100%;
   margin: auto;
@@ -163,48 +176,19 @@ nav {
   border-radius: 10px;
 }
 
-/* Card */
-
-.card {
-  border-radius: 15px;
-  transition: transform 0.5s;
-  @include shadow();
-  background-color: $white;
-  @media (prefers-color-scheme: dark) {
-    background-color: $dark;
-  }
-}
-
-.card:hover {
-  transform: scale(1.025);
-}
-
 /* Services */
 
-.grid-h11 {
-  grid-template-rows: 50px;
-  grid-template-areas: ". h11 .";
-}
-
 #services-heading {
-  grid-area: h11;
-}
-
-.services-container {
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-areas: "services services services";
+  grid-area: services-heading;
 }
 
 .services {
   grid-area: services;
   display: grid;
-  grid-template-rows: 400px;
   grid-template-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
   grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
   column-gap: 20px;
-  padding: 20px calc(10vw - 2px) 0;
-  overflow-x: scroll;
+  padding: 20px;
   overscroll-behavior: contain;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
@@ -212,7 +196,7 @@ nav {
   -ms-overflow-scrolling: touch;
   touch-action: pan-x;
   .card {
-    width: 19vw;
+    width: 80vw;
     height: 350px;
     padding: 25px;
     &:hover{
@@ -230,44 +214,8 @@ nav {
 
 /* Contact */
 
-.grid-contact {
-  grid-template-rows: 50px 500px;
-  grid-template-areas: ". h12 ." ". contact .";
-}
-
 #contact-heading {
-  grid-area: h12;
-}
-
-.contact {
-  grid-area: contact;
-  display: grid;
-  grid-template-rows: 500px 500px 500px;
-  grid-template-columns: 1fr;
-  grid-template-areas: "con-contact" "con-text" "con-map";
-  grid-row-gap: 20px;
-    img{
-      width: 100%;
-      border-radius: 10px;
-    }
-}
-
-@media (min-width: 1050px) {
-  .contact {
-    grid-template-rows: 500px 500px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "con-contact con-text" "con-map";
-    column-gap: 20px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .contact {
-    grid-template-rows: 500px;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-areas: "con-contact con-text con-map";
-    column-gap: 20px;
-  }
+  grid-area: contact-heading;
 }
 
 .con-contact, .con-text {
@@ -275,6 +223,7 @@ nav {
 }
 
 .con-contact {
+  height: 200px;
   grid-area: con-contact;
   h3 {
     margin-bottom: 16px;
@@ -285,24 +234,22 @@ nav {
   font-size: 20px;
   margin: 8px 0;
 }
+
 .con-text {
   grid-area: con-text;
+  height: 350px;
+  img{
+    width: 100%;
+    border-radius: 10px;
+  }
 }
 
 .con-map {
   grid-area: con-map;
+  height: 350px;
 }
 
-/* Clients */
-
-.grid-h13 {
-  grid-template-rows: 50px;
-  grid-template-areas: ". h13 .";
-}
-
-#clients-heading {
-  grid-area: h13;
-}
+/* Clients
 
 .clients {
   grid-area: clients;
@@ -322,19 +269,15 @@ nav {
   width: 80%;
   margin-bottom: -29px;
   @include shadow();
-}
+}*/
 
-/* Pricing */
+/* Pricing
 
 .grid-pricing {
   grid-template-rows: 50px 500px;
   grid-template-areas: ". h14 ." ". pricing .";
 }
 
-#pricing-heading {
-  grid-area: h14;
-}
-
 .pricing {
   grid-area: pricing;
-}
+}*/
