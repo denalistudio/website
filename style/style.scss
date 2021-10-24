@@ -28,10 +28,9 @@ body {
   color: $dark;
   background-color: #fafafa;
   display: grid;
-  grid-template-columns: 15px 1fr 15px;
-  grid-template-rows: 50px 50px 325px 50px 500px 500px 500px 50px;
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-rows: 50px 390px 50px 500px 500px 500px 50px;
   grid-template-areas:
-  "nav nav nav"
   ". services-heading ."
   "services services services"
   ". contact-heading ."
@@ -124,10 +123,9 @@ li {
   }
 }
 
-/* Nav */
+/* Nav
 
 nav {
-  grid-area: nav;
   display: grid;
   grid-template-columns: 15px 1fr 15px;
   grid-template-areas: ". nav-content .";
@@ -173,18 +171,21 @@ nav {
   background-color: $denali;
   border: none;
   border-radius: 10px;
-}
+}*/
 
 /* Services */
+
+#services-heading {
+  grid-area: services-heading;
+}
 
 .services {
   grid-area: services;
   display: grid;
-  grid-template-rows: 400px;
   grid-template-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
   grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
   column-gap: 20px;
-  padding: 15px 0;
+  padding: 20px;
   overflow-x: scroll;
   overscroll-behavior: contain;
   scroll-snap-type: x mandatory;
@@ -209,7 +210,7 @@ nav {
   display: none;
 }
 
-/* Contact */
+/* Contact
 
 .grid-contact {
   grid-template-rows: 50px 500px;
@@ -254,9 +255,9 @@ nav {
 
 .con-map {
   grid-area: con-map;
-}
+}*/
 
-/* Clients */
+/* Clients
 
 .clients {
   grid-area: clients;
@@ -276,9 +277,9 @@ nav {
   width: 80%;
   margin-bottom: -29px;
   @include shadow();
-}
+}*/
 
-/* Pricing */
+/* Pricing
 
 .grid-pricing {
   grid-template-rows: 50px 500px;
@@ -287,4 +288,4 @@ nav {
 
 .pricing {
   grid-area: pricing;
-}
+}*/
