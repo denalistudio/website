@@ -27,32 +27,23 @@ body {
   font-family: 'Roboto', sans-serif;
   color: $dark;
   background-color: #fafafa;
-  /*display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 100px 50px 500px 50px 50px 500px 50px 250px 50px 200px;
-  gap: 25px 0;
+  display: grid;
+  grid-template-columns: 15px 1fr 15px;
+  grid-template-rows: 50px 50px 325px 50px 500px 500px 500px 50px ;
   grid-template-areas:
-    ". . ."
-    ". h11 ."
-    "services-container services-container services-container"
-    ". . ."
-    ". h14 ."
-    ". contact ."
-    ". h12 ."
-    ". clients ."
-    ". h13 ."
-    ". . ."
-    ". h15 ."
-    ". pricing ."*/
+  "nav nav nav"
+  ". services-heading ."
+  "services services services"
+  ". contact-heading ."
+  ". con-contact ."
+  ". con-text ."
+  ". con-map";
     @media (prefers-color-scheme: dark) {
       background-color: rgb(30, 30, 30);
     }
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
-}
+/* Text */
 
 a {
   color: inherit;
@@ -87,10 +78,30 @@ h4 {
   font-weight: 400;
 }
 
+/* Images */
+
 img {
   max-width: 100%;
   max-height: 100%;
 }
+
+/* Card */
+
+.card {
+  border-radius: 15px;
+  transition: transform 0.5s;
+  @include shadow();
+  background-color: $white;
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+  }
+}
+
+.card:hover {
+  transform: scale(1.025);
+}
+
+/* List */
 
 ul{
   display: none;
@@ -116,8 +127,9 @@ li {
 /* Nav */
 
 nav {
+  grid-area: nav;
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-columns: 15px 1fr 15px;
   grid-template-areas: ". nav-content .";
   width: 100%;
   margin: auto;
@@ -163,38 +175,12 @@ nav {
   border-radius: 10px;
 }
 
-/* Card */
-
-.card {
-  border-radius: 15px;
-  transition: transform 0.5s;
-  @include shadow();
-  background-color: $white;
-  @media (prefers-color-scheme: dark) {
-    background-color: $dark;
-  }
-}
-
-.card:hover {
-  transform: scale(1.025);
-}
-
 /* Services */
-
-.grid-h11 {
-  grid-template-rows: 50px;
-  grid-template-areas: ". h11 .";
-}
-
-#services-heading {
-  grid-area: h11;
-}
 
 .services-container {
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-columns: 15px 1fr 15px;
   grid-template-areas: "services services services";
-}
 
 .services {
   grid-area: services;
@@ -252,24 +238,6 @@ nav {
     }
 }
 
-@media (min-width: 1050px) {
-  .contact {
-    grid-template-rows: 500px 500px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "con-contact con-text" "con-map";
-    column-gap: 20px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .contact {
-    grid-template-rows: 500px;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-areas: "con-contact con-text con-map";
-    column-gap: 20px;
-  }
-}
-
 .con-contact, .con-text {
   padding: 25px;
 }
@@ -294,15 +262,6 @@ nav {
 }
 
 /* Clients */
-
-.grid-h13 {
-  grid-template-rows: 50px;
-  grid-template-areas: ". h13 .";
-}
-
-#clients-heading {
-  grid-area: h13;
-}
 
 .clients {
   grid-area: clients;
@@ -329,10 +288,6 @@ nav {
 .grid-pricing {
   grid-template-rows: 50px 500px;
   grid-template-areas: ". h14 ." ". pricing .";
-}
-
-#pricing-heading {
-  grid-area: h14;
 }
 
 .pricing {
