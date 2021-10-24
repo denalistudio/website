@@ -19,11 +19,11 @@ Poštovní klient je ve zkratce program, který slouží k příjmání, odesíl
 ## Windows Pošta
 Windows Pošta je výchozím poštovním klientem pro operační systém Windows od společnosti Microsoft, který mnoho lidí využívá pro jeho jednoduchost.
 
-<img src="https://www.studiodenali.cz/image/jak-pridat-mail/windows-mail/1.png">
-<img src="https://www.studiodenali.cz/image/jak-pridat-mail/windows-mail/2.png">
-<img src="https://www.studiodenali.cz/image/jak-pridat-mail/windows-mail/3.png">
-<img src="https://www.studiodenali.cz/image/jak-pridat-mail/windows-mail/4.png">
-<img src="https://www.studiodenali.cz/image/jak-pridat-mail/windows-mail/5.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/1.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/2.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/3.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/4.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/5.png">
 
 1) Když otevřete aplikaci Windows Pošta poprvé, stačí jednoduše kliknout na možnost **Přidat účet**. Pokud jste již Windows Poštu používali a máte již jeden nebo více e-mailových adres přidaných, klikněte na **Nastavení** > **Přidat účet**.
 2) Klikněte na možnost **Jiný účet**.
