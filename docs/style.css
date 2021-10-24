@@ -58,8 +58,8 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: 50px 50px 390px 50px 200px 350px 350px 50px;
-  grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map .";
+  grid-template-rows: 50px 50px 390px 50px 200px 350px 350px 50px 390px 20px;
+  grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map ." ". clients-heading ." "clients clients clients" ". lang .";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -312,19 +312,22 @@ nav a:hover {
 }
 
 /* Clients */
+#clients-heading {
+  grid-area: clients-heading;
+}
+
 .clients {
   grid-area: clients;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
 }
 
-.clients a {
+.clients .card {
   padding: 25px;
 }
 
 @media (prefers-color-scheme: dark) {
-  .clients a {
+  .clients .card {
     background-color: #272727;
   }
 }
@@ -340,4 +343,9 @@ nav a:hover {
   .client-img {
     box-shadow: #00000033 0 8px 24px;
   }
+}
+
+/* Languages */
+.listlanguages {
+  grid-area: lang;
 }
