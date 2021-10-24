@@ -46,7 +46,8 @@
 
 * {
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -55,11 +56,14 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #272727;
   background-color: #fafafa;
+  display: -ms-grid;
   display: grid;
   row-gap: 20px;
-  grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: 50px 50px 390px 50px 179px 350px 350px 50px 390px 20px;
-  grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map ." ". clients-heading ." "clients clients clients" ". lang .";
+  -ms-grid-columns: 20px 1fr 20px;
+      grid-template-columns: 20px 1fr 20px;
+  -ms-grid-rows: 50px 50px 390px 50px 179px 350px 350px 50px 390px 20px;
+      grid-template-rows: 50px 50px 390px 50px 179px 350px 350px 50px 390px 20px;
+      grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map ." ". clients-heading ." "clients clients clients" ". lang .";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -117,14 +121,19 @@ img {
 /* Card */
 .card {
   border-radius: 15px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  box-shadow: #959da533 0 8px 24px;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-box-shadow: #959da533 0 8px 24px;
+          box-shadow: #959da533 0 8px 24px;
   background-color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   .card {
-    box-shadow: #00000033 0 8px 24px;
+    -webkit-box-shadow: #00000033 0 8px 24px;
+            box-shadow: #00000033 0 8px 24px;
   }
 }
 
@@ -135,7 +144,8 @@ img {
 }
 
 .card:hover {
-  transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
 }
 
 /* List */
@@ -146,12 +156,14 @@ ul {
   border-radius: 15px;
   z-index: 5;
   background-color: white;
-  box-shadow: #959da533 0 8px 24px;
+  -webkit-box-shadow: #959da533 0 8px 24px;
+          box-shadow: #959da533 0 8px 24px;
 }
 
 @media (prefers-color-scheme: dark) {
   ul {
-    box-shadow: #00000033 0 8px 24px;
+    -webkit-box-shadow: #00000033 0 8px 24px;
+            box-shadow: #00000033 0 8px 24px;
   }
 }
 
@@ -172,22 +184,29 @@ li a:hover {
 
 /* Nav */
 nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: nav;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 15px 1fr 15px;
-  grid-template-areas: ". nav-content .";
+  -ms-grid-columns: 15px 1fr 15px;
+      grid-template-columns: 15px 1fr 15px;
+      grid-template-areas: ". nav-content .";
   width: 100%;
   margin: auto;
   position: fixed;
   top: 0px;
   z-index: 1;
   background-color: #ffffff;
-  box-shadow: #959da533 0 8px 24px;
+  -webkit-box-shadow: #959da533 0 8px 24px;
+          box-shadow: #959da533 0 8px 24px;
 }
 
 @media (prefers-color-scheme: dark) {
   nav {
-    box-shadow: #00000033 0 8px 24px;
+    -webkit-box-shadow: #00000033 0 8px 24px;
+            box-shadow: #00000033 0 8px 24px;
   }
 }
 
@@ -218,6 +237,8 @@ nav a:hover {
 }
 
 .nav-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: nav-content;
 }
 
@@ -237,15 +258,23 @@ nav a:hover {
 
 /* Services */
 #services-heading {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: services-heading;
 }
 
 .services {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: services;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
-  grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
-  column-gap: 20px;
+  -ms-grid-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
+      grid-template-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
+      grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
   padding: 20px;
   overflow-x: scroll;
   scrollbar-width: none;
@@ -260,10 +289,12 @@ nav a:hover {
 }
 
 .services .card:hover {
+  cursor: -webkit-grab;
   cursor: grab;
 }
 
 .services .card:active {
+  cursor: -webkit-grabbing;
   cursor: grabbing;
 }
 
@@ -273,10 +304,14 @@ nav a:hover {
 
 /* Contact */
 #contact-heading {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
   grid-area: contact-heading;
 }
 
 .con-contact {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
   grid-area: con-contact;
   padding: 25px;
 }
@@ -305,6 +340,8 @@ nav a:hover {
 }
 
 .con-text {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
   grid-area: con-text;
   height: 350px;
   padding: 25px;
@@ -316,21 +353,31 @@ nav a:hover {
 }
 
 .con-map {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
   grid-area: con-map;
   height: 350px;
 }
 
 /* Clients */
 #clients-heading {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
   grid-area: clients-heading;
 }
 
 .clients {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: clients;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "pivonky elektra";
-  column-gap: 20px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "pivonky elektra";
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
   padding: 20px;
   overflow-x: scroll;
   scrollbar-width: none;
@@ -345,10 +392,12 @@ nav a:hover {
 }
 
 .clients .card:hover {
+  cursor: -webkit-grab;
   cursor: grab;
 }
 
 .clients .card:active {
+  cursor: -webkit-grabbing;
   cursor: grabbing;
 }
 
@@ -360,24 +409,32 @@ nav a:hover {
   margin-left: 10%;
   width: 80%;
   margin-bottom: -29px;
-  box-shadow: #959da533 0 8px 24px;
+  -webkit-box-shadow: #959da533 0 8px 24px;
+          box-shadow: #959da533 0 8px 24px;
 }
 
 @media (prefers-color-scheme: dark) {
   .client-img {
-    box-shadow: #00000033 0 8px 24px;
+    -webkit-box-shadow: #00000033 0 8px 24px;
+            box-shadow: #00000033 0 8px 24px;
   }
 }
 
 .pivonky {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: pivonky;
 }
 
 .elektra {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: elektra;
 }
 
 /* Languages */
 .listlanguages {
+  -ms-grid-row: 10;
+  -ms-grid-column: 2;
   grid-area: lang;
 }
