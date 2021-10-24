@@ -36,7 +36,12 @@ Microsoft Outlook je skvělým poštovním klientem, který je součástí služ
 
 <img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/1.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/2.png">
-<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/2.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/3.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/4.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/5.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/6.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/7.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/8.png">
 
 1) 
 
