@@ -102,6 +102,12 @@ body {
   }
 }
 
+/* Notch */
+nav, .services-heading, .contact-heading {
+  padding-right: env(safe-area-inset-right);
+  padding-left: env(safe-area-inset-left);
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   p, h2, h3, .nav-content a {
