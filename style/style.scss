@@ -272,7 +272,7 @@ nav {
   @media (min-width: 1200px) {
     padding: 0 calc(5vw + 20px) 40px calc(5vw + 20px);
     .card {
-      width: calc(50vw - var(--scrollbar-width));
+      width: calc(var(--bodyWidth) / 2);
     }
   }
 }
@@ -283,6 +283,7 @@ nav {
 
 .service-1 {
   grid-area: service-1;
+  width: var(--bodyWidth);
 }
 
 .service-2 {

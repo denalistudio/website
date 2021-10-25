@@ -154,8 +154,10 @@
     <select class="listlanguages" name="listlanguages" onmouseup="langSelectChange(this)">
     </select>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - document.documentElement.clientWidth) + "px");
+        bodyWidth = $('body').innerWidth()
+        document.getElementByClassName('service-1').style.setProperty('--bodyWidth', bodyWidth)
 
         function search() {
             var input, filter, ul, li, a, i, txtValue;
