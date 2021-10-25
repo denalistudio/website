@@ -81,6 +81,8 @@ Poštovní klient je ve zkratce program, který slouží k příjmání, odesíl
 <img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/7.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/8.png">
 
+1) s
+
 ## Mozilla Thunderbird
 Poštovní klient *Mozilla Thunderbird* je open-source projektem tvůrce prohlížeče Firefox, který je nejen skvělým nástrojem pro správu vaší elektronické pošty, ale nabídne například i vlastní adresář kontaktů nebo chatovací systém.
 
