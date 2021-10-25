@@ -102,10 +102,6 @@ body {
   }
 }
 
-nav {
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-}
-
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   p, h2, h3, .nav-content a {
@@ -213,6 +209,7 @@ nav {
 
 .nav-content {
   grid-area: nav-content;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 .nav-content svg {
