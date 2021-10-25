@@ -103,7 +103,7 @@ body {
     "clients clients clients clients clients clients"
     "lang . . . . .";
   }
-  @media (min-width: 1400px) {
+  @media (min-width: 1600px) {
     column-gap: 20px;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
     grid-template-rows: auto auto auto auto 200px 200px auto auto 20px;
@@ -301,7 +301,7 @@ nav {
       width: calc(var(--fractionWidth) * 2.25);
     }
   }
-  @media (min-width: 1400px) {
+  @media (min-width: 1600px) {
     padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
     .card {
       width: calc(var(--fractionWidth) * 2);
@@ -469,7 +469,7 @@ nav {
       width: calc(var(--fractionWidth) * 2.25);
     }
   }
-  @media (min-width: 1400px) {
+  @media (min-width: 1600px) {
     padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
     .card {
       width: calc(var(--fractionWidth) * 2);

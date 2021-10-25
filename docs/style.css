@@ -96,7 +96,7 @@ body {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   body {
     column-gap: 20px;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
@@ -307,7 +307,7 @@ nav {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .services {
     padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
   }
@@ -511,7 +511,7 @@ nav {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .clients {
     padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
   }
