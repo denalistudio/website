@@ -160,16 +160,17 @@
 
     <script>
 
-        width()
-        window.addEventListener('resize', width)
-
+        // Finding width
+        width();
+        window.addEventListener('resize', width);
         function width() {
             var bodyWidth = document.body.clientWidth
-            document.documentElement.style.setProperty('--bodyWidth', bodyWidth + 'px')
-            var fractionWidth = (bodyWidth - 100) / 10
-            document.documentElement.style.setProperty('--fractionWidth', fractionWidth + 'px')
+            document.documentElement.style.setProperty('--bodyWidth', bodyWidth + 'px');
+            var fractionWidth = (bodyWidth - 100) / 10;
+            document.documentElement.style.setProperty('--fractionWidth', fractionWidth + 'px');
         }
 
+        // Search function
         function search() {
             var input, filter, ul, li, a, i, txtValue;
             input = document.getElementById('search');
@@ -187,108 +188,95 @@
                 }
             }
         }
-
         document.getElementById("search").onclick = function searchResults() {
             document.getElementById("search-results").style.display = "block";
         }
-
         document.getElementById("search").ondblclick = function searchResultsHide() {
             document.getElementById("search-results").style.display = "none";
         }
 
-            // Dragscroll, Copyright © 2015 asvd, Provided under the MIT License, https://github.com/asvd/dragscroll
-
-            (function (root, factory) {
-                if (typeof define === 'function' && define.amd) {
-                    define(['exports'], factory);
-                } else if (typeof exports !== 'undefined') {
-                    factory(exports);
-                } else {
-                    factory((root.dragscroll = {}));
+        // Dragscroll, Copyright © 2015 asvd, Provided under the MIT License, https://github.com/asvd/dragscroll
+        (function (root, factory) {
+            if (typeof define === 'function' && define.amd) {
+                define(['exports'], factory);
+            } else if (typeof exports !== 'undefined') {
+                factory(exports);
+            } else {
+                factory((root.dragscroll = {}));
+            }
+        }(this, function (exports) {
+            var _window = window;
+            var _document = document;
+            var mousemove = 'mousemove';
+            var mouseup = 'mouseup';
+            var mousedown = 'mousedown';
+            var EventListener = 'EventListener';
+            var addEventListener = 'add' + EventListener;
+            var removeEventListener = 'remove' + EventListener;
+            var newScrollX, newScrollY;
+            var dragged = [];
+            var reset = function (i, el) {
+                for (i = 0; i < dragged.length;) {
+                    el = dragged[i++];
+                    el = el.container || el;
+                    el[removeEventListener](mousedown, el.md, 0);
+                    _window[removeEventListener](mouseup, el.mu, 0);
+                    _window[removeEventListener](mousemove, el.mm, 0);
                 }
-            }(this, function (exports) {
-                var _window = window;
-                var _document = document;
-                var mousemove = 'mousemove';
-                var mouseup = 'mouseup';
-                var mousedown = 'mousedown';
-                var EventListener = 'EventListener';
-                var addEventListener = 'add' + EventListener;
-                var removeEventListener = 'remove' + EventListener;
-                var newScrollX, newScrollY;
-
-                var dragged = [];
-                var reset = function (i, el) {
-                    for (i = 0; i < dragged.length;) {
-                        el = dragged[i++];
-                        el = el.container || el;
-                        el[removeEventListener](mousedown, el.md, 0);
-                        _window[removeEventListener](mouseup, el.mu, 0);
-                        _window[removeEventListener](mousemove, el.mm, 0);
-                    }
-
-                    dragged = [].slice.call(_document.getElementsByClassName('dragscroll'));
-                    for (i = 0; i < dragged.length;) {
-                        (function (el, lastClientX, lastClientY, pushed, scroller, cont) {
-                            (cont = el.container || el)[addEventListener](
-                                mousedown,
-                                cont.md = function (e) {
-                                    if (!el.hasAttribute('nochilddrag') ||
-                                        _document.elementFromPoint(
-                                            e.pageX, e.pageY
-                                        ) == cont
-                                    ) {
-                                        pushed = 1;
-                                        lastClientX = e.clientX;
-                                        lastClientY = e.clientY;
-
-                                        e.preventDefault();
+                dragged = [].slice.call(_document.getElementsByClassName('dragscroll'));
+                for (i = 0; i < dragged.length;) {
+                    (function (el, lastClientX, lastClientY, pushed, scroller, cont) {
+                        (cont = el.container || el)[addEventListener](
+                            mousedown,
+                            cont.md = function (e) {
+                                if (!el.hasAttribute('nochilddrag') ||
+                                    _document.elementFromPoint(
+                                        e.pageX, e.pageY
+                                    ) == cont
+                                ) {
+                                    pushed = 1;
+                                    lastClientX = e.clientX;
+                                    lastClientY = e.clientY;
+                                    e.preventDefault();
+                                }
+                            }, 0
+                        );
+                        _window[addEventListener](
+                            mouseup, cont.mu = function () { pushed = 0; }, 0
+                        );
+                        _window[addEventListener](
+                            mousemove,
+                            cont.mm = function (e) {
+                                if (pushed) {
+                                    (scroller = el.scroller || el).scrollLeft -=
+                                        newScrollX = (- lastClientX + (lastClientX = e.clientX));
+                                    scroller.scrollTop -=
+                                        newScrollY = (- lastClientY + (lastClientY = e.clientY));
+                                    if (el == _document.body) {
+                                        (scroller = _document.documentElement).scrollLeft -= newScrollX;
+                                        scroller.scrollTop -= newScrollY;
                                     }
-                                }, 0
-                            );
-
-                            _window[addEventListener](
-                                mouseup, cont.mu = function () { pushed = 0; }, 0
-                            );
-
-                            _window[addEventListener](
-                                mousemove,
-                                cont.mm = function (e) {
-                                    if (pushed) {
-                                        (scroller = el.scroller || el).scrollLeft -=
-                                            newScrollX = (- lastClientX + (lastClientX = e.clientX));
-                                        scroller.scrollTop -=
-                                            newScrollY = (- lastClientY + (lastClientY = e.clientY));
-                                        if (el == _document.body) {
-                                            (scroller = _document.documentElement).scrollLeft -= newScrollX;
-                                            scroller.scrollTop -= newScrollY;
-                                        }
-                                    }
-                                }, 0
-                            );
-                        })(dragged[i++]);
-                    }
+                                }
+                            }, 0
+                        );
+                    })(dragged[i++]);
                 }
-
-
-                if (_document.readyState == 'complete') {
-                    reset();
-                } else {
-                    _window[addEventListener]('load', reset, 0);
-                }
-
-                exports.reset = reset;
-            }));
+            }
+            if (_document.readyState == 'complete') {
+                reset();
+            } else {
+                _window[addEventListener]('load', reset, 0);
+            }
+            exports.reset = reset;
+        }));
 
         // MultiLanguage, Copyright © 2015 Bas de Reuver, Provided under the MIT License, https://github.com/BdR76/MultiLanguage
-
         var multilang;
         function onLoad() {
             multilang = new MultiLang('languages.json', null, this.initList);
         }
         function langSelectChange(sel) {
             multilang.setLanguage(sel.value);
-
             refreshLabels();
         }
         function initList() {
@@ -311,7 +299,6 @@
                 };
             };
         }
-
         var MultiLang = function (url, lang, onload) {
             this.phrases = {};
             this.selectedLanguage = (lang || navigator.language || navigator.userLanguage).substring(0, 2);
