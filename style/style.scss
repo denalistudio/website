@@ -22,10 +22,6 @@ $white: #ffffff;
   box-sizing: border-box;
 }
 
-html {
-  width: 100%;
-}
-
 body {
   /*margin-top: 5%;*/
   font-size: 16px;
@@ -80,6 +76,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 h2 {
   font-size: 30px;
 }
@@ -111,16 +112,6 @@ img {
 
 .card:hover {
   transform: scale(1.025);
-}
-
-.services.card, .clients.card {
-  width: 80vw;
-  &:hover{
-    cursor: grab;
-  }
-  &:active{
-    cursor: grabbing;
-  }
 }
 
 /* List */
@@ -210,8 +201,20 @@ nav {
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
   .card {
+    width: 80vw;
     height: 310px;
     padding: 25px;
+    &:hover{
+      cursor: grab;
+    }
+    &:active{
+      cursor: grabbing;
+    }
+  }
+  @media (min-width: 576px) {
+    .card {
+      width: 50vw;
+    }
   }
 }
 
@@ -305,7 +308,14 @@ nav {
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
   .card {
+    width: 80vw;
     padding: 25px 25px 0 25px;
+    &:hover{
+      cursor: grab;
+    }
+    &:active{
+      cursor: grabbing;
+    }
   }
 }
 

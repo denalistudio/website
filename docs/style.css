@@ -50,10 +50,6 @@
   box-sizing: border-box;
 }
 
-html {
-  width: 100%;
-}
-
 body {
   /*margin-top: 5%;*/
   font-size: 16px;
@@ -104,6 +100,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 h2 {
   font-size: 30px;
 }
@@ -134,18 +135,6 @@ img {
 
 .card:hover {
   transform: scale(1.025);
-}
-
-.services.card, .clients.card {
-  width: 80vw;
-}
-
-.services.card:hover, .clients.card:hover {
-  cursor: grab;
-}
-
-.services.card:active, .clients.card:active {
-  cursor: grabbing;
 }
 
 /* List */
@@ -242,8 +231,23 @@ nav {
 }
 
 .services .card {
+  width: 80vw;
   height: 310px;
   padding: 25px;
+}
+
+.services .card:hover {
+  cursor: grab;
+}
+
+.services .card:active {
+  cursor: grabbing;
+}
+
+@media (min-width: 576px) {
+  .services .card {
+    width: 50vw;
+  }
 }
 
 .services::-webkit-scrollbar {
@@ -338,7 +342,16 @@ nav {
 }
 
 .clients .card {
+  width: 80vw;
   padding: 25px 25px 0 25px;
+}
+
+.clients .card:hover {
+  cursor: grab;
+}
+
+.clients .card:active {
+  cursor: grabbing;
 }
 
 .clients::-webkit-scrollbar {
