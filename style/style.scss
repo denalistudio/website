@@ -30,7 +30,7 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: 50px 50px 390px 50px 179px 350px 350px 50px 390px 20px;
+  grid-template-rows: auto auto auto auto auto auto 400px auto auto 20px;
   grid-template-areas:
   "nav nav nav"
   ". services-heading ."
@@ -41,7 +41,7 @@ body {
   ". con-map ."
   ". clients-heading ."
   "clients clients clients"
-  ". lang .";
+  "lang . .";
     @media (prefers-color-scheme: dark) {
       background-color: #1e1e1e;
     }
@@ -54,7 +54,7 @@ a {
   text-decoration: none;
 }
 
-p {
+p, h2, h3 {
   @media (prefers-color-scheme: dark) {
     color: $white;
   }
@@ -62,18 +62,12 @@ p {
 
 h2 {
   font-size: 30px;
-  @media (prefers-color-scheme: dark) {
-    color: $white;
-  }
 }
 
 h3 {
   margin: 0;
   font-size: 25px;
   color: $dark;
-  @media (prefers-color-scheme: dark) {
-    color: $white;
-  }
 }
 
 h4 {
@@ -133,10 +127,9 @@ li {
 nav {
   grid-area: nav;
   display: grid;
-  grid-template-columns: 15px 1fr 15px;
+  grid-template-columns: 20px 1fr 20px;
   grid-template-areas: ". nav-content .";
   width: 100%;
-  margin: auto;
   position: fixed;
   top: 0px;
   z-index: 1;
@@ -145,13 +138,17 @@ nav {
   @media (prefers-color-scheme: dark) {
     background-color: $dark;
   }
+}
+
+.nav-content {
+  grid-area: nav-content;
   svg {
     width: 24px;
   }
   a {
     float: left;
     font-size: 18px;
-    margin: 24px 16px;
+    /*margin: 24px 16px;*/
     @media (prefers-color-scheme: dark) {
       color: $white;
     }
@@ -159,10 +156,9 @@ nav {
   a:hover {
     color: $denali;
   }
-}
-
-.nav-content {
-  grid-area: nav-content;
+  input {
+    width: 20px;
+  }
 }
 
 .listlanguages {
@@ -191,14 +187,13 @@ nav {
   grid-template-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
   grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
   column-gap: 20px;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   overflow-x: scroll;
-  scrollbar-width: none;
+  scrollbar-width: 0;
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
   .card {
     width: 80vw;
-    height: 350px;
     padding: 25px;
     &:hover{
       cursor: grab;
@@ -272,17 +267,16 @@ nav {
 
 .con-text {
   grid-area: con-text;
-  height: 350px;
   padding: 25px;
   img{
     width: 100%;
     border-radius: 10px;
+    margin: 0 0 8px 0;
   }
 }
 
 .con-map {
   grid-area: con-map;
-  height: 350px;
 }
 
 /* Clients */
@@ -297,7 +291,7 @@ nav {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "pivonky elektra";
   column-gap: 20px;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   overflow-x: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
