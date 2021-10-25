@@ -50,17 +50,8 @@
   box-sizing: border-box;
 }
 
-html {
-  background-color: #fafafa;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    background-color: #1e1e1e;
-  }
-}
-
 body {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   line-height: 1.3;
