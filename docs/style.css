@@ -136,6 +136,18 @@ img {
   transform: scale(1.025);
 }
 
+.services.card, .clients.card {
+  width: 80vw;
+}
+
+.services.card:hover, .clients.card:hover {
+  cursor: grab;
+}
+
+.services.card:active, .clients.card:active {
+  cursor: grabbing;
+}
+
 /* List */
 ul {
   display: none;
@@ -230,17 +242,8 @@ nav {
 }
 
 .services .card {
-  width: 80vw;
   height: 310px;
   padding: 25px;
-}
-
-.services .card:hover {
-  cursor: grab;
-}
-
-.services .card:active {
-  cursor: grabbing;
 }
 
 .services::-webkit-scrollbar {
@@ -335,16 +338,7 @@ nav {
 }
 
 .clients .card {
-  width: 80vw;
   padding: 25px 25px 0 25px;
-}
-
-.clients .card:hover {
-  cursor: grab;
-}
-
-.clients .card:active {
-  cursor: grabbing;
 }
 
 .clients::-webkit-scrollbar {
@@ -368,3 +362,5 @@ nav {
 .listlanguages {
   grid-area: lang;
 }
+
+/* Screen settings */

@@ -113,6 +113,16 @@ img {
   transform: scale(1.025);
 }
 
+.services.card, .clients.card {
+  width: 80vw;
+  &:hover{
+    cursor: grab;
+  }
+  &:active{
+    cursor: grabbing;
+  }
+}
+
 /* List */
 
 ul {
@@ -200,15 +210,8 @@ nav {
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
   .card {
-    width: 80vw;
     height: 310px;
     padding: 25px;
-    &:hover{
-      cursor: grab;
-    }
-    &:active{
-      cursor: grabbing;
-    }
   }
 }
 
@@ -302,14 +305,7 @@ nav {
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
   .card {
-    width: 80vw;
     padding: 25px 25px 0 25px;
-    &:hover{
-      cursor: grab;
-    }
-    &:active{
-      cursor: grabbing;
-    }
   }
 }
 
@@ -335,3 +331,5 @@ nav {
 .listlanguages {
   grid-area: lang;
 }
+
+/* Screen settings */
