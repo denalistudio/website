@@ -51,7 +51,6 @@
 }
 
 body {
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   line-height: 1.3;
@@ -101,6 +100,10 @@ body {
   body {
     background-color: #1e1e1e;
   }
+}
+
+nav {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 /* Dark mode */
