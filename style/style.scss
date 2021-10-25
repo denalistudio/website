@@ -58,9 +58,61 @@ body {
     "clients clients clients clients"
     "lang . . .";
   }
+  @media (min-width: 768px) {
+    grid-template-columns: 20px 1fr 1fr 20px;
+    grid-template-rows: auto auto auto auto auto auto 300px auto auto 20px;
+    grid-template-areas:
+    "nav nav nav nav"
+    ". services-heading services-heading ."
+    "services services services services"
+    ". contact-heading contact-heading ."
+    ". con-contact con-text ."
+    ". con-img con-text ."
+    ". con-map con-map ."
+    ". clients-heading clients-heading ."
+    "clients clients clients clients"
+    "lang . . .";
+  }
+  @media (min-width: 992px) {
+    grid-template-columns: 20px 1fr 1fr 20px;
+    grid-template-rows: auto auto auto auto auto auto 400px auto auto 20px;
+    grid-template-areas:
+    "nav nav nav nav"
+    ". services-heading services-heading ."
+    "services services services services"
+    ". contact-heading contact-heading ."
+    ". con-contact con-text ."
+    ". con-img con-text ."
+    ". con-map con-map ."
+    ". clients-heading clients-heading ."
+    "clients clients clients clients"
+    "lang . . .";
+  }
+  @media (min-width: 1200px) {
+    column-gap: 20px;
+    grid-template-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
+    grid-template-rows: auto auto auto auto 200px 200px auto auto 20px;
+    grid-template-areas:
+    "nav nav nav nav nav nav"
+    ". services-heading services-heading services-heading services-heading ."
+    "services services services services services services"
+    ". contact-heading contact-heading contact-heading contact-heading ."
+    ". con-contact con-text con-map con-map ."
+    ". con-img con-text con-map con-map ."
+    ". clients-heading clients-heading clients-heading clients-heading ."
+    "clients clients clients clients clients clients"
+    "lang . . . . .";
+  }
   @media (prefers-color-scheme: dark) {
     background-color: #1e1e1e;
   }
+}
+
+/* Notch */
+
+.nav-content, .services-heading, .contact-heading, .clients-heading {
+  padding-right: calc(env(safe-area-inset-right) + 20px);
+  padding-left: calc(env(safe-area-inset-left) + 20px);
 }
 
 /* Dark mode */
@@ -166,6 +218,7 @@ nav {
 
 .nav-content {
   grid-area: nav-content;
+  padding-top: env(safe-area-inset-top);
   svg {
     width: 24px;
   }
@@ -208,7 +261,7 @@ nav {
   grid-template-columns: auto auto auto auto auto auto;
   grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
   column-gap: 20px;
-  padding: 0 20px 40px 20px;
+  padding: 0 calc(20px + env(safe-area-inset-right)) 40px calc(20px + env(safe-area-inset-right));
   margin: 0 0 -40px 0;
   overflow-x: scroll;
   scrollbar-width: 0;
@@ -228,6 +281,12 @@ nav {
   @media (min-width: 576px) {
     .card {
       width: 50vw;
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 0 calc(5vw + 20px) 40px calc(5vw + 20px);
+    .card {
+      width: 22.5vw;
     }
   }
 }
@@ -274,6 +333,12 @@ nav {
     margin: 0 0 16px 0;
     line-height: 1;
   }
+  @media (min-width: 768px) {
+    margin-right: 0;
+  }
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
 }
 
 .con-email, .con-mobile {
@@ -292,9 +357,15 @@ nav {
 
 .con-img {
   grid-area: con-img;
-  margin-left: 10px;
+  margin: 0 0 0 10px;
   @media (max-width: 576px) {
     display: none;
+  }
+  @media (min-width: 768px) {
+    margin: 0 10px 0 0;
+  }
+  @media (min-width: 1200px) {
+    margin: 0;
   }
 }
 
@@ -310,6 +381,12 @@ nav {
     img {
       display: none;
     }
+  }
+  @media (min-width: 768px) {
+    margin-left: 20px;
+  }
+  @media (min-width: 1200px) {
+    margin: 0;
   }
 }
 
@@ -343,6 +420,11 @@ nav {
     }
     &:active{
       cursor: grabbing;
+    }
+  }
+  @media (min-width: 576px) {
+    .card {
+      width: 50vw;
     }
   }
 }
