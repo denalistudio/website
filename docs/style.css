@@ -44,6 +44,10 @@
   /* Legacy iOS */
 }
 
+:root {
+  font-size: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -51,7 +55,6 @@
 }
 
 body {
-  font-size: 16px;
   font-family: 'Roboto', sans-serif;
   line-height: 1.3;
   color: #272727;
@@ -135,21 +138,22 @@ a {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 h3 {
   margin: 0 0 8px 0;
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #272727;
 }
 
 h4 {
+  font-size: 1.6rem;
   margin: 0;
   color: #4f54ff;
   font-weight: 400;
@@ -212,6 +216,7 @@ nav {
 .nav-content {
   grid-area: nav-content;
   padding-top: env(safe-area-inset-top);
+  font-size: 1.8rem;
 }
 
 .nav-content svg {
@@ -220,8 +225,6 @@ nav {
 
 .nav-content a {
   float: left;
-  font-size: 18px;
-  /*margin: 24px 16px;*/
 }
 
 .nav-content a:hover {
@@ -237,7 +240,7 @@ nav {
   padding: 4px 6px;
   margin: 20.725px 0;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
@@ -373,7 +376,7 @@ nav {
 }
 
 .con-email, .con-mobile {
-  font-size: 1rem;
+  font-size: 1.6rem;
   line-height: 1;
 }
 
