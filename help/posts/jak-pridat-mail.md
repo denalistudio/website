@@ -44,6 +44,10 @@ Microsoft Outlook je skvělým poštovním klientem, který je součástí služ
 2) Vyberte možnost **Umožnit mi ručne si nastavit účet** a klikněte na tlačítko **Připojit**.
 3) Vyberte možnost **IMAP** s ikonou obálky.
 4) V novém okně **Nastavení ůčtu IMAP** jsou dvě sekce: Příchozí a odchozí pošta. Do sekce **Příchozí pošta** do pole **Server** vyplňte `imap.forpsi.com`, do pole **Port** číslo **993**, zkontrolujte že jako **Metoda šifrování** je vybrána možnost **SSL/TLS**. Do sekce **Odchozí pošta** do pole **Server** vyplňte `smtp.forpsi.com`, do pole **Port** číslo **465**, zkontrolujte že jako **Metoda šifrování** je vybrána možnost **SSL/TLS**, zaškrntněte možnost **Požadovat přihlášení pomocí zabezpečeného ověřování hesla (SPA)**. Všechny informace zkontrolujte a klikněte na možnost **Další**.
+5) Do pole **Heslo** vyplňte vaše heslo.
+6) Klikněte na tlačítko **Připojit** v pravém dolním rohu.
+7) Účet se úspěšně přidal! Pokud chcete přidat další účet, pokračujte od kroku **1)**. Pokud chcete pokračovat do vašeho e-mailu, klikněte na tlačítko **Hotovo**.
+8) **Hotovo!** Vyzkoušejte si na vaši novou adresu poslat pro radost e-mail z jiného účtu.
 
 ## Microsoft Outlook pro telefon
 
