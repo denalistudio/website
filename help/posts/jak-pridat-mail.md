@@ -10,10 +10,8 @@ lang-check: 'no'
 # Jak přidat vaši e-mailovou adresu do poštovních klientů
 Poštovní klient je ve zkratce program, který slouží k příjmání, odesílání a správě elektronické pošty. Nesmíme si ale plést poštovní klienty s tzv. "webmailem," což je velice podobný program, jen zcela umístěn na webu a je většinou operovaný samotnou společností provozující vaši e-mailovou službu (Google = Gmail, Forpsi = Forpsi Webmail). Pokud máte vaši mailovou adresu zařízenou s námi u Forpsi a nechcete využívat Forpsi Webmail ale například poštovní klienty od Apple a Microsoft, dozvíte se v tomto článku jak.
 
-[# Microsoft Outlook 365]
 [[#Apple Pošta (Mac)]] 
 [[#Gmail pro telefon]]
-[[#Outlook pro telefon]]
 
 ## Windows Pošta
 Windows Pošta je výchozím poštovním klientem pro operační systém Windows od společnosti Microsoft, který mnoho lidí využívá pro jeho jednoduchost.
@@ -42,7 +40,22 @@ Microsoft Outlook je skvělým poštovním klientem, který je součástí služ
 <img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/7.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/8.png">
 
-1) 
+1) Když otevřete aplikaci Microsoft Outlook 365 poprvé, vypňte do pole **E-mailová adresa** vaši novou e-mailovou adresu a klikněte na tlačítko **Upřesnit možnosti**.
+2) Vyberte možnost **Umožnit mi ručne si nastavit účet** a klikněte na tlačítko **Připojit**.
+3) Vyberte možnost **IMAP** s ikonou obálky.
+4) V novém okně **Nastavení ůčtu IMAP** jsou dvě sekce: Příchozí a odchozí pošta. Do sekce **Příchozí pošta** do pole **Server** vyplňte `imap.forpsi.com`, do pole **Port** číslo **993**, zkontrolujte že jako **Metoda šifrování** je vybrána možnost **SSL/TLS**. Do sekce **Odchozí pošta** do pole **Server** vyplňte `smtp.forpsi.com`, do pole **Port** číslo **465**, zkontrolujte že jako **Metoda šifrování** je vybrána možnost **SSL/TLS**, zaškrntněte možnost **Požadovat přihlášení pomocí zabezpečeného ověřování hesla (SPA)**. Všechny informace zkontrolujte a klikněte na možnost **Další**.
+
+## Microsoft Outlook pro telefon
+
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/1.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/2.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/3.1.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/3.2.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/4.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/5.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/6.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/7.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/8.png">
 
 ## Mozilla Thunderbird
 Poštovní klient Mozilla Thunderbird je open-source projektem tvůrce prohlížeče Firefox, který je nejen skvělým nástrojem pro správu vaší elektronické pošty, ale nabídne například i vlastní adresář kontaktů nebo chatovací systém.
@@ -61,7 +74,7 @@ Poštovní klient Mozilla Thunderbird je open-source projektem tvůrce prohlíž
 5) Vyberte možnost **IMAP** z pole **Protokol** a klikněte na tlačítko **Hotovo**.
 6) **Hotovo!** Vyzkoušejte si na vaši novou adresu poslat pro radost e-mail z jiného účtu.
 
-## Apple Pošta (iPhone, iPad)
+## Apple Pošta pro iPhone/iPad
 Apple Pošta pro iPhone a iPad je předinstalovaný poštovní klient od společnosti Apple, který je skvěle zabudovaný do každého iPhonu a iPadu.
 
 <img src="https://src.studiodenali.cz/jak-pridat-mail/ios-mail/1.png">
