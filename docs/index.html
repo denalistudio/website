@@ -43,7 +43,7 @@
 </head>
 
 <body onload="onLoad()" translate="no">
-    <nav>
+    <nav id="navigation">
         <div class="nav-content">
             <a href="index.html">
                 <svg width="100%" height="100%" viewBox="0 0 37 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -77,27 +77,27 @@
     </ul>
     <h2 id="services-heading"></h2>
     <div class="services dragscroll">
-        <a class="card service-1">
+        <a class="services-card service-1">
             <h4 id="services-website-subtitle"></h4>
             <h3 id="services-website-title"></h3>
             <p id="services-website-text"></p>
         </a>
-        <a class="card service-2">
+        <a class="services-card service-2">
             <h4 id="services-knowledgebase-subtitle"></h4>
             <h3 id="services-knowledgebase-title"></h3>
             <p id="services-knowledgebase-text"></p>
         </a>
-        <a class="card service-3">
+        <a class="services-card service-3">
             <h4 id="services-editsandupkeep-subtitle"></h4>
             <h3 id="services-editsandupkeep-title"></h3>
             <p id="services-editsandupkeep-text"></p>
         </a>
-        <a class="card service-4">
+        <a class="services-card service-4">
             <h4 id="services-domainandhosting-subtitle"></h4>
             <h3 id="services-domainandhosting-title"></h3>
             <p id="services-domainandhosting-text"></p>
         </a>
-        <a class="card service-5">
+        <a class="services-card service-5">
             <h4 id="services-emailadress-subtitle"></h4>
             <h3 id="services-emailadress-title"></h3>
             <p>
@@ -106,14 +106,14 @@
                 <span id="services-emailadress-text-3"></span>
             </p>
         </a>
-        <a class="card service-6">
+        <a class="services-card service-6">
             <h4 id="services-social-subtitle"></h4>
             <h3 id="services-social-title"></h3>
             <p id="services-social-text"></p>
         </a>
     </div>
     <h2 id="contact-heading"></h2>
-    <div class="card con-contact">
+    <div id="con-contact" class="card con-contact">
         <h3>Jakub Klapka</h3>
         <a href="mailto:jakubklapka@studiodenali.cz">
             <p class="con-email">jakubklapka@studiodenali.cz</p>
@@ -154,10 +154,17 @@
     <select class="listlanguages" name="listlanguages" onmouseup="langSelectChange(this)">
     </select>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        bodyWidth = $('body').innerWidth()
-        document.getElementByClassName('service-1').style.setProperty('--bodyWidth', bodyWidth)
+
+        width()
+        window.addEventListener('resize', width)
+
+        function width() {
+            var bodyWidth = document.body.clientWidth
+            document.documentElement.style.setProperty('--bodyWidth', bodyWidth + 'px')
+            var fractionWidth = (bodyWidth - 100) / 10
+            document.documentElement.style.setProperty('--fractionWidth', fractionWidth + 'px')
+        }
 
         function search() {
             var input, filter, ul, li, a, i, txtValue;

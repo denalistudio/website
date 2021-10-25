@@ -117,7 +117,7 @@ body {
 
 /* Shadows */
 
-ul, nav, .card, .client-img {
+ul, nav, .card, .services-card, .client-img {
   @include shadow();
 }
 
@@ -156,13 +156,13 @@ img {
 
 /* Card */
 
-.card {
+.card, .services-card {
   border-radius: 15px;
   transition: transform 0.5s;
   background-color: $white;
 }
 
-.card:hover {
+.card:hover, .services-card:hover {
   transform: scale(1.025);
 }
 
@@ -247,43 +247,45 @@ nav {
   grid-template-columns: auto auto auto auto auto auto;
   grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
   column-gap: 20px;
-  padding: 0 calc(20px + env(safe-area-inset-right)) 40px calc(20px + env(safe-area-inset-right));
+  padding: 0 calc(20px + env(safe-area-inset-right)) 40px calc(20px + env(safe-area-inset-left));
   margin: 0 0 -40px 0;
   overflow-x: scroll;
   scrollbar-width: 0;
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
-  .card {
-    width: 80vw;
-    height: 310px;
-    padding: 25px;
-    &:hover{
-      cursor: grab;
-    }
-    &:active{
-      cursor: grabbing;
-    }
-  }
-  @media (min-width: 576px) {
-    .card {
-      width: 50vw;
-    }
-  }
-  @media (min-width: 1200px) {
-    padding: 0 calc(5vw + 20px) 40px calc(5vw + 20px);
-    .card {
-      width: calc(var(--bodyWidth) / 2);
-    }
-  }
 }
 
 .services::-webkit-scrollbar {
   display: none;
 }
 
+.services-card {
+  width: 80vw;
+  height: 310px;
+  padding: 25px;
+  &:hover{
+    cursor: grab;
+  }
+  &:active{
+    cursor: grabbing;
+  }
+}
+@media (min-width: 576px) {
+  .services-card {
+    width: 50vw;
+  }
+}
+@media (min-width: 1200px) {
+  .services {
+    padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
+  }
+  .services-card {
+    width: calc(var(--fractionWidth) * 2.25);
+  }
+}
+
 .service-1 {
   grid-area: service-1;
-  width: var(--bodyWidth);
 }
 
 .service-2 {
