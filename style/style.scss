@@ -115,20 +115,6 @@ body {
   padding-left: calc(env(safe-area-inset-left) + 20px);
 }
 
-/* Dark mode */
-
-p, h2, h3, .nav-content a {
-  @media (prefers-color-scheme: dark) {
-    color: $white;
-  }
-}
-
-nav, .card {
-  @media (prefers-color-scheme: dark) {
-    background-color: $dark;
-  }
-}
-
 /* Shadows */
 
 ul, nav, .card, .client-img {
@@ -452,4 +438,15 @@ nav {
   grid-area: lang;
 }
 
-/* Screen settings */
+/* Dark mode */
+
+@media (prefers-color-scheme: dark) {
+  p, h2, h3, .nav-content a {
+    color: $white;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  nav, .card {
+    background-color: $dark;}
+}

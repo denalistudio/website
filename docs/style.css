@@ -108,19 +108,6 @@ body {
   padding-left: calc(env(safe-area-inset-left) + 20px);
 }
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  p, h2, h3, .nav-content a {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  nav, .card {
-    background-color: #272727;
-  }
-}
-
 /* Shadows */
 ul, nav, .card, .client-img {
   box-shadow: #959da533 0 8px 24px;
@@ -484,4 +471,15 @@ nav {
   grid-area: lang;
 }
 
-/* Screen settings */
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  p, h2, h3, .nav-content a {
+    color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  nav, .card {
+    background-color: #272727;
+  }
+}
