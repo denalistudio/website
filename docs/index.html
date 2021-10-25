@@ -43,9 +43,9 @@
 </head>
 
 <body onload="onLoad()" translate="no">
-    <nav id="navigation">
+    <nav>
         <div class="nav-content">
-            <a href="index.html">
+            <a href="https://www.studiodenali.cz/">
                 <svg width="100%" height="100%" viewBox="0 0 37 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
                     style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -59,9 +59,14 @@
                     </g>
                 </svg>
             </a>
-            <a id="navigation-contact" href="#con-1"></a>
-            <a id="navigation-knowledgebase" href="https://dev.studiodenali.cz/help/"></a>
-            <input type="text" id="search" onkeyup="search()" placeholder="Search">
+            <div class="menu">
+                <a id="nav-contact" href="#con-1"></a>
+                <a id="nav-knowledgebase" href="https://dev.studiodenali.cz/help/"></a>
+                <input type="text" id="search" onkeyup="search()" placeholder="Search">
+            </div>
+            <a class="menu-btn" href="javascript:void(0)" onclick="menu()">
+                <div class="menu-btn__burger"></div>
+            </a>
         </div>
     </nav>
     <ul id="search-results">
@@ -158,6 +163,27 @@
     </select>
 
     <script>
+        // Hamburger menu
+        const menuBtn = document.querySelector('.menu-btn');
+        let menuOpen = false;
+        menuBtn.addEventListener('click', () => {
+            if(!menuOpen) {
+                menuBtn.classList.add('open');
+                menuOpen = true;
+            } else {
+                menuBtn.classList.remove('open');
+                menuOpen = false;
+            }
+        });
+        function menu() {
+            var x = document.querySelector('.menu');
+            if (x.style.display === 'block') {
+                x.style.display = 'none';
+            } else {
+                x.style.display = 'block';
+            }
+        }
+
         // Finding width
         width();
         window.addEventListener('resize', width);

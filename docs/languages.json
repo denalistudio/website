@@ -1,8 +1,8 @@
 ﻿{
 	"cs": {
 		"langdesc": "cs",
-		"navigation-contact": "Kontaktujte nás",
-		"navigation-knowledgebase": "Znalostní báze",
+		"nav-contact": "Kontaktujte nás",
+		"nav-knowledgebase": "Znalostní báze",
 		"search-mainsite": "Hlavní stránka",
 		"search-result-services": "Naše služby",
 		"services-heading": "Naše služby",
@@ -37,8 +37,8 @@
 	},
 	"en": {
 		"langdesc": "en",
-		"navigation-contact": "Contact us",
-		"navigation-knowledgebase": "Knowledge base",
+		"nav-contact": "Contact us",
+		"nav-knowledgebase": "Knowledge base",
 		"search-mainsite": "Main site",
 		"search-mainsite-result-services": "Our services",
 		"search-mainsite-result-pricing": "Pricing",
