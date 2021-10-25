@@ -258,7 +258,7 @@ nav {
   grid-template-columns: auto auto auto auto auto auto;
   grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
   column-gap: 20px;
-  padding: 0 20px 40px 20px;
+  padding: 0 calc(20px + env(safe-area-inset-right)) 40px calc(20px + env(safe-area-inset-right));
   margin: 0 0 -40px 0;
   overflow-x: scroll;
   scrollbar-width: 0;
