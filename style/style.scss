@@ -30,7 +30,7 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: 50px 50px 390px 50px 179px 350px 350px 50px 390px 20px;
+  grid-template-rows: 50px 50px 390px 50px auto auto 400px 50px 390px 20px;
   grid-template-areas:
   "nav nav nav"
   ". services-heading ."
@@ -41,7 +41,7 @@ body {
   ". con-map ."
   ". clients-heading ."
   "clients clients clients"
-  ". lang .";
+  "lang . .";
     @media (prefers-color-scheme: dark) {
       background-color: #1e1e1e;
     }
@@ -272,17 +272,16 @@ nav {
 
 .con-text {
   grid-area: con-text;
-  height: 350px;
   padding: 25px;
   img{
     width: 100%;
     border-radius: 10px;
+    margin: 0 0 8px 0;
   }
 }
 
 .con-map {
   grid-area: con-map;
-  height: 350px;
 }
 
 /* Clients */
