@@ -281,7 +281,7 @@ nav {
     padding: 0 calc(5vw + 20px) 40px calc(5vw + 20px);
   }
   .services .card {
-    width: calc(50 * var(--vw));
+    width: 50vw;
   }
 }
 
