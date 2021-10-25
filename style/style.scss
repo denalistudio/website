@@ -77,7 +77,7 @@ a {
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -261,12 +261,12 @@ nav {
   }
 }
 
-.con-email {
+.con-email, .con-mobile {
+  font-size: 1rem;
   line-height: 1;
 }
 
 .con-mobile {
-  line-height: 1;
   margin: 12px 0 16px 0;
 }
 
