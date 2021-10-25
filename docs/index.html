@@ -155,6 +155,8 @@
     </select>
 
     <script>
+        document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - document.documentElement.clientWidth) + "px");
+
         function search() {
             var input, filter, ul, li, a, i, txtValue;
             input = document.getElementById('search');
