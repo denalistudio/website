@@ -50,17 +50,30 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: #fafafa;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #1e1e1e;
+  }
+}
+
 body {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   line-height: 1.3;
   color: #272727;
-  background-color: #fafafa;
+  /*background-color: #fafafa;*/
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 10fr 20px;
   grid-template-rows: auto auto auto auto auto auto 400px auto auto 20px;
   grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map ." ". clients-heading ." "clients clients clients" "lang . .";
+  /*@media (prefers-color-scheme: dark) {
+    background-color: #1e1e1e;
+  }*/
 }
 
 @media (min-width: 576px) {
@@ -93,12 +106,6 @@ body {
     grid-template-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
     grid-template-rows: auto auto auto auto 200px 200px auto auto 20px;
     grid-template-areas: "nav nav nav nav nav nav" ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". con-contact con-text con-map con-map ." ". con-img con-text con-map con-map ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" "lang . . . . .";
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1e1e1e;
   }
 }
 
