@@ -370,6 +370,19 @@ nav {
 .con-img {
   grid-area: con-img;
   margin: 0 0 0 10px;
+  box-shadow: #959da533 0 8px 24px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .con-img {
+    box-shadow: #00000033 0 8px 24px;
+  }
+}
+
+.con-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
 }
 
 @media (max-width: 576px) {

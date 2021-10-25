@@ -354,6 +354,11 @@ nav {
 .con-img {
   grid-area: con-img;
   margin: 0 0 0 10px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
   @media (max-width: 576px) {
     display: none;
   }
