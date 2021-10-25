@@ -111,8 +111,8 @@ body {
 /* Notch */
 
 .nav-content, .services-heading, .contact-heading, .clients-heading {
-  padding-right: env(safe-area-inset-right);
-  padding-left: env(safe-area-inset-left);
+  padding-right: calc(env(safe-area-inset-right) + 20px);
+  padding-left: calc(env(safe-area-inset-left) + 20px);
 }
 
 /* Dark mode */
