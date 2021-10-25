@@ -14,7 +14,7 @@ Poštovní klient je ve zkratce program, který slouží k příjmání, odesíl
 [[#Gmail pro telefon]]
 
 ## Windows Pošta
-Windows Pošta je výchozím poštovním klientem pro operační systém Windows od společnosti Microsoft, který mnoho lidí využívá pro jeho jednoduchost.
+*Windows Pošta* je výchozím poštovním klientem pro operační systém Windows od společnosti Microsoft, který mnoho lidí využívá pro jeho jednoduchost.
 
 <img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/1.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/2.png">
@@ -28,8 +28,22 @@ Windows Pošta je výchozím poštovním klientem pro operační systém Windows
 4) Do polí **E-mailová adresa** a **Uživatelské jméno** vyplňte vaši novou e-mailovou adresu s vaší doménou a do pole **Heslo** vaše heslo. Do pole **Název účtu** zvolte název, pod kterým se vám v adresáři váš e-mail bude zobrazovat. Do pole **Zprávy odesílat pod tímto jménem** vyplňte vaše jméno/název firmy, pod kterým uvidí příjemci vaše e-maily. Do pole **Server příchozí pošty** vyplňte `imap.forpsi.com` a do pole **Server odchozí pošty** `smtp.forpsi.com`, v poli **Typ účtu** nechte zvolenou možnost IMAP4. Po kontrole údajů klikněte na tlačítko **Přihlásit se**.
 5) **Hotovo!** Vyzkoušejte si na vaši novou adresu poslat pro radost e-mail z jiného účtu.
 
+## Gmail pro telefon
+*Gmail pro telefon* je mobilní poštovní klient společnosti Google, který je perfektní pro každý telefon Android.
+
+<img src="https://src.studiodenali.cz/jak-pridat-mail/gmail/1.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/gmail/2.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/gmail/3.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/gmail/4.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/gmail/5.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/gmail/6.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/gmail/7.png">
+
+1) Když na vašem telefonu otevřete aplikaci Gmail, ukáže se vám uvítací obrazovka. Klikněte na tlačítko **Přihlásit se**.
+2) Z menu **Nastavte si e-mail** vyberte poslední možnost **Jiný (IMAP)** s ikonou pošty.
+
 ## Microsoft Outlook 365
-Microsoft Outlook je skvělým poštovním klientem, který je součástí služby Microsoft 365. Proto funguje skvěle s ostatními aplikacemi Office, jako například Word, Excel a PowerPoint.
+*Microsoft Outlook 365* je skvělým poštovním klientem, který je součástí služby Microsoft 365. Proto funguje skvěle s ostatními aplikacemi Office, jako například Word, Excel a PowerPoint.
 
 <img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/1.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/outlook/2.png">
@@ -46,10 +60,11 @@ Microsoft Outlook je skvělým poštovním klientem, který je součástí služ
 4) V novém okně **Nastavení ůčtu IMAP** jsou dvě sekce: Příchozí a odchozí pošta. Do sekce **Příchozí pošta** do pole **Server** vyplňte `imap.forpsi.com`, do pole **Port** číslo **993**, zkontrolujte že jako **Metoda šifrování** je vybrána možnost **SSL/TLS**. Do sekce **Odchozí pošta** do pole **Server** vyplňte `smtp.forpsi.com`, do pole **Port** číslo **465**, zkontrolujte že jako **Metoda šifrování** je vybrána možnost **SSL/TLS**, zaškrntněte možnost **Požadovat přihlášení pomocí zabezpečeného ověřování hesla (SPA)**. Všechny informace zkontrolujte a klikněte na možnost **Další**.
 5) Do pole **Heslo** vyplňte vaše heslo.
 6) Klikněte na tlačítko **Připojit** v pravém dolním rohu.
-7) Účet se úspěšně přidal! Pokud chcete přidat další účet, pokračujte od kroku **1)**. Pokud chcete pokračovat do vašeho e-mailu, klikněte na tlačítko **Hotovo**.
+7) Účet se úspěšně přidal! Pokud chcete přidat další účet, pokračujte od kroku **1)**. Zaškrtněte možnost **Nastavit mi také Outlook Mobile v telefonu**, pokud používáte pod stejným Microsoft účtem Outlook i v telefonu. Pokud chcete pokračovat do vašeho e-mailu, klikněte na tlačítko **Hotovo**.
 8) **Hotovo!** Vyzkoušejte si na vaši novou adresu poslat pro radost e-mail z jiného účtu.
 
 ## Microsoft Outlook pro telefon
+*Microsoft Outlook pro telefon* je verze poštovního klienta Microsoft Outlook 365 předělaná pro telefony, která je součástí služby Microsoft 365. Stejně jako klient Microsoft Outlook 365 funguje skvěle s ostatními aplikacemi Office, jako například Word, Excel a PowerPoint.
 
 <img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/1.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/2.png">
@@ -62,7 +77,7 @@ Microsoft Outlook je skvělým poštovním klientem, který je součástí služ
 <img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/8.png">
 
 ## Mozilla Thunderbird
-Poštovní klient Mozilla Thunderbird je open-source projektem tvůrce prohlížeče Firefox, který je nejen skvělým nástrojem pro správu vaší elektronické pošty, ale nabídne například i vlastní adresář kontaktů nebo chatovací systém.
+Poštovní klient *Mozilla Thunderbird* je open-source projektem tvůrce prohlížeče Firefox, který je nejen skvělým nástrojem pro správu vaší elektronické pošty, ale nabídne například i vlastní adresář kontaktů nebo chatovací systém.
 
 <img src="https://src.studiodenali.cz/jak-pridat-mail/thunderbird/1.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/thunderbird/2.png">
@@ -78,8 +93,11 @@ Poštovní klient Mozilla Thunderbird je open-source projektem tvůrce prohlíž
 5) Vyberte možnost **IMAP** z pole **Protokol** a klikněte na tlačítko **Hotovo**.
 6) **Hotovo!** Vyzkoušejte si na vaši novou adresu poslat pro radost e-mail z jiného účtu.
 
+## Apple Pošta pro Mac
+*Apple Pošta pro iPhone/iPad* je předinstalovaný poštovní klient od společnosti Apple, který je skvěle zabudovaný do každého Macu.
+
 ## Apple Pošta pro iPhone/iPad
-Apple Pošta pro iPhone a iPad je předinstalovaný poštovní klient od společnosti Apple, který je skvěle zabudovaný do každého iPhonu a iPadu.
+*Apple Pošta pro iPhone/iPad* je předinstalovaný poštovní klient od společnosti Apple, který je skvěle zabudovaný do každého iPhonu a iPadu.
 
 <img src="https://src.studiodenali.cz/jak-pridat-mail/ios-mail/1.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/ios-mail/2.png">
