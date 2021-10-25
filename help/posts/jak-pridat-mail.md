@@ -41,6 +41,7 @@ Poštovní klient je ve zkratce program, který slouží k příjmání, odesíl
 
 1) Když na vašem telefonu otevřete aplikaci Gmail, ukáže se vám uvítací obrazovka. Klikněte na tlačítko **Přihlásit se**.
 2) Z menu **Nastavte si e-mail** vyberte poslední možnost **Jiný (IMAP)** s ikonou pošty.
+3) V okně **Nastavte si e-mailovou adresu** zadejte do pole **E-mailová adresa** vaši novou e-mailovou adresu.
 
 ## Microsoft Outlook 365
 *Microsoft Outlook 365* je skvělým poštovním klientem, který je součástí služby Microsoft 365. Proto funguje skvěle s ostatními aplikacemi Office, jako například Word, Excel a PowerPoint.
