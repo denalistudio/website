@@ -58,7 +58,7 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: 50px 50px 390px 50px auto auto 400px 50px 390px 20px;
+  grid-template-rows: auto auto auto auto auto auto 400px auto auto 20px;
   grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map ." ". clients-heading ." "clients clients clients" "lang . .";
 }
 
@@ -75,7 +75,7 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  p {
+  p, h2, h3 {
     color: #ffffff;
   }
 }
@@ -84,22 +84,10 @@ h2 {
   font-size: 30px;
 }
 
-@media (prefers-color-scheme: dark) {
-  h2 {
-    color: #ffffff;
-  }
-}
-
 h3 {
   margin: 0;
   font-size: 25px;
   color: #272727;
-}
-
-@media (prefers-color-scheme: dark) {
-  h3 {
-    color: #ffffff;
-  }
 }
 
 h4 {
@@ -174,10 +162,9 @@ li a:hover {
 nav {
   grid-area: nav;
   display: grid;
-  grid-template-columns: 15px 1fr 15px;
+  grid-template-columns: 20px 1fr 20px;
   grid-template-areas: ". nav-content .";
   width: 100%;
-  margin: auto;
   position: fixed;
   top: 0px;
   z-index: 1;
@@ -197,28 +184,32 @@ nav {
   }
 }
 
-nav svg {
+.nav-content {
+  grid-area: nav-content;
+}
+
+.nav-content svg {
   width: 24px;
 }
 
-nav a {
+.nav-content a {
   float: left;
   font-size: 18px;
-  margin: 24px 16px;
+  /*margin: 24px 16px;*/
 }
 
 @media (prefers-color-scheme: dark) {
-  nav a {
+  .nav-content a {
     color: #ffffff;
   }
 }
 
-nav a:hover {
+.nav-content a:hover {
   color: #4f54ff;
 }
 
-.nav-content {
-  grid-area: nav-content;
+.nav-content input {
+  width: 20px;
 }
 
 .listlanguages {
@@ -246,16 +237,15 @@ nav a:hover {
   grid-template-columns: 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr 1.66fr;
   grid-template-areas: "service-1 service-2 service-3 service-4 service-5 service-6";
   column-gap: 20px;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   overflow-x: scroll;
-  scrollbar-width: none;
+  scrollbar-width: 0;
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
 }
 
 .services .card {
   width: 80vw;
-  height: 350px;
   padding: 25px;
 }
 
@@ -354,7 +344,7 @@ nav a:hover {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "pivonky elektra";
   column-gap: 20px;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   overflow-x: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
