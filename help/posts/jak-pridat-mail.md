@@ -41,7 +41,11 @@ Poštovní klient je ve zkratce program, který slouží k příjmání, odesíl
 
 1) Když na vašem telefonu otevřete aplikaci Gmail, ukáže se vám uvítací obrazovka. Klikněte na tlačítko **Přihlásit se**.
 2) Z menu **Nastavte si e-mail** vyberte poslední možnost **Jiný (IMAP)** s ikonou pošty.
-3) V okně **Nastavte si e-mailovou adresu** zadejte do pole **E-mailová adresa** vaši novou e-mailovou adresu.
+3) V okně **Nastavte si e-mailovou adresu** zadejte do pole **E-mailová adresa** vaši novou e-mailovou adresu a klikněte na tlačítko **Další** v pravém horním rohu.
+4) V okně **Nastav. serveru příchozí pošty** budou již některá okna vyplněná, doplňte do pole **Heslo** vaše heslo a do pole **Server IMAP** vyplňte `imap.forpsi.com`. Zkontrolujte že v poli **Port** je číslo `993` a ve výběru **Typ zabezpečení** vybrána možnost `SSL/TLS` a stiskňete tlačítko **Další**.
+5) V okně **Nastav. serveru odchozí pošty** budou opět některá okna vyplněná, doplňte do pole **Heslo** vaše heslo a do pole **Server SMTP** vyplňte `smtp.forpsi.com`. Zkontrolujte že v poli **Port** je číslo `465` a ve výběru **Typ zabezpečení** vybrána možnost `SSL/TLS` a stiskňete tlačítko **Další**.
+6) V poli **Vaše jméno** vyplňte vaše jméno/název firmy, pod kterým uvidí příjemci vaše e-maily a stiskěte **Další**.
+7) **Hotovo!** Vyzkoušejte si na vaši novou adresu poslat pro radost e-mail z jiného účtu.
 
 ## Microsoft Outlook 365
 *Microsoft Outlook 365* je skvělým poštovním klientem, který je součástí služby Microsoft 365. Proto funguje skvěle s ostatními aplikacemi Office, jako například Word, Excel a PowerPoint.
@@ -58,7 +62,7 @@ Poštovní klient je ve zkratce program, který slouží k příjmání, odesíl
 1) Když otevřete aplikaci Microsoft Outlook 365 poprvé, vypňte do pole **E-mailová adresa** vaši novou e-mailovou adresu a klikněte na tlačítko **Upřesnit možnosti**.
 2) Vyberte možnost **Umožnit mi ručne si nastavit účet** a klikněte na tlačítko **Připojit**.
 3) Vyberte možnost **IMAP** s ikonou obálky.
-4) V novém okně **Nastavení ůčtu IMAP** jsou dvě sekce: Příchozí a odchozí pošta. Do sekce **Příchozí pošta** do pole **Server** vyplňte `imap.forpsi.com`, do pole **Port** číslo **993**, zkontrolujte že jako **Metoda šifrování** je vybrána možnost **SSL/TLS**. Do sekce **Odchozí pošta** do pole **Server** vyplňte `smtp.forpsi.com`, do pole **Port** číslo **465**, zkontrolujte že jako **Metoda šifrování** je vybrána možnost **SSL/TLS**, zaškrntněte možnost **Požadovat přihlášení pomocí zabezpečeného ověřování hesla (SPA)**. Všechny informace zkontrolujte a klikněte na možnost **Další**.
+4) V novém okně **Nastavení ůčtu IMAP** jsou dvě sekce: Příchozí a odchozí pošta. Do sekce **Příchozí pošta** do pole **Server** vyplňte `imap.forpsi.com`, do pole **Port** číslo `993`, zkontrolujte že jako **Metoda šifrování** je vybrána možnost `SSL/TLS`. Do sekce **Odchozí pošta** do pole **Server** vyplňte `smtp.forpsi.com`, do pole **Port** číslo `465`, zkontrolujte že jako **Metoda šifrování** je vybrána možnost `SSL/TLS`, zaškrntněte možnost **Požadovat přihlášení pomocí zabezpečeného ověřování hesla (SPA)**. Všechny informace zkontrolujte a klikněte na možnost **Další**.
 5) Do pole **Heslo** vyplňte vaše heslo.
 6) Klikněte na tlačítko **Připojit** v pravém dolním rohu.
 7) Účet se úspěšně přidal! Pokud chcete přidat další účet, pokračujte od kroku **1)**. Zaškrtněte možnost **Nastavit mi také Outlook Mobile v telefonu**, pokud používáte pod stejným Microsoft účtem Outlook i v telefonu. Pokud chcete pokračovat do vašeho e-mailu, klikněte na tlačítko **Hotovo**.
