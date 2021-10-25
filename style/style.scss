@@ -22,6 +22,10 @@ $white: #ffffff;
   box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+}
+
 body {
   /*margin-top: 5%;*/
   font-size: 16px;
@@ -49,6 +53,26 @@ body {
     }
 }
 
+/* Dark mode */
+
+p, h2, h3, .nav-content a {
+  @media (prefers-color-scheme: dark) {
+    color: $white;
+  }
+}
+
+nav, .card {
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+  }
+}
+
+/* Shadows */
+
+ul, nav, .card, .client-img {
+  @include shadow();
+}
+
 /* Text */
 
 a {
@@ -56,10 +80,8 @@ a {
   text-decoration: none;
 }
 
-p, h2, h3 {
-  @media (prefers-color-scheme: dark) {
-    color: $white;
-  }
+p {
+  line-height: 1.3;
 }
 
 h2 {
@@ -90,11 +112,7 @@ img {
 .card {
   border-radius: 15px;
   transition: transform 0.5s;
-  @include shadow();
   background-color: $white;
-  @media (prefers-color-scheme: dark) {
-    background-color: $dark;
-  }
 }
 
 .card:hover {
@@ -109,8 +127,7 @@ ul {
   padding: 25px;
   border-radius: 15px;
   z-index: 5;
-  background-color: white;
-  @include shadow();
+  background-color: #ffffff;
   @media (prefers-color-scheme: dark) {
     background-color: $dark;
     color: $white;
@@ -136,10 +153,6 @@ nav {
   top: 0px;
   z-index: 1;
   background-color: $white; 
-  @include shadow();
-  @media (prefers-color-scheme: dark) {
-    background-color: $dark;
-  }
 }
 
 .nav-content {
@@ -151,9 +164,6 @@ nav {
     float: left;
     font-size: 18px;
     /*margin: 24px 16px;*/
-    @media (prefers-color-scheme: dark) {
-      color: $white;
-    }
   }
   a:hover {
     color: $denali;
@@ -316,7 +326,6 @@ nav {
 .client-img {
   width: 80%;
   margin: 13px 10% -4px 10%;
-  @include shadow();
 }
 
 .pivonky {
