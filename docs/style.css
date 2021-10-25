@@ -59,9 +59,17 @@ body {
   background-color: #fafafa;
   display: grid;
   row-gap: 20px;
-  grid-template-columns: 20px 1fr 20px;
+  grid-template-columns: 20px 10fr 20px;
   grid-template-rows: auto auto auto auto auto auto 400px auto auto 20px;
   grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map ." ". clients-heading ." "clients clients clients" "lang . .";
+}
+
+@media (min-width: 576px) {
+  body {
+    grid-template-columns: 20px 1fr 1fr 20px;
+    grid-template-rows: auto auto auto auto auto auto 300px auto auto 20px;
+    grid-template-areas: "nav nav nav nav" ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". con-contact con-img ." ". con-text con-text ." ". con-map con-map ." ". clients-heading clients-heading ." "clients clients clients clients" "lang . . .";
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -286,6 +294,7 @@ nav {
 .con-contact {
   grid-area: con-contact;
   padding: 25px;
+  margin-right: 10px;
 }
 
 .con-contact h3 {
@@ -307,6 +316,17 @@ nav {
   line-height: 1;
 }
 
+.con-img {
+  grid-area: con-img;
+  margin-left: 10px;
+}
+
+@media (max-width: 576px) {
+  .con-img {
+    display: none;
+  }
+}
+
 .con-text {
   grid-area: con-text;
   padding: 25px;
@@ -316,6 +336,12 @@ nav {
   width: 100%;
   border-radius: 10px;
   margin: 0 0 8px 0;
+}
+
+@media (min-width: 576px) {
+  .con-text img {
+    display: none;
+  }
 }
 
 .con-map {
