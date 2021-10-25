@@ -58,7 +58,7 @@ body {
   background-color: #fafafa;
   display: grid;
   row-gap: 20px;
-  grid-template-columns: 20px 10fr 20px;
+  grid-template-columns: 20px 1fr 20px;
   grid-template-rows: auto auto auto auto auto auto 400px auto auto 20px;
   grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map ." ". clients-heading ." "clients clients clients" "lang . .";
 }
@@ -109,12 +109,12 @@ body {
 }
 
 /* Shadows */
-ul, nav, .card, .services-card, .client-img {
+ul, nav, .card, .client-img {
   box-shadow: #959da533 0 8px 24px;
 }
 
 @media (prefers-color-scheme: dark) {
-  ul, nav, .card, .services-card, .client-img {
+  ul, nav, .card, .client-img {
     box-shadow: #00000033 0 8px 24px;
   }
 }
@@ -152,13 +152,13 @@ img {
 }
 
 /* Card */
-.card, .services-card {
+.card {
   border-radius: 15px;
   transition: transform 0.5s;
   background-color: #ffffff;
 }
 
-.card:hover, .services-card:hover {
+.card:hover {
   transform: scale(1.025);
 }
 
@@ -256,27 +256,35 @@ nav {
   -ms-overflow-scrolling: touch;
 }
 
-.services::-webkit-scrollbar {
-  display: none;
-}
-
-.services-card {
-  width: 80vw;
+.services .card {
+  width: calc(var(--bodyWidth) * 0.8);
   height: 310px;
   padding: 25px;
 }
 
-.services-card:hover {
+.services .card:hover {
   cursor: grab;
 }
 
-.services-card:active {
+.services .card:active {
   cursor: grabbing;
 }
 
 @media (min-width: 576px) {
-  .services-card {
-    width: 50vw;
+  .services .card {
+    width: calc(var(--bodyWidth) / 2);
+  }
+}
+
+@media (min-width: 768px) {
+  .services .card {
+    width: calc(var(--bodyWidth) * 0.4);
+  }
+}
+
+@media (min-width: 992px) {
+  .services .card {
+    width: calc(var(--bodyWidth) * 0.3);
   }
 }
 
@@ -284,9 +292,13 @@ nav {
   .services {
     padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
   }
-  .services-card {
+  .services .card {
     width: calc(var(--fractionWidth) * 2.25);
   }
+}
+
+.services::-webkit-scrollbar {
+  display: none;
 }
 
 .service-1 {
@@ -411,6 +423,10 @@ nav {
   grid-area: con-map;
 }
 
+.con-map iframe {
+  border-radius: 15px;
+}
+
 /* Clients */
 #clients-heading {
   grid-area: clients-heading;
@@ -419,20 +435,20 @@ nav {
 .clients {
   grid-area: clients;
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-areas: "pivonky elektra";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "pivonky elektra . .";
   column-gap: 20px;
-  padding: 0 20px 40px 20px;
+  padding: 0 calc(20px + env(safe-area-inset-right)) 40px calc(20px + env(safe-area-inset-left));
   margin: 0 0 -40px 0;
   overflow-x: scroll;
-  scrollbar-width: none;
+  scrollbar-width: 0;
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
 }
 
 .clients .card {
-  width: 80vw;
-  padding: 25px 25px 0 25px;
+  width: calc(var(--bodyWidth) * 0.8);
+  padding: 25px;
 }
 
 .clients .card:hover {
@@ -445,7 +461,28 @@ nav {
 
 @media (min-width: 576px) {
   .clients .card {
-    width: 50vw;
+    width: calc(var(--bodyWidth) / 2);
+  }
+}
+
+@media (min-width: 768px) {
+  .clients .card {
+    width: calc(var(--bodyWidth) * 0.4);
+  }
+}
+
+@media (min-width: 992px) {
+  .clients .card {
+    width: calc(var(--bodyWidth) * 0.3);
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients {
+    padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
+  }
+  .clients .card {
+    width: calc(var(--fractionWidth) * 2.25);
   }
 }
 
