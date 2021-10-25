@@ -218,11 +218,7 @@ nav {
 
 .nav-content {
   grid-area: nav-content;
-  padding:
-    env(safe-area-inset-top)
-    env(safe-area-inset-right)
-    env(safe-area-inset-bottom)
-    env(safe-area-inset-left);
+  padding-top: env(safe-area-inset-top);
   svg {
     width: 24px;
   }
