@@ -59,7 +59,7 @@
                     </g>
                 </svg>
             </a>
-            <div class="menu">
+            <div class="mobile-menu">
                 <a id="nav-contact" href="#con-1"></a>
                 <a id="nav-knowledgebase" href="https://dev.studiodenali.cz/help/"></a>
                 <input type="text" id="search" onkeyup="search()" placeholder="Search">
@@ -67,6 +67,11 @@
             <a class="menu-btn" href="javascript:void(0)" onclick="menu()">
                 <div class="menu-btn__burger"></div>
             </a>
+            <div class="desktop-menu">
+                <a id="nav-contact" href="#con-1"></a>
+                <a id="nav-knowledgebase" href="https://dev.studiodenali.cz/help/"></a>
+                <input type="text" id="search" onkeyup="search()" placeholder="Search">
+            </div>
         </div>
     </nav>
     <ul id="search-results">
@@ -170,17 +175,19 @@
             if(!menuOpen) {
                 menuBtn.classList.add('open');
                 menuOpen = true;
+                document.documentElement.style.setProperty('--navHeight', 226 + 'px')
             } else {
                 menuBtn.classList.remove('open');
                 menuOpen = false;
+                document.documentElement.style.setProperty('--navHeight', 60 + 'px')
             }
         });
         function menu() {
-            var x = document.querySelector('.menu');
-            if (x.style.display === 'block') {
-                x.style.display = 'none';
+            var menu = document.querySelector('.menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
             } else {
-                x.style.display = 'block';
+                menu.style.display = 'block';
             }
         }
 

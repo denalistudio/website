@@ -45,6 +45,7 @@
 }
 
 :root {
+  --navHeight: 60px;
   font-size: 10px;
 }
 
@@ -55,6 +56,7 @@
 }
 
 body {
+  margin-top: var(--navHeight);
   font-family: 'Roboto', sans-serif;
   line-height: 1.3;
   color: #272727;
@@ -213,14 +215,35 @@ nav {
   background-color: #ffffff;
 }
 
+@media (min-width: 1200px) {
+  nav {
+    grid-template-columns: 0.5fr 9fr 0.5fr;
+    grid-template-areas: ". nav-content .";
+  }
+}
+
+@media (min-width: 1600px) {
+  nav {
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: ". nav-content .";
+  }
+}
+
 .nav-content {
   grid-area: nav-content;
   display: grid;
   grid-template-rows: 60px auto;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "nav-svg menu-btn" "menu menu";
-  padding-top: env(safe-area-inset-top);
+  grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
   background-color: inherit;
+}
+
+@media (min-width: 768px) {
+  .nav-content {
+    grid-template-rows: 60px;
+    grid-template-columns: 50px 1fr;
+    grid-template-areas: "nav-svg desktop-menu";
+  }
 }
 
 .nav-content svg {
@@ -229,12 +252,18 @@ nav {
   width: 30px;
 }
 
-.menu {
-  grid-area: menu;
+@media (min-width: 1200px) {
+  .nav-content {
+    padding: 0 20px;
+  }
+}
+
+.mobile-menu {
+  grid-area: mobile-menu;
   display: none;
 }
 
-.menu input {
+.mobile-menu input {
   width: 100%;
   height: 40px;
   margin: 0 0 32px 0;
@@ -244,14 +273,14 @@ nav {
   background-color: #ffffff;
 }
 
-.menu a {
+.mobile-menu a {
   color: #000000;
   margin: 16px 0;
   font-size: 1.8rem;
   display: block;
 }
 
-.menu a:hover {
+.mobile-menu a:hover {
   color: #4f54ff;
 }
 
@@ -319,6 +348,48 @@ nav {
 
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg) translate(20px, 20px);
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+  .menu-btn {
+    display: none;
+  }
+}
+
+.desktop-menu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop-menu {
+    display: block;
+  }
+}
+
+.desktop-menu {
+  grid-area: desktop-menu;
+}
+
+.desktop-menu #nav-contact {
+  margin: 18.5px 0 18.5px 16px;
+}
+
+.desktop-menu #nav-knowledgebase {
+  margin: 18.5px 16px;
+}
+
+.desktop-menu a {
+  color: #000000;
+  margin: 16px 0;
+  font-size: 1.8rem;
+  display: inline-block;
+}
+
+.desktop-menu a:hover {
+  color: #4f54ff;
 }
 
 .listlanguages {
