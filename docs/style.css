@@ -96,6 +96,15 @@ body {
   }
 }
 
+@media (min-width: 1400px) {
+  body {
+    column-gap: 20px;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: auto auto auto auto 200px 200px auto auto 20px;
+    grid-template-areas: "nav nav nav nav nav nav" ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". con-contact con-text con-map con-map ." ". con-img con-text con-map con-map ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" "lang . . . . .";
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #1e1e1e;
@@ -135,7 +144,7 @@ h2 {
 }
 
 h3 {
-  margin: 0;
+  margin: 0 0 8px 0;
   font-size: 25px;
   color: #272727;
 }
@@ -285,6 +294,7 @@ nav {
 @media (min-width: 992px) {
   .services .card {
     width: calc(var(--bodyWidth) * 0.3);
+    height: 350px;
   }
 }
 
@@ -294,6 +304,15 @@ nav {
   }
   .services .card {
     width: calc(var(--fractionWidth) * 2.25);
+  }
+}
+
+@media (min-width: 1400px) {
+  .services {
+    padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
+  }
+  .services .card {
+    width: calc(var(--fractionWidth) * 2);
   }
 }
 
@@ -370,13 +389,6 @@ nav {
 .con-img {
   grid-area: con-img;
   margin: 0 0 0 10px;
-  box-shadow: #959da533 0 8px 24px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .con-img {
-    box-shadow: #00000033 0 8px 24px;
-  }
 }
 
 .con-img img {
@@ -461,7 +473,7 @@ nav {
 
 .clients .card {
   width: calc(var(--bodyWidth) * 0.8);
-  padding: 25px;
+  padding: 25px 25px 0 25px;
 }
 
 .clients .card:hover {
@@ -496,6 +508,15 @@ nav {
   }
   .clients .card {
     width: calc(var(--fractionWidth) * 2.25);
+  }
+}
+
+@media (min-width: 1400px) {
+  .clients {
+    padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
+  }
+  .clients .card {
+    width: calc(var(--fractionWidth) * 2);
   }
 }
 

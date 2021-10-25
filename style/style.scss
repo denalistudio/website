@@ -103,6 +103,21 @@ body {
     "clients clients clients clients clients clients"
     "lang . . . . .";
   }
+  @media (min-width: 1400px) {
+    column-gap: 20px;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: auto auto auto auto 200px 200px auto auto 20px;
+    grid-template-areas:
+    "nav nav nav nav nav nav"
+    ". services-heading services-heading services-heading services-heading ."
+    "services services services services services services"
+    ". contact-heading contact-heading contact-heading contact-heading ."
+    ". con-contact con-text con-map con-map ."
+    ". con-img con-text con-map con-map ."
+    ". clients-heading clients-heading clients-heading clients-heading ."
+    "clients clients clients clients clients clients"
+    "lang . . . . .";
+  }
   @media (prefers-color-scheme: dark) {
     background-color: #1e1e1e;
   }
@@ -138,7 +153,7 @@ h2 {
 }
 
 h3 {
-  margin: 0;
+  margin: 0 0 8px 0;
   font-size: 25px;
   color: $dark;
 }
@@ -271,18 +286,25 @@ nav {
   }
   @media (min-width: 768px) {
     .card {
-      width: calc(var(--bodyWidth) * 0.4)
+      width: calc(var(--bodyWidth) * 0.4);
     }
   }
   @media (min-width: 992px) {
     .card {
-      width: calc(var(--bodyWidth) * 0.3)
+      width: calc(var(--bodyWidth) * 0.3);
+      height: 350px;
     }
   }
   @media (min-width: 1200px) {
       padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
     .card {
       width: calc(var(--fractionWidth) * 2.25);
+    }
+  }
+  @media (min-width: 1400px) {
+    padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
+    .card {
+      width: calc(var(--fractionWidth) * 2);
     }
   }
 }
@@ -418,7 +440,7 @@ nav {
   -ms-overflow-scrolling: touch;
   .card {
     width: calc(var(--bodyWidth) * 0.8);
-    padding: 25px;
+    padding: 25px 25px 0 25px;
     &:hover{
       cursor: grab;
     }
@@ -445,6 +467,12 @@ nav {
       padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
     .card {
       width: calc(var(--fractionWidth) * 2.25);
+    }
+  }
+  @media (min-width: 1400px) {
+    padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
+    .card {
+      width: calc(var(--fractionWidth) * 2);
     }
   }
 }
