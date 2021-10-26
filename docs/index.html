@@ -189,7 +189,7 @@
             } else {
                 menu.style.display = 'block';
             }
-        }
+        };
 
         // Finding width
         width();
@@ -199,7 +199,7 @@
             document.documentElement.style.setProperty('--bodyWidth', bodyWidth + 'px');
             var fractionWidth = (bodyWidth - 100) / 10;
             document.documentElement.style.setProperty('--fractionWidth', fractionWidth + 'px');
-        }
+        };
 
         // Search function
         function search() {
@@ -224,7 +224,7 @@
         }
         document.getElementById("search").ondblclick = function searchResultsHide() {
             document.getElementById("search-results").style.display = "none";
-        }
+        };
 
             // Dragscroll, Copyright © 2015 asvd, Provided under the MIT License, https://github.com/asvd/dragscroll
             (function (root, factory) {
