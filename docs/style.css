@@ -184,11 +184,6 @@ img {
   max-height: 100%;
 }
 
-#search-results {
-  display: none;
-  position: fixed;
-}
-
 /* Card */
 .card {
   border-radius: 15px;
