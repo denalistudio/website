@@ -492,30 +492,6 @@ nav {
   padding-right: 20px;
 }
 
-/*
-.service-1 {
-  grid-area: service-1;
-}
-
-.service-2 {
-  grid-area: service-2;
-}
-
-.service-3 {
-  grid-area: service-3;
-}
-
-.service-4 {
-  grid-area: service-4;
-}
-
-.service-5 {
-  grid-area: service-5;
-}
-
-.service-6 {
-  grid-area: service-6;
-}*/
 /* Contact */
 #contact-heading {
   grid-area: contact-heading;
@@ -630,10 +606,8 @@ nav {
 
 .clients {
   grid-area: clients;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "pivonky elektra . .";
-  column-gap: 20px;
+  display: flex;
+  flex-direction: row;
   padding: 0 calc(20px + env(safe-area-inset-right)) 40px calc(20px + env(safe-area-inset-left));
   margin: 0 0 -40px 0;
   overflow-x: scroll;
@@ -645,6 +619,7 @@ nav {
 .clients .card {
   width: calc(var(--bodyWidth) * 0.8);
   padding: 25px 25px 0 25px;
+  margin-right: 20px;
 }
 
 .clients .card:hover {
@@ -655,21 +630,25 @@ nav {
   cursor: grabbing;
 }
 
+.clients .card:last-child {
+  margin-right: 0;
+}
+
 @media (min-width: 576px) {
   .clients .card {
-    width: calc(var(--bodyWidth) / 2);
+    flex-basis: calc(var(--bodyWidth) / 2);
   }
 }
 
 @media (min-width: 768px) {
   .clients .card {
-    width: calc(var(--bodyWidth) * 0.4);
+    flex-basis: calc(var(--bodyWidth) * 0.4);
   }
 }
 
 @media (min-width: 992px) {
   .clients .card {
-    width: calc(var(--bodyWidth) * 0.3);
+    flex-basis: calc(var(--bodyWidth) * 0.3);
   }
 }
 
@@ -678,7 +657,7 @@ nav {
     padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
   }
   .clients .card {
-    width: calc(var(--fractionWidth) * 2.25);
+    flex-basis: calc(var(--fractionWidth) * 2.25);
   }
 }
 
@@ -687,7 +666,7 @@ nav {
     padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
   }
   .clients .card {
-    width: calc(var(--fractionWidth) * 2);
+    flex-basis: calc(var(--fractionWidth) * 2);
   }
 }
 
