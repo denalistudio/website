@@ -62,7 +62,7 @@
             <div class="mobile-menu">
                 <a id="nav-contact" href="#con-1"></a>
                 <a id="nav-knowledgebase" href="https://dev.studiodenali.cz/help/"></a>
-                <input type="text" id="search" onkeyup="search()" placeholder="Search">
+                <input type="text" id="mobile-search" onkeyup="mobileSearch()" placeholder="Search">
             </div>
             <a class="menu-btn" href="javascript:void(0)" onclick="menu()">
                 <div class="menu-btn__burger"></div>
@@ -70,7 +70,7 @@
             <div class="desktop-menu">
                 <a id="nav-contact" href="#con-1"></a>
                 <a id="nav-knowledgebase" href="https://dev.studiodenali.cz/help/"></a>
-                <input type="text" id="search" onkeyup="search()" placeholder="Search">
+                <input type="text" id="desktop-search" onkeyup="desktopSearch()" placeholder="Search">
             </div>
         </div>
     </nav>
@@ -201,29 +201,54 @@
             document.documentElement.style.setProperty('--fractionWidth', fractionWidth + 'px');
         };
 
-        // Search function
-        function search() {
+        // Search function - mobile
+        function mobileSearch() {
             var input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById('search');
+            input = document.getElementById('mobile-search');
             filter = input.value.toUpperCase();
-            ul = document.getElementById("search-results");
+            ul = document.getElementById('search-results');
             li = ul.getElementsByTagName('li');
 
             for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
+                a = li[i].getElementsByTagName('a')[0];
                 txtValue = a.textContent || a.innerText;
                 if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    li[i].style.display = "";
+                    li[i].style.display = 'block';
                 } else {
-                    li[i].style.display = "none";
+                    li[i].style.display = 'none';
                 }
             }
         }
-        document.getElementById("search").onclick = function searchResults() {
-            document.getElementById("search-results").style.display = "block";
+        document.getElementById('mobile-search').onclick = function searchResults() {
+            document.getElementById('search-results').style.display = 'block';
         }
-        document.getElementById("search").ondblclick = function searchResultsHide() {
-            document.getElementById("search-results").style.display = "none";
+        document.getElementById('mobile-search').ondblclick = function searchResultsHide() {
+            document.getElementById('search-results').style.display = 'none';
+        };
+        
+        // Search function - desktop
+        function desktopSearch() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('desktop-search');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById('search-results');
+            li = ul.getElementsByTagName('li');
+
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName('a')[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = 'block';
+                } else {
+                    li[i].style.display = 'none';
+                }
+            }
+        }
+        document.getElementById('desktop-search').onclick = function searchResults() {
+            document.getElementById('search-results').style.display = 'block';
+        }
+        document.getElementById('desktop-search').ondblclick = function searchResultsHide() {
+            document.getElementById('search-results').style.display = 'none';
         };
 
             // Dragscroll, Copyright © 2015 asvd, Provided under the MIT License, https://github.com/asvd/dragscroll
