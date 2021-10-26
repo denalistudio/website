@@ -244,7 +244,7 @@
                 }
             };
         };
-        document.getElementById('desktop-search').onclick = function searchResults() {
+        document.getElementById('desktop-search').onkeydown = function searchResults() {
             document.getElementById('search-results').style.display = 'block';
         };
         document.getElementById('desktop-search').ondblclick = function searchResultsHide() {
