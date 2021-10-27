@@ -156,33 +156,35 @@ a {
 p {
   font-size: 1.6rem;
   font-weight: 400;
-  @media (prefers-color-scheme: dark) {
-    color: $white
-  }
 }
 
 h2 {
+  // Headings (Section)
   font-size: 3rem;
   color: $dark;
-  @media (prefers-color-scheme: dark) {
-    color: $white
-  }
 }
 
 h3 {
+  // CHeadings (Card)
   margin: 0 0 8px 0;
   font-size: 2.5rem;
   color: $dark;
-  @media (prefers-color-scheme: dark) {
-    color: $white
-  }
 }
 
 h4 {
+  // Subtitles
   font-size: 1.6rem;
   font-weight: 400;
   margin: 0;
   color: $denali;
+}
+
+p,
+h2,
+h3 {
+  @media (prefers-color-scheme: dark) {
+    color: $white;
+  }
 }
 
 img {
@@ -200,7 +202,7 @@ noscript {
   padding: 10%;
   background-color: $white;
   @media (prefers-color-scheme: dark) {
-    background-color: $dark
+    background-color: $dark;
   }
 }
 
