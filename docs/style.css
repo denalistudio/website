@@ -170,8 +170,21 @@ p {
   font-weight: 400;
 }
 
+@media (prefers-color-scheme: dark) {
+  p {
+    background-color: #ffffff;
+  }
+}
+
 h2 {
   font-size: 3rem;
+  color: #272727;
+}
+
+@media (prefers-color-scheme: dark) {
+  h2 {
+    background-color: #ffffff;
+  }
 }
 
 h3 {
@@ -180,11 +193,17 @@ h3 {
   color: #272727;
 }
 
+@media (prefers-color-scheme: dark) {
+  h3 {
+    background-color: #ffffff;
+  }
+}
+
 h4 {
   font-size: 1.6rem;
+  font-weight: 400;
   margin: 0;
   color: #4f54ff;
-  font-weight: 400;
 }
 
 img {
@@ -201,16 +220,6 @@ noscript {
   z-index: 15;
   padding: 10%;
   background-color: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  noscript {
-    background-color: #272727;
-  }
-}
-
-noscript img {
-  width: 300px;
 }
 
 /* Card */
