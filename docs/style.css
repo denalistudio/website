@@ -203,6 +203,12 @@ noscript {
   background-color: #ffffff;
 }
 
+@media (prefers-color-scheme: dark) {
+  noscript {
+    background-color: #272727;
+  }
+}
+
 /* Card */
 .card {
   border-radius: 15px;
