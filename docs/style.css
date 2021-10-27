@@ -172,7 +172,7 @@ p {
 
 @media (prefers-color-scheme: dark) {
   p {
-    background-color: #ffffff;
+    color: #ffffff;
   }
 }
 
@@ -183,7 +183,7 @@ h2 {
 
 @media (prefers-color-scheme: dark) {
   h2 {
-    background-color: #ffffff;
+    color: #ffffff;
   }
 }
 
@@ -195,7 +195,7 @@ h3 {
 
 @media (prefers-color-scheme: dark) {
   h3 {
-    background-color: #ffffff;
+    color: #ffffff;
   }
 }
 
@@ -220,6 +220,12 @@ noscript {
   z-index: 15;
   padding: 10%;
   background-color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  noscript {
+    background-color: #272727;
+  }
 }
 
 /* Card */
