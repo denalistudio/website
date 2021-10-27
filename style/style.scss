@@ -158,20 +158,20 @@ p {
   font-weight: 400;
 }
 
-h2 {
+h1 {
   // Headings (Section)
   font-size: 3rem;
   color: $dark;
 }
 
-h3 {
-  // CHeadings (Card)
+h2 {
+  // Headings (Card)
   margin: 0 0 8px 0;
   font-size: 2.5rem;
   color: $dark;
 }
 
-h4 {
+h3 {
   // Subtitles
   font-size: 1.6rem;
   font-weight: 400;
@@ -180,8 +180,8 @@ h4 {
 }
 
 p,
-h2,
-h3 {
+h1,
+h2 {
   @media (prefers-color-scheme: dark) {
     color: $white;
   }
