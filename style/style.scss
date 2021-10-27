@@ -27,6 +27,66 @@ $white: #ffffff;
   box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  // Text
+  font-size: 1.6rem;
+  font-weight: 400;
+  @media (prefers-color-scheme: dark) {
+    color: $white;
+  }
+}
+
+h1 {
+  // Headings (Section)
+  font-size: 3rem;
+  color: $dark;
+  @media (prefers-color-scheme: dark) {
+    color: $white;
+  }
+}
+
+h2 {
+  // Headings (Card)
+  margin: 0 0 8px 0;
+  font-size: 2.5rem;
+  color: $dark;
+  @media (prefers-color-scheme: dark) {
+    color: $white;
+  }
+}
+
+h3 {
+  // Subtitles
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+  color: $denali;
+  @media (prefers-color-scheme: dark) {
+    color: $denali;
+  }
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+noscript {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 15;
+  padding: 10%;
+  background-color: $white;
+}
+
 body {
   margin-top: var(--navHeight);
   font-family: "Roboto", sans-serif;
@@ -144,66 +204,6 @@ nav,
 .card,
 .client-img {
   @include shadow();
-}
-
-/* General */
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-p {
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-
-h1 {
-  // Headings (Section)
-  font-size: 3rem;
-  color: $dark;
-}
-
-h2 {
-  // Headings (Card)
-  margin: 0 0 8px 0;
-  font-size: 2.5rem;
-  color: $dark;
-}
-
-h3 {
-  // Subtitles
-  font-size: 1.6rem;
-  font-weight: 400;
-  margin: 0;
-  color: $denali;
-}
-
-p,
-h1,
-h2 {
-  @media (prefers-color-scheme: dark) {
-    color: $white;
-  }
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-noscript {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 15;
-  padding: 10%;
-  background-color: $white;
-  @media (prefers-color-scheme: dark) {
-    background-color: $dark;
-  }
 }
 
 /* Card */
@@ -669,19 +669,10 @@ nav {
 /* Dark mode */
 
 @media (prefers-color-scheme: dark) {
-  p,
-  h2,
-  h3,
-  .nav-content a,
-  .menu input {
-    color: $white;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
   nav,
   .menu input,
-  .card {
+  .card,
+  noscript {
     background-color: $dark;
   }
 }
