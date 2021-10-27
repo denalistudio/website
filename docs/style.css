@@ -209,6 +209,10 @@ noscript {
   }
 }
 
+noscript img {
+  width: 300px;
+}
+
 /* Card */
 .card {
   border-radius: 15px;
