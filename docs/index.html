@@ -60,6 +60,8 @@
                 </svg>
             </a>
             <div class="mobile-menu">
+                <a id="nav-services" href="#services-heading"></a>
+                <a id="nav-client" href="#client-heading"></a>
                 <a id="nav-contact" href="#contact-heading"></a>
                 <a id="nav-knowledgebase" href="https://dev.studiodenali.cz/help/"></a>
                 <input type="text" id="mobile-search" onkeyup="mobileSearch()" placeholder="Search">
@@ -68,6 +70,8 @@
                 <div class="menu-btn__burger"></div>
             </a>
             <div class="desktop-menu">
+                <a id="nav-services" href="#services-heading"></a>
+                <a id="nav-client" href="#client-heading"></a>
                 <a id="nav-contact" href="#contact-heading"></a>
                 <a id="nav-knowledgebase" href="https://dev.studiodenali.cz/help/"></a>
                 <input type="text" id="desktop-search" onkeyup="desktopSearch()" placeholder="Search">
@@ -140,9 +144,8 @@
     </div>
     <div class="card con-text">
         <img src="src/contact.jpg">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nemo deserunt molestias, numquam
-            voluptas eos molestiae pariatur explicabo repudiandae quasi est mollitia similique itaque earum dolorem illo
-            nam rem rerum!</p>
+        <h3 id="contact-title"></h3>
+        <p id="contact-text"></p>
     </div>
     <div class="card con-map">
         <iframe
@@ -150,7 +153,7 @@
             width="100%" height="100%" style="border:0;" allowfullscreen="no" loading="lazy"></iframe>
     </div>
     <h2 id="clients-heading"></h2>
-    <div class="clients">
+    <div class="clients dragscroll">
         <a class="card pivonky" href="https://www.pivonkykarvina.cz/" target="_blank" rel="noopener noreferrer">
             <h4>Latest project</h4>
             <h3 id="client-pivonky-title"></h3>

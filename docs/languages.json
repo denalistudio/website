@@ -1,6 +1,8 @@
 ﻿{
 	"cs": {
 		"langdesc": "cs",
+		"nav-services": "Naše služby",
+		"nav-client": "Dokončené projekty",
 		"nav-contact": "Kontaktujte nás",
 		"nav-knowledgebase": "Znalostní báze",
 		"search-mainsite": "Hlavní stránka",
@@ -28,6 +30,8 @@
 		"services-social-text": "",
 		"contact-heading": "Kontaktujte nás",
 		"contact-savebutton": "Uložit kontakt",
+		"contact-title": "Jsme tady pro vás",
+		"contact-text": "lorem ipsum",
 		"clients-heading": "Dokončené projekty",
 		"client-pivonky-title": "Pivoňky",
 		"client-pivonky-text": "Již od samotného názvu jsme Pivoňkám pomáhali formovat jejich nápad, aby se stal realitou.",
@@ -37,6 +41,8 @@
 	},
 	"en": {
 		"langdesc": "en",
+		"nav-services": "Our services",
+		"nav-client": "Finished projects",
 		"nav-contact": "Contact us",
 		"nav-knowledgebase": "Knowledge base",
 		"search-mainsite": "Main site",
@@ -67,6 +73,8 @@
 		"services-social-text": "",
 		"contact-heading": "Contact us",
 		"contact-savebutton": "Save contact",
+		"contact-title": "We are here for you",
+		"contact-text": "lorem ipsum",
 		"clients-heading": "Finished projects",
 		"client-pivonky-title": "Pivonky",
 		"client-pivonky-text": "From the name itself, we helped the Pivonky beer hall shape their idea so it can become reality.",
