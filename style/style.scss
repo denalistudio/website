@@ -3,11 +3,9 @@
 @import "./fonts";
 
 $denali: #4f54ff;
-$grey: #e5e5e5;
 $dark: #272727;
-$link: #0d6efd;
-$black: #000000;
 $white: #ffffff;
+$black: #000000;
 
 @mixin shadow {
   box-shadow: #959da533 0 8px 24px;
@@ -28,47 +26,41 @@ $white: #ffffff;
 }
 
 a {
-  color: inherit;
+  color: $black;
   text-decoration: none;
 }
 
 p {
-  // Text
   font-size: 1.6rem;
   font-weight: 400;
-  @media (prefers-color-scheme: dark) {
-    color: $white;
-  }
+  color: $black;
 }
 
 h1 {
-  // Headings (Section)
   font-size: 3rem;
   color: $dark;
-  @media (prefers-color-scheme: dark) {
-    color: $white;
-  }
 }
 
 h2 {
-  // Headings (Card)
-  margin: 0 0 8px 0;
   font-size: 2.5rem;
   color: $dark;
+  margin: 0 0 8px 0;
+}
+
+a,
+p,
+h1,
+h2 {
   @media (prefers-color-scheme: dark) {
     color: $white;
   }
 }
 
 h3 {
-  // Subtitles
   font-size: 1.6rem;
   font-weight: 400;
-  margin: 0;
   color: $denali;
-  @media (prefers-color-scheme: dark) {
-    color: $denali;
-  }
+  margin: 0;
 }
 
 img {
@@ -260,6 +252,9 @@ nav {
   top: 0px;
   z-index: 1;
   background-color: $white;
+  a:hover{
+    color: $denali;
+  }
 }
 
 .nav-content {
@@ -299,14 +294,9 @@ nav {
 }
 
 .mobile-menu a {
-  color: $black;
   margin: 16px 0;
   font-size: 1.8rem;
   display: block;
-}
-
-.mobile-menu a:hover {
-  color: $denali;
 }
 
 .menu-btn {
@@ -397,14 +387,9 @@ nav {
 }
 
 .desktop-menu a {
-  color: $black;
   margin: 16px 0;
   font-size: 1.8rem;
   display: inline-block;
-}
-
-.desktop-menu a:hover {
-  color: $denali;
 }
 
 .listlanguages {
