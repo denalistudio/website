@@ -11,7 +11,6 @@ lang-check: 'no'
 Poštovní klient je ve zkratce program, který slouží k příjmání, odesílání a správě elektronické pošty. Nesmíme si ale plést poštovní klienty s tzv. "webmailem," což je velice podobný program, jen zcela umístěn na webu a je většinou operovaný samotnou společností provozující vaši e-mailovou službu (Google = Gmail, Forpsi = Forpsi Webmail). Pokud máte vaši mailovou adresu zařízenou s námi u Forpsi a nechcete využívat Forpsi Webmail ale například poštovní klienty od Apple a Microsoft, dozvíte se v tomto článku jak.
 
 [[#Apple Pošta (Mac)]] 
-[[#Gmail pro telefon]]
 
 ## Windows Pošta
 *Windows Pošta* je výchozím poštovním klientem pro operační systém Windows od společnosti Microsoft, který mnoho lidí využívá pro jeho jednoduchost.
@@ -61,7 +60,7 @@ Poštovní klient je ve zkratce program, který slouží k příjmání, odesíl
 
 1) Když otevřete aplikaci Microsoft Outlook 365 poprvé, vypňte do pole **E-mailová adresa** vaši novou e-mailovou adresu a klikněte na tlačítko **Upřesnit možnosti**.
 2) Vyberte možnost **Umožnit mi ručne si nastavit účet** a klikněte na tlačítko **Připojit**.
-3) Vyberte možnost **IMAP** s ikonou obálky.
+3) Vyberte možnost `IMAP` s ikonou obálky.
 4) V novém okně **Nastavení ůčtu IMAP** jsou dvě sekce: Příchozí a odchozí pošta. Do sekce **Příchozí pošta** do pole **Server** vyplňte `imap.forpsi.com`, do pole **Port** číslo `993`, zkontrolujte že jako **Metoda šifrování** je vybrána možnost `SSL/TLS`. Do sekce **Odchozí pošta** do pole **Server** vyplňte `smtp.forpsi.com`, do pole **Port** číslo `465`, zkontrolujte že jako **Metoda šifrování** je vybrána možnost `SSL/TLS`, zaškrntněte možnost **Požadovat přihlášení pomocí zabezpečeného ověřování hesla (SPA)**. Všechny informace zkontrolujte a klikněte na možnost **Další**.
 5) Do pole **Heslo** vyplňte vaše heslo.
 6) Klikněte na tlačítko **Připojit** v pravém dolním rohu.
@@ -81,7 +80,14 @@ Poštovní klient je ve zkratce program, který slouží k příjmání, odesíl
 <img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/7.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/outlook-mobil/8.png">
 
-1) s
+1) Když otevřete aplikaci *Microsoft Outlook pro telefony* poprvé, hned se vám zobrazí okno **Přidat účet**. Do pole **Zadejte svůj pracovní nebo osobní e-mail.** vyplňte vaši novou e-mailovou adresu s vaší doménou.
+2) Z menu **Vyberte poskytovatele e-mailu** z poslední sekce **Upřesnit** vyberte možnost **IMAP** s ikonou *pošty*.
+3) Některá pole (Jako pole E-mailová adresa) již budou vyplněna z předchozího kroku, pokud ne vyplňte je podle pokynů. Do pole **Zobrazovaný název** vyplňte vaše jméno/název firmy, pod kterým uvidí příjemci vaše e-maily. Do pole **Popis** vyplňte název, pod kterým uvidíte vy váš e-mail ve shcránce. Do sekce **Server příchozí pošty IMAP** do pole **Název hostitele IMAP** vyplňte `imap.forpsi.com`, pole **Port** vynechte prázdné, do pole **Heslo IMAP** vaše heslo a pokud není pole **Uživatelské jméno IMAP** již vyplňeno, vyplňte do něj váš e-mail. Do sekce **Server odchozí pošty SMTP** do pole **Název hostitele SMTP** vyplňte `smtp.forpsi.com`, pole **Port** vynechte prázdné, do pole **Heslo IMAP** vaše heslo a pokud není pole **Uživatelské jméno IMAP** již vyplňeno, vyplňte do něj váš e-mail. Poté kliněte na tlačítko **Přihlásit se**.
+4) Na stránce **Vaše data, vaše volba** si pročtěte, s čím souhlasíte a stiskněte **Další**.
+5) Na stránce **Vylepšování našich produktů díky vám** zhodnoťte, či chcete sdílet nepovinná diagnostická data se společností *Microsoft* a stiskněte tlačítko **Odmítnout** nebo **Příjmout**.
+6) Opět si pročťete, s ším souhlasíte a stiskněte tlačítko **Pokračovat do aplikace Outlook**.
+7) Na poslední stránce je okno **Povolit oznámení**, doporučujeme je zapnout aby vám mohly chodit notifikace z vašich e-mailů.
+8) **Hotovo!** Vyzkoušejte si na vaši novou adresu poslat pro radost e-mail z jiného účtu.
 
 ## Mozilla Thunderbird
 Poštovní klient *Mozilla Thunderbird* je open-source projektem tvůrce prohlížeče Firefox, který je nejen skvělým nástrojem pro správu vaší elektronické pošty, ale nabídne například i vlastní adresář kontaktů nebo chatovací systém.
