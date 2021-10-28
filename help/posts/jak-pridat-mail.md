@@ -109,6 +109,8 @@ Poštovní klient *Mozilla Thunderbird* je open-source projektem tvůrce prohlí
 ## Apple Pošta pro Mac
 *Apple Pošta pro iPhone/iPad* je předinstalovaný poštovní klient od společnosti Apple, který je skvěle zabudovaný do každého Macu.
 
+*Coming soon*
+
 ## Apple Pošta pro iPhone/iPad
 *Apple Pošta pro iPhone/iPad* je předinstalovaný poštovní klient od společnosti Apple, který je skvěle zabudovaný do každého iPhonu a iPadu.
 
