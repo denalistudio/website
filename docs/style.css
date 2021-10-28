@@ -52,8 +52,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -116,67 +115,52 @@ body {
   line-height: 1.3;
   color: #272727;
   background-color: #fafafa;
-  display: -ms-grid;
   display: grid;
   row-gap: 20px;
-  -ms-grid-columns: 20px 1fr 20px;
-      grid-template-columns: 20px 1fr 20px;
-  -ms-grid-rows: auto auto auto auto auto auto 400px auto auto 20px;
-      grid-template-rows: auto auto auto auto auto auto 400px auto auto 20px;
-      grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". con-contact ." ". con-text ." ". con-map ." ". clients-heading ." "clients clients clients" "lang . .";
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-rows: auto auto auto auto 182px auto 400px auto auto 20px;
+  grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". contact ." ". contact ." ". contact ." ". clients-heading ." "clients clients clients" "lang . .";
 }
 
 @media (min-width: 576px) {
   body {
-    -ms-grid-columns: 20px 1fr 1fr 20px;
-        grid-template-columns: 20px 1fr 1fr 20px;
-    -ms-grid-rows: auto auto auto auto auto auto 300px auto auto 20px;
-        grid-template-rows: auto auto auto auto auto auto 300px auto auto 20px;
-        grid-template-areas: "nav nav nav nav" ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". con-contact con-img ." ". con-text con-text ." ". con-map con-map ." ". clients-heading clients-heading ." "clients clients clients clients" "lang . . .";
+    grid-template-columns: 20px 1fr 1fr 20px;
+    grid-template-rows: auto auto auto auto 182px auto 300px auto auto 20px;
+    grid-template-areas: "nav nav nav nav" ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" "lang . . .";
   }
 }
 
 @media (min-width: 768px) {
   body {
-    -ms-grid-columns: 20px 1fr 1fr 20px;
-        grid-template-columns: 20px 1fr 1fr 20px;
-    -ms-grid-rows: auto auto auto auto auto auto 300px auto auto 20px;
-        grid-template-rows: auto auto auto auto auto auto 300px auto auto 20px;
-        grid-template-areas: "nav nav nav nav" ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". con-contact con-text ." ". con-img con-text ." ". con-map con-map ." ". clients-heading clients-heading ." "clients clients clients clients" "lang . . .";
+    grid-template-columns: 20px 1fr 1fr 20px;
+    grid-template-rows: auto auto auto auto 182px 200px 300px auto auto 20px;
+    grid-template-areas: "nav nav nav nav" ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" "lang . . .";
   }
 }
 
 @media (min-width: 992px) {
   body {
-    -ms-grid-columns: 20px 1fr 1fr 20px;
-        grid-template-columns: 20px 1fr 1fr 20px;
-    -ms-grid-rows: auto auto auto auto auto auto 400px auto auto 20px;
-        grid-template-rows: auto auto auto auto auto auto 400px auto auto 20px;
-        grid-template-areas: "nav nav nav nav" ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". con-contact con-text ." ". con-img con-text ." ". con-map con-map ." ". clients-heading clients-heading ." "clients clients clients clients" "lang . . .";
+    grid-template-columns: 20px 1fr 1fr 20px;
+    grid-template-rows: auto auto auto auto 182px 200px 400px auto auto 20px;
+    grid-template-areas: "nav nav nav nav" ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" "lang . . .";
   }
 }
 
 @media (min-width: 1200px) {
   body {
-    -webkit-column-gap: 20px;
-            column-gap: 20px;
-    -ms-grid-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
-        grid-template-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
-    -ms-grid-rows: auto auto auto auto 200px 200px auto auto 20px;
-        grid-template-rows: auto auto auto auto 200px 200px auto auto 20px;
-        grid-template-areas: "nav nav nav nav nav nav" ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". con-contact con-text con-map con-map ." ". con-img con-text con-map con-map ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" "lang . . . . .";
+    column-gap: 20px;
+    grid-template-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
+    grid-template-rows: auto auto auto auto 200px 200px auto auto 20px;
+    grid-template-areas: "nav nav nav nav nav nav" ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" "lang . . . . .";
   }
 }
 
 @media (min-width: 1600px) {
   body {
-    -webkit-column-gap: 20px;
-            column-gap: 20px;
-    -ms-grid-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-        grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-    -ms-grid-rows: auto auto auto auto 200px 200px auto auto 20px;
-        grid-template-rows: auto auto auto auto 200px 200px auto auto 20px;
-        grid-template-areas: "nav nav nav nav nav nav" ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". con-contact con-text con-map con-map ." ". con-img con-text con-map con-map ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" "lang . . . . .";
+    column-gap: 20px;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: auto auto auto auto 200px 200px auto auto 20px;
+    grid-template-areas: "nav nav nav nav nav nav" ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" "lang . . . . .";
   }
 }
 
@@ -199,8 +183,7 @@ ul,
 nav,
 .card,
 .client-img {
-  -webkit-box-shadow: #959da533 0 8px 24px;
-          box-shadow: #959da533 0 8px 24px;
+  box-shadow: #959da533 0 8px 24px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -208,24 +191,19 @@ nav,
   nav,
   .card,
   .client-img {
-    -webkit-box-shadow: #00000033 0 8px 24px;
-            box-shadow: #00000033 0 8px 24px;
+    box-shadow: #00000033 0 8px 24px;
   }
 }
 
 /* Card */
 .card {
   border-radius: 15px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
   background-color: #ffffff;
 }
 
 .card:hover {
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
+  transform: scale(1.025);
 }
 
 /* List */
@@ -255,15 +233,10 @@ li a:hover {
 
 /* Nav */
 nav {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: nav;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20px 1fr 20px;
-      grid-template-columns: 20px 1fr 20px;
-      grid-template-areas: ". nav-content .";
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-areas: ". nav-content .";
   width: 100%;
   position: fixed;
   top: 0px;
@@ -273,17 +246,15 @@ nav {
 
 @media (min-width: 1200px) {
   nav {
-    -ms-grid-columns: 0.5fr 9fr 0.5fr;
-        grid-template-columns: 0.5fr 9fr 0.5fr;
-        grid-template-areas: ". nav-content .";
+    grid-template-columns: 0.5fr 9fr 0.5fr;
+    grid-template-areas: ". nav-content .";
   }
 }
 
 @media (min-width: 1600px) {
   nav {
-    -ms-grid-columns: 1fr 8fr 1fr;
-        grid-template-columns: 1fr 8fr 1fr;
-        grid-template-areas: ". nav-content .";
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: ". nav-content .";
   }
 }
 
@@ -292,35 +263,25 @@ nav a:hover {
 }
 
 .nav-content {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: nav-content;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 60px auto;
-      grid-template-rows: 60px auto;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
+  grid-template-rows: 60px auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
   background-color: inherit;
 }
 
 @media (min-width: 768px) {
   .nav-content {
-    -ms-grid-rows: 60px;
-        grid-template-rows: 60px;
-    -ms-grid-columns: 50px 1fr;
-        grid-template-columns: 50px 1fr;
-        grid-template-areas: "nav-svg desktop-menu";
+    grid-template-rows: 60px;
+    grid-template-columns: 50px 1fr;
+    grid-template-areas: "nav-svg desktop-menu";
   }
 }
 
 .nav-content svg {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: nav-svg;
-  -ms-grid-column-align: start;
-      justify-self: start;
+  justify-self: start;
   width: 30px;
 }
 
@@ -331,9 +292,6 @@ nav a:hover {
 }
 
 .mobile-menu {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: mobile-menu;
   display: none;
 }
@@ -355,23 +313,14 @@ nav a:hover {
 }
 
 .menu-btn {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: menu-btn;
   justify-self: end;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 60px;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -380,7 +329,6 @@ nav a:hover {
   height: 4px;
   background-color: #000000;
   border-radius: 4px;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -398,7 +346,6 @@ nav a:hover {
   height: 4px;
   background-color: #000000;
   border-radius: 4px;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -410,31 +357,25 @@ nav a:hover {
 }
 
 .menu-btn__burger::before {
-  -webkit-transform: translateY(-9px);
-          transform: translateY(-9px);
+  transform: translateY(-9px);
 }
 
 .menu-btn__burger::after {
-  -webkit-transform: translateY(9px);
-          transform: translateY(9px);
+  transform: translateY(9px);
 }
 
 .menu-btn.open .menu-btn__burger {
-  -webkit-transform: translateX(-30px);
-          transform: translateX(-30px);
+  transform: translateX(-30px);
   background-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .menu-btn.open .menu-btn__burger::before {
-  -webkit-transform: rotate(45deg) translate(20px, -20px);
-          transform: rotate(45deg) translate(20px, -20px);
+  transform: rotate(45deg) translate(20px, -20px);
 }
 
 .menu-btn.open .menu-btn__burger::after {
-  -webkit-transform: rotate(-45deg) translate(20px, 20px);
-          transform: rotate(-45deg) translate(20px, 20px);
+  transform: rotate(-45deg) translate(20px, 20px);
 }
 
 @media (min-width: 768px) {
@@ -490,23 +431,13 @@ nav a:hover {
 
 /* Services */
 #services-heading {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: services-heading;
 }
 
 .services {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: services;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   padding: 0 calc(20px + env(safe-area-inset-right)) 40px calc(20px + env(safe-area-inset-left));
   margin: 0 0 -40px 0;
   overflow-x: scroll;
@@ -516,22 +447,18 @@ nav a:hover {
 }
 
 .services .card {
-  -ms-flex-preferred-size: calc(var(--bodyWidth) * 0.8);
-      flex-basis: calc(var(--bodyWidth) * 0.8);
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-basis: calc(var(--bodyWidth) * 0.8);
+  flex-shrink: 0;
   height: 310px;
   padding: 25px;
   margin-right: 20px;
 }
 
 .services .card:hover {
-  cursor: -webkit-grab;
   cursor: grab;
 }
 
 .services .card:active {
-  cursor: -webkit-grabbing;
   cursor: grabbing;
 }
 
@@ -541,22 +468,19 @@ nav a:hover {
 
 @media (min-width: 576px) {
   .services .card {
-    -ms-flex-preferred-size: calc(var(--bodyWidth) / 2);
-        flex-basis: calc(var(--bodyWidth) / 2);
+    flex-basis: calc(var(--bodyWidth) / 2);
   }
 }
 
 @media (min-width: 768px) {
   .services .card {
-    -ms-flex-preferred-size: calc(var(--bodyWidth) * 0.4);
-        flex-basis: calc(var(--bodyWidth) * 0.4);
+    flex-basis: calc(var(--bodyWidth) * 0.4);
   }
 }
 
 @media (min-width: 992px) {
   .services .card {
-    -ms-flex-preferred-size: calc(var(--bodyWidth) * 0.3);
-        flex-basis: calc(var(--bodyWidth) * 0.3);
+    flex-basis: calc(var(--bodyWidth) * 0.3);
     height: 350px;
   }
 }
@@ -566,8 +490,7 @@ nav a:hover {
     padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
   }
   .services .card {
-    -ms-flex-preferred-size: calc(var(--fractionWidth) * 2.25);
-        flex-basis: calc(var(--fractionWidth) * 2.25);
+    flex-basis: calc(var(--fractionWidth) * 2.25);
   }
   .services .card:last-child {
     margin-right: -20px;
@@ -579,8 +502,7 @@ nav a:hover {
     padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
   }
   .services .card {
-    -ms-flex-preferred-size: calc(var(--fractionWidth) * 2);
-        flex-basis: calc(var(--fractionWidth) * 2);
+    flex-basis: calc(var(--fractionWidth) * 2);
   }
 }
 
@@ -595,14 +517,51 @@ nav a:hover {
 
 /* Contact */
 #contact-heading {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
   grid-area: contact-heading;
 }
 
+.contact {
+  grid-area: contact;
+  display: grid;
+  grid-template-rows: 182px auto 400px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "con-contact" "con-text" "con-map";
+  row-gap: 20px;
+}
+
+@media (min-width: 576px) {
+  .contact {
+    grid-template-rows: 182px auto 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "con-contact con-img" "con-text con-text" "con-map con-map";
+    gap: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    grid-template-rows: 182px 200px 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "con-contact con-text" "con-img con-text" "con-map con-map";
+  }
+}
+
+@media (min-width: 992px) {
+  .contact {
+    grid-template-rows: 182px 200px 400px;
+    grid-template-areas: "con-contact con-text" "con-img con-text" "con-map con-map";
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "con-contact con-text con-map con-map" "con-img con-text con-map con-map";
+  }
+}
+
 .con-contact {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
   grid-area: con-contact;
   padding: 25px;
 }
@@ -610,18 +569,6 @@ nav a:hover {
 .con-contact h3 {
   margin: 0 0 16px 0;
   line-height: 1;
-}
-
-@media (min-width: 576px) {
-  .con-contact {
-    margin-right: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .con-contact {
-    margin: 0;
-  }
 }
 
 .con-email,
@@ -641,7 +588,6 @@ nav a:hover {
 
 .con-img {
   grid-area: con-img;
-  margin: 0 0 0 10px;
 }
 
 .con-img img {
@@ -656,21 +602,7 @@ nav a:hover {
   }
 }
 
-@media (min-width: 768px) {
-  .con-img {
-    margin: 0 10px 0 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .con-img {
-    margin: 0;
-  }
-}
-
 .con-text {
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
   grid-area: con-text;
   padding: 25px;
 }
@@ -687,21 +619,7 @@ nav a:hover {
   }
 }
 
-@media (min-width: 768px) {
-  .con-text {
-    margin-left: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .con-text {
-    margin: 0;
-  }
-}
-
 .con-map {
-  -ms-grid-row: 7;
-  -ms-grid-column: 2;
   grid-area: con-map;
 }
 
@@ -711,23 +629,13 @@ nav a:hover {
 
 /* Clients */
 #clients-heading {
-  -ms-grid-row: 8;
-  -ms-grid-column: 2;
   grid-area: clients-heading;
 }
 
 .clients {
-  -ms-grid-row: 9;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: clients;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   padding: 0 calc(20px + env(safe-area-inset-right)) 40px calc(20px + env(safe-area-inset-left));
   margin: 0 0 -40px 0;
   overflow-x: scroll;
@@ -743,12 +651,10 @@ nav a:hover {
 }
 
 .clients .card:hover {
-  cursor: -webkit-grab;
   cursor: grab;
 }
 
 .clients .card:active {
-  cursor: -webkit-grabbing;
   cursor: grabbing;
 }
 
@@ -758,22 +664,19 @@ nav a:hover {
 
 @media (min-width: 576px) {
   .clients .card {
-    -ms-flex-preferred-size: calc(var(--bodyWidth) / 2);
-        flex-basis: calc(var(--bodyWidth) / 2);
+    flex-basis: calc(var(--bodyWidth) / 2);
   }
 }
 
 @media (min-width: 768px) {
   .clients .card {
-    -ms-flex-preferred-size: calc(var(--bodyWidth) * 0.4);
-        flex-basis: calc(var(--bodyWidth) * 0.4);
+    flex-basis: calc(var(--bodyWidth) * 0.4);
   }
 }
 
 @media (min-width: 992px) {
   .clients .card {
-    -ms-flex-preferred-size: calc(var(--bodyWidth) * 0.3);
-        flex-basis: calc(var(--bodyWidth) * 0.3);
+    flex-basis: calc(var(--bodyWidth) * 0.3);
   }
 }
 
@@ -782,8 +685,7 @@ nav a:hover {
     padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
   }
   .clients .card {
-    -ms-flex-preferred-size: calc(var(--fractionWidth) * 2.25);
-        flex-basis: calc(var(--fractionWidth) * 2.25);
+    flex-basis: calc(var(--fractionWidth) * 2.25);
   }
 }
 
@@ -792,8 +694,7 @@ nav a:hover {
     padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
   }
   .clients .card {
-    -ms-flex-preferred-size: calc(var(--fractionWidth) * 2);
-        flex-basis: calc(var(--fractionWidth) * 2);
+    flex-basis: calc(var(--fractionWidth) * 2);
   }
 }
 
@@ -816,8 +717,6 @@ nav a:hover {
 
 /* Languages */
 .listlanguages {
-  -ms-grid-row: 10;
-  -ms-grid-column: 1;
   grid-area: lang;
 }
 

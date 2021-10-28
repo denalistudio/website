@@ -88,59 +88,59 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: auto auto auto auto auto auto 400px auto auto 20px;
+  grid-template-rows: auto auto auto auto 182px auto 400px auto auto 20px;
   grid-template-areas:
     "nav nav nav"
     ". services-heading ."
     "services services services"
     ". contact-heading ."
-    ". con-contact ."
-    ". con-text ."
-    ". con-map ."
+    ". contact ."
+    ". contact ."
+    ". contact ."
     ". clients-heading ."
     "clients clients clients"
     "lang . .";
   @media (min-width: 576px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto auto auto auto auto auto 300px auto auto 20px;
+    grid-template-rows: auto auto auto auto 182px auto 300px auto auto 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
       "services services services services"
       ". contact-heading contact-heading ."
-      ". con-contact con-img ."
-      ". con-text con-text ."
-      ". con-map con-map ."
+      ". contact contact ."
+      ". contact contact ."
+      ". contact contact ."
       ". clients-heading clients-heading ."
       "clients clients clients clients"
       "lang . . .";
   }
   @media (min-width: 768px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto auto auto auto auto auto 300px auto auto 20px;
+    grid-template-rows: auto auto auto auto 182px 200px 300px auto auto 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
       "services services services services"
       ". contact-heading contact-heading ."
-      ". con-contact con-text ."
-      ". con-img con-text ."
-      ". con-map con-map ."
+      ". contact contact ."
+      ". contact contact ."
+      ". contact contact ."
       ". clients-heading clients-heading ."
       "clients clients clients clients"
       "lang . . .";
   }
   @media (min-width: 992px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto auto auto auto auto auto 400px auto auto 20px;
+    grid-template-rows: auto auto auto auto 182px 200px 400px auto auto 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
       "services services services services"
       ". contact-heading contact-heading ."
-      ". con-contact con-text ."
-      ". con-img con-text ."
-      ". con-map con-map ."
+      ". contact contact ."
+      ". contact contact ."
+      ". contact contact ."
       ". clients-heading clients-heading ."
       "clients clients clients clients"
       "lang . . .";
@@ -154,8 +154,8 @@ body {
       ". services-heading services-heading services-heading services-heading ."
       "services services services services services services"
       ". contact-heading contact-heading contact-heading contact-heading ."
-      ". con-contact con-text con-map con-map ."
-      ". con-img con-text con-map con-map ."
+      ". contact contact contact contact ."
+      ". contact contact contact contact ."
       ". clients-heading clients-heading clients-heading clients-heading ."
       "clients clients clients clients clients clients"
       "lang . . . . .";
@@ -169,8 +169,8 @@ body {
       ". services-heading services-heading services-heading services-heading ."
       "services services services services services services"
       ". contact-heading contact-heading contact-heading contact-heading ."
-      ". con-contact con-text con-map con-map ."
-      ". con-img con-text con-map con-map ."
+      ". contact contact contact contact ."
+      ". contact contact contact contact ."
       ". clients-heading clients-heading clients-heading clients-heading ."
       "clients clients clients clients clients clients"
       "lang . . . . .";
@@ -489,18 +489,55 @@ nav {
   grid-area: contact-heading;
 }
 
+.contact {
+  grid-area: contact;
+  display: grid;
+  grid-template-rows: 182px auto 400px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "con-contact"
+  "con-text"
+  "con-map";
+  row-gap: 20px;
+  @media (min-width: 576px) {
+    grid-template-rows: 182px auto 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "con-contact con-img"
+    "con-text con-text"
+    "con-map con-map";
+    gap: 20px;
+  }
+  @media (min-width: 768px) {
+    grid-template-rows: 182px 200px 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "con-contact con-text"
+    "con-img con-text"
+    "con-map con-map";
+  }
+  @media (min-width: 992px) {
+    grid-template-rows: 182px 200px 400px;
+    grid-template-areas:
+    "con-contact con-text"
+    "con-img con-text"
+    "con-map con-map";
+  }
+  @media (min-width: 1200px) {
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "con-contact con-text con-map con-map"
+    "con-img con-text con-map con-map";
+  }
+}
+
 .con-contact {
   grid-area: con-contact;
   padding: 25px;
   h3 {
     margin: 0 0 16px 0;
     line-height: 1;
-  }
-  @media (min-width: 576px) {
-    margin-right: 10px;
-  }
-  @media (min-width: 1200px) {
-    margin: 0;
   }
 }
 
@@ -521,7 +558,6 @@ nav {
 
 .con-img {
   grid-area: con-img;
-  margin: 0 0 0 10px;
   img {
     width: 100%;
     height: 100%;
@@ -529,12 +565,6 @@ nav {
   }
   @media (max-width: 576px) {
     display: none;
-  }
-  @media (min-width: 768px) {
-    margin: 0 10px 0 0;
-  }
-  @media (min-width: 1200px) {
-    margin: 0;
   }
 }
 
@@ -550,12 +580,6 @@ nav {
     img {
       display: none;
     }
-  }
-  @media (min-width: 768px) {
-    margin-left: 10px;
-  }
-  @media (min-width: 1200px) {
-    margin: 0;
   }
 }
 
