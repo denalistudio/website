@@ -88,7 +88,7 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: auto auto auto auto 182px auto 400px auto auto 20px;
+  grid-template-rows: auto auto auto auto 182px auto 400px auto auto auto auto auto 20px;
   grid-template-areas:
     "nav nav nav"
     ". services-heading ."
@@ -99,10 +99,13 @@ body {
     ". contact ."
     ". clients-heading ."
     "clients clients clients"
+    ". pricing ."
+    ". pricing ."
+    ". pricing ."
     "lang . .";
   @media (min-width: 576px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto auto auto auto 182px auto 300px auto auto 20px;
+    grid-template-rows: auto auto auto auto 182px auto 300px auto auto auto auto auto 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
@@ -113,11 +116,14 @@ body {
       ". contact contact ."
       ". clients-heading clients-heading ."
       "clients clients clients clients"
+      ". pricing ."
+      ". pricing ."
+      ". pricing ."
       "lang . . .";
   }
   @media (min-width: 768px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto auto auto auto 182px 200px 300px auto auto 20px;
+    grid-template-rows: auto auto auto auto 182px 200px 300px auto auto auto auto auto 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
@@ -128,11 +134,14 @@ body {
       ". contact contact ."
       ". clients-heading clients-heading ."
       "clients clients clients clients"
+      ". pricing ."
+      ". pricing ."
+      ". pricing ."
       "lang . . .";
   }
   @media (min-width: 992px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto auto auto auto 182px 200px 400px auto auto 20px;
+    grid-template-rows: auto auto auto auto 182px 200px 400px auto auto auto auto auto 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
@@ -143,12 +152,15 @@ body {
       ". contact contact ."
       ". clients-heading clients-heading ."
       "clients clients clients clients"
+      ". pricing ."
+      ". pricing ."
+      ". pricing ."
       "lang . . .";
   }
   @media (min-width: 1200px) {
     column-gap: 20px;
     grid-template-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
-    grid-template-rows: auto auto auto auto 200px 200px auto auto 20px;
+    grid-template-rows: auto auto auto auto 200px 200px auto auto auto auto 20px;
     grid-template-areas:
       "nav nav nav nav nav nav"
       ". services-heading services-heading services-heading services-heading ."
@@ -158,12 +170,14 @@ body {
       ". contact contact contact contact ."
       ". clients-heading clients-heading clients-heading clients-heading ."
       "clients clients clients clients clients clients"
+      ". pricing pricing pricing pricing ."
+      ". pricing pricing pricing pricing ."
       "lang . . . . .";
   }
   @media (min-width: 1600px) {
     column-gap: 20px;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: auto auto auto auto 200px 200px auto auto 20px;
+    grid-template-rows: auto auto auto auto 200px 200px auto auto auto auto 20px;
     grid-template-areas:
       "nav nav nav nav nav nav"
       ". services-heading services-heading services-heading services-heading ."
@@ -173,6 +187,8 @@ body {
       ". contact contact contact contact ."
       ". clients-heading clients-heading clients-heading clients-heading ."
       "clients clients clients clients clients clients"
+      ". pricing pricing pricing pricing ."
+      ". pricing pricing pricing pricing ."
       "lang . . . . .";
   }
   @media (prefers-color-scheme: dark) {
@@ -667,6 +683,13 @@ nav {
 
 .elektra {
   grid-area: elektra;
+}
+
+/* Pricing */
+
+.pricing {
+  grid-area: pricing;
+  display: grid;
 }
 
 /* Languages */
