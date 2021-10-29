@@ -278,21 +278,14 @@ nav a:hover {
 @media (min-width: 768px) {
   .nav-content {
     grid-template-rows: 60px;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 30px 1fr;
     grid-template-areas: "nav-svg desktop-menu";
   }
 }
 
 .nav-content svg {
   grid-area: nav-svg;
-  justify-self: start;
   width: 30px;
-}
-
-@media (min-width: 1200px) {
-  .nav-content {
-    padding: 0 20px;
-  }
 }
 
 .mobile-menu {
@@ -396,20 +389,27 @@ nav a:hover {
   display: none;
 }
 
-.desktop-menu #nav-services {
-  margin: 18.4px 16px 18.4px 0;
+.desktop-menu a {
+  font-size: 1.8rem;
+  display: inline-block;
+}
+
+.desktop-menu #menu-services {
+  margin: 18.4px 16px 18.4px 32px;
+}
+
+.desktop-menu #menu-clients, .desktop-menu #menu-contact {
+  margin: 18.4px 16px;
+}
+
+.desktop-menu #menu-knowledgebase {
+  margin: 18.4px 32px 18.4px 16px;
 }
 
 @media (min-width: 768px) {
   .desktop-menu {
     display: block;
   }
-}
-
-.desktop-menu a {
-  margin: 18.4px 16px;
-  font-size: 1.8rem;
-  display: inline-block;
 }
 
 .listlanguages {

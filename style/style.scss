@@ -291,17 +291,13 @@ nav {
   grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
   @media (min-width: 768px) {
     grid-template-rows: 60px;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 30px 1fr;
     grid-template-areas: "nav-svg desktop-menu";
   }
   background-color: inherit;
   svg {
     grid-area: nav-svg;
-    justify-self: start;
     width: 30px;
-  }
-  @media (min-width: 1200px) {
-    padding: 0 20px;
   }
 }
 
@@ -396,18 +392,22 @@ nav {
 .desktop-menu {
   grid-area: desktop-menu;
   display: none;
-  #nav-services {
-    margin: 18.4px 16px 18.4px 0;
+  a {
+    font-size: 1.8rem;
+    display: inline-block;
+  }
+  #menu-services {
+    margin: 18.4px 16px 18.4px 32px;
+  }
+  #menu-clients, #menu-contact {
+    margin: 18.4px 16px;
+  }
+  #menu-knowledgebase {
+    margin: 18.4px 32px 18.4px 16px;
   }
   @media (min-width: 768px) {
     display: block;
   }
-}
-
-.desktop-menu a {
-  margin: 18.4px 16px;
-  font-size: 1.8rem;
-  display: inline-block;
 }
 
 .listlanguages {
