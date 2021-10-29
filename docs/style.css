@@ -64,14 +64,14 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: auto 38.4px 310px 38.4px 182px auto 400px 38.4px auto 38.4px auto auto auto 20px;
+  grid-template-rows: auto 38.4px 350px 38.4px 182px auto 400px 38.4px auto 38.4px auto auto auto 20px;
   grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". contact ." ". contact ." ". contact ." ". clients-heading ." "clients clients clients" ". pricing-heading ." ". pricing ." ". pricing ." ". pricing ." "lang . .";
 }
 
 @media (min-width: 576px) {
   body {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto 38.4px 310px 38.4px 182px auto 300px 38.4px auto 38.4px auto auto auto 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px 182px auto 300px 38.4px auto 38.4px auto auto auto 20px;
     grid-template-areas: "nav nav nav nav" ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". pricing-heading pricing-heading ." ". pricing pricing ." ". pricing pricing ." ". pricing pricing ." "lang . . .";
   }
 }
@@ -79,7 +79,7 @@ body {
 @media (min-width: 768px) {
   body {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto 38.4px 310px 38.4px 182px 200px 300px 38.4px auto 38.4px auto auto auto 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px 182px 200px 300px 38.4px auto 38.4px auto auto auto 20px;
     grid-template-areas: "nav nav nav nav" ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". pricing-heading pricing-heading ." ". pricing pricing ." ". pricing pricing ." ". pricing pricing ." "lang . . .";
   }
 }
@@ -446,7 +446,7 @@ nav a:hover {
 .services .card {
   flex-basis: calc(var(--bodyWidth) * 0.8);
   flex-shrink: 0;
-  height: 310px;
+  height: 350px;
   padding: 25px;
   margin-right: 20px;
 }
@@ -478,7 +478,6 @@ nav a:hover {
 @media (min-width: 992px) {
   .services .card {
     flex-basis: calc(var(--bodyWidth) * 0.3);
-    height: 350px;
   }
 }
 
