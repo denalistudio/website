@@ -34,7 +34,7 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px auto auto auto 38.4px 182px auto 400px 50px 20px;
+  grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px 400px 200px 200px 38.4px 182px auto 400px 50px 20px;
   grid-template-areas:
     "nav nav nav"
     ". services-heading ."
@@ -53,7 +53,7 @@ body {
     "lang . .";
   @media (min-width: 576px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px auto auto auto 38.4px 182px auto 300px 50px 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px 400px 200px 200px 38.4px 182px auto 300px 50px 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
@@ -73,7 +73,7 @@ body {
   }
   @media (min-width: 768px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px auto auto auto 38.4px 182px 200px 300px 50px 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px 400px 200px 200px 38.4px 182px 200px 300px 50px 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
@@ -93,7 +93,7 @@ body {
   }
   @media (min-width: 992px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px auto auto auto 38.4px 182px 200px 400px 50px 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px 400px 200px 200px 38.4px 182px 200px 400px 50px 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
@@ -114,7 +114,7 @@ body {
   @media (min-width: 1200px) {
     column-gap: 20px;
     grid-template-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
-    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px auto auto auto 38.4px 200px 200px 50px 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px 200px 200px 38.4px 200px 200px 50px 20px;
     grid-template-areas:
       "nav nav nav nav nav nav"
       ". services-heading services-heading services-heading services-heading ."
@@ -133,7 +133,7 @@ body {
   @media (min-width: 1600px) {
     column-gap: 20px;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px auto auto auto 38.4px 200px 200px 50px 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px 200px 200px 38.4px 200px 200px 50px 20px;
     grid-template-areas:
       "nav nav nav nav nav nav"
       ". services-heading services-heading services-heading services-heading ."
@@ -503,111 +503,6 @@ nav {
   padding-right: 20px;
 }
 
-/* Contact */
-
-#contact-heading {
-  grid-area: contact-heading;
-}
-
-.contact {
-  display: grid;
-  gap: 20px;
-  grid-area: contact;
-  grid-template-rows: 182px auto 400px;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "con-contact"
-  "con-text"
-  "con-map";
-  @media (min-width: 576px) {
-    grid-template-rows: 182px auto 300px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "con-contact con-img"
-    "con-text con-text"
-    "con-map con-map";
-  }
-  @media (min-width: 768px) {
-    grid-template-rows: 182px 200px 300px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "con-contact con-text"
-    "con-img con-text"
-    "con-map con-map";
-  }
-  @media (min-width: 992px) {
-    grid-template-rows: 182px 200px 400px;
-    grid-template-areas:
-    "con-contact con-text"
-    "con-img con-text"
-    "con-map con-map";
-  }
-  @media (min-width: 1200px) {
-    grid-template-rows: 200px 200px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "con-contact con-text con-map con-map"
-    "con-img con-text con-map con-map";
-  }
-}
-
-.con-contact {
-  grid-area: con-contact;
-  padding: 25px;
-  h3 {
-    margin: 0 0 16px 0;
-    line-height: 1;
-  }
-}
-
-.con-email,
-.con-mobile {
-  font-size: 1.6rem;
-  line-height: 1;
-}
-
-.con-mobile {
-  margin: 12px 0 16px 0;
-}
-
-#contact-savebutton {
-  color: $denali;
-  line-height: 1;
-}
-
-.con-img {
-  grid-area: con-img;
-  background-image: url(../docs/src/contact.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  @media (max-width: 576px) {
-    display: none;
-  }
-}
-
-.con-text {
-  grid-area: con-text;
-  padding: 25px;
-  img {
-    width: 100%;
-    border-radius: 10px;
-    margin: 0 0 8px 0;
-  }
-  @media (min-width: 576px) {
-    img {
-      display: none;
-    }
-  }
-}
-
-.con-map {
-  grid-area: con-map;
-  iframe {
-    border-radius: 15px;
-  }
-}
-
 /* Clients */
 
 #clients-heading {
@@ -723,6 +618,111 @@ nav {
 .pricing-3 {
   grid-area: pricing-3;
   padding: 25px;
+}
+
+/* Contact */
+
+#contact-heading {
+  grid-area: contact-heading;
+}
+
+.contact {
+  display: grid;
+  gap: 20px;
+  grid-area: contact;
+  grid-template-rows: 182px auto 400px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "con-contact"
+  "con-text"
+  "con-map";
+  @media (min-width: 576px) {
+    grid-template-rows: 182px auto 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "con-contact con-img"
+    "con-text con-text"
+    "con-map con-map";
+  }
+  @media (min-width: 768px) {
+    grid-template-rows: 182px 200px 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "con-contact con-text"
+    "con-img con-text"
+    "con-map con-map";
+  }
+  @media (min-width: 992px) {
+    grid-template-rows: 182px 200px 400px;
+    grid-template-areas:
+    "con-contact con-text"
+    "con-img con-text"
+    "con-map con-map";
+  }
+  @media (min-width: 1200px) {
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "con-contact con-text con-map con-map"
+    "con-img con-text con-map con-map";
+  }
+}
+
+.con-contact {
+  grid-area: con-contact;
+  padding: 25px;
+  h3 {
+    margin: 0 0 16px 0;
+    line-height: 1;
+  }
+}
+
+.con-email,
+.con-mobile {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.con-mobile {
+  margin: 12px 0 16px 0;
+}
+
+#contact-savebutton {
+  color: $denali;
+  line-height: 1;
+}
+
+.con-img {
+  grid-area: con-img;
+  background-image: url(../docs/src/contact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
+.con-text {
+  grid-area: con-text;
+  padding: 25px;
+  img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 0 8px 0;
+  }
+  @media (min-width: 576px) {
+    img {
+      display: none;
+    }
+  }
+}
+
+.con-map {
+  grid-area: con-map;
+  iframe {
+    border-radius: 15px;
+  }
 }
 
 /* Footer */
