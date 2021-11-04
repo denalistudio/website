@@ -34,7 +34,7 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: auto 38.4px 350px 38.4px 182px auto 400px 38.4px auto 38.4px auto auto auto auto 20px;
+  grid-template-rows: auto 38.4px 350px 38.4px 182px auto 400px 38.4px auto 38.4px auto auto auto 50px 20px;
   grid-template-areas:
     "nav nav nav"
     ". services-heading ."
@@ -53,7 +53,7 @@ body {
     "lang . .";
   @media (min-width: 576px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto 38.4px 350px 38.4px 182px auto 300px 38.4px auto 38.4px auto auto auto auto 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px 182px auto 300px 38.4px auto 38.4px auto auto auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
@@ -73,7 +73,7 @@ body {
   }
   @media (min-width: 768px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto 38.4px 350px 38.4px 182px 200px 300px 38.4px auto 38.4px auto auto auto auto 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px 182px 200px 300px 38.4px auto 38.4px auto auto auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
@@ -93,7 +93,7 @@ body {
   }
   @media (min-width: 992px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto 38.4px 350px 38.4px 182px 200px 400px 38.4px auto 38.4px auto auto auto auto 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px 182px 200px 400px 38.4px auto 38.4px auto auto auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
@@ -729,8 +729,17 @@ nav {
 /* Footer */
 
 footer {
+  margin: auto;
   display: grid;
   grid-area: footer;
+  grid-template-rows: 50px;
+  grid-template-columns: 1fr;
+  p {
+    color: $dark;
+    line-height: 1;
+    height: 20px;
+    margin: 15px 0;
+  }
 }
 
 /* Languages */
