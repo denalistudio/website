@@ -1,10 +1,11 @@
-import Header from '../components/Header'
 import '../styles/style.css'
 
 function MyApp({ Component, pageProps }) {
     return (
         <>
-        <Header />
+        <nav>
+            <p>Znalostní báze</p>
+        </nav>
         <main className='container'>
             <Component {...pageProps} />
         </main>

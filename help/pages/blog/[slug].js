@@ -5,18 +5,20 @@ import marked from 'marked'
 import Link from 'next/Link'
 
 export default function PostPage({
-    frontmatter: {title, date, cover_image, category},
+    frontmatter: { title, date, cover_image, category },
     slug,
     content
 }) {
     return <>
         <img src={`./../..${cover_image}`} />
-        <h4>{category}</h4>
-        <h1>{title}</h1>
-        <div className='post-date'>Posted on {date}</div>
-        <div className='post-body'>
-            <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-        </div>
+        <article>
+            <h4>{category}</h4>
+            <h1>{title}</h1>
+            <div className='post-date'>Posted on {date}</div>
+            <div className='post-body'>
+                <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+            </div>
+        </article>
     </>
 }
 
@@ -35,9 +37,9 @@ export async function getStaticPaths() {
     }
 }
 
-export async function getStaticProps({params: {slug}}) {
+export async function getStaticProps({ params: { slug } }) {
     const markdownWithMeta = fs.readFileSync(path.join('posts', slug + '.md'), 'utf-8')
-    const {data:frontmatter, content} = matter(markdownWithMeta)
+    const { data: frontmatter, content } = matter(markdownWithMeta)
     return {
         props: {
             frontmatter,
