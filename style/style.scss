@@ -34,118 +34,96 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px 400px 200px 200px 38.4px 182px auto 400px 50px 20px;
+  grid-template-rows: auto 38.4px 350px 38.4px 182px auto 400px 38.4px auto 50px 20px;
   grid-template-areas:
     "nav nav nav"
     ". services-heading ."
     "services services services"
-    ". clients-heading ."
-    "clients clients clients"
-    ". pricing-heading ."
-    ". pricing ."
-    ". pricing ."
-    ". pricing ."
     ". contact-heading ."
     ". contact ."
     ". contact ."
     ". contact ."
+    ". clients-heading ."
+    "clients clients clients"
     ". footer ."
     "lang . .";
   @media (min-width: 576px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px 400px 200px 200px 38.4px 182px auto 300px 50px 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px 182px auto 300px 38.4px auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
       "services services services services"
-      ". clients-heading clients-heading ."
-      "clients clients clients clients"
-      ". pricing-heading pricing-heading ."
-      ". pricing pricing ."
-      ". pricing pricing ."
-      ". pricing pricing ."
       ". contact-heading contact-heading ."
       ". contact contact ."
       ". contact contact ."
       ". contact contact ."
+      ". clients-heading clients-heading ."
+      "clients clients clients clients"
       ". footer footer ."
       "lang . . .";
   }
   @media (min-width: 768px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px 400px 200px 200px 38.4px 182px 200px 300px 50px 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px 182px 200px 300px 38.4px auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
       "services services services services"
-      ". clients-heading clients-heading ."
-      "clients clients clients clients"
-      ". pricing-heading pricing-heading ."
-      ". pricing pricing ."
-      ". pricing pricing ."
-      ". pricing pricing ."
       ". contact-heading contact-heading ."
       ". contact contact ."
       ". contact contact ."
       ". contact contact ."
+      ". clients-heading clients-heading ."
+      "clients clients clients clients"
       ". footer footer ."
       "lang . . .";
   }
   @media (min-width: 992px) {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px 400px 200px 200px 38.4px 182px 200px 400px 50px 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px 182px 200px 400px 38.4px auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav"
       ". services-heading services-heading ."
       "services services services services"
-      ". clients-heading clients-heading ."
-      "clients clients clients clients"
-      ". pricing-heading pricing-heading ."
-      ". pricing pricing ."
-      ". pricing pricing ."
-      ". pricing pricing ."
       ". contact-heading contact-heading ."
       ". contact contact ."
       ". contact contact ."
       ". contact contact ."
+      ". clients-heading clients-heading ."
+      "clients clients clients clients"
       ". footer footer ."
       "lang . . .";
   }
   @media (min-width: 1200px) {
     column-gap: 20px;
     grid-template-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
-    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px 200px 200px 38.4px 200px 200px 50px 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px 200px 200px 38.4px auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav nav nav"
       ". services-heading services-heading services-heading services-heading ."
       "services services services services services services"
-      ". clients-heading clients-heading clients-heading clients-heading ."
-      "clients clients clients clients clients clients"
-      ". pricing-heading pricing-heading pricing-heading pricing-heading ."
-      ". pricing pricing pricing pricing ."
-      ". pricing pricing pricing pricing ."
       ". contact-heading contact-heading contact-heading contact-heading ."
       ". contact contact contact contact ."
       ". contact contact contact contact ."
+      ". clients-heading clients-heading clients-heading clients-heading ."
+      "clients clients clients clients clients clients"
       ". footer footer footer footer ."
       "lang . . . . .";
   }
   @media (min-width: 1600px) {
     column-gap: 20px;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: auto 38.4px 350px 38.4px auto 38.4px 200px 200px 38.4px 200px 200px 50px 20px;
+    grid-template-rows: auto 38.4px 350px 38.4px 200px 200px 38.4px auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav nav nav"
       ". services-heading services-heading services-heading services-heading ."
       "services services services services services services"
-      ". clients-heading clients-heading clients-heading clients-heading ."
-      "clients clients clients clients clients clients"
-      ". pricing-heading pricing-heading pricing-heading pricing-heading ."
-      ". pricing pricing pricing pricing ."
-      ". pricing pricing pricing pricing ."
       ". contact-heading contact-heading contact-heading contact-heading ."
       ". contact contact contact contact ."
       ". contact contact contact contact ."
+      ". clients-heading clients-heading clients-heading clients-heading ."
+      "clients clients clients clients clients clients"
       ". footer footer footer footer ."
       "lang . . . . .";
   }
@@ -493,123 +471,6 @@ nav input{
   padding-right: 20px;
 }
 
-/* Clients */
-
-#clients-heading {
-  grid-area: clients-heading;
-}
-
-.clients {
-  grid-area: clients;
-  display: flex;
-  flex-direction: row;
-  padding: 0 calc(20px + env(safe-area-inset-right)) 40px calc(20px + env(safe-area-inset-left));
-  margin: 0 0 -40px 0;
-  overflow-x: scroll;
-  scrollbar-width: 0;
-  -ms-overflow-style: none;
-  -ms-overflow-scrolling: touch;
-  .card {
-    flex-basis: calc(var(--bodyWidth) * 0.8);
-    flex-shrink: 0;
-    padding: 25px 25px 0 25px;
-    margin-right: 20px;
-    &:hover {
-      cursor: grab;
-    }
-    &:active {
-      cursor: grabbing;
-    }
-  }
-  .card:last-child {
-    margin-right: 0;
-  }
-  @media (min-width: 576px) {
-    .card {
-      flex-basis: calc(var(--bodyWidth) / 2);
-    }
-  }
-  @media (min-width: 768px) {
-    .card {
-      flex-basis: calc(var(--bodyWidth) * 0.4);
-    }
-  }
-  @media (min-width: 992px) {
-    .card {
-      flex-basis: calc(var(--bodyWidth) * 0.3);
-    }
-  }
-  @media (min-width: 1200px) {
-    padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
-    .card {
-      flex-basis: calc(var(--fractionWidth) * 2.25);
-    }
-  }
-  @media (min-width: 1600px) {
-    padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
-    .card {
-      flex-basis: calc(var(--fractionWidth) * 2);
-    }
-  }
-}
-
-.clients::-webkit-scrollbar {
-  display: none;
-}
-
-.client-img {
-  width: 80%;
-  margin: 13px 10% -4px 10%;
-}
-
-.pivonky {
-  grid-area: pivonky;
-}
-
-.elektra {
-  grid-area: elektra;
-}
-
-/* Pricing */
-
-#pricing-heading {
-  grid-area: pricing-heading;
-}
-
-.pricing {
-  display: grid;
-  gap: 20px;
-  grid-area: pricing;
-  grid-template-rows: 400px 200px 200px;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "pricing-1"
-  "pricing-2"
-  "pricing-3";
-  @media (min-width: 1200px) {
-    grid-template-rows: 200px 200px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "pricing-1 pricing-2"
-    "pricing-1 pricing-3";
-  }
-}
-
-.pricing-1 {
-  grid-area: pricing-1;
-  padding: 25px;
-}
-
-.pricing-2 {
-  grid-area: pricing-2;
-  padding: 25px;
-}
-
-.pricing-3 {
-  grid-area: pricing-3;
-  padding: 25px;
-}
-
 /* Contact */
 
 #contact-heading {
@@ -713,6 +574,83 @@ nav input{
   iframe {
     border-radius: 15px;
   }
+}
+
+/* Clients */
+
+#clients-heading {
+  grid-area: clients-heading;
+}
+
+.clients {
+  grid-area: clients;
+  display: flex;
+  flex-direction: row;
+  padding: 0 calc(20px + env(safe-area-inset-right)) 40px calc(20px + env(safe-area-inset-left));
+  margin: 0 0 -40px 0;
+  overflow-x: scroll;
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
+  -ms-overflow-scrolling: touch;
+  .card {
+    flex-basis: calc(var(--bodyWidth) * 0.8);
+    flex-shrink: 0;
+    padding: 25px 25px 0 25px;
+    margin-right: 20px;
+    &:hover {
+      cursor: grab;
+    }
+    &:active {
+      cursor: grabbing;
+    }
+  }
+  .card:last-child {
+    margin-right: 0;
+  }
+  @media (min-width: 576px) {
+    .card {
+      flex-basis: calc(var(--bodyWidth) / 2);
+    }
+  }
+  @media (min-width: 768px) {
+    .card {
+      flex-basis: calc(var(--bodyWidth) * 0.4);
+    }
+  }
+  @media (min-width: 992px) {
+    .card {
+      flex-basis: calc(var(--bodyWidth) * 0.3);
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
+    .card {
+      flex-basis: calc(var(--fractionWidth) * 2.25);
+    }
+  }
+  @media (min-width: 1600px) {
+    padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
+    .card {
+      flex-basis: calc(var(--fractionWidth) * 2);
+    }
+  }
+}
+
+.clients::-webkit-scrollbar {
+  display: none;
+}
+
+.client-img {
+  width: 80%;
+  margin: 13px 10% -4px 10%;
+}
+
+.pivonky {
+  grid-area: pivonky;
+}
+
+.elektra {
+  grid-area: elektra;
 }
 
 /* Footer */
