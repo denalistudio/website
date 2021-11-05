@@ -32,12 +32,14 @@
 		"contact-savebutton": "Uložit kontakt",
 		"contact-title": "Jsme tady pro vás",
 		"contact-text": "Nebojte se zeptat na jakoukoli otázku, buď přes e-mail nebo po telefonu. Jsme tady pro vás a rádi s vámi vše prodiskutujeme.",
+		"pricing-heading": "Ceny služeb",
+		"pricing-section1-title": "",
+		"pricing-section1-text": "",
 		"clients-heading": "Dokončené projekty",
 		"clients-pivonky-title": "Pivoňky",
 		"clients-pivonky-text": "Již od samotného názvu jsme Pivoňkám pomáhali formovat jejich nápad, aby se stal realitou.",
 		"clients-cafeelektra-title": "Kavárna Elektra",
 		"clients-cafeelektra-text": "Známá lokální kavárna, která nabízí vynikající kávu. Jejich nové webové stránky ale nechali na nás.",
-		"pricing-heading": "Ceny služeb"
 	},
 	"en": {
 		"langdesc": "en",
@@ -75,12 +77,14 @@
 		"contact-savebutton": "Save contact",
 		"contact-title": "We're here for you",
 		"contact-text": "Feel free to ask questions, either by e-mail or on the phone. We are here for you and are ready to discuss everything you want.",
+		"pricing-heading": "Pricing",
+		"pricing-section1-title": "",
+		"pricing-section1-text": "",
 		"clients-heading": "Finished projects",
 		"clients-pivonky-title": "Pivonky",
 		"clients-pivonky-text": "From the name itself, we helped the Pivonky beer hall shape their idea so it can become reality.",
 		"clients-cafeelektra-title": "Café Elektra",
-		"clients-cafeelektra-text": "A well known local café, which serves excellent coffee. Their website was nonetheless left to us.",
-		"pricing-heading": "Pricing"
+		"clients-cafeelektra-text": "A well-known local café, which serves excellent coffee. Their website was nonetheless left to us.",
 	},
 	"test": {
 		"langdesc": "test"

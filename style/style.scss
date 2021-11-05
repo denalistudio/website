@@ -307,6 +307,10 @@ nav {
   }
 }
 
+nav input{
+  display: none;
+}
+
 .mobile-menu {
   grid-area: mobile-menu;
   display: none;
@@ -725,13 +729,10 @@ footer {
     height: 20px;
     margin: 15px 0;
   }
-  select {
-    margin-left: 15px;
-    margin-top: -7px;
-    background-color: #fafafa;
-    border: none;
-    outline: none;
-  }
+}
+
+.listlanguages {
+  display: none;
 }
 
 /* Dark mode */
