@@ -64,31 +64,31 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: auto 38.4px 350px 38.4px 182px auto 400px 38.4px auto 50px 20px;
-  grid-template-areas: "nav nav nav" ". services-heading ." "services services services" ". contact-heading ." ". contact ." ". contact ." ". contact ." ". clients-heading ." "clients clients clients" ". footer ." "lang . .";
+  grid-template-rows: auto auto 38.4px 350px 38.4px 182px auto 400px 38.4px auto 50px 20px;
+  grid-template-areas: "nav nav nav" ". hero ." ". services-heading ." "services services services" ". contact-heading ." ". contact ." ". contact ." ". contact ." ". clients-heading ." "clients clients clients" ". footer ." "lang . .";
 }
 
 @media (min-width: 576px) {
   body {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto 38.4px 350px 38.4px 182px auto 300px 38.4px auto 50px 20px;
-    grid-template-areas: "nav nav nav nav" ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer ." "lang . . .";
+    grid-template-rows: auto auto 38.4px 350px 38.4px 182px auto 300px 38.4px auto 50px 20px;
+    grid-template-areas: "nav nav nav nav" ". hero hero ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer ." "lang . . .";
   }
 }
 
 @media (min-width: 768px) {
   body {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto 38.4px 350px 38.4px 182px 200px 300px 38.4px auto 50px 20px;
-    grid-template-areas: "nav nav nav nav" ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer ." "lang . . .";
+    grid-template-rows: auto auto 38.4px 350px 38.4px 182px 200px 300px 38.4px auto 50px 20px;
+    grid-template-areas: "nav nav nav nav" ". hero hero ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer ." "lang . . .";
   }
 }
 
 @media (min-width: 992px) {
   body {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto 38.4px 350px 38.4px 182px 200px 400px 38.4px auto 50px 20px;
-    grid-template-areas: "nav nav nav nav" ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer ." "lang . . .";
+    grid-template-rows: auto auto 38.4px 350px 38.4px 182px 200px 400px 38.4px auto 50px 20px;
+    grid-template-areas: "nav nav nav nav" ". hero hero ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer ." "lang . . .";
   }
 }
 
@@ -96,8 +96,8 @@ body {
   body {
     column-gap: 20px;
     grid-template-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
-    grid-template-rows: auto 38.4px 350px 38.4px 200px 200px 38.4px auto 50px 20px;
-    grid-template-areas: "nav nav nav nav nav nav" ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" ". footer footer footer footer ." "lang . . . . .";
+    grid-template-rows: auto auto 38.4px 350px 38.4px 200px 200px 38.4px auto 50px 20px;
+    grid-template-areas: "nav nav nav nav nav nav" ". hero hero hero hero ." ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" ". footer footer footer footer ." "lang . . . . .";
   }
 }
 
@@ -105,8 +105,8 @@ body {
   body {
     column-gap: 20px;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: auto 38.4px 350px 38.4px 200px 200px 38.4px auto 50px 20px;
-    grid-template-areas: "nav nav nav nav nav nav" ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" ". footer footer footer footer ." "lang . . . . .";
+    grid-template-rows: auto auto 38.4px 350px 38.4px 200px 200px 38.4px auto 50px 20px;
+    grid-template-areas: "nav nav nav nav nav nav" ". hero hero hero hero ." ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" ". footer footer footer footer ." "lang . . . . .";
   }
 }
 
@@ -414,6 +414,14 @@ nav input {
   .desktop-menu {
     display: block;
   }
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-area: hero;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* Services */
