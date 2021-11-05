@@ -416,20 +416,6 @@ nav {
   }
 }
 
-.listlanguages {
-  float: right;
-  padding: 4px 6px;
-  margin: 20.725px 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: $white;
-  background-color: $denali;
-  border: none;
-  border-radius: 10px;
-}
-
 /* Services */
 
 #services-heading {
@@ -739,12 +725,13 @@ footer {
     height: 20px;
     margin: 15px 0;
   }
-}
-
-/* Languages */
-
-.listlanguages {
-  grid-area: lang;
+  select {
+    margin-left: 15px;
+    margin-top: -7px;
+    background-color: #fafafa;
+    border: none;
+    outline: none;
+  }
 }
 
 /* Dark mode */
