@@ -326,6 +326,10 @@ nav a:hover {
   width: 30px;
 }
 
+nav input {
+  display: none;
+}
+
 .mobile-menu {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -880,18 +884,13 @@ footer {
 }
 
 footer p {
-  color: #272727;
   line-height: 1;
   height: 20px;
   margin: 15px 0;
 }
 
-footer select {
-  margin-left: 15px;
-  margin-top: -7px;
-  background-color: #fafafa;
-  border: none;
-  outline: none;
+.listlanguages {
+  display: none;
 }
 
 /* Dark mode */
