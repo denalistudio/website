@@ -525,7 +525,6 @@ nav {
     margin-right: 0;
   }
   @media (min-width: 576px) {
-    padding: 0 calc(var(--safe-area-inset-right) + 20px) 40px calc(var(--safe-area-inset-left) + 20px);
     .card {
       flex-basis: calc(var(--bodyWidth) / 2);
     }

@@ -567,9 +567,6 @@ nav a:hover {
 }
 
 @media (min-width: 576px) {
-  .services {
-    padding: 0 calc(var(--safe-area-inset-right) + 20px) 40px calc(var(--safe-area-inset-left) + 20px);
-  }
   .services .card {
     flex-basis: calc(var(--bodyWidth) / 2);
   }
