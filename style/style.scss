@@ -107,7 +107,7 @@ body {
     margin-top: calc(var(--navHeight) + 20px);
     column-gap: 20px;
     grid-template-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
-    grid-template-rows: auto auto 38.4px 350px 38.4px 200px 200px 38.4px auto 50px 20px;
+    grid-template-rows: auto auto 38.4px 350px 68.4px 200px 200px 38.4px auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav nav nav"
       ". hero hero hero hero ."
@@ -124,7 +124,7 @@ body {
   @media (min-width: 1600px) {
     column-gap: 20px;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: auto auto 38.4px 350px 38.4px 200px 200px 38.4px auto 50px 20px;
+    grid-template-rows: auto auto 38.4px 350px 68.4px 200px 200px 38.4px auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav nav nav"
       ". hero hero hero hero ."
@@ -504,15 +504,6 @@ nav {
   &::-webkit-scrollbar {
     display: none;
   }
-  /*&::-webkit-scrollbar {
-    width: 0;
-    height: 5px;
-    background-color: #fafafa;
-  }
-  &::-webkit-scrollbar-thumb:horizontal {
-    background-color: #e5e5e5;
-    border-radius: 5px;
-  }*/
   &::after {
     content: "";
     padding-right: 20px;
@@ -550,6 +541,22 @@ nav {
   }
   @media (min-width: 1200px) {
     padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
+    &::-webkit-scrollbar {
+      display: block;
+      width: 0;
+      height: 5px;
+      background-color: #fafafa;
+    }
+    &::-webkit-scrollbar-thumb:horizontal {
+      background-color: #e5e5e5;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-track-piece:end {
+      margin-right: calc(var(--fractionWidth) / 2 + 20px);
+    }
+    &::-webkit-scrollbar-track-piece:start {
+      margin-left: calc(var(--fractionWidth) / 2 + 20px);
+    }
     &::after {
       padding-right: 0;
     }
@@ -559,6 +566,12 @@ nav {
   }
   @media (min-width: 1600px) {
     padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
+    &::-webkit-scrollbar-track-piece:end {
+      margin-right: calc(var(--fractionWidth) + 20px);
+    }
+    &::-webkit-scrollbar-track-piece:start {
+      margin-left: calc(var(--fractionWidth) + 20px);
+    }
     .card {
       flex-basis: calc(var(--fractionWidth) * 2);
     }
@@ -567,7 +580,10 @@ nav {
 
 /* Contact */
 
-#contact-heading {
+.contact-heading-container {
+  display: flex;
+  justify-content: start;
+  align-items: end;
   grid-area: contact-heading;
   margin: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
 }
