@@ -390,6 +390,9 @@ nav a:hover {
   justify-self: end;
   height: 100%;
   align-items: center;
+  /*#menu-knowledgebase {
+    margin: 0 0 0 16px;
+  }*/
 }
 
 .desktop-menu a {
@@ -403,10 +406,6 @@ nav a:hover {
 
 .desktop-menu #menu-clients, .desktop-menu #menu-contact {
   margin: 0 16px;
-}
-
-.desktop-menu #menu-knowledgebase {
-  margin: 0 0 0 16px;
 }
 
 @media (min-width: 992px) {
