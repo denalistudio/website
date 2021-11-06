@@ -482,7 +482,7 @@ nav {
   grid-area: services;
   display: flex;
   flex-direction: row;
-  padding: 0 calc(env(safe-area-inset-right) + 20px) 40px calc(env(safe-area-inset-left) + 20px);
+  padding: 0 0 40px 0;
   margin: 0 0 -40px 0;
   overflow-x: scroll;
   scrollbar-width: 0;
@@ -512,6 +512,7 @@ nav {
     margin-right: 0;
   }
   @media (min-width: 576px) {
+    padding: 0 calc(env(safe-area-inset-right) + 20px) 40px calc(env(safe-area-inset-left) + 20px);
     .card {
       flex-basis: calc(var(--bodyWidth) / 2);
     }
@@ -562,7 +563,6 @@ nav {
   "con-contact"
   "con-text"
   "con-map";
-  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   @media (min-width: 576px) {
     grid-template-rows: 182px auto 300px;
     grid-template-columns: 1fr 1fr;
@@ -570,6 +570,7 @@ nav {
     "con-contact con-img"
     "con-text con-text"
     "con-map con-map";
+    padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   }
   @media (min-width: 768px) {
     grid-template-rows: 182px 200px 300px;
@@ -662,7 +663,7 @@ nav {
   grid-area: clients;
   display: flex;
   flex-direction: row;
-  padding: 0 calc(20px + env(safe-area-inset-right)) 40px calc(20px + env(safe-area-inset-left));
+  padding: 0 0 40px 0;
   margin: 0 0 -40px 0;
   overflow-x: scroll;
   scrollbar-width: 0;
@@ -690,6 +691,7 @@ nav {
     margin-right: 0;
   }
   @media (min-width: 576px) {
+    padding: 0 calc(env(safe-area-inset-right) + 20px) 40px calc(env(safe-area-inset-left) + 20px);
     .card {
       flex-basis: calc(var(--bodyWidth) / 2);
     }

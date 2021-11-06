@@ -519,7 +519,7 @@ nav a:hover {
   grid-area: services;
   display: flex;
   flex-direction: row;
-  padding: 0 calc(env(safe-area-inset-right) + 20px) 40px calc(env(safe-area-inset-left) + 20px);
+  padding: 0 0 40px 0;
   margin: 0 0 -40px 0;
   overflow-x: scroll;
   scrollbar-width: 0;
@@ -557,6 +557,9 @@ nav a:hover {
 }
 
 @media (min-width: 576px) {
+  .services {
+    padding: 0 calc(env(safe-area-inset-right) + 20px) 40px calc(env(safe-area-inset-left) + 20px);
+  }
   .services .card {
     flex-basis: calc(var(--bodyWidth) / 2);
   }
@@ -610,7 +613,6 @@ nav a:hover {
   grid-template-rows: 182px auto 400px;
   grid-template-columns: 1fr;
   grid-template-areas: "con-contact" "con-text" "con-map";
-  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
 }
 
 @media (min-width: 576px) {
@@ -618,6 +620,7 @@ nav a:hover {
     grid-template-rows: 182px auto 300px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "con-contact con-img" "con-text con-text" "con-map con-map";
+    padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   }
 }
 
@@ -717,7 +720,7 @@ nav a:hover {
   grid-area: clients;
   display: flex;
   flex-direction: row;
-  padding: 0 calc(20px + env(safe-area-inset-right)) 40px calc(20px + env(safe-area-inset-left));
+  padding: 0 0 40px 0;
   margin: 0 0 -40px 0;
   overflow-x: scroll;
   scrollbar-width: 0;
@@ -752,6 +755,9 @@ nav a:hover {
 }
 
 @media (min-width: 576px) {
+  .clients {
+    padding: 0 calc(env(safe-area-inset-right) + 20px) 40px calc(env(safe-area-inset-left) + 20px);
+  }
   .clients .card {
     flex-basis: calc(var(--bodyWidth) / 2);
   }
