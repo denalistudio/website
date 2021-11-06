@@ -535,6 +535,15 @@ nav a:hover {
   scrollbar-width: 0;
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
+  /*&::-webkit-scrollbar {
+    width: 0;
+    height: 5px;
+    background-color: #fafafa;
+  }
+  &::-webkit-scrollbar-thumb:horizontal {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+  }*/
 }
 
 .services::-webkit-scrollbar {
@@ -593,9 +602,6 @@ nav a:hover {
   }
   .services .card {
     flex-basis: calc(var(--fractionWidth) * 2.25);
-  }
-  .services .card:last-child {
-    margin-right: -20px;
   }
 }
 
