@@ -282,15 +282,19 @@ nav {
   grid-template-columns: auto 60px;
   grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
   padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
-  svg {
-    grid-area: nav-svg;
-    height: 20px;
-    margin: 20px 0;
-  }
   @media (min-width: 992px) {
     grid-template-rows: 60px;
     grid-template-columns: auto auto;
     grid-template-areas: "nav-svg desktop-menu";
+  }
+}
+
+.nav-logo {
+  justify-self: start;
+  svg {
+    grid-area: nav-svg;
+    height: 20px;
+    margin: 20px 0;
   }
   @media (min-width: 1200px) {
     svg {
