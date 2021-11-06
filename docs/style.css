@@ -234,7 +234,6 @@ li a:hover {
 /* Nav */
 nav {
   display: grid;
-  column-gap: 20px;
   grid-area: nav;
   grid-template-columns: 20px 1fr 20px;
   grid-template-areas: ". nav-content .";
@@ -247,6 +246,7 @@ nav {
 
 @media (min-width: 1200px) {
   nav {
+    column-gap: 20px;
     grid-template-columns: 0.5fr 9fr 0.5fr;
     grid-template-areas: ". nav-content .";
   }
