@@ -558,7 +558,7 @@ nav {
       margin-left: calc(var(--fractionWidth) / 2 + 20px);
     }
     &::after {
-      padding-right: 0;
+      padding-right: calc(var(--fractionWidth) / 2 + 20px);
     }
     .card {
       flex-basis: calc(var(--fractionWidth) * 2.25);
