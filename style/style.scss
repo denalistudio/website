@@ -150,7 +150,7 @@ p {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.75rem;
   color: $dark;
 }
 
@@ -396,10 +396,14 @@ nav input{
   grid-area: hero;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: "hero-left hero-right";
 }
 
 .hero-left {
   grid-area: hero-left;
+  p {
+    font-size: 2rem;
+  }
 }
 
 .hero-right {
@@ -671,7 +675,7 @@ footer {
   grid-template-columns: 1fr;
   p {
     line-height: 1;
-    height: 20px;
+    font-size: 2rem;
     margin: 15px 0;
   }
 }
