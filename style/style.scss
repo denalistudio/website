@@ -102,6 +102,7 @@ body {
       "lang . . .";
   }
   @media (min-width: 1200px) {
+    margin-top: calc(var(--navHeight) + 20px);
     column-gap: 20px;
     grid-template-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
     grid-template-rows: auto auto 38.4px 350px 38.4px 200px 200px 38.4px auto 50px 20px;
@@ -272,13 +273,13 @@ nav {
 }
 
 .nav-content {
-
   display: grid;
   background-color: inherit;
   grid-area: nav-content;
   grid-template-rows: 60px auto;
   grid-template-columns: auto 60px;
   grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   svg {
     grid-area: nav-svg;
     height: 20px;
