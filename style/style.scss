@@ -749,8 +749,9 @@ footer {
   grid-template-columns: 1fr;
   padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   p {
-    line-height: 1;
     font-size: 2rem;
+    line-height: 1;
+    text-align: center;
     margin: 15px 0;
   }
 }
