@@ -271,15 +271,23 @@ nav a:hover {
   background-color: inherit;
   grid-area: nav-content;
   grid-template-rows: 60px auto;
-  grid-template-columns: auto 60px;
-  grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
+  grid-template-columns: 223px auto;
+  grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
   padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
 }
 
 @media (min-width: 992px) {
   .nav-content {
     grid-template-rows: 60px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 223px auto;
+    grid-template-areas: "nav-svg desktop-menu";
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-content {
+    grid-template-rows: 60px;
+    grid-template-columns: 278.75px auto;
     grid-template-areas: "nav-svg desktop-menu";
   }
 }
