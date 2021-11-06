@@ -32,3 +32,55 @@
         "search-mainsite": "Hlavní stránka",
 		"search-result-services": "Naše služby",
 ```
+
+```js
+        // Search function - mobile
+        function mobileSearch() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('mobile-search');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById('search-results');
+            li = ul.getElementsByTagName('li');
+
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName('a')[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = 'block';
+                } else {
+                    li[i].style.display = 'none';
+                }
+            };
+        };
+        document.getElementById('mobile-search').onclick = function searchResults() {
+            document.getElementById('search-results').style.display = 'block';
+        };
+        document.getElementById('mobile-search').ondblclick = function searchResultsHide() {
+            document.getElementById('search-results').style.display = 'none';
+        };
+
+        // Search function - desktop
+        function desktopSearch() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('desktop-search');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById('search-results');
+            li = ul.getElementsByTagName('li');
+
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName('a')[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = 'block';
+                } else {
+                    li[i].style.display = 'none';
+                }
+            };
+        };
+        document.getElementById('desktop-search').onkeydown = function searchResults() {
+            document.getElementById('search-results').style.display = 'block';
+        };
+        document.getElementById('desktop-search').ondblclick = function searchResultsHide() {
+            document.getElementById('search-results').style.display = 'none';
+        };
+```
