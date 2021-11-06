@@ -282,13 +282,14 @@ nav {
   grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
   @media (min-width: 768px) {
     grid-template-rows: 60px;
-    grid-template-columns: 30px 1fr;
+    grid-template-columns: 280px 1fr;
     grid-template-areas: "nav-svg desktop-menu";
   }
   background-color: inherit;
   svg {
     grid-area: nav-svg;
-    width: 30px;
+    height: 25px;
+    margin: 17.5px 0;
   }
 }
 
@@ -372,21 +373,24 @@ nav input{
 .desktop-menu {
   grid-area: desktop-menu;
   display: none;
+  justify-self: end;
+  height: 100%;
+  align-items: center;
   a {
     font-size: 1.8rem;
     display: inline-block;
   }
   #menu-services {
-    margin: 18.4px 16px 18.4px 32px;
+    margin: 0 16px 0 0;
   }
   #menu-clients, #menu-contact {
-    margin: 18.4px 16px;
+    margin: 0 16px;
   }
   #menu-knowledgebase {
-    margin: 18.4px 32px 18.4px 16px;
+    margin: 0 0 0 16px;
   }
   @media (min-width: 768px) {
-    display: block;
+    display: flex;
   }
 }
 

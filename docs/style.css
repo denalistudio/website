@@ -279,14 +279,15 @@ nav a:hover {
 @media (min-width: 768px) {
   .nav-content {
     grid-template-rows: 60px;
-    grid-template-columns: 30px 1fr;
+    grid-template-columns: 280px 1fr;
     grid-template-areas: "nav-svg desktop-menu";
   }
 }
 
 .nav-content svg {
   grid-area: nav-svg;
-  width: 30px;
+  height: 25px;
+  margin: 17.5px 0;
 }
 
 nav input {
@@ -374,6 +375,9 @@ nav input {
 .desktop-menu {
   grid-area: desktop-menu;
   display: none;
+  justify-self: end;
+  height: 100%;
+  align-items: center;
 }
 
 .desktop-menu a {
@@ -382,20 +386,20 @@ nav input {
 }
 
 .desktop-menu #menu-services {
-  margin: 18.4px 16px 18.4px 32px;
+  margin: 0 16px 0 0;
 }
 
 .desktop-menu #menu-clients, .desktop-menu #menu-contact {
-  margin: 18.4px 16px;
+  margin: 0 16px;
 }
 
 .desktop-menu #menu-knowledgebase {
-  margin: 18.4px 32px 18.4px 16px;
+  margin: 0 0 0 16px;
 }
 
 @media (min-width: 768px) {
   .desktop-menu {
-    display: block;
+    display: flex;
   }
 }
 
