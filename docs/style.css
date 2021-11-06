@@ -515,7 +515,7 @@ nav a:hover {
 /* Services */
 #services-heading {
   grid-area: services-heading;
-  padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
+  margin: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
 }
 
 .services {
@@ -607,7 +607,7 @@ nav a:hover {
 /* Contact */
 #contact-heading {
   grid-area: contact-heading;
-  padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
+  margin: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
 }
 
 .contact {
@@ -624,7 +624,7 @@ nav a:hover {
     grid-template-rows: 182px auto 300px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "con-contact con-img" "con-text con-text" "con-map con-map";
-    padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
+    margin: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
   }
 }
 
@@ -718,7 +718,7 @@ nav a:hover {
 /* Clients */
 #clients-heading {
   grid-area: clients-heading;
-  padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
+  margin: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
 }
 
 .clients {
