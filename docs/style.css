@@ -273,7 +273,7 @@ nav a:hover {
   grid-template-rows: 60px auto;
   grid-template-columns: auto 60px;
   grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
-  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
+  padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
 }
 
 .nav-content svg {
@@ -515,6 +515,7 @@ nav a:hover {
 /* Services */
 #services-heading {
   grid-area: services-heading;
+  padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
 }
 
 .services {
@@ -606,6 +607,7 @@ nav a:hover {
 /* Contact */
 #contact-heading {
   grid-area: contact-heading;
+  padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
 }
 
 .contact {
@@ -716,6 +718,7 @@ nav a:hover {
 /* Clients */
 #clients-heading {
   grid-area: clients-heading;
+  padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
 }
 
 .clients {

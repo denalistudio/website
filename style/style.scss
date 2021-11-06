@@ -281,7 +281,7 @@ nav {
   grid-template-rows: 60px auto;
   grid-template-columns: auto 60px;
   grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
-  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
+  padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
   svg {
     grid-area: nav-svg;
     height: 20px;
@@ -478,6 +478,7 @@ nav {
 
 #services-heading {
   grid-area: services-heading;
+  padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
 }
 
 .services {
@@ -553,6 +554,7 @@ nav {
 
 #contact-heading {
   grid-area: contact-heading;
+  padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
 }
 
 .contact {
@@ -659,6 +661,7 @@ nav {
 
 #clients-heading {
   grid-area: clients-heading;
+  padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
 }
 
 .clients {
