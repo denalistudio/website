@@ -398,6 +398,14 @@ nav input{
   grid-template-columns: 1fr 1fr;
 }
 
+.hero-left {
+  grid-area: hero-left;
+}
+
+.hero-right {
+  grid-area: hero-left;
+}
+
 /* Services */
 
 #services-heading {
