@@ -65,14 +65,14 @@ body {
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
   grid-template-rows: auto auto auto 38.4px 350px 38.4px 182px auto 400px 38.4px auto 50px 20px;
-  grid-template-areas: "nav nav nav" ". hero-left ." ". hero-right ." ". services-heading ." "services services services" ". contact-heading ." ". contact ." ". contact ." ". contact ." ". clients-heading ." "clients clients clients" ". footer ." "lang . .";
+  grid-template-areas: "nav nav nav" ". hero ." ". hero ." ". services-heading ." "services services services" ". contact-heading ." ". contact ." ". contact ." ". contact ." ". clients-heading ." "clients clients clients" ". footer ." "lang . .";
 }
 
 @media (min-width: 576px) {
   body {
     grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto auto 38.4px 350px 38.4px 182px auto 300px 38.4px auto 50px 20px;
-    grid-template-areas: "nav nav nav nav" ". hero-left hero-right ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer ." "lang . . .";
+    grid-template-rows: auto auto auto 38.4px 350px 38.4px 182px auto 300px 38.4px auto 50px 20px;
+    grid-template-areas: "nav nav nav nav" ". hero hero ." ". hero hero ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer ." "lang . . .";
   }
 }
 
@@ -80,7 +80,7 @@ body {
   body {
     grid-template-columns: 20px 1fr 1fr 20px;
     grid-template-rows: auto auto 38.4px 350px 38.4px 182px 200px 300px 38.4px auto 50px 20px;
-    grid-template-areas: "nav nav nav nav" ". hero-left hero-right ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer ." "lang . . .";
+    grid-template-areas: "nav nav nav nav" ". hero hero ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer ." "lang . . .";
   }
 }
 
@@ -88,7 +88,7 @@ body {
   body {
     grid-template-columns: 20px 1fr 1fr 20px;
     grid-template-rows: auto auto 38.4px 350px 38.4px 182px 200px 400px 38.4px auto 50px 20px;
-    grid-template-areas: "nav nav nav nav" ". hero-left hero-right ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer ." "lang . . .";
+    grid-template-areas: "nav nav nav nav" ". hero hero ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer ." "lang . . .";
   }
 }
 
@@ -97,7 +97,7 @@ body {
     column-gap: 20px;
     grid-template-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
     grid-template-rows: auto auto 38.4px 350px 38.4px 200px 200px 38.4px auto 50px 20px;
-    grid-template-areas: "nav nav nav nav nav nav" ". hero-left hero-left hero-right hero-right ." ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" ". footer footer footer footer ." "lang . . . . .";
+    grid-template-areas: "nav nav nav nav nav nav" ". hero hero hero hero ." ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" ". footer footer footer footer ." "lang . . . . .";
   }
 }
 
@@ -106,7 +106,7 @@ body {
     column-gap: 20px;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
     grid-template-rows: auto auto 38.4px 350px 38.4px 200px 200px 38.4px auto 50px 20px;
-    grid-template-areas: "nav nav nav nav nav nav" ". hero-left hero-left hero-right hero-right ." ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" ". footer footer footer footer ." "lang . . . . .";
+    grid-template-areas: "nav nav nav nav nav nav" ". hero hero hero hero ." ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" ". footer footer footer footer ." "lang . . . . .";
   }
 }
 
@@ -397,6 +397,67 @@ nav a:hover {
 }
 
 /* Hero */
+.hero {
+  display: grid;
+  gap: 20px;
+  grid-area: hero;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "hero-left" "hero-right";
+}
+
+@media (min-width: 576px) {
+  .hero {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "hero-left hero-left" "hero-right hero-right";
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    gap: 40px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "hero-left hero-right";
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "hero-left hero-right";
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    gap: 80px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "hero-left hero-left hero-right hero-right";
+  }
+}
+
+@media (min-width: 1300px) {
+  .hero {
+    gap: 60px;
+    grid-template-rows: auto;
+    grid-template-columns: 0 1fr 1fr 0;
+    grid-template-areas: ". hero-left hero-right .";
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero {
+    gap: 80px;
+    grid-template-rows: auto;
+    grid-template-columns: 0 1fr 1fr 0;
+    grid-template-areas: ". hero-left hero-right .";
+  }
+}
+
 .hero-left {
   grid-area: hero-left;
 }
@@ -407,22 +468,36 @@ nav a:hover {
 
 .hero-left p {
   font-size: 2rem;
-}
-
-@media (min-width: 576px) {
-  .hero-left {
-    padding-right: 10%;
-  }
-}
-
-@media (min-width: 768px) {
-  .hero-left {
-    padding-right: 20%;
-  }
+  margin: 16px 0;
 }
 
 .hero-right {
   grid-area: hero-right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .hero-img {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-img {
+    width: 90%;
+  }
 }
 
 /* Services */
