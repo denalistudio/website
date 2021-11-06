@@ -495,7 +495,7 @@ nav {
   grid-area: services;
   display: flex;
   flex-direction: row;
-  padding: 0 20px 40px 20px;
+  padding: 0 calc(var(--safe-area-inset-right) + 20px) 40px calc(var(--safe-area-inset-left) + 20px);
   margin: 0 0 -40px 0;
   overflow-x: scroll;
   scrollbar-width: 0;
@@ -678,7 +678,7 @@ nav {
   grid-area: clients;
   display: flex;
   flex-direction: row;
-  padding: 0 20px 40px 20px;
+  padding: 0 calc(var(--safe-area-inset-right) + 20px) 40px calc(var(--safe-area-inset-left) + 20px);
   margin: 0 0 -40px 0;
   overflow-x: scroll;
   scrollbar-width: 0;
@@ -706,7 +706,6 @@ nav {
     margin-right: 0;
   }
   @media (min-width: 576px) {
-    padding: 0 calc(var(--safe-area-inset-right) + 20px) 40px calc(var(--safe-area-inset-left) + 20px);
     .card {
       flex-basis: calc(var(--bodyWidth) / 2);
     }
