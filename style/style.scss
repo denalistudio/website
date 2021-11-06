@@ -572,6 +572,9 @@ nav {
     &::-webkit-scrollbar-track-piece:start {
       margin-left: calc(var(--fractionWidth) + 20px);
     }
+    &::after {
+      padding-right: calc(var(--fractionWidth) + 20px);
+    }
     .card {
       flex-basis: calc(var(--fractionWidth) * 2);
     }
