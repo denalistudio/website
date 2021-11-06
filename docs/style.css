@@ -128,7 +128,7 @@ p {
 }
 
 h1 {
-  font-size: 3.75rem;
+  font-size: 3rem;
   color: #272727;
 }
 
@@ -237,8 +237,9 @@ li a:hover {
 
 /* Nav */
 nav {
-  grid-area: nav;
   display: grid;
+  column-gap: 20px;
+  grid-area: nav;
   grid-template-columns: 20px 1fr 20px;
   grid-template-areas: ". nav-content .";
   width: 100%;
@@ -409,6 +410,10 @@ nav input {
 
 .hero-left {
   grid-area: hero-left;
+}
+
+.hero-left h1 {
+  font-size: 3.75rem;
 }
 
 .hero-left p {
@@ -635,6 +640,9 @@ nav input {
   flex-shrink: 0;
   padding: 25px 25px 0 25px;
   margin-right: 20px;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr;
 }
 
 .clients .card:hover {
@@ -691,15 +699,7 @@ nav input {
 
 .client-img {
   width: 80%;
-  margin: 13px 10% -4px 10%;
-}
-
-.pivonky {
-  grid-area: pivonky;
-}
-
-.elektra {
-  grid-area: elektra;
+  margin: 13px 10% 0 10%;
 }
 
 /* Footer */
