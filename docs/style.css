@@ -170,10 +170,6 @@ noscript {
   background-color: #ffffff;
 }
 
-.noscript-cs {
-  margin: 0 0 32px 0;
-}
-
 /* Notch */
 .services-heading,
 .contact-heading,
@@ -639,6 +635,10 @@ nav a:hover {
   -ms-overflow-scrolling: touch;
 }
 
+.clients::-webkit-scrollbar {
+  display: none;
+}
+
 .clients .card {
   flex-basis: calc(var(--bodyWidth) * 0.8);
   flex-shrink: 0;
@@ -695,10 +695,6 @@ nav a:hover {
   .clients .card {
     flex-basis: calc(var(--fractionWidth) * 2);
   }
-}
-
-.clients::-webkit-scrollbar {
-  display: none;
 }
 
 .client-img {

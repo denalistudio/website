@@ -192,10 +192,6 @@ noscript {
   background-color: $white;
 }
 
-.noscript-cs {
-  margin: 0 0 32px 0;
-}
-
 /* Notch */
 
 .services-heading,
@@ -220,10 +216,9 @@ nav,
   border-radius: 15px;
   transition: transform 0.5s;
   background-color: $white;
-}
-
-.card:hover {
-  transform: scale(1.025);
+  &:hover {
+    transform: scale(1.025);
+  }
 }
 
 /* List */
@@ -303,12 +298,11 @@ nav {
 .mobile-menu {
   grid-area: mobile-menu;
   display: none;
-}
-
-.mobile-menu a {
-  margin: 16px 0;
-  font-size: 1.8rem;
-  display: block;
+  a {
+    margin: 16px 0;
+    font-size: 1.8rem;
+    display: block;
+  }
 }
 
 .menu-btn {
@@ -331,18 +325,17 @@ nav {
   @media (prefers-color-scheme: dark) {
     background-color: $white;
   }
-}
-
-.menu-btn__burger::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 4px;
-  background-color: $black;
-  transition: all 0.3s ease-in-out;
-  transform: translateY(10px);
-  @media (prefers-color-scheme: dark) {
-    background-color: $white;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: $black;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(10px);
+    @media (prefers-color-scheme: dark) {
+      background-color: $white;
+    }
   }
 }
 
@@ -607,6 +600,9 @@ nav {
   scrollbar-width: 0;
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   .card {
     flex-basis: calc(var(--bodyWidth) * 0.8);
     flex-shrink: 0;
@@ -652,10 +648,6 @@ nav {
       flex-basis: calc(var(--fractionWidth) * 2);
     }
   }
-}
-
-.clients::-webkit-scrollbar {
-  display: none;
 }
 
 .client-img {
