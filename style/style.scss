@@ -34,10 +34,11 @@ body {
   display: grid;
   row-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: auto auto 38.4px 350px 38.4px 182px auto 400px 38.4px auto 50px 20px;
+  grid-template-rows: auto auto auto 38.4px 350px 38.4px 182px auto 400px 38.4px auto 50px 20px;
   grid-template-areas:
     "nav nav nav"
-    ". hero ."
+    ". hero-left ."
+    ". hero-right ."
     ". services-heading ."
     "services services services"
     ". contact-heading ."
@@ -53,7 +54,7 @@ body {
     grid-template-rows: auto auto 38.4px 350px 38.4px 182px auto 300px 38.4px auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav"
-      ". hero hero ."
+      ". hero-left hero-right ."
       ". services-heading services-heading ."
       "services services services services"
       ". contact-heading contact-heading ."
@@ -70,7 +71,7 @@ body {
     grid-template-rows: auto auto 38.4px 350px 38.4px 182px 200px 300px 38.4px auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav"
-      ". hero hero ."
+      ". hero-left hero-right ."
       ". services-heading services-heading ."
       "services services services services"
       ". contact-heading contact-heading ."
@@ -87,7 +88,7 @@ body {
     grid-template-rows: auto auto 38.4px 350px 38.4px 182px 200px 400px 38.4px auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav"
-      ". hero hero ."
+      ". hero-left hero-right ."
       ". services-heading services-heading ."
       "services services services services"
       ". contact-heading contact-heading ."
@@ -105,7 +106,7 @@ body {
     grid-template-rows: auto auto 38.4px 350px 38.4px 200px 200px 38.4px auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav nav nav"
-      ". hero hero hero hero ."
+      ". hero-left hero-left hero-right hero-right ."
       ". services-heading services-heading services-heading services-heading ."
       "services services services services services services"
       ". contact-heading contact-heading contact-heading contact-heading ."
@@ -122,7 +123,7 @@ body {
     grid-template-rows: auto auto 38.4px 350px 38.4px 200px 200px 38.4px auto 50px 20px;
     grid-template-areas:
       "nav nav nav nav nav nav"
-      ". hero hero hero hero ."
+      ". hero-left hero-left hero-right hero-right ."
       ". services-heading services-heading services-heading services-heading ."
       "services services services services services services"
       ". contact-heading contact-heading contact-heading contact-heading ."
@@ -273,9 +274,9 @@ nav {
   grid-area: nav-content;
   display: grid;
   grid-template-rows: 60px auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 280px 1fr;
   grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     grid-template-rows: 60px;
     grid-template-columns: 280px 1fr;
     grid-template-areas: "nav-svg desktop-menu";
@@ -348,7 +349,7 @@ nav {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .mobile-menu {
     display: none;
   }
@@ -376,20 +377,12 @@ nav {
   #menu-knowledgebase {
     margin: 0 0 0 16px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     display: flex;
   }
 }
 
 /* Hero */
-
-.hero {
-  display: grid;
-  grid-area: hero;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "hero-left hero-right";
-}
 
 .hero-left {
   grid-area: hero-left;
@@ -399,10 +392,16 @@ nav {
   p {
     font-size: 2rem;
   }
+  @media (min-width: 576px) {
+    padding-right: 10%;
+  }
+  @media (min-width: 768px) {
+    padding-right: 20%;
+  }
 }
 
 .hero-right {
-  grid-area: hero-left;
+  grid-area: hero-right;
 }
 
 /* Services */
