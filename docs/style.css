@@ -264,26 +264,33 @@ nav a:hover {
 }
 
 .nav-content {
-  grid-area: nav-content;
   display: grid;
-  grid-template-rows: 60px auto;
-  grid-template-columns: 280px 1fr;
-  grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
   background-color: inherit;
+  grid-area: nav-content;
+  grid-template-rows: 60px auto;
+  grid-template-columns: auto 60px;
+  grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
+}
+
+.nav-content svg {
+  grid-area: nav-svg;
+  height: 20px;
+  margin: 20px 0;
 }
 
 @media (min-width: 992px) {
   .nav-content {
     grid-template-rows: 60px;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: auto auto;
     grid-template-areas: "nav-svg desktop-menu";
   }
 }
 
-.nav-content svg {
-  grid-area: nav-svg;
-  height: 25px;
-  margin: 17.5px 0;
+@media (min-width: 1200px) {
+  .nav-content svg {
+    height: 25px;
+    margin: 17.5px 0;
+  }
 }
 
 .svg-letter {
@@ -321,7 +328,7 @@ nav a:hover {
 
 .menu-btn__burger {
   width: 30px;
-  height: 4px;
+  height: 2px;
   background-color: #000000;
   transition: all 0.3s ease-in-out;
 }
@@ -336,7 +343,7 @@ nav a:hover {
   content: "";
   position: absolute;
   width: 30px;
-  height: 4px;
+  height: 2px;
   background-color: #000000;
   transition: all 0.3s ease-in-out;
   transform: translateY(10px);

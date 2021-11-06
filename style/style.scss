@@ -272,21 +272,28 @@ nav {
 }
 
 .nav-content {
-  grid-area: nav-content;
+
   display: grid;
-  grid-template-rows: 60px auto;
-  grid-template-columns: 280px 1fr;
-  grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
-  @media (min-width: 992px) {
-    grid-template-rows: 60px;
-    grid-template-columns: 280px 1fr;
-    grid-template-areas: "nav-svg desktop-menu";
-  }
   background-color: inherit;
+  grid-area: nav-content;
+  grid-template-rows: 60px auto;
+  grid-template-columns: auto 60px;
+  grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
   svg {
     grid-area: nav-svg;
-    height: 25px;
-    margin: 17.5px 0;
+    height: 20px;
+    margin: 20px 0;
+  }
+  @media (min-width: 992px) {
+    grid-template-rows: 60px;
+    grid-template-columns: auto auto;
+    grid-template-areas: "nav-svg desktop-menu";
+  }
+  @media (min-width: 1200px) {
+    svg {
+      height: 25px;
+      margin: 17.5px 0;
+    }
   }
 }
 
@@ -321,7 +328,7 @@ nav {
 
 .menu-btn__burger {
   width: 30px;
-  height: 4px;
+  height: 2px;
   background-color: $black;
   transition: all 0.3s ease-in-out;
   @media (prefers-color-scheme: dark) {
@@ -331,7 +338,7 @@ nav {
     content: "";
     position: absolute;
     width: 30px;
-    height: 4px;
+    height: 2px;
     background-color: $black;
     transition: all 0.3s ease-in-out;
     transform: translateY(10px);
