@@ -741,9 +741,15 @@ nav a:hover {
   display: none;
 }
 
+.clients::after {
+  content: "";
+  padding-right: 20px;
+}
+
 .clients .card {
   flex-basis: calc(var(--bodyWidth) * 0.8);
   flex-shrink: 0;
+  height: 350px;
   padding: 25px 25px 0 25px;
   margin-right: 20px;
   display: grid;
@@ -785,8 +791,14 @@ nav a:hover {
   .clients {
     padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
   }
+  .clients::after {
+    padding-right: 0;
+  }
   .clients .card {
     flex-basis: calc(var(--fractionWidth) * 2.25);
+  }
+  .clients .card:last-child {
+    margin-right: -20px;
   }
 }
 

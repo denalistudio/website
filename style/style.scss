@@ -686,9 +686,14 @@ nav {
   &::-webkit-scrollbar {
     display: none;
   }
+  &::after {
+    content: "";
+    padding-right: 20px;
+  }
   .card {
     flex-basis: calc(var(--bodyWidth) * 0.8);
     flex-shrink: 0;
+    height: 350px;
     padding: 25px 25px 0 25px;
     margin-right: 20px;
     display: grid;
@@ -721,8 +726,14 @@ nav {
   }
   @media (min-width: 1200px) {
     padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
+    &::after {
+      padding-right: 0;
+    }
     .card {
       flex-basis: calc(var(--fractionWidth) * 2.25);
+    }
+    .card:last-child {
+      margin-right: -20px;
     }
   }
   @media (min-width: 1600px) {
