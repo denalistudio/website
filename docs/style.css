@@ -413,6 +413,7 @@ nav a:hover {
   grid-template-rows: auto auto;
   grid-template-columns: 1fr;
   grid-template-areas: "hero-left" "hero-right";
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
 }
 
 @media (min-width: 576px) {
@@ -518,7 +519,7 @@ nav a:hover {
   grid-area: services;
   display: flex;
   flex-direction: row;
-  padding: 0 calc(20px + env(safe-area-inset-right)) 40px calc(20px + env(safe-area-inset-left));
+  padding: 0 calc(env(safe-area-inset-right) + 20px) 40px calc(env(safe-area-inset-left) + 20px);
   margin: 0 0 -40px 0;
   overflow-x: scroll;
   scrollbar-width: 0;
@@ -609,6 +610,7 @@ nav a:hover {
   grid-template-rows: 182px auto 400px;
   grid-template-columns: 1fr;
   grid-template-areas: "con-contact" "con-text" "con-map";
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
 }
 
 @media (min-width: 576px) {
@@ -797,6 +799,7 @@ footer {
   grid-area: footer;
   grid-template-rows: 50px;
   grid-template-columns: 1fr;
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
 }
 
 footer p {

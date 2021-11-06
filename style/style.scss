@@ -402,6 +402,7 @@ nav {
   grid-template-areas:
   "hero-left"
   "hero-right";
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   @media (min-width: 576px) {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
@@ -481,7 +482,7 @@ nav {
   grid-area: services;
   display: flex;
   flex-direction: row;
-  padding: 0 calc(20px + env(safe-area-inset-right)) 40px calc(20px + env(safe-area-inset-left));
+  padding: 0 calc(env(safe-area-inset-right) + 20px) 40px calc(env(safe-area-inset-left) + 20px);
   margin: 0 0 -40px 0;
   overflow-x: scroll;
   scrollbar-width: 0;
@@ -561,6 +562,7 @@ nav {
   "con-contact"
   "con-text"
   "con-map";
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   @media (min-width: 576px) {
     grid-template-rows: 182px auto 300px;
     grid-template-columns: 1fr 1fr;
@@ -729,6 +731,7 @@ footer {
   grid-area: footer;
   grid-template-rows: 50px;
   grid-template-columns: 1fr;
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   p {
     line-height: 1;
     font-size: 2rem;
