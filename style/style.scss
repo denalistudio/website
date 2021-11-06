@@ -495,7 +495,7 @@ nav {
   grid-area: services;
   display: flex;
   flex-direction: row;
-  padding: 0 calc(var(--safe-area-inset-right) + 20px) 40px calc(var(--safe-area-inset-left) + 20px);
+  padding: 0 0 40px calc(var(--safe-area-inset-left) + 20px);
   margin: 0 0 -40px 0;
   overflow-x: scroll;
   scrollbar-width: 0;
@@ -506,7 +506,7 @@ nav {
   }
   &::after {
     content: "";
-    padding-right: 20px;
+    padding-right: calc(var(--safe-area-inset-right) + 20px);
   }
   .card {
     flex-basis: calc(var(--bodyWidth) * 0.8);
@@ -540,7 +540,7 @@ nav {
     }
   }
   @media (min-width: 1200px) {
-    padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
+    padding: 0 0 40px calc(var(--fractionWidth) / 2 + 20px);
     &::-webkit-scrollbar {
       display: block;
       width: 0;
@@ -565,7 +565,7 @@ nav {
     }
   }
   @media (min-width: 1600px) {
-    padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
+    padding: 0 0 40px calc(var(--fractionWidth) + 20px);
     &::-webkit-scrollbar-track-piece:end {
       margin-right: calc(var(--fractionWidth) + 20px);
     }

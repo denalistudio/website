@@ -529,7 +529,7 @@ nav a:hover {
   grid-area: services;
   display: flex;
   flex-direction: row;
-  padding: 0 calc(var(--safe-area-inset-right) + 20px) 40px calc(var(--safe-area-inset-left) + 20px);
+  padding: 0 0 40px calc(var(--safe-area-inset-left) + 20px);
   margin: 0 0 -40px 0;
   overflow-x: scroll;
   scrollbar-width: 0;
@@ -543,7 +543,7 @@ nav a:hover {
 
 .services::after {
   content: "";
-  padding-right: 20px;
+  padding-right: calc(var(--safe-area-inset-right) + 20px);
 }
 
 .services .card {
@@ -586,7 +586,7 @@ nav a:hover {
 
 @media (min-width: 1200px) {
   .services {
-    padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
+    padding: 0 0 40px calc(var(--fractionWidth) / 2 + 20px);
   }
   .services::-webkit-scrollbar {
     display: block;
@@ -605,7 +605,7 @@ nav a:hover {
     margin-left: calc(var(--fractionWidth) / 2 + 20px);
   }
   .services::after {
-    padding-right: 0;
+    padding-right: calc(var(--fractionWidth) / 2 + 20px);
   }
   .services .card {
     flex-basis: calc(var(--fractionWidth) * 2.25);
@@ -614,13 +614,16 @@ nav a:hover {
 
 @media (min-width: 1600px) {
   .services {
-    padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
+    padding: 0 0 40px calc(var(--fractionWidth) + 20px);
   }
   .services::-webkit-scrollbar-track-piece:end {
     margin-right: calc(var(--fractionWidth) + 20px);
   }
   .services::-webkit-scrollbar-track-piece:start {
     margin-left: calc(var(--fractionWidth) + 20px);
+  }
+  .services::after {
+    padding-right: calc(var(--fractionWidth) + 20px);
   }
   .services .card {
     flex-basis: calc(var(--fractionWidth) * 2);
