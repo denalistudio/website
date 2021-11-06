@@ -693,7 +693,7 @@ nav {
   .card {
     flex-basis: calc(var(--bodyWidth) * 0.8);
     flex-shrink: 0;
-    height: 350px;
+    height: 90px + calc(var(--fractionWidth) * 3.2);
     padding: 25px 25px 0 25px;
     margin-right: 20px;
     /*display: grid;
