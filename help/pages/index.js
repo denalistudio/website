@@ -1,28 +1,33 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import Head from 'next/head'
+
+import Container from '../components/container'
+import Layout from '../components/layout'
 import Post from '../components/Post'
+import Head from 'next/head'
+
 import { sortByDate } from '../utils'
 
-export default function Home({ posts }) {
+export default function Index({ posts }) {
     return (
-        <div>
+        <Layout>
             <Head>
                 <title>Znalostní báze | Studio Denali</title>
             </Head>
-            <div className='posts'>
-                {posts.map((post, index) => (
-                    <Post key={index} post={post} />
-                ))}
-            </div>
-        </div>
+            <Container>
+                <div className='posts'>
+                    {posts.map((post, index) => (
+                        <Post key={index} post={post} />
+                    ))}
+                </div>
+            </Container>
+        </Layout>
     )
 }
 
 export async function getStaticProps() {
     const files = fs.readdirSync(path.join('posts'))
-    // Get slug and frontmatter from posts
     const posts = files.map((filename) => {
         const slug = filename.replace('.md', '')
         const markdownWithMeta = fs.readFileSync(
