@@ -7,6 +7,7 @@ import Container from '../../components/container'
 import PostLayout from '../../components/post-layout'
 import PostBody from '../../components/post-body'
 import PostHeader from '../../components/post-header'
+import Head from 'next/head'
 import Link from 'next/Link'
 
 export default function Post({
@@ -22,11 +23,12 @@ export default function Post({
                         <title>{title} | Studio Denali</title>
                     </Head>
                     <PostHeader
-                        title={post.title}
-                        date={post.date}
-                        category={post.category}
-                        coverImage={post.coverImage}
+                        title={title}
+                        date={date}
+                        category={category}
+                        coverImage={coverImage}
                     />
+                    <PostBody content={content} />
                 </article>
             </Container>
         </PostLayout>
