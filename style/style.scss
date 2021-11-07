@@ -8,9 +8,9 @@ $white: #ffffff;
 $black: #000000;
 
 @mixin shadow {
-  box-shadow: #959da533 0 8px 24px;
+  box-shadow: #959da533 0 6px 18px;
   @media (prefers-color-scheme: dark) {
-    box-shadow: #00000033 0 8px 24px;
+    box-shadow: #00000033 0 6px 18px;
   }
 }
 

@@ -186,7 +186,7 @@ ul,
 nav,
 .card,
 .client-img {
-  box-shadow: #959da533 0 8px 24px;
+  box-shadow: #959da533 0 6px 18px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -194,7 +194,7 @@ nav,
   nav,
   .card,
   .client-img {
-    box-shadow: #00000033 0 8px 24px;
+    box-shadow: #00000033 0 6px 18px;
   }
 }
 
