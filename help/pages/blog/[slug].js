@@ -3,25 +3,44 @@ import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
 
-
+import Container from '../../components/container'
+import PostLayout from '../../components/post-layout'
+import PostBody from '../../components/post-body'
+import PostHeader from '../../components/post-header'
 import Link from 'next/Link'
 
-export default function PostPage({
-    frontmatter: { title, date, cover_image, category },
+export default function Post({
+    frontmatter: { title, date, coverImage, category },
     slug,
     content
 }) {
-    return <>
-        <img src={`./../..${cover_image}`} />
-        <article>
-            <h4>{category}</h4>
-            <h1>{title}</h1>
-            <div className='post-date'>Posted on {date}</div>
-            <div className='post-body'>
-                <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-            </div>
-        </article>
-    </>
+    return (
+        <PostLayout>
+            <Container>
+                <article>
+                    <Head>
+                        <title>{title} | Studio Denali</title>
+                    </Head>
+                    <PostHeader
+                        title={post.title}
+                        date={post.date}
+                        category={post.category}
+                        coverImage={post.coverImage}
+                    />
+                </article>
+            </Container>
+        </PostLayout>
+    )
+
+    /*<img src={`./../..${cover_image}`} />
+    <article>
+        <h4>{category}</h4>
+        <h1>{title}</h1>
+        <div className='post-date'>Posted on {date}</div>
+        <div className='post-body'>
+            <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+        </div>
+    </article>*/
 }
 
 // <Link href='/'><a className='btn btn-back'>Go Back</a></Link>
