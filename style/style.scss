@@ -8,9 +8,9 @@ $white: #ffffff;
 $black: #000000;
 
 @mixin shadow {
-  box-shadow: #959da533 0 6px 18px;
+  box-shadow: #959da533 0 8px 24px;
   @media (prefers-color-scheme: dark) {
-    box-shadow: #00000033 0 6px 18px;
+    box-shadow: #00000033 0 8px 24px;
   }
 }
 
@@ -495,10 +495,9 @@ nav {
   grid-area: services;
   display: flex;
   flex-direction: row;
-  padding: 0 40px 0 calc(var(--safe-area-inset-left) + 20px);
+  padding: 0 0 40px calc(var(--safe-area-inset-left) + 20px);
   margin: 0 0 -40px 0;
   overflow-x: scroll;
-  overflow-y: hidden;
   scrollbar-width: 0;
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
@@ -542,43 +541,15 @@ nav {
   }
   @media (min-width: 1200px) {
     padding: 0 0 40px calc(var(--fractionWidth) / 2 + 20px);
-    &::-webkit-scrollbar {
-      display: block;
-      width: 0;
-      height: 8px;
-      background-color: transparent;
-    }
-    &::-webkit-scrollbar-thumb:horizontal {
-      background-color: #e5e5e5;
-      border-radius: 5px;
-    }
-    &::-webkit-scrollbar-track-piece:end {
-      margin-right: calc(var(--fractionWidth) / 2 + 20px);
-    }
-    &::-webkit-scrollbar-track-piece:start {
-      margin-left: calc(var(--fractionWidth) / 2 + 20px);
-    }
     &::after {
       padding-right: calc(var(--fractionWidth) / 2 + 20px);
     }
     .card {
       flex-basis: calc(var(--fractionWidth) * 2.25);
     }
-    @media (prefers-color-scheme: dark) {
-      &::-webkit-scrollbar-thumb:horizontal {
-        background-color: #525252;
-      }
-    }
   }
   @media (min-width: 1600px) {
-    padding: 0 0 20px calc(var(--fractionWidth) + 20px);
-    margin: 0 0 -28px 0;
-    &::-webkit-scrollbar-track-piece:end {
-      margin-right: calc(var(--fractionWidth) + 20px);
-    }
-    &::-webkit-scrollbar-track-piece:start {
-      margin-left: calc(var(--fractionWidth) + 20px);
-    }
+    padding: 0 0 40px calc(var(--fractionWidth) + 20px);
     &::after {
       padding-right: calc(var(--fractionWidth) + 20px);
     }
@@ -592,7 +563,7 @@ nav {
 
 #contact-heading {
   grid-area: contact-heading;
-  margin: 30px var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
+  margin: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
 }
 
 .contact {
