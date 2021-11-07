@@ -564,6 +564,11 @@ nav {
     .card {
       flex-basis: calc(var(--fractionWidth) * 2.25);
     }
+    @media (prefers-color-scheme: dark) {
+      &::-webkit-scrollbar-thumb:horizontal {
+        background-color: #525252;
+      }
+    }
   }
   @media (min-width: 1600px) {
     padding: 0 0 20px calc(var(--fractionWidth) + 20px);

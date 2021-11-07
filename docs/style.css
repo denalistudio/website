@@ -613,6 +613,12 @@ nav a:hover {
   }
 }
 
+@media (min-width: 1200px) and (prefers-color-scheme: dark) {
+  .services::-webkit-scrollbar-thumb:horizontal {
+    background-color: #525252;
+  }
+}
+
 @media (min-width: 1600px) {
   .services {
     padding: 0 0 20px calc(var(--fractionWidth) + 20px);
