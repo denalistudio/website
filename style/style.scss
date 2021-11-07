@@ -495,9 +495,10 @@ nav {
   grid-area: services;
   display: flex;
   flex-direction: row;
-  padding: 0 0 40px calc(var(--safe-area-inset-left) + 20px);
+  padding: 0 40px 0 calc(var(--safe-area-inset-left) + 20px);
   margin: 0 0 -40px 0;
   overflow-x: scroll;
+  overflow-y: hidden;
   scrollbar-width: 0;
   -ms-overflow-style: none;
   -ms-overflow-scrolling: touch;
@@ -544,8 +545,8 @@ nav {
     &::-webkit-scrollbar {
       display: block;
       width: 0;
-      height: 5px;
-      background-color: #fafafa;
+      height: 8px;
+      background-color: transparent;
     }
     &::-webkit-scrollbar-thumb:horizontal {
       background-color: #e5e5e5;
@@ -565,7 +566,8 @@ nav {
     }
   }
   @media (min-width: 1600px) {
-    padding: 0 0 40px calc(var(--fractionWidth) + 20px);
+    padding: 0 0 20px calc(var(--fractionWidth) + 20px);
+    margin: 0 0 -28px 0;
     &::-webkit-scrollbar-track-piece:end {
       margin-right: calc(var(--fractionWidth) + 20px);
     }
@@ -583,12 +585,9 @@ nav {
 
 /* Contact */
 
-.contact-heading-container {
-  display: flex;
-  justify-content: start;
-  align-items: end;
+#contact-heading {
   grid-area: contact-heading;
-  margin: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
+  margin: 30px var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
 }
 
 .contact {
