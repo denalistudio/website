@@ -2,7 +2,6 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
-import Container from '../components/container'
 import Layout from '../components/layout'
 import Post from '../components/post'
 import Head from 'next/head'
@@ -15,7 +14,7 @@ export default function Index({ posts }) {
             <Head>
                 <title>Znalostní báze | Studio Denali</title>
             </Head>
-            <Container>
+            <div className="container">
                 <header>
                     <nav>
                         <p>Znalostní báze</p>
@@ -26,7 +25,7 @@ export default function Index({ posts }) {
                         <Post key={index} post={post} />
                     ))}
                 </div>
-            </Container>
+            </div>
         </Layout>
     )
 }

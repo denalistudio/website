@@ -3,8 +3,6 @@ import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
 
-import Container from '../../components/container'
-import PostLayout from '../../components/post-layout'
 import PostBody from '../../components/post-body'
 import PostHeader from '../../components/post-header'
 import Head from 'next/head'
@@ -16,20 +14,16 @@ export default function Post({
     content
 }) {
     return (
-        <PostLayout>
-            <Container>
-                <article>
-                    <Head>
-                        <title>{title} | Studio Denali</title>
-                    </Head>
-                    <PostHeader
-                        title={title}
-                        coverImage={coverImage}
-                    />
-                    <PostBody content={content} />
-                </article>
-            </Container>
-        </PostLayout>
+        <main className="post-container">
+            <Head>
+                <title>{title} | Studio Denali</title>
+            </Head>
+            <PostHeader
+                title={title}
+                coverImage={coverImage}
+            />
+            <PostBody content={content} />
+        </main>
     )
 
     /*<img src={`./../..${cover_image}`} />

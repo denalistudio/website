@@ -117,3 +117,21 @@ nav {
 .card:hover {
   transform: scale(1.025);
 }
+
+.post-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 2fr 6fr 2fr;
+  grid-template-areas:
+  ". post-header ."
+  ". post-body .";
+  height: 100vh;
+}
+
+.post-header {
+  grid-area: post-header;
+}
+
+article {
+  grid-area: post-body;
+}
