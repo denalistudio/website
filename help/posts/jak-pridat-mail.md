@@ -3,14 +3,10 @@ title: 'Jak přidat vaši e-mailovou adresu do poštovních klientů'
 excerpt: 'Pokud máte vaši mailovou adresu zařízenou s námi u Forpsi a nechcete využívat Forpsi Webmail ale například poštovní klienty od Apple a Microsoft, dozvíte se v tomto článku jak.'
 cover_image: 'null'
 slug: 'jak-pridat-mail'
-version: '0'
-lang-check: 'no'
 ---
 
 # Jak přidat vaši e-mailovou adresu do poštovních klientů
 Poštovní klient je ve zkratce program, který slouží k příjmání, odesílání a správě elektronické pošty. Nesmíme si ale plést poštovní klienty s tzv. "webmailem," což je velice podobný program, jen zcela umístěn na webu a je většinou operovaný samotnou společností provozující vaši e-mailovou službu (Google = Gmail, Forpsi = Forpsi Webmail). Pokud máte vaši mailovou adresu zařízenou s námi u Forpsi a nechcete využívat Forpsi Webmail ale například poštovní klienty od Apple a Microsoft, dozvíte se v tomto článku jak.
-
-[[#Apple Pošta (Mac)]] 
 
 ## Windows Pošta
 *Windows Pošta* je výchozím poštovním klientem pro operační systém Windows od společnosti Microsoft, který mnoho lidí využívá pro jeho jednoduchost.
