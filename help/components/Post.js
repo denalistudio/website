@@ -1,14 +1,20 @@
+import CoverImage from './cover-image'
+import PostTitle from './post-title'
+import PostExcerpt from './post-excerpt'
+import Image from 'next/Image'
 import Link from 'next/Link'
 
 export default function Post({ post }) {
     return (
-        <div class='card'>
+        <div className="card">
             <Link href={`./blog/${post.slug}`}>
                 <a>
-                    <img src={post.frontmatter.cover_image} />
-                    <h4>{post.frontmatter.category}</h4>
-                    <h3>{post.frontmatter.title}</h3>
-                    <p>{post.frontmatter.description}</p>
+                    <Image
+                        src={post.frontmatter.coverImage}
+                        layout="responsive"
+                    />
+                    <PostTitle>{post.frontmatter.title}</PostTitle>
+                    <PostExcerpt>{post.frontmatter.excerpt}</PostExcerpt>
                 </a>
             </Link>
         </div>

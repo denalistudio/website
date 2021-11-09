@@ -1,7 +1,7 @@
 ---
-title: 'Jak se příhlásit do redakčního systému WordPress'
+title: 'Jak se přihlásit do redakčního systému WordPress'
 excerpt: 'Pokud máte vaši mailovou adresu zařízenou s námi u Forpsi a nechcete využívat Forpsi Webmail ale například poštovní klienty od Apple a Microsoft, dozvíte se v tomto článku jak.'
-cover_image: 'null'
+coverImage: 'null'
 slug: 'jak-se-prihlasit-do-wordpressu'
 ---
 
