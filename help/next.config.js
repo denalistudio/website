@@ -1,5 +1,5 @@
 module.exports = {
     images: {
-        domains: ['src.studiodenali.cz']
-    }
+        domains: ['src.studiodenali.cz'],
+    },
 }

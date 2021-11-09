@@ -14,11 +14,13 @@ $white: #ffffff;
   }
 }
 
+:root {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
-  font-size: 16px;
   font-family: 'Roboto', sans-serif;
-  background-color: #fafafa;
 }
 
 a {
@@ -30,6 +32,7 @@ h3 {
   margin: 0;
   font-size: 25px;
 }
+
 h4 {
   margin: 16px 0 0 0;
   color: $denali;
@@ -38,10 +41,14 @@ h4 {
 }
 
 .container {
-  margin: 100px auto 0 auto;
-  max-width: 1600px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: ". posts .";
+  height: 100vh;
+  background-color: #fafafa;
 }
-
+/*
 nav {
   background-color: $white;
   margin: auto;
@@ -66,10 +73,11 @@ nav {
   p:hover {
     color: $denali;
   }
-}
+}*/
 
 .posts {
   display: grid;
+  grid-area: posts;
   grid-template-columns: repeat(1, 1fr);
   gap: 25px;
 }
@@ -87,7 +95,7 @@ nav {
 }
 
 .card {
-  height: 400px;
+  height: 500px;
   padding: 25px;
   border-radius: 15px;
   transition: transform 0.5s;
@@ -104,8 +112,4 @@ nav {
 
 .card:hover {
   transform: scale(1.025);
-}
-
-.post-body {
-  max-width: 800px;
 }
