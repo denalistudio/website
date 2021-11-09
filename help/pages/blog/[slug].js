@@ -11,7 +11,7 @@ import Head from 'next/head'
 import Link from 'next/Link'
 
 export default function Post({
-    frontmatter: { title, date, coverImage, category },
+    frontmatter: { title, coverImage },
     slug,
     content
 }) {
@@ -24,8 +24,6 @@ export default function Post({
                     </Head>
                     <PostHeader
                         title={title}
-                        date={date}
-                        category={category}
                         coverImage={coverImage}
                     />
                     <PostBody content={content} />
