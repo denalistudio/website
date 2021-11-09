@@ -15,15 +15,14 @@ export default function Index({ posts }) {
             <Head>
                 <title>Znalostní báze | Studio Denali</title>
             </Head>
-            <div className="screen-h">
                 <Container>
+                    <nav></nav>
                     <div className="posts">
                         {posts.map((post, index) => (
                             <Post key={index} post={post} />
                         ))}
                     </div>
                 </Container>
-            </div>
         </Layout>
     )
 }

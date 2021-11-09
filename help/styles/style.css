@@ -27,39 +27,54 @@ h4 {
 
 .container {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-columns: 1fr 8fr 1fr;
-  grid-template-areas: ". posts .";
+  grid-template-areas: "nav nav nav" ". posts .";
   height: 100vh;
   background-color: #fafafa;
 }
 
-/*
 nav {
-  background-color: $white;
+  grid-area: nav;
+  background-color: #ffffff;
   margin: auto;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 1;
-  @include shadow();
-  @media (prefers-color-scheme: dark) {
-    background-color: $dark;
-  }
+  box-shadow: #959da533 0 8px 24px;
   display: grid;
   grid-template-columns: 1fr 8fr 1fr;
-  p {
-    float: left;
-    font-size: 18px;
-    margin: 24px 16px;
-    @media (prefers-color-scheme: dark) {
-      color: $white;
-    }
+}
+
+@media (prefers-color-scheme: dark) {
+  nav {
+    box-shadow: #00000033 0 8px 24px;
   }
-  p:hover {
-    color: $denali;
+}
+
+@media (prefers-color-scheme: dark) {
+  nav {
+    background-color: #272727;
   }
-}*/
+}
+
+nav p {
+  float: left;
+  font-size: 18px;
+  margin: 24px 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  nav p {
+    color: #ffffff;
+  }
+}
+
+nav p:hover {
+  color: #4f54ff;
+}
+
 .posts {
   display: grid;
   grid-area: posts;
