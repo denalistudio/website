@@ -1,7 +1,7 @@
 ---
 title: 'Jak přidat vaši e-mailovou adresu do poštovních klientů'
 excerpt: 'Pokud máte vaši mailovou adresu zařízenou s námi u Forpsi a nechcete využívat Forpsi Webmail ale například poštovní klienty od Apple a Microsoft, dozvíte se v tomto článku jak.'
-cover_image: 'null'
+coverImage: 'null'
 slug: 'jak-pridat-mail'
 ---
 

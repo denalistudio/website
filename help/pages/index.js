@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 
 import Container from '../components/container'
 import Layout from '../components/layout'
-import Post from '../components/Post'
+import Post from '../components/post'
 import Head from 'next/head'
 
 import { sortByDate } from '../utils'
