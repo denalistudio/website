@@ -25,16 +25,6 @@ export default function Post({
             <PostBody content={content} />
         </main>
     )
-
-    /*<img src={`./../..${cover_image}`} />
-    <article>
-        <h4>{category}</h4>
-        <h1>{title}</h1>
-        <div className='post-date'>Posted on {date}</div>
-        <div className='post-body'>
-            <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-        </div>
-    </article>*/
 }
 
 // <Link href='/'><a className='btn btn-back'>Go Back</a></Link>
