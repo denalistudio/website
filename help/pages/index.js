@@ -16,7 +16,9 @@ export default function Index({ posts }) {
                 <title>Znalostní báze | Studio Denali</title>
             </Head>
                 <Container>
-                    <nav></nav>
+                    <nav>
+                        <p>Znalostní báze</p>
+                    </nav>
                     <div className="posts">
                         {posts.map((post, index) => (
                             <Post key={index} post={post} />

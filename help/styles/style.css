@@ -35,16 +35,15 @@ h4 {
 }
 
 nav {
+  display: grid;
   grid-area: nav;
+  grid-template-columns: 1fr 8fr 1fr;
   background-color: #ffffff;
-  margin: auto;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 1;
   box-shadow: #959da533 0 8px 24px;
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,10 +68,6 @@ nav p {
   nav p {
     color: #ffffff;
   }
-}
-
-nav p:hover {
-  color: #4f54ff;
 }
 
 .posts {

@@ -52,9 +52,10 @@ h4 {
 }
 
 nav {
+  display: grid;
   grid-area: nav;
+  grid-template-columns: 1fr 8fr 1fr;
   background-color: $white;
-  margin: auto;
   width: 100%;
   position: fixed;
   top: 0;
@@ -63,8 +64,6 @@ nav {
   @media (prefers-color-scheme: dark) {
     background-color: $dark;
   }
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
   p {
     float: left;
     font-size: 18px;
@@ -72,9 +71,6 @@ nav {
     @media (prefers-color-scheme: dark) {
       color: $white;
     }
-  }
-  p:hover {
-    color: $denali;
   }
 }
 

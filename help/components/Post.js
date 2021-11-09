@@ -1,5 +1,3 @@
-import PostTitle from './post-title'
-import PostDescription from './post-description'
 import Link from 'next/Link'
 
 export default function Post({ post }) {
@@ -8,8 +6,8 @@ export default function Post({ post }) {
             <Link href={`./blog/${post.slug}`}>
                 <a>
                     <img src={post.frontmatter.coverImage} />
-                    <PostTitle>{post.frontmatter.title}</PostTitle>
-                    <PostDescription>{post.frontmatter.description}</PostDescription>
+                    <h3>{post.frontmatter.title}</h3>
+                    <p>{post.frontmatter.description}</p>
                 </a>
             </Link>
         </div>
