@@ -29,15 +29,22 @@ h4 {
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr 8fr 1fr;
-  grid-template-areas: "nav nav nav" ". posts .";
+  grid-template-areas: "header header header" ". posts .";
   height: 100vh;
+  padding-top: 100px;
   background-color: #fafafa;
 }
 
-nav {
+header {
   display: grid;
-  grid-area: nav;
+  grid-area: header;
+  grid-template-rows: 1fr;
   grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas: ". nav .";
+}
+
+nav {
+  grid-area: nav;
   background-color: #ffffff;
   width: 100%;
   position: fixed;

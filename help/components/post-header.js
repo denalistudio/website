@@ -1,10 +1,9 @@
-import PostTitle from './post-title'
 import CoverImage from './cover-image'
 
 export default function PostHeader({ title, coverImage}) {
     return (
         <>
-            <PostTitle>{title}</PostTitle>
+            <h1>{title}</h1>
             <CoverImage src={coverImage} />
         </>
     )

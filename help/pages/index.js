@@ -15,16 +15,18 @@ export default function Index({ posts }) {
             <Head>
                 <title>Znalostní báze | Studio Denali</title>
             </Head>
-                <Container>
+            <Container>
+                <header>
                     <nav>
                         <p>Znalostní báze</p>
                     </nav>
-                    <div className="posts">
-                        {posts.map((post, index) => (
-                            <Post key={index} post={post} />
-                        ))}
-                    </div>
-                </Container>
+                </header>
+                <div className="posts">
+                    {posts.map((post, index) => (
+                        <Post key={index} post={post} />
+                    ))}
+                </div>
+            </Container>
         </Layout>
     )
 }
