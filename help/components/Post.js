@@ -5,7 +5,7 @@ export default function Post({ post }) {
         <div class='card'>
             <Link href={`./blog/${post.slug}`}>
                 <a>
-                    <img src={`.${post.frontmatter.cover_image}`} />
+                    <img src={post.frontmatter.cover_image} />
                     <h4>{post.frontmatter.category}</h4>
                     <h3>{post.frontmatter.title}</h3>
                     <p>{post.frontmatter.description}</p>
