@@ -6,3 +6,5 @@ slug: 'jak-se-prihlasit-do-wordpressu'
 ---
 
 <img src="https://src.studiodenali.cz/jak-se-prihlasit-do-wordpressu/1.png">
+<img src="https://src.studiodenali.cz/jak-se-prihlasit-do-wordpressu/2.png">
+<img src="https://src.studiodenali.cz/jak-se-prihlasit-do-wordpressu/3.png">
