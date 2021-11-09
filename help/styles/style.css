@@ -41,10 +41,6 @@ header {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-areas: ". nav .";
-}
-
-nav {
-  grid-area: nav;
   background-color: #ffffff;
   width: 100%;
   position: fixed;
@@ -54,21 +50,23 @@ nav {
 }
 
 @media (prefers-color-scheme: dark) {
-  nav {
+  header {
     box-shadow: #00000033 0 8px 24px;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  nav {
+  header {
     background-color: #272727;
   }
 }
 
+nav {
+  grid-area: nav;
+}
+
 nav p {
-  float: left;
   font-size: 18px;
-  margin: 24px 16px;
 }
 
 @media (prefers-color-scheme: dark) {
