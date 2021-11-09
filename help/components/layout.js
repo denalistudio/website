@@ -1,7 +1,5 @@
 export default function Layout({ children }) {
     return (
-        <>
-            <main>{children}</main>
-        </>
+        <div className="container">{children}</div>
     )
 }

@@ -14,7 +14,7 @@ export default function Index({ posts }) {
             <Head>
                 <title>Znalostní báze | Studio Denali</title>
             </Head>
-            <div className="container">
+            <main>
                 <header>
                     <nav>
                         <p>Znalostní báze</p>
@@ -25,7 +25,7 @@ export default function Index({ posts }) {
                         <Post key={index} post={post} />
                     ))}
                 </div>
-            </div>
+            </main>
         </Layout>
     )
 }
