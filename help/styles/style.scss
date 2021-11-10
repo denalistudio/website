@@ -120,12 +120,12 @@ nav {
 
 .post-container {
   display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: 2fr 6fr 2fr;
+  grid-template-rows: 100px auto;
+  grid-template-columns: 200px auto 200px;
   grid-template-areas:
   ". post-header ."
   ". post-body .";
-  height: 100vh;
+  background-color: #ffffff;
 }
 
 .post-header {

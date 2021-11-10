@@ -2,7 +2,6 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
-import Layout from '../components/layout'
 import Post from '../components/post'
 import Head from 'next/head'
 
@@ -10,23 +9,21 @@ import { sortByDate } from '../utils'
 
 export default function Index({ posts }) {
     return (
-        <Layout>
+        <main className="container">
             <Head>
                 <title>Znalostní báze | Studio Denali</title>
             </Head>
-            <main>
-                <header>
-                    <nav>
-                        <p>Znalostní báze</p>
-                    </nav>
-                </header>
-                <div className="posts">
-                    {posts.map((post, index) => (
-                        <Post key={index} post={post} />
-                    ))}
-                </div>
-            </main>
-        </Layout>
+            <header>
+                <nav>
+                    <p>Znalostní báze</p>
+                </nav>
+            </header>
+            <div className="posts">
+                {posts.map((post, index) => (
+                    <Post key={index} post={post} />
+                ))}
+            </div>
+        </main>
     )
 }
 

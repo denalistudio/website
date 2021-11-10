@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
 export default function CoverImage({ src, width, height }) {
-    const image = (
-        <Image
+    return (
+        <img
             src={src}
             className="post-image"
             layout="fill"
@@ -10,5 +10,4 @@ export default function CoverImage({ src, width, height }) {
             height={height}
         />
     )
-    return (image)
 }
