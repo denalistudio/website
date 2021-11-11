@@ -11,7 +11,7 @@ Poštovní klient je ve zkratce program, který slouží k příjmání, odesíl
 ## Windows Pošta
 *Windows Pošta* je výchozím poštovním klientem pro operační systém Windows od společnosti Microsoft, který mnoho lidí využívá pro jeho jednoduchost.
 
-<img class="md-img" src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/1.png">
+<img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/1.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/2.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/3.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/4.png">

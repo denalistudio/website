@@ -13,7 +13,7 @@ export default function Index({ posts }) {
             <Head>
                 <title>Znalostní báze | Studio Denali</title>
             </Head>
-            <header>
+            <header className="navbar">
                 <nav>
                     <p>Znalostní báze</p>
                 </nav>

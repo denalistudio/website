@@ -1,9 +1,7 @@
-import markdownStyles from './markdown-styles.module.css'
+import marked from "marked";
 
 export default function PostBody({ content }) {
     return (
-        <article>
-            <div className={markdownStyles['markdown']} dangerouslySetInnerHTML={{ __html: content }} />
-        </article>
+        <article className={["post-body"]} dangerouslySetInnerHTML={{ __html: marked(content) }} />
     )
 }

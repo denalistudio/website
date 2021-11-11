@@ -1,12 +1,10 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import marked from 'marked'
 
 import PostBody from '../../components/post-body'
 import PostHeader from '../../components/post-header'
 import Head from 'next/head'
-import Link from 'next/Link'
 
 export default function Post({
     frontmatter: { title, coverImage },
@@ -18,6 +16,11 @@ export default function Post({
             <Head>
                 <title>{title} | Studio Denali</title>
             </Head>
+            <header className="post-navbar">
+                <nav>
+                    <p>Znalostní báze</p>
+                </nav>
+            </header>
             <PostHeader
                 title={title}
                 coverImage={coverImage}
