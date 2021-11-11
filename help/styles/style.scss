@@ -113,7 +113,7 @@ a {
 .post-container {
   display: grid;
   grid-template-rows: 60px auto auto;
-  grid-template-columns: 3fr 4fr 1fr 3fr;
+  grid-template-columns: 2fr 4fr 3fr 2fr;
   grid-template-areas:
   "post-navbar post-navbar post-navbar post-navbar"
   ". post-header post-header ."
@@ -157,5 +157,11 @@ a {
   grid-area: post-body;
   img {
     width: 200px;
+  }
+  p {
+    line-height: 1.5;
+  }
+  li {
+    line-height: 1.5;
   }
 }
