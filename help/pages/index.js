@@ -1,10 +1,8 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-
-import Post from '../components/post'
 import Head from 'next/head'
-
+import Post from '../components/post'
 import { sortByDate } from '../utils'
 
 export default function Home({ posts }) {
