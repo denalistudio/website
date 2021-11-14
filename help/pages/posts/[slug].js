@@ -1,16 +1,13 @@
-import Head from 'next/head'
-import CoverImage from '../../components/cover-image'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import DOMPurify from 'dompurify'
-import { JSDOM } from 'jsdom'
-
-const window = new JSDOM('').window
+import Head from 'next/head'
+import CoverImage from '../../components/cover-image'
+import markdownToHtml from '../../lib/markdownToHtml'
 
 export default function Post({
-    frontmatter: { title, coverImage },
-    content,
+    frontmatter: {title, coverImage},
+    clean,
 }) {
     return (
         <main className="post-container">
@@ -26,7 +23,7 @@ export default function Post({
                 <CoverImage src={coverImage} width={1920} height={1080} />
                 <h1>{title}</h1>
             </div>
-            <article className={["post-body"]} dangerouslySetInnerHTML={{ __html: DOMPurify(window).sanitize(content) }} />
+            <article className={["post-body"]} dangerouslySetInnerHTML={{ __html: clean }} />
         </main>
     )
 }
@@ -50,11 +47,12 @@ export async function getStaticProps({ params: { slug } }) {
         'utf-8'
     )
     const { data: frontmatter, content } = matter(markdownWithMeta)
+    const clean = await markdownToHtml(content || '')
     return {
         props: {
             frontmatter,
             slug,
-            content,
+            clean,
         },
     }
 }
