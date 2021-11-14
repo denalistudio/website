@@ -19,10 +19,10 @@ export default function Post({
                     <p>Znalostní báze</p>
                 </nav>
             </header>
-            <div className="post-header">
+            <section className="post-header">
                 <CoverImage src={coverImage} width={1920} height={1080} />
                 <h1>{title}</h1>
-            </div>
+            </section>
             <article className={["post-body"]} dangerouslySetInnerHTML={{ __html: clean }} />
         </main>
     )

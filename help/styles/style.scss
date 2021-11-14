@@ -113,11 +113,11 @@ a {
 .post-container {
   display: grid;
   grid-template-rows: 60px auto auto;
-  grid-template-columns: 2fr 4fr 3fr 2fr;
+  grid-template-columns: 2fr 6fr 2fr;
   grid-template-areas:
-  "post-navbar post-navbar post-navbar post-navbar"
-  ". post-header post-header ."
-  ". post-body . .";
+  "post-navbar post-navbar post-navbar"
+  ". post-header ."
+  ". post-body .";
   padding-top: 40px;
   background-color: #ffffff;
 }
@@ -164,4 +164,8 @@ a {
   li {
     line-height: 1.5;
   }
+}
+
+.toc-item {
+  list-style-type: none;
 }
