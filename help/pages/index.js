@@ -38,13 +38,12 @@ export async function getStaticProps() {
         const { data: frontmatter } = matter(markdownWithMeta)
         return {
             slug,
-            frontmatter
+            frontmatter,
         }
-
     })
     return {
         props: {
-            posts: posts.sort(sortByDate)
-        }
+            posts: posts.sort(sortByDate),
+        },
     }
 }
