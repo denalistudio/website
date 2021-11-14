@@ -13,5 +13,3 @@ export default function Post({ post }) {
         </div>
     )
 }
-
-// <div className='post-date'>Posted on {post.frontmatter.date}</div>

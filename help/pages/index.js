@@ -7,7 +7,7 @@ import Head from 'next/head'
 
 import { sortByDate } from '../utils'
 
-export default function Index({ posts }) {
+export default function Home({ posts }) {
     return (
         <main className="container">
             <Head>
