@@ -1,11 +1,14 @@
+import Head from 'next/head'
+import CoverImage from '../../components/cover-image'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import marked from 'marked'
-import Head from 'next/head'
-import CoverImage from '../../components/cover-image'
+import DOMPurify from 'dompurify'
+import { JSDOM } from 'jsdom'
 
-export default function PostPage({
+const window = new JSDOM('').window
+
+export default function Post({
     frontmatter: { title, coverImage },
     content,
 }) {
@@ -23,7 +26,7 @@ export default function PostPage({
                 <CoverImage src={coverImage} width={1920} height={1080} />
                 <h1>{title}</h1>
             </div>
-            <article className={["post-body"]} dangerouslySetInnerHTML={{ __html: marked(content) }} />
+            <article className={["post-body"]} dangerouslySetInnerHTML={{ __html: DOMPurify(window).sanitize(content) }} />
         </main>
     )
 }
