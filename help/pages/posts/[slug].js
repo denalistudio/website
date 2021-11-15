@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import Head from 'next/head'
 import Image from 'next/image'
 import markdownToHtml from '../../lib/markdownToHtml'
+import PostBody from '../../components/post-body'
 
 export default function Post({
     frontmatter: {
@@ -32,9 +33,7 @@ export default function Post({
                 />
                 <h1>{title}</h1>
             </div>
-            <main className="post-body">
-                <article className={["post"]} dangerouslySetInnerHTML={{ __html: clean }} />
-            </main>
+            <PostBody clean={clean} />
         </div>
     )
 }
