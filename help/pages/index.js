@@ -7,7 +7,7 @@ import { sortByDate } from '../utils'
 
 export default function Index({ posts }) {
     return (
-        <main className="container">
+        <div className="container">
             <Head>
                 <title>Znalostní báze | Studio Denali</title>
             </Head>
@@ -16,9 +16,9 @@ export default function Index({ posts }) {
                     <p>Znalostní báze</p>
                 </nav>
             </header>
-            <div className="posts">
+            <main className="posts">
                 {posts.map((post, index) => (
-                    <div className="card" key={index} post={post}>
+                    <article className="card" key={index} post={post}>
                         <Link href={`./posts/${post.slug}`}>
                             <a>
                                 <img className="card-img" src={post.frontmatter.coverImage} />
@@ -26,10 +26,10 @@ export default function Index({ posts }) {
                                 <p className="card-description">{post.frontmatter.description}</p>
                             </a>
                         </Link>
-                    </div>
+                    </article>
                 ))}
-            </div>
-        </main>
+            </main>
+        </div>
     )
 }
 

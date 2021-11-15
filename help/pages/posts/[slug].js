@@ -13,7 +13,7 @@ export default function Post({
     clean,
 }) {
     return (
-        <main className="post-container">
+        <div className="post-container">
             <Head>
                 <title>{title} | Studio Denali</title>
             </Head>
@@ -22,7 +22,7 @@ export default function Post({
                     <p>Znalostní báze</p>
                 </nav>
             </header>
-            <section className="post-header">
+            <div className="post-header">
                 <Image
                     src={coverImage}
                     className="post-image"
@@ -31,11 +31,11 @@ export default function Post({
                     height = {1080}
                 />
                 <h1>{title}</h1>
-            </section>
-            <section className="post-body">
+            </div>
+            <main className="post-body">
                 <article className={["post"]} dangerouslySetInnerHTML={{ __html: clean }} />
-            </section>
-        </main>
+            </main>
+        </div>
     )
 }
 
