@@ -21,9 +21,9 @@ export default function Index({ posts }) {
                     <article className="card" key={index} post={post}>
                         <Link href={`./posts/${post.slug}`}>
                             <a>
-                                <img className="card-img" src={post.frontmatter.coverImage} />
-                                <h3 className="card-title">{post.frontmatter.title}</h3>
-                                <p className="card-description">{post.frontmatter.description}</p>
+                                <img src={post.frontmatter.coverImage} />
+                                <h3>{post.frontmatter.title}</h3>
+                                <p>{post.frontmatter.description}</p>
                             </a>
                         </Link>
                     </article>

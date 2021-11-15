@@ -28,14 +28,9 @@ a {
   text-decoration: none;
 }
 
-.card-title {
-  margin: 0;
-  font-size: 25px;
-}
 
-.card-description {
-  margin: 16px 0 0 0;
-}
+
+/* Index */
 
 .container {
   display: grid;
@@ -106,34 +101,39 @@ a {
     width: 100%;
     border-radius: 10px;
   }
+  h3 {
+    margin: 0;
+    font-size: 25px;
+  }
+  p {
+    margin: 16px 0 0 0;
+  }
 }
 
 /* Post */
 
 .post-container {
   display: grid;
+  row-gap: 20px;
   grid-template-rows: 60px auto auto;
   grid-template-columns: 2fr 6fr 2fr;
   grid-template-areas:
   "post-navbar post-navbar post-navbar"
   ". post-header ."
   ". post-body .";
-  padding-top: 40px;
   background-color: #ffffff;
 }
 
 .post-navbar {
   display: grid;
-  grid-area: header;
-  grid-template-rows: 1fr;
+  grid-area: post-navbar;
+  grid-template-rows: 60px;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-areas: ". nav .";
   background-color: $white;
   width: 100%;
   height: 60px;
-  position: fixed;
   top: 0;
-  z-index: 1;
   @include shadow();
   @media (prefers-color-scheme: dark) {
     background-color: $dark;
@@ -151,10 +151,12 @@ a {
 
 .post-header {
   grid-area: post-header;
+  padding-top: 20px;
 }
 
 .post-body {
   display: grid;
+  column-gap: 40px;
   grid-area: post-body;
   grid-template-rows: auto;
   grid-template-columns: 2fr 1fr;
@@ -174,10 +176,29 @@ a {
   }
 }
 
+/* Table of contents */
+
 .post-toc {
   grid-area: post-toc;
 }
 
+.toc-level {
+  margin: 0;
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.5s;
+  @include shadow();
+  background-color: $white;
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+  }
+  &:hover {
+    transform: scale(1.025);
+  }
+}
+
 .toc-item {
+  margin: 8px 0;
+  font-size: 18px;
   list-style-type: none;
 }
