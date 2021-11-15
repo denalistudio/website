@@ -113,11 +113,11 @@ a {
 .post-container {
   display: grid;
   grid-template-rows: 60px auto auto;
-  grid-template-columns: 2fr 4fr 3fr 2fr;
+  grid-template-columns: 2fr 6fr 2fr;
   grid-template-areas:
-  "post-navbar post-navbar post-navbar post-navbar"
-  ". post-header post-header ."
-  ". post-body . .";
+  "post-navbar post-navbar post-navbar"
+  ". post-header ."
+  ". post-body .";
   padding-top: 40px;
   background-color: #ffffff;
 }
@@ -154,7 +154,15 @@ a {
 }
 
 .post-body {
+  display: grid;
   grid-area: post-body;
+}
+
+.post {
+  grid-area: post;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "post post-toc";
   img {
     width: 200px;
   }
@@ -164,4 +172,12 @@ a {
   li {
     line-height: 1.5;
   }
+}
+
+.post-toc {
+  grid-area: post-toc;
+}
+
+.toc-item {
+  list-style-type: none;
 }

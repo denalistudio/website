@@ -1,7 +1,16 @@
-import marked from "marked";
+import { useEffect } from 'react'
 
-export default function PostBody({ content }) {
+export default function PostBody({ clean }) {
+    useEffect(() => {
+        const toc = document.querySelector('.toc');
+        const postToc = document.querySelector('.post-toc');
+        postToc.innerHTML = toc.innerHTML;
+        toc.remove();
+    }, []);
     return (
-        <article className={["post-body"]} dangerouslySetInnerHTML={{ __html: marked(content) }} />
+        <main className="post-body">
+            <nav className="post-toc" />
+            <article className={["post"]} dangerouslySetInnerHTML={{ __html: clean }} />
+        </main>
     )
 }

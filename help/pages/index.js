@@ -1,15 +1,13 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-
-import Post from '../components/post'
 import Head from 'next/head'
-
+import Link from 'next/link'
 import { sortByDate } from '../utils'
 
 export default function Index({ posts }) {
     return (
-        <main className="container">
+        <div className="container">
             <Head>
                 <title>Znalostní báze | Studio Denali</title>
             </Head>
@@ -18,12 +16,20 @@ export default function Index({ posts }) {
                     <p>Znalostní báze</p>
                 </nav>
             </header>
-            <div className="posts">
+            <main className="posts">
                 {posts.map((post, index) => (
-                    <Post key={index} post={post} />
+                    <article className="card" key={index} post={post}>
+                        <Link href={`./posts/${post.slug}`}>
+                            <a>
+                                <img className="card-img" src={post.frontmatter.coverImage} />
+                                <h3 className="card-title">{post.frontmatter.title}</h3>
+                                <p className="card-description">{post.frontmatter.description}</p>
+                            </a>
+                        </Link>
+                    </article>
                 ))}
-            </div>
-        </main>
+            </main>
+        </div>
     )
 }
 
@@ -38,13 +44,12 @@ export async function getStaticProps() {
         const { data: frontmatter } = matter(markdownWithMeta)
         return {
             slug,
-            frontmatter
+            frontmatter,
         }
-
     })
     return {
         props: {
-            posts: posts.sort(sortByDate)
-        }
+            posts: posts.sort(sortByDate),
+        },
     }
 }
