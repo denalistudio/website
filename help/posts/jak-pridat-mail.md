@@ -16,7 +16,7 @@ Poštovní klient je ve zkratce program, který slouží k příjmání, odesíl
 <img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/4.png">
 <img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/5.png">
 
-1) Když otevřete aplikaci Windows Pošta poprvé, stačí jednoduše kliknout na možnost **Přidat účet**. Pokud jste již Windows Poštu používali a máte již jeden nebo více e-mailových adres přidaných, klikněte na´menu **Nastavení** > možnost **Přidat účet**.
+1) Když otevřete aplikaci Windows Pošta poprvé, stačí jednoduše kliknout na možnost **Přidat účet**. Pokud jste již Windows Poštu používali a máte již jeden nebo více e-mailových adres přidaných, klikněte na menu **Nastavení** > možnost **Přidat účet**.
 2) Klikněte na možnost **Jiný účet**.
 3) Vyberte možnost **Internetový e-mail**.
 4) Do polí **E-mailová adresa** a **Uživatelské jméno** vyplňte vaši novou e-mailovou adresu s vaší doménou a do pole **Heslo** vaše heslo. Do pole **Název účtu** zvolte název, pod kterým se vám v adresáři váš e-mail bude zobrazovat. Do pole **Zprávy odesílat pod tímto jménem** vyplňte vaše jméno/název firmy, pod kterým uvidí příjemci vaše e-maily. Do pole **Server příchozí pošty** vyplňte `imap.forpsi.com` a do pole **Server odchozí pošty** `smtp.forpsi.com`, v poli **Typ účtu** nechte zvolenou možnost IMAP4. Po kontrole údajů klikněte na tlačítko **Přihlásit se**.
