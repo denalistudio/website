@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Head from 'next/head'
-import Post from '../components/post'
+import Link from 'next/link'
 import { sortByDate } from '../utils'
 
 export default function Index({ posts }) {
@@ -18,7 +18,15 @@ export default function Index({ posts }) {
             </header>
             <div className="posts">
                 {posts.map((post, index) => (
-                    <Post key={index} post={post} />
+                    <div className="card" key={index} post={post}>
+                        <Link href={`./posts/${post.slug}`}>
+                            <a>
+                                <img className="card-img" src={post.frontmatter.coverImage} />
+                                <h3 className="card-title">{post.frontmatter.title}</h3>
+                                <p className="card-description">{post.frontmatter.description}</p>
+                            </a>
+                        </Link>
+                    </div>
                 ))}
             </div>
         </main>
