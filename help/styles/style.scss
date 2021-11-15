@@ -156,13 +156,13 @@ a {
 .post-body {
   display: grid;
   grid-area: post-body;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "post post-toc";
 }
 
 .post {
   grid-area: post;
-  grid-template-rows: 1fr;
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas: "post post-toc";
   img {
     width: 200px;
   }
