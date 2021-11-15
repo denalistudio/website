@@ -18,6 +18,12 @@ $white: #ffffff;
   font-size: 16px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -94,7 +100,7 @@ a {
 }
 
 .card {
-  height: 450px;
+  height: 500px;
   padding: 25px;
   border-radius: 15px;
   transition: transform 0.5s;
@@ -111,7 +117,7 @@ a {
     border-radius: 10px;
   }
   h3 {
-    margin: 8px 0;
+    margin: 12px 0;
     font-size: 25px;
   }
   p {
@@ -233,10 +239,11 @@ a {
   img {
     width: 200px;
   }
-  p {
-    line-height: 1.5;
+  h2 {
+    margin: 16px 0 12px 0;
   }
-  li {
+  p, li {
+    margin: 8px 0;
     line-height: 1.5;
   }
 }
@@ -244,14 +251,10 @@ a {
 /* Table of contents */
 
 .post-toc {
-  grid-area: post-toc;
-}
-
-.toc-level {
-  margin: 0;
   padding: 25px;
   border-radius: 15px;
   transition: transform 0.5s;
+  grid-area: post-toc;
   @include shadow();
   background-color: $white;
   @media (prefers-color-scheme: dark) {

@@ -9,7 +9,9 @@ export default function PostBody({ clean }) {
     }, []);
     return (
         <main className="post-body">
-            <nav className="post-toc" />
+            <aside className="post-toc-container">
+                <nav className="post-toc" />
+            </aside>
             <article className={["post"]} dangerouslySetInnerHTML={{ __html: clean }} />
         </main>
     )
