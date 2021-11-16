@@ -276,6 +276,10 @@ a {
 /* Table of contents */
 
 .post-toc {
+  width: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 100px;
   padding: 25px;
   border-radius: 15px;
   transition: transform 0.5s;
@@ -298,6 +302,9 @@ a {
 
 .toc-link {
   color: $black;
+  &:hover {
+    text-decoration: underline;
+  }
   @media (prefers-color-scheme: dark) {
     color: $white;
   }
