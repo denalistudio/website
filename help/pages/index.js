@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import Head from 'next/head'
 import Link from 'next/link'
 import { sortByDate } from '../utils'
+import Footer from '../components/footer'
 
 export default function Index({ posts }) {
     return (
@@ -29,6 +30,7 @@ export default function Index({ posts }) {
                     </article>
                 ))}
             </main>
+            <Footer />
         </div>
     )
 }

@@ -5,6 +5,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import markdownToHtml from '../../lib/markdownToHtml'
 import PostBody from '../../components/post-body'
+import Footer from '../../components/footer'
 
 export default function Post({
     frontmatter: {
@@ -34,6 +35,7 @@ export default function Post({
                 <h1>{title}</h1>
             </div>
             <PostBody clean={clean} />
+            <Footer />
         </div>
     )
 }
