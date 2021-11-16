@@ -304,6 +304,7 @@ a {
   color: $black;
   &:hover {
     text-decoration: underline;
+    text-decoration-color: #979797;
   }
   @media (prefers-color-scheme: dark) {
     color: $white;
