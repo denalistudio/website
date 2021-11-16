@@ -321,6 +321,41 @@ a {
   }
 }
 
+/* Gallery */
+
+.gallery {
+  width: 100%;
+  margin: 30px 0;
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.5s;
+  background-color: $white;
+  @include shadow();
+  &:hover {
+    transform: scale(1.025);
+  }
+  p {
+    text-align: center;
+  }
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+  }
+}
+
+.gallery-images {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  img {
+    width: 100%;
+  }
+  @media (min-width: 1200px) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 /* Footer */
 
 footer {
