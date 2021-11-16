@@ -30,7 +30,6 @@ body {
 }
 
 a {
-  color: $dark;
   text-decoration: none;
 }
 
@@ -52,6 +51,9 @@ a {
     grid-template-areas:
     "header header header"
     ". posts .";
+  }
+  @media (prefers-color-scheme: dark) {
+    background-color: #1e1e1e;
   }
 }
 
@@ -104,11 +106,8 @@ a {
   padding: 25px;
   border-radius: 15px;
   transition: transform 0.5s;
-  @include shadow();
   background-color: $white;
-  @media (prefers-color-scheme: dark) {
-    background-color: $dark;
-  }
+  @include shadow();
   &:hover {
     transform: scale(1.025);
   }
@@ -116,13 +115,21 @@ a {
     width: 100%;
     border-radius: 10px;
   }
-  h3 {
-    margin: 12px 0;
-    font-size: 25px;
-  }
   p {
     margin: 0;
     font-size: 16px;
+    color: $black;
+  }
+  h3 {
+    margin: 12px 0;
+    font-size: 25px;
+    color: $black;
+  }
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+    p, h3 {
+      color: $white;
+    }
   }
 }
 
@@ -173,6 +180,9 @@ a {
     ". post-header post-header ."
     ". post-body post-body .";
   }
+  @media (prefers-color-scheme: dark) {
+    background-color: #1e1e1e;
+  }
 }
 
 .post-navbar {
@@ -193,6 +203,7 @@ a {
     grid-area: nav;
     p {
       font-size: 18px;
+      color: $black;
       @media (prefers-color-scheme: dark) {
         color: $white;
       }
@@ -206,11 +217,15 @@ a {
   h1 {
     margin: 16px 0;
     font-size: 26px;
+    color: $black;
     @media (min-width: 992px) {
       font-size: 30px;
     }
     @media (min-width: 1200px) {
       font-size: 32px;
+    }
+    @media (prefers-color-scheme: dark) {
+      color: $white;
     }
   }
 }
@@ -239,12 +254,19 @@ a {
   img {
     width: 200px;
   }
-  h2 {
-    margin: 16px 0 12px 0;
-  }
   p, li {
     margin: 8px 0;
+    color: $black;
     line-height: 1.5;
+  }
+  h2 {
+    margin: 16px 0 12px 0;
+    color: $black;
+  }
+  @media (prefers-color-scheme: dark) {
+    p, h2, li {
+      color: $white;
+    }
   }
 }
 
@@ -255,13 +277,13 @@ a {
   border-radius: 15px;
   transition: transform 0.5s;
   grid-area: post-toc;
-  @include shadow();
   background-color: $white;
-  @media (prefers-color-scheme: dark) {
-    background-color: $dark;
-  }
+  @include shadow();
   &:hover {
     transform: scale(1.025);
+  }
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
   }
 }
 
@@ -269,4 +291,11 @@ a {
   margin: 8px 0;
   font-size: 18px;
   list-style-type: none;
+}
+
+.toc-link {
+  color: $black;
+  @media (prefers-color-scheme: dark) {
+    color: $white;
+  }
 }
