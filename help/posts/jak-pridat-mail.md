@@ -106,12 +106,12 @@ Poštovní klient *Mozilla Thunderbird* je open-source projektem tvůrce prohlí
 5) Vyberte možnost **IMAP** z pole **Protokol** a klikněte na tlačítko **Hotovo**.
 6) **Hotovo!** Vyzkoušejte si na vaši novou adresu poslat pro radost e-mail z jiného účtu.
 
-## Apple Pošta pro Mac
-*Apple Pošta pro iPhone/iPad* je předinstalovaný poštovní klient od společnosti Apple, který je skvěle zabudovaný do každého Macu.
+## Apple Mail pro Mac
+*Apple Mail pro Mac* je předinstalovaný poštovní klient od společnosti Apple, který je skvěle zabudovaný do každého Macu.
 
 *Coming soon*
 
-## Apple Pošta pro iPhone/iPad
+## Apple Mail pro iPhone/iPad
 *Apple Pošta pro iPhone/iPad* je předinstalovaný poštovní klient od společnosti Apple, který je skvěle zabudovaný do každého iPhonu a iPadu.
 
 <img src="https://src.studiodenali.cz/jak-pridat-mail/ios-mail/1.png">
