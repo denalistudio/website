@@ -1,3 +1,9 @@
-export default function Gallery() {
-    return 
+export default function Gallery({ gallery }) {
+    if (gallery === 'true') {
+       return (
+           
+       )
+    } else {
+        return false
+    }
 }

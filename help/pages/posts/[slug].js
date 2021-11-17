@@ -3,13 +3,15 @@ import path from 'path'
 import matter from 'gray-matter'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
+import Gallery from '../../lib/gallery'
 import PostBody from '../../components/post-body'
 import Footer from '../../components/footer'
 
 export default function Post({
     frontmatter: {
         title,
-        coverImage
+        coverImage,
+        gallery
     },
     clean,
 }) {
@@ -33,6 +35,7 @@ export default function Post({
             </div>
             <PostBody clean={clean} />
             <Footer />
+            <Gallery gallery={gallery} />
         </div>
     )
 }
