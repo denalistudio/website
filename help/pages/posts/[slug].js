@@ -2,7 +2,6 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Head from 'next/head'
-import Image from 'next/image'
 import markdownToHtml from '../../lib/markdownToHtml'
 import PostBody from '../../components/post-body'
 import Footer from '../../components/footer'
@@ -25,12 +24,10 @@ export default function Post({
                 </nav>
             </header>
             <div className="post-header">
-                <Image
-                    src={coverImage}
+                <img
                     className="post-image"
-                    layout="responsive"
-                    width = {1920}
-                    height = {1080}
+                    src={coverImage}
+                    width="100%"
                 />
                 <h1>{title}</h1>
             </div>
