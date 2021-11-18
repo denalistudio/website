@@ -40,17 +40,19 @@ a {
   height: 100vh;
   padding: 20px 0 0 0;
   background-color: #fafafa;
-  grid-template-rows: 60px auto;
+  grid-template-rows: 60px auto 50px;
   grid-template-columns: 20px 1fr 20px;
   grid-template-areas:
   "header header header"
-  ". posts .";
+  ". posts ."
+  ". footer .";
   @media (min-width: 992px) {
-    grid-template-rows: 60px auto;
+    grid-template-rows: 60px auto 50px;
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-areas:
     "header header header"
-    ". posts .";
+    ". posts ."
+    ". footer .";
   }
   @media (prefers-color-scheme: dark) {
     background-color: #1e1e1e;
@@ -69,6 +71,7 @@ a {
   position: fixed;
   top: 0;
   z-index: 1;
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   @include shadow();
   @media (prefers-color-scheme: dark) {
     background-color: $dark;
@@ -87,7 +90,7 @@ a {
 .posts {
   display: grid;
   gap: 20px;
-  padding: 0 0 20px 0;
+  padding: 0 env(safe-area-inset-right) 20px env(safe-area-inset-left);
   grid-area: posts;
   grid-template-columns: repeat(1, 1fr);
   @media (min-width: 576px) {
@@ -141,44 +144,49 @@ a {
   padding: 0 0 20px 0;
   background-color: #ffffff;
   grid-template-rows: 60px auto auto auto;
-  grid-template-columns: 20px 1fr 20px;
+  grid-template-columns: 20px 1fr 20px 50px;
   grid-template-areas:
   "post-navbar post-navbar post-navbar"
   ". post-header ."
   ". post-body ."
-  ". post-body .";
+  ". post-body ."
+  ". footer .";
   @media (min-width: 768px) {
-    grid-template-rows: 60px auto auto auto;
+    grid-template-rows: 60px auto auto auto 50px;
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-areas:
     "post-navbar post-navbar post-navbar"
     ". post-header ."
     ". post-body ."
-    ". post-body .";
+    ". post-body ."
+    ". footer .";
   }
   @media (min-width: 992px) {
-    grid-template-rows: 60px auto auto;
+    grid-template-rows: 60px auto auto 50px;
     grid-template-columns: 0.5fr 6fr 3fr 0.5fr;
     grid-template-areas:
     "post-navbar post-navbar post-navbar post-navbar"
     ". post-header post-header ."
-    ". post-body post-body .";
+    ". post-body post-body ."
+    ". footer footer .";
   }
   @media (min-width: 1200px) {
-    grid-template-rows: 60px auto auto;
+    grid-template-rows: 60px auto auto 50px;
     grid-template-columns: 1fr 5fr 3fr 1fr;
     grid-template-areas:
     "post-navbar post-navbar post-navbar post-navbar"
     ". post-header post-header ."
-    ". post-body post-body .";
+    ". post-body post-body ."
+    ". footer footer .";
   }
   @media (min-width: 1600px) {
-    grid-template-rows: 60px auto auto;
+    grid-template-rows: 60px auto auto 50px;
     grid-template-columns: 2fr 4fr 2fr 2fr;
     grid-template-areas:
     "post-navbar post-navbar post-navbar post-navbar"
     ". post-header post-header ."
-    ". post-body post-body .";
+    ". post-body post-body ."
+    ". footer footer .";
   }
   @media (prefers-color-scheme: dark) {
     background-color: #1e1e1e;
@@ -195,6 +203,7 @@ a {
   width: 100%;
   height: 60px;
   top: 0;
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   @include shadow();
   @media (prefers-color-scheme: dark) {
     background-color: $dark;
@@ -213,7 +222,7 @@ a {
 
 .post-header {
   grid-area: post-header;
-  padding-top: 20px;
+  padding: 20px env(safe-area-inset-right) 0 env(safe-area-inset-left);
   h1 {
     margin: 16px 0;
     font-size: 26px;
@@ -232,6 +241,7 @@ a {
 
 .post-body {
   display: grid;
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   row-gap: 20px;
   column-gap: 0;
   grid-area: post-body;
@@ -276,6 +286,10 @@ a {
 /* Table of contents */
 
 .post-toc {
+  width: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 100px;
   padding: 25px;
   border-radius: 15px;
   transition: transform 0.5s;
@@ -298,7 +312,70 @@ a {
 
 .toc-link {
   color: $black;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: #979797;
+  }
   @media (prefers-color-scheme: dark) {
     color: $white;
+  }
+}
+
+/* Gallery */
+
+.gallery {
+  width: 100%;
+  margin: 30px 0;
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.5s;
+  background-color: $white;
+  @include shadow();
+  &:hover {
+    transform: scale(1.025);
+  }
+  p {
+    text-align: center;
+  }
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+  }
+}
+
+.gallery-images {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  img {
+    width: 100%;
+  }
+  @media (min-width: 1200px) {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* Footer */
+
+footer {
+  margin: auto;
+  display: grid;
+  grid-area: footer;
+  grid-template-rows: 50px;
+  grid-template-columns: 1fr;
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
+  a {
+    color: $black;
+  }
+  p {
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 0;
+  }
+  @media (prefers-color-scheme: dark) {
+    a, p {
+      color: $white;
+    }
   }
 }

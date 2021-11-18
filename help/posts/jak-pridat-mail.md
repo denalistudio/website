@@ -3,6 +3,7 @@ title: 'Jak přidat vaši e-mailovou adresu do poštovních klientů'
 description: 'Pokud máte vaši mailovou adresu zařízenou s námi u Forpsi a nechcete využívat Forpsi Webmail ale například poštovní klienty od Apple a Microsoft, dozvíte se v tomto článku jak.'
 coverImage: 'https://src.studiodenali.cz/jak-pridat-mail/cover.png'
 slug: 'jak-pridat-mail'
+gallery: 'true'
 ---
 
 Poštovní klient je ve zkratce program, který slouží k příjmání, odesílání a správě elektronické pošty. Nesmíme si ale plést poštovní klienty s tzv. "webmailem," což je velice podobný program, jen zcela umístěn na webu a je většinou operovaný samotnou společností provozující vaši e-mailovou službu (Google = Gmail, Forpsi = Forpsi Webmail). Pokud máte vaši mailovou adresu zařízenou s námi u Forpsi a nechcete využívat Forpsi Webmail ale například poštovní klienty od Apple a Microsoft, dozvíte se v tomto článku jak.
@@ -10,11 +11,16 @@ Poštovní klient je ve zkratce program, který slouží k příjmání, odesíl
 ## Windows Pošta
 *Windows Pošta* je výchozím poštovním klientem pro operační systém Windows od společnosti Microsoft, který mnoho lidí využívá pro jeho jednoduchost.
 
-<img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/1.png">
-<img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/2.png">
-<img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/3.png">
-<img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/4.png">
-<img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/5.png">
+<figure class="gallery">
+    <figure class="gallery-images">
+        <img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/1.png">
+        <img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/2.png">
+        <img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/3.png">
+        <img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/4.png">
+        <!--<img src="https://src.studiodenali.cz/jak-pridat-mail/windows-mail/5.png">-->
+    </figure>
+    <p>Vstoupit do galerie</p>
+</figure>
 
 1) Když otevřete aplikaci Windows Pošta poprvé, stačí jednoduše kliknout na možnost **Přidat účet**. Pokud jste již Windows Poštu používali a máte již jeden nebo více e-mailových adres přidaných, klikněte na menu **Nastavení** > možnost **Přidat účet**.
 2) Klikněte na možnost **Jiný účet**.
@@ -101,12 +107,12 @@ Poštovní klient *Mozilla Thunderbird* je open-source projektem tvůrce prohlí
 5) Vyberte možnost **IMAP** z pole **Protokol** a klikněte na tlačítko **Hotovo**.
 6) **Hotovo!** Vyzkoušejte si na vaši novou adresu poslat pro radost e-mail z jiného účtu.
 
-## Apple Pošta pro Mac
-*Apple Pošta pro iPhone/iPad* je předinstalovaný poštovní klient od společnosti Apple, který je skvěle zabudovaný do každého Macu.
+## Apple Mail pro Mac
+*Apple Mail pro Mac* je předinstalovaný poštovní klient od společnosti Apple, který je skvěle zabudovaný do každého Macu.
 
 *Coming soon*
 
-## Apple Pošta pro iPhone/iPad
+## Apple Mail pro iPhone/iPad
 *Apple Pošta pro iPhone/iPad* je předinstalovaný poštovní klient od společnosti Apple, který je skvěle zabudovaný do každého iPhonu a iPadu.
 
 <img src="https://src.studiodenali.cz/jak-pridat-mail/ios-mail/1.png">
