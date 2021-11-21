@@ -17,7 +17,7 @@ body {
   display: grid;
   grid-template-rows: auto auto auto auto auto auto auto;
   grid-template-columns: 0.9375em 1fr 0.9375em;
-  grid-template-areas: "header-mobile header-mobile header-mobile" "hero hero hero" ". o-nas ." ". nabidka ." "galerie galerie galerie" ". kontakt ." ". footer .";
+  grid-template-areas: "header-mobile header-mobile header-mobile" "hero hero hero" ". about-us ." ". offer ." "gallery gallery gallery" ". contact ." ". footer .";
 }
 
 @media (min-width: 75em) {
@@ -25,7 +25,7 @@ body {
     row-gap: 3.125em;
     grid-template-rows: auto auto auto auto auto auto auto;
     grid-template-columns: 2fr 6fr 2fr;
-    grid-template-areas: "header-desktop header-desktop header-desktop" "hero hero hero" ". o-nas ." ". nabidka ." "galerie galerie galerie" ". kontakt ." ". footer .";
+    grid-template-areas: "header-desktop header-desktop header-desktop" "hero hero hero" ". about-us ." ". offer ." "gallery gallery gallery" ". contact ." ". footer .";
   }
 }
 
@@ -66,18 +66,6 @@ h2 {
   top: -1.25em;
 }
 
-.mt-10 {
-  margin-top: 0.625em;
-}
-
-.mt-20 {
-  margin-top: 1.25em;
-}
-
-.mt-40 {
-  margin-top: 2.5em;
-}
-
 .header-mobile {
   margin: auto;
   padding: 1.25em 0 0 0;
@@ -106,7 +94,7 @@ h2 {
     gap: 2.5em;
     grid-template-rows: 5.1875em;
     grid-template-columns: calc(50% - 33.75em) 3.75em 5.5em 34em 4.8125em 5.1875em calc(50% - 34.5em);
-    grid-template-areas: ". anchor_o-nas anchor_nabidka header-heading anchor_galerie anchor_kontakt .";
+    grid-template-areas: ". anchor_about-us anchor_offer header-heading anchor_gallery anchor_contact .";
     grid-area: header-desktop;
     margin: 3.125em auto 0 auto;
   }
@@ -129,35 +117,35 @@ h2 {
   }
 }
 
-.anchor_o-nas, .anchor_nabidka, .anchor_galerie, .anchor_kontakt {
+.anchor_about-us, .anchor_offer, .anchor_gallery, .anchor_contact {
   display: none;
 }
 
-.anchor_o-nas p, .anchor_nabidka p, .anchor_galerie p, .anchor_kontakt p {
+.anchor_about-us p, .anchor_offer p, .anchor_gallery p, .anchor_contact p {
   font-size: 1.5rem;
 }
 
 @media (min-width: 75em) {
-  .anchor_o-nas, .anchor_nabidka, .anchor_galerie, .anchor_kontakt {
+  .anchor_about-us, .anchor_offer, .anchor_gallery, .anchor_contact {
     display: flex;
     align-items: center;
   }
 }
 
-.anchor_o-nas {
-  grid-area: anchor_o-nas;
+.anchor_about-us {
+  grid-area: anchor_about-us;
 }
 
-.anchor_nabidka {
-  grid-area: anchor_nabidka;
+.anchor_offer {
+  grid-area: anchor_offer;
 }
 
-.anchor_galerie {
-  grid-area: anchor_galerie;
+.anchor_gallery {
+  grid-area: anchor_gallery;
 }
 
-.anchor_kontakt {
-  grid-area: anchor_kontakt;
+.anchor_contact {
+  grid-area: anchor_contact;
 }
 
 .hero {
@@ -187,71 +175,71 @@ h2 {
   }
 }
 
-.o-nas {
-  grid-area: o-nas;
+.about-us {
+  grid-area: about-us;
 }
 
-.o-nas p {
+.about-us p {
   margin: 0.625em 0 0 0;
   text-align: justify;
 }
 
 @media (min-width: 75em) {
-  .o-nas p {
+  .about-us p {
     margin: 2.5em 0 0 0;
   }
 }
 
-.nabidka {
+.offer {
   display: grid;
   grid-template-rows: auto auto auto auto;
   grid-template-columns: 1fr;
-  grid-template-areas: "nabidka-rectangle" "nabidka-heading" "nabidka-ul" "nabidka-img";
-  grid-area: nabidka;
+  grid-template-areas: "offer-rectangle" "offer-heading" "offer-ul" "offer-img";
+  grid-area: offer;
 }
 
-.nabidka .section-rectangle {
-  grid-area: nabidka-rectangle;
+.offer .section-rectangle {
+  grid-area: offer-rectangle;
 }
 
-.nabidka h1 {
-  grid-area: nabidka-heading;
+.offer h1 {
+  grid-area: offer-heading;
 }
 
-.nabidka ul {
+.offer ul {
   margin: 0.625em 0;
   padding: 0 0 0 0.9375em;
-  grid-area: nabidka-ul;
+  grid-area: offer-ul;
 }
 
-.nabidka ul li {
+.offer ul li {
   margin: 0.4em 0;
 }
 
-.nabidka ul li:first-child {
+.offer ul li:first-child {
   margin: 0 0 0.4em 0;
 }
 
-.nabidka ul li:last-child {
+.offer ul li:last-child {
   margin: 0.4em 0 0 0;
 }
 
 @media (min-width: 75em) {
-  .nabidka ul {
+  .offer ul {
     margin: 2.5em 0 0 0;
   }
 }
 
 @media (min-width: 75em) {
-  .nabidka {
+  .offer {
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "nabidka-rectangle nabidka-rectangle" "nabidka-heading nabidka-heading" "nabidka-ul nabidka-img";
+    grid-template-areas: "offer-rectangle offer-rectangle" "offer-heading offer-heading" "offer-ul offer-img";
   }
 }
 
-.nabidka-img {
-  grid-area: nabidka-img;
+.offer-img {
+  grid-area: offer-img;
   justify-self: end;
   width: 100%;
   height: 200px;
@@ -259,79 +247,79 @@ h2 {
 }
 
 @media (min-width: 75em) {
-  .nabidka-img {
+  .offer-img {
     width: 25.375em;
     height: 25.375em;
   }
 }
 
-.galerie {
+.gallery {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 0.9375em 1fr 0.9375em;
-  grid-template-areas: ". galerie-grid ." ". galerie-grid ." ". galerie-grid ." ". galerie-grid ." ". galerie-grid ." ". galerie-grid .";
-  grid-area: galerie;
+  grid-template-areas: ". gallery-grid ." ". gallery-grid ." ". gallery-grid ." ". gallery-grid ." ". gallery-grid ." ". gallery-grid .";
+  grid-area: gallery;
   padding: 1.25em 0;
   background-color: #ffc6c6;
 }
 
 @media (min-width: 75em) {
-  .galerie {
+  .gallery {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 2fr 6fr 2fr;
-    grid-template-areas: ". galerie-grid ." ". galerie-grid .";
+    grid-template-areas: ". gallery-grid ." ". gallery-grid .";
     padding: 6.25em 0;
   }
 }
 
-.galerie-grid {
+.gallery-grid {
   display: grid;
   gap: 1.25em;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr;
-  grid-area: galerie-grid;
+  grid-area: gallery-grid;
 }
 
-.galerie-grid div {
+.gallery-grid div {
   width: 100%;
   height: 300px;
   background-color: #ffffff;
 }
 
 @media (min-width: 75em) {
-  .galerie-grid div {
+  .gallery-grid div {
     width: 21.875em;
     height: 21.875em;
   }
 }
 
 @media (min-width: 75em) {
-  .galerie-grid {
+  .gallery-grid {
     gap: 3.125em;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-.kontakt {
-  grid-area: kontakt;
+.contact {
+  grid-area: contact;
 }
 
-.kontakt p {
+.contact p {
   text-align: center;
 }
 
-.kontakt table {
+.contact table {
   margin: 1.25em auto 0 auto;
 }
 
-.kontakt-mapa {
+.contact-map {
   width: 100%;
   height: 28.125em;
   margin: 2.5em 0 0 0;
 }
 
-.kontakt-mapa iframe {
+.contact-map iframe {
   border: 0;
 }
 
