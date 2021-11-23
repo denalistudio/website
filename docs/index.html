@@ -112,7 +112,11 @@
         </div>
         <div class="hero-right">
             <div class="hero-img">
-                <img src="src/mockup.png">
+                <picture>
+                    <source srcset="src/mockup.webp" type="image/webp">
+                    <source srcset="src/mockup.png" type="image/png">
+                    <img src="src/mockup.png">
+                </picture>
             </div>
         </div>
     </div>
@@ -182,16 +186,30 @@
     <h1 id="clients-heading"></h1>
     <div class="clients dragscroll">
         <a class="card pivonky" href="https://www.pivonkykarvina.cz/" target="_blank" rel="noopener noreferrer">
-            <h3 id="clients-category-shoppingandretail"></h3>
+            <h3 id="clients-category-shopsandretail"></h3>
             <h2 id="clients-pivonky-title"></h2>
             <p id="clients-pivonky-text"></p>
-            <img class="client-img" src="src/pivonky.png">
+            <picture>
+                <source srcset="src/pivonky.webp" type="image/webp">
+                <source srcset="src/pivonky.png" type="image/png">
+                <img class="client-img" src="src/pivonky.png">
+            </picture>
         </a>
         <a class="card elektra" href="https://www.elektrakarvina.cz/" target="_blank" rel="noopener noreferrer">
-            <h3 id="clients-category-restaurantandcafe"></h3>
-            <h2 id="clients-cafeelektra-title"></h2>
-            <p id="clients-cafeelektra-text"></p>
-            <img class="client-img" src="src/elektra.png">
+            <h3 id="clients-category-restaurantsandcafes"></h3>
+            <h2 id="clients-elektra-title"></h2>
+            <p id="clients-elektra-text"></p>
+            <picture>
+                <source srcset="src/elektra.webp" type="image/webp">
+                <source srcset="src/elektra.png" type="image/webp">
+                <img class="client-img" src="src/elektra.png">
+            </picture>
+        </a>
+        <a class="card kouzlokvetin" href="https://www.kouzlo-kvetin.cz" target="_blank" rel="noopener noreferrer">
+            <h3 id="clients-category-shopsandretail"></h3>
+            <h2 id="clients-kouzlokvetin-title"></h2>
+            <p id="clients-kouzlokvetin-text"></p>
+
         </a>
     </div>
     <footer>

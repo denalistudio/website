@@ -7,10 +7,13 @@ $dark: #272727;
 $white: #ffffff;
 $black: #000000;
 
+$safe-area-inset-right: env(safe-area-inset-right);
+$safe-area-inset-left: env(safe-area-inset-left);
+
 @mixin shadow {
-  box-shadow: #959da533 0 8px 24px;
+  box-shadow: #959da533 0 0.5em 1.5em;
   @media (prefers-color-scheme: dark) {
-    box-shadow: #00000033 0 8px 24px;
+    box-shadow: #00000033 0 0.5em 1.5em;
   }
 }
 
@@ -18,13 +21,16 @@ $black: #000000;
   --navHeight: 60px;
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-left: env(safe-area-inset-left);
-  font-size: 10px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
 }
 
 body {
@@ -34,9 +40,9 @@ body {
   color: $dark;
   background-color: #fafafa;
   display: grid;
-  row-gap: 20px;
-  grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: auto auto auto 38.4px 350px 38.4px 182px auto 400px 38.4px auto 50px 20px;
+  row-gap: 1.25em;
+  grid-template-columns: 1.25em 1fr 1.25em;
+  grid-template-rows: auto auto auto 2.4em 21.875em 2.4em 11.375em auto 25em 2.4em auto 3.125em 1.25em;
   grid-template-areas:
     "nav nav nav"
     ". hero ."
@@ -51,9 +57,9 @@ body {
     "clients clients clients"
     ". footer ."
     "lang . .";
-  @media (min-width: 576px) {
-    grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto auto auto 38.4px 350px 38.4px 182px auto 300px 38.4px auto 50px 20px;
+  @media (min-width: 36em) {
+    grid-template-columns: 1.25em 1fr 1fr 1.25e,;
+    grid-template-rows: auto auto auto 2.4em 21.875em 2.4em 11.375em auto 18.75em 2.4em auto 3.125em 1.25em;
     grid-template-areas:
       "nav nav nav nav"
       ". hero hero ."
@@ -69,9 +75,9 @@ body {
       ". footer footer ."
       "lang . . .";
   }
-  @media (min-width: 768px) {
-    grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto auto 38.4px 350px 38.4px 182px 200px 300px 38.4px auto 50px 20px;
+  @media (min-width: 48em) {
+    grid-template-columns: 1.25em 1fr 1fr 1.25em;
+    grid-template-rows: auto auto 2.4em 21.875em 2.4em 11.375em 12.5em 18.75em 2.4em auto 3.125em 1.25em;
     grid-template-areas:
       "nav nav nav nav"
       ". hero hero ."
@@ -86,9 +92,9 @@ body {
       ". footer footer ."
       "lang . . .";
   }
-  @media (min-width: 992px) {
-    grid-template-columns: 20px 1fr 1fr 20px;
-    grid-template-rows: auto auto 38.4px 350px 38.4px 182px 200px 400px 38.4px auto 50px 20px;
+  @media (min-width: 62em) {
+    grid-template-columns: 1.25em 1fr 1fr 1.25em;
+    grid-template-rows: auto auto 2.4em 21.875em 2.4em 11.375em 12.5em 25em 2.4em auto 3.125em 2.4em;
     grid-template-areas:
       "nav nav nav nav"
       ". hero hero ."
@@ -103,11 +109,11 @@ body {
       ". footer footer ."
       "lang . . .";
   }
-  @media (min-width: 1200px) {
-    margin-top: calc(var(--navHeight) + 20px);
-    column-gap: 20px;
+  @media (min-width: 75em) {
+    margin-top: calc(var(--navHeight) + 1.25em);
+    column-gap: 1.25em;
     grid-template-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
-    grid-template-rows: auto auto 38.4px 350px 68.4px 200px 200px 38.4px auto 50px 20px;
+    grid-template-rows: auto auto 2.4em 21.875em 4.275em 12.5em 12.5em 2.4em auto 3.125em 1.25em;
     grid-template-areas:
       "nav nav nav nav nav nav"
       ". hero hero hero hero ."
@@ -121,10 +127,10 @@ body {
       ". footer footer footer footer ."
       "lang . . . . .";
   }
-  @media (min-width: 1600px) {
-    column-gap: 20px;
+  @media (min-width: 100em) {
+    column-gap: 1.25em;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: auto auto 38.4px 350px 68.4px 200px 200px 38.4px auto 50px 20px;
+    grid-template-rows: auto auto 2.4em 21.875em 4.275em 12.5em 12.5em 2.4em auto 3.125em 1.25em;
     grid-template-areas:
       "nav nav nav nav nav nav"
       ". hero hero hero hero ."
@@ -149,20 +155,20 @@ a {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 400;
   color: $black;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 1.875rem;
   color: $dark;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5625rem;
   color: $dark;
-  margin: 0 0 8px 0;
+  margin: 0 0 0.32em 0;
 }
 
 a,
@@ -175,7 +181,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 400;
   color: $denali;
   margin: 0;
@@ -202,8 +208,8 @@ noscript {
 .services-heading,
 .contact-heading,
 .clients-heading {
-  padding-right: calc(env(safe-area-inset-right) + 20px);
-  padding-left: calc(env(safe-area-inset-left) + 20px);
+  padding-right: calc(env(safe-area-inset-right) + (20em / 30));
+  padding-left: calc(env(safe-area-inset-left) + (20em / 30));
 }
 
 /* Shadows */
@@ -218,7 +224,7 @@ nav,
 /* Card */
 
 .card {
-  border-radius: 15px;
+  border-radius: 0.9375em;
   transition: transform 0.5s;
   background-color: $white;
   &:hover {
@@ -253,20 +259,20 @@ li {
 nav {
   display: grid;
   grid-area: nav;
-  grid-template-columns: 20px 1fr 20px;
+  grid-template-columns: 1.25em 1fr 1.25em;
   grid-template-areas: ". nav-content .";
-  @media (min-width: 1200px) {
-    column-gap: 20px;
+  @media (min-width: 75em) {
+    column-gap: 1.25em;
     grid-template-columns: 0.5fr 9fr 0.5fr;
     grid-template-areas: ". nav-content .";
   }
-  @media (min-width: 1600px) {
+  @media (min-width: 100em) {
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-areas: ". nav-content .";
   }
   width: 100%;
   position: fixed;
-  top: 0px;
+  top: 0;
   z-index: 1;
   background-color: $white;
   a:hover{
@@ -278,20 +284,15 @@ nav {
   display: grid;
   background-color: inherit;
   grid-area: nav-content;
-  grid-template-rows: 60px auto;
-  grid-template-columns: 223px auto;
+  grid-template-rows: 3.75em auto;
+  grid-template-columns: 13.9375em auto;
   grid-template-areas:
   "nav-svg menu-btn"
   "mobile-menu mobile-menu";
-  padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
-  @media (min-width: 992px) {
-    grid-template-rows: 60px;
-    grid-template-columns: 223px auto;
-    grid-template-areas: "nav-svg desktop-menu";
-  }
-  @media (min-width: 992px) {
-    grid-template-rows: 60px;
-    grid-template-columns: 278.75px auto;
+  padding: 0 $safe-area-inset-right 0 $safe-area-inset-left;
+  @media (min-width: 62em) {
+    grid-template-rows: 3.75em;
+    grid-template-columns: 17.421875em auto;
     grid-template-areas: "nav-svg desktop-menu";
   }
 }
@@ -299,13 +300,13 @@ nav {
 .nav-logo {
   svg {
     grid-area: nav-svg;
-    height: 20px;
-    margin: 20px 0;
+    height: 1.25em;
+    margin: 1.25em 0;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 75em) {
     svg {
-      height: 25px;
-      margin: 17.5px 0;
+      height: 1.5625em;
+      margin: 1.09375em 0;
     }
   }
 }
@@ -321,8 +322,8 @@ nav {
   grid-area: mobile-menu;
   display: none;
   a {
-    margin: 16px 0;
-    font-size: 1.8rem;
+    margin: calc(16em / 18) 0;
+    font-size: 1.125rem;
     display: block;
   }
 }
@@ -333,15 +334,15 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 60px;
+  width: 1.875em;
+  height: 3.75em;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
 .menu-btn__burger {
-  width: 30px;
-  height: 2px;
+  width: 1.875em;
+  height: 0.125em;
   background-color: $black;
   transition: all 0.3s ease-in-out;
   @media (prefers-color-scheme: dark) {
@@ -350,11 +351,11 @@ nav {
   &::after {
     content: "";
     position: absolute;
-    width: 30px;
-    height: 2px;
+    width: 1.875em;
+    height: 0.125em;
     background-color: $black;
     transition: all 0.3s ease-in-out;
-    transform: translateY(10px);
+    transform: translateY(0.625em);
     @media (prefers-color-scheme: dark) {
       background-color: $white;
     }
@@ -370,7 +371,7 @@ nav {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 62em) {
   .mobile-menu {
     display: none;
   }
@@ -386,19 +387,19 @@ nav {
   height: 100%;
   align-items: center;
   a {
-    font-size: 1.8rem;
+    font-size: 1.125em;
     display: inline-block;
   }
   #menu-services {
-    margin: 0 16px 0 0;
+    margin: 0 calc(16em / 18) 0 0;
   }
   #menu-clients, #menu-contact {
-    margin: 0 16px;
+    margin: 0 calc(16em / 18);
   }
   /*#menu-knowledgebase {
-    margin: 0 0 0 16px;
+    margin: 0 0 0 calc(16em / 18);
   }*/
-  @media (min-width: 992px) {
+  @media (min-width: 62em) {
     display: flex;
   }
 }
@@ -407,7 +408,7 @@ nav {
 
 .hero {
   display: grid;
-  gap: 20px;
+  gap: 1.25em;
   grid-area: hero;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr;
@@ -415,38 +416,38 @@ nav {
   "hero-left"
   "hero-right";
   padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
-  @media (min-width: 576px) {
+  @media (min-width: 36em) {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "hero-left hero-left"
     "hero-right hero-right";
   }
-  @media (min-width: 768px) {
-    gap: 40px;
+  @media (min-width: 48em) {
+    gap: 2.5em;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "hero-left hero-right";
   }
-  @media (min-width: 992px) {
+  @media (min-width: 62em) {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "hero-left hero-right";
   }
-  @media (min-width: 1200px) {
-    gap: 80px;
+  @media (min-width: 75em) {
+    gap: 5em;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "hero-left hero-left hero-right hero-right";
   }
-  @media (min-width: 1300px) {
-    gap: 60px;
+  @media (min-width: 81.25em) {
+    gap: 4em;
     grid-template-rows: auto;
     grid-template-columns: 0 1fr 1fr 0;
     grid-template-areas: ". hero-left hero-right .";
   }
-  @media (min-width: 1600px) {
-    gap: 80px;
+  @media (min-width: 100em) {
+    gap: 5em;
     grid-template-rows: auto;
     grid-template-columns: 0 1fr 1fr 0;
     grid-template-areas: ". hero-left hero-right .";
@@ -456,11 +457,11 @@ nav {
 .hero-left {
   grid-area: hero-left;
   h1 {
-    font-size: 3.75rem;
+    font-size: 2.34375em;
   }
   p {
-    font-size: 2rem;
-    margin: 16px 0;
+    font-size: 1.25rem;
+    margin: 0.8em 0;
   }
 }
 
@@ -473,13 +474,13 @@ nav {
 
 .hero-img {
   width: 100%;
-  @media (min-width: 576px) {
+  @media (min-width: 36em) {
     width: 70%;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 48em) {
     width: 100%;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 75em) {
     width: 90%;
   }
 }
@@ -488,15 +489,15 @@ nav {
 
 #services-heading {
   grid-area: services-heading;
-  margin: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
+  margin: 0 $safe-area-inset-right 0 $safe-area-inset-left;
 }
 
 .services {
   grid-area: services;
   display: flex;
   flex-direction: row;
-  padding: 0 0 40px calc(var(--safe-area-inset-left) + 20px);
-  margin: 0 0 -40px 0;
+  padding: 0 0 2.5em calc(env(safe-area-inset-left) + 1.25em);
+  margin: 0 0 -2.5em 0;
   overflow-x: scroll;
   scrollbar-width: 0;
   -ms-overflow-style: none;
@@ -506,14 +507,14 @@ nav {
   }
   &::after {
     content: "";
-    padding-right: calc(var(--safe-area-inset-right) + 20px);
+    padding-right: calc(env(safe-area-inset-right) + 1.25em);
   }
   .card {
     flex-basis: calc(var(--bodyWidth) * 0.8);
     flex-shrink: 0;
-    height: 350px;
-    padding: 25px;
-    margin-right: 20px;
+    height: 21.875em;
+    padding: 1.5625em;
+    margin-right: 1.25em;
     &:hover {
       cursor: grab;
     }
@@ -524,34 +525,34 @@ nav {
   .card:last-child {
     margin-right: 0;
   }
-  @media (min-width: 576px) {
+  @media (min-width: 36em) {
     .card {
       flex-basis: calc(var(--bodyWidth) / 2);
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: 48em) {
     .card {
       flex-basis: calc(var(--bodyWidth) * 0.4);
     }
   }
-  @media (min-width: 992px) {
+  @media (min-width: 62em) {
     .card {
       flex-basis: calc(var(--bodyWidth) * 0.3);
     }
   }
-  @media (min-width: 1200px) {
-    padding: 0 0 40px calc(var(--fractionWidth) / 2 + 20px);
+  @media (min-width: 75em) {
+    padding: 0 0 2.5em calc(var(--fractionWidth) / 2 + 1.25em);
     &::after {
-      padding-right: calc(var(--fractionWidth) / 2 + 20px);
+      padding-right: calc(var(--fractionWidth) / 2 + 1.25em);
     }
     .card {
       flex-basis: calc(var(--fractionWidth) * 2.25);
     }
   }
-  @media (min-width: 1600px) {
-    padding: 0 0 40px calc(var(--fractionWidth) + 20px);
+  @media (min-width: 100em) {
+    padding: 0 0 2.5em calc(var(--fractionWidth) + 1.25em);
     &::after {
-      padding-right: calc(var(--fractionWidth) + 20px);
+      padding-right: calc(var(--fractionWidth) + 1.25em);
     }
     .card {
       flex-basis: calc(var(--fractionWidth) * 2);
@@ -563,45 +564,45 @@ nav {
 
 #contact-heading {
   grid-area: contact-heading;
-  margin: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
+  margin: 0 $safe-area-inset-right 0 $safe-area-inset-left;
 }
 
 .contact {
   display: grid;
-  gap: 20px;
+  gap: 1.25em;
   grid-area: contact;
-  grid-template-rows: 182px auto 400px;
+  grid-template-rows: 11.375em auto 25em;
   grid-template-columns: 1fr;
   grid-template-areas:
   "con-contact"
   "con-text"
   "con-map";
-  @media (min-width: 576px) {
-    grid-template-rows: 182px auto 300px;
+  @media (min-width: 36em) {
+    grid-template-rows: 11.375em auto 18.75em;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "con-contact con-img"
     "con-text con-text"
     "con-map con-map";
-    margin: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
+    margin: 0 $safe-area-inset-right 0 $safe-area-inset-right;
   }
-  @media (min-width: 768px) {
-    grid-template-rows: 182px 200px 300px;
+  @media (min-width: 48em) {
+    grid-template-rows: 11.375em 12.5em 18.75em;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "con-contact con-text"
     "con-img con-text"
     "con-map con-map";
   }
-  @media (min-width: 992px) {
-    grid-template-rows: 182px 200px 400px;
+  @media (min-width: 62em) {
+    grid-template-rows: 11.375em 12.5em 25em;
     grid-template-areas:
     "con-contact con-text"
     "con-img con-text"
     "con-map con-map";
   }
-  @media (min-width: 1200px) {
-    grid-template-rows: 200px 200px;
+  @media (min-width: 75em) {
+    grid-template-rows: 12.5em 12.5em;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "con-contact con-text con-map con-map"
@@ -611,21 +612,21 @@ nav {
 
 .con-contact {
   grid-area: con-contact;
-  padding: 25px;
+  padding: 1.5625em;
   h3 {
-    margin: 0 0 16px 0;
+    margin: 0 0 1em 0;
     line-height: 1;
   }
 }
 
 .con-email,
 .con-mobile {
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1;
 }
 
 .con-mobile {
-  margin: 12px 0 16px 0;
+  margin: 0.75em 0 1em 0;
 }
 
 #contact-savebutton {
@@ -639,20 +640,20 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  @media (max-width: 576px) {
+  @media (max-width: 36em) {
     display: none;
   }
 }
 
 .con-text {
   grid-area: con-text;
-  padding: 25px;
+  padding: 1.5625em;
   img {
     width: 100%;
-    border-radius: 10px;
-    margin: 0 0 8px 0;
+    border-radius: 0.625em;
+    margin: 0 0 0.5em 0;
   }
-  @media (min-width: 576px) {
+  @media (min-width: 36em) {
     img {
       display: none;
     }
@@ -662,7 +663,7 @@ nav {
 .con-map {
   grid-area: con-map;
   iframe {
-    border-radius: 15px;
+    border-radius: 0.9375em;
   }
 }
 
@@ -670,15 +671,15 @@ nav {
 
 #clients-heading {
   grid-area: clients-heading;
-  margin: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
+  margin: 0 $safe-area-inset-right 0 $safe-area-inset-left;
 }
 
 .clients {
   grid-area: clients;
   display: flex;
   flex-direction: row;
-  padding: 0 calc(var(--safe-area-inset-right) + 20px) 40px calc(var(--safe-area-inset-left) + 20px);
-  margin: 0 0 -40px 0;
+  padding: 0 calc(env(safe-area-inset-right) + 1.25em) 2.5em calc(env(safe-area-inset-left) + 1.25em);
+  margin: 0 0 -2.5em 0;
   overflow-x: scroll;
   scrollbar-width: 0;
   -ms-overflow-style: none;
@@ -688,16 +689,16 @@ nav {
   }
   &::after {
     content: "";
-    padding-right: 20px;
+    padding-right: 1.25em;
   }
   .card {
     flex-basis: calc(var(--bodyWidth) * 0.8);
     flex-shrink: 0;
-    height: 90px + calc(var(--fractionWidth) * 3.2);
-    padding: 25px 25px 0 25px;
-    margin-right: 20px;
+    height: 5.625em + calc(var(--fractionWidth) * 3.2);
+    padding: 1.5625em 1.5625em 0 1.5625em;
+    margin-right: 1.25em;
     display: grid;
-    grid-template-rows: 20px 40px auto auto;
+    grid-template-rows: 1.25em 2.5em auto auto;
     grid-template-columns: 1fr;
     &:hover {
       cursor: grab;
@@ -709,23 +710,23 @@ nav {
   .card:last-child {
     margin-right: 0;
   }
-  @media (min-width: 576px) {
+  @media (min-width: 36em) {
     .card {
       flex-basis: calc(var(--bodyWidth) / 2);
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: 48em) {
     .card {
       flex-basis: calc(var(--bodyWidth) * 0.4);
     }
   }
-  @media (min-width: 992px) {
+  @media (min-width: 62em) {
     .card {
       flex-basis: calc(var(--bodyWidth) * 0.3);
     }
   }
-  @media (min-width: 1200px) {
-    padding: 0 calc(var(--fractionWidth) / 2 + 20px) 40px calc(var(--fractionWidth) / 2 + 20px);
+  @media (min-width: 75em) {
+    padding: 0 calc(var(--fractionWidth) / 2 + 1.25em) 2.5em calc(var(--fractionWidth) / 2 + 1.25em);
     &::after {
       padding-right: 0;
     }
@@ -733,11 +734,11 @@ nav {
       flex-basis: calc(var(--fractionWidth) * 2.25);
     }
     .card:last-child {
-      margin-right: -20px;
+      margin-right: -1.25em;
     }
   }
-  @media (min-width: 1600px) {
-    padding: 0 calc(var(--fractionWidth) + 20px) 40px calc(var(--fractionWidth) + 20px);
+  @media (min-width: 100em) {
+    padding: 0 calc(var(--fractionWidth) + 1.25em) 2.5em calc(var(--fractionWidth) + 1.25em);
     .card {
       flex-basis: calc(var(--fractionWidth) * 2);
     }
@@ -746,7 +747,7 @@ nav {
 
 .client-img {
   width: 80%;
-  margin: 13px 10% 0 10%;
+  margin: 0.8125em 10% 0 10%;
 }
 
 /* Footer */
@@ -755,13 +756,13 @@ footer {
   margin: auto;
   display: grid;
   grid-area: footer;
-  grid-template-rows: 50px;
+  grid-template-rows: 3.125em;
   grid-template-columns: 1fr;
   padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
   p {
-    font-size: 2rem;
+    font-size: 1.25rem;
     text-align: center;
-    margin: 15px 0;
+    margin: 0.75em 0;
   }
 }
 
