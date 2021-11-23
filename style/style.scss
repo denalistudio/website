@@ -136,8 +136,7 @@ body {
       ". contact contact contact contact ."
       ". clients-heading clients-heading clients-heading clients-heading ."
       "clients clients clients clients clients clients"
-      ". footer footer footer footer ."
-      "lang . . . . .";
+      ". footer footer footer footer .";
   }
   @media (prefers-color-scheme: dark) {
     background-color: #1e1e1e;
@@ -753,7 +752,7 @@ footer {
   grid-area: footer;
   grid-template-rows: 3.125em;
   grid-template-columns: 1fr;
-  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
+  padding: 0 env(safe-area-inset-right) 1.25em env(safe-area-inset-left);
   p {
     font-size: 1.25rem;
     text-align: center;

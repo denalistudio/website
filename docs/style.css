@@ -112,7 +112,7 @@ body {
     column-gap: 1.25em;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
     grid-template-rows: auto auto 2.4em 22.421875em 2.4em 12.5em 12.5em 2.4em auto 3.125em;
-    grid-template-areas: "nav nav nav nav nav nav" ". hero hero hero hero ." ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" ". footer footer footer footer ." "lang . . . . .";
+    grid-template-areas: "nav nav nav nav nav nav" ". hero hero hero hero ." ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" ". footer footer footer footer .";
   }
 }
 
@@ -818,7 +818,7 @@ footer {
   grid-area: footer;
   grid-template-rows: 3.125em;
   grid-template-columns: 1fr;
-  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
+  padding: 0 env(safe-area-inset-right) 1.25em env(safe-area-inset-left);
 }
 
 footer p {
