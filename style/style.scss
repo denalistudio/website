@@ -42,7 +42,7 @@ body {
   display: grid;
   row-gap: 1.25em;
   grid-template-columns: 1.25em 1fr 1.25em;
-  grid-template-rows: auto auto auto 2.4em 21.875em 2.4em 11.375em auto 25em 2.4em auto 3.125em 1.25em;
+  grid-template-rows: auto auto auto 2.4em 22.421875em 2.4em 11.375em auto 25em 2.4em auto 3.125em;
   grid-template-areas:
     "nav nav nav"
     ". hero ."
@@ -55,11 +55,10 @@ body {
     ". contact ."
     ". clients-heading ."
     "clients clients clients"
-    ". footer ."
-    "lang . .";
+    ". footer .";
   @media (min-width: 36em) {
-    grid-template-columns: 1.25em 1fr 1fr 1.25e,;
-    grid-template-rows: auto auto auto 2.4em 21.875em 2.4em 11.375em auto 18.75em 2.4em auto 3.125em 1.25em;
+    grid-template-columns: 1.25em 1fr 1fr 1.25em;
+    grid-template-rows: auto auto auto 2.4em 22.421875em 2.4em 11.375em auto 18.75em 2.4em auto 3.125em;
     grid-template-areas:
       "nav nav nav nav"
       ". hero hero ."
@@ -72,12 +71,11 @@ body {
       ". contact contact ."
       ". clients-heading clients-heading ."
       "clients clients clients clients"
-      ". footer footer ."
-      "lang . . .";
+      ". footer footer .";
   }
   @media (min-width: 48em) {
     grid-template-columns: 1.25em 1fr 1fr 1.25em;
-    grid-template-rows: auto auto 2.4em 21.875em 2.4em 11.375em 12.5em 18.75em 2.4em auto 3.125em 1.25em;
+    grid-template-rows: auto auto 2.4em 22.421875em 2.4em 11.375em 12.5em 18.75em 2.4em auto 3.125em;
     grid-template-areas:
       "nav nav nav nav"
       ". hero hero ."
@@ -89,12 +87,11 @@ body {
       ". contact contact ."
       ". clients-heading clients-heading ."
       "clients clients clients clients"
-      ". footer footer ."
-      "lang . . .";
+      ". footer footer .";
   }
   @media (min-width: 62em) {
     grid-template-columns: 1.25em 1fr 1fr 1.25em;
-    grid-template-rows: auto auto 2.4em 21.875em 2.4em 11.375em 12.5em 25em 2.4em auto 3.125em 2.4em;
+    grid-template-rows: auto auto 2.4em 22.421875em 2.4em 11.375em 12.5em 25em 2.4em auto 3.125em;
     grid-template-areas:
       "nav nav nav nav"
       ". hero hero ."
@@ -106,14 +103,13 @@ body {
       ". contact contact ."
       ". clients-heading clients-heading ."
       "clients clients clients clients"
-      ". footer footer ."
-      "lang . . .";
+      ". footer footer .";
   }
   @media (min-width: 75em) {
     margin-top: calc(var(--navHeight) + 1.25em);
     column-gap: 1.25em;
     grid-template-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
-    grid-template-rows: auto auto 2.4em 21.875em 4.275em 12.5em 12.5em 2.4em auto 3.125em 1.25em;
+    grid-template-rows: auto auto 2.4em 22.421875em 2.4em 12.5em 12.5em 2.4em auto 3.125em;
     grid-template-areas:
       "nav nav nav nav nav nav"
       ". hero hero hero hero ."
@@ -124,13 +120,12 @@ body {
       ". contact contact contact contact ."
       ". clients-heading clients-heading clients-heading clients-heading ."
       "clients clients clients clients clients clients"
-      ". footer footer footer footer ."
-      "lang . . . . .";
+      ". footer footer footer footer .";
   }
   @media (min-width: 100em) {
     column-gap: 1.25em;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: auto auto 2.4em 21.875em 4.275em 12.5em 12.5em 2.4em auto 3.125em 1.25em;
+    grid-template-rows: auto auto 2.4em 22.421875em 2.4em 12.5em 12.5em 2.4em auto 3.125em;
     grid-template-areas:
       "nav nav nav nav nav nav"
       ". hero hero hero hero ."
@@ -496,8 +491,8 @@ nav {
   grid-area: services;
   display: flex;
   flex-direction: row;
-  padding: 0 0 2.5em calc(env(safe-area-inset-left) + 1.25em);
-  margin: 0 0 -2.5em 0;
+  padding: 2.5em 0 2.5em calc(env(safe-area-inset-left) + 1.25em);
+  margin: -2.5em 0;
   overflow-x: scroll;
   scrollbar-width: 0;
   -ms-overflow-style: none;
@@ -541,7 +536,7 @@ nav {
     }
   }
   @media (min-width: 75em) {
-    padding: 0 0 2.5em calc(var(--fractionWidth) / 2 + 1.25em);
+    padding: 2.5em 0 2.5em calc(var(--fractionWidth) / 2 + 1.25em);
     &::after {
       padding-right: calc(var(--fractionWidth) / 2 + 1.25em);
     }
@@ -550,7 +545,7 @@ nav {
     }
   }
   @media (min-width: 100em) {
-    padding: 0 0 2.5em calc(var(--fractionWidth) + 1.25em);
+    padding: 2.5em 0 2.5em calc(var(--fractionWidth) + 1.25em);
     &::after {
       padding-right: calc(var(--fractionWidth) + 1.25em);
     }
@@ -678,8 +673,8 @@ nav {
   grid-area: clients;
   display: flex;
   flex-direction: row;
-  padding: 0 calc(env(safe-area-inset-right) + 1.25em) 2.5em calc(env(safe-area-inset-left) + 1.25em);
-  margin: 0 0 -2.5em 0;
+  padding: 2.5em calc(env(safe-area-inset-right) + 1.25em) 2.5em calc(env(safe-area-inset-left) + 1.25em);
+  margin: -2.5em 0;
   overflow-x: scroll;
   scrollbar-width: 0;
   -ms-overflow-style: none;
@@ -726,7 +721,7 @@ nav {
     }
   }
   @media (min-width: 75em) {
-    padding: 0 calc(var(--fractionWidth) / 2 + 1.25em) 2.5em calc(var(--fractionWidth) / 2 + 1.25em);
+    padding: 2.5em calc(var(--fractionWidth) / 2 + 1.25em) 2.5em calc(var(--fractionWidth) / 2 + 1.25em);
     &::after {
       padding-right: 0;
     }
@@ -738,7 +733,7 @@ nav {
     }
   }
   @media (min-width: 100em) {
-    padding: 0 calc(var(--fractionWidth) + 1.25em) 2.5em calc(var(--fractionWidth) + 1.25em);
+    padding: 2.5em calc(var(--fractionWidth) + 1.25em) 2.5em calc(var(--fractionWidth) + 1.25em);
     .card {
       flex-basis: calc(var(--fractionWidth) * 2);
     }
