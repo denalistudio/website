@@ -33,15 +33,15 @@
 		"contact-title": "Jsme tady pro vás",
 		"contact-text": "Ve Studiu Denali věříme, že individuální přístup je pro každou spolupráci důležitý, proto se s vámi na vašich potřebách a následných výdajích vždy domluvíme. Nebojte se zeptat na jakoukoli otázku, buď přes e-mail, nebo po telefonu. Jsme tady pro vás a rádi s vámi vše prodiskutujeme.",
 		"clients-heading": "Dokončené projekty",
-		"clients-category-restaurantsandcafes": "Restaurace a kavárny",
-		"clients-category-shopsandretail": "Obchody a prodej",
+		"clients-category-restaurantandcafe": "Restaurace a kavárny",
+		"clients-category-shoppingandretail": "Obchody a prodej",
 		"clients-category-funandleisure": "Zábava a volný čas",
+		"clients-kouzlokvetin-title": "Kouzlo květin",
+		"clients-kouzlokvetin-text": "Místní květinářství, které využívalo bezplatný nástroj pro tvorbu webových stránek, dokud jsme jej neoslovili.",
 		"clients-pivonky-title": "Pivoňky",
 		"clients-pivonky-text": "Již od samotného názvu jsme Pivoňkám pomáhali formovat jejich nápad, aby se stal realitou.",
-		"clients-elektra-title": "Kavárna Elektra",
-		"clients-elektra-text": "Známá lokální kavárna, která nabízí vynikající kávu. Jejich nové webové stránky ale nechali na nás.",
-		"clients-kouzlokvetin-title": "Kouzlo květin",
-		"clients-kouzlokvetin-text" : "Místní květinářství, které využívalo bezplatný nástroj pro tvorbu webových stránek, dokud jsme jej neoslovili."
+		"clients-cafeelektra-title": "Kavárna Elektra",
+		"clients-cafeelektra-text": "Známá lokální kavárna, která nabízí vynikající kávu. Jejich nové webové stránky ale nechali na nás."
 	},
 	"en": {
 		"langdesc": "en",
@@ -77,14 +77,14 @@
 		"contact-title": "We're here for you",
 		"contact-text": "We at Studio Denali believe that an individual approach is important for every cooperation, that is why we discuss your needs and our price of service directly with you. Feel free to ask questions, either by e-mail or on the phone. We are here for you and are ready to discuss everything you want.",
 		"clients-heading": "Finished projects",
-		"clients-category-restaurantsandcafes": "Restaurants and cafés",
-		"clients-category-shopsandretail": "Shops and retail",
+		"clients-category-restaurantandcafe": "Restaurant and café",
+		"clients-category-shoppingandretail": "Shopping and retail",
 		"clients-category-funandleisure": "Fun and leisure",
+		"clients-kouzlokvetin-title": "Flower magic",
+		"clients-kouzlokvetin-text": "A local florist's that used a free website builder, until we approached them.",
 		"clients-pivonky-title": "Pivonky",
 		"clients-pivonky-text": "From the name itself, we helped the Pivonky beer hall shape their idea so it can become reality.",
-		"clients-elektra-title": "Café Elektra",
-		"clients-elektra-text": "A well-known local café, which serves excellent coffee. Their website was nonetheless left to us.",
-		"clients-kouzlokvetin-title": "Kouzlo květin",
-		"clients-kouzlokvetin-text" : "A local florist's that used a free website builder, until we approached them."
+		"clients-cafeelektra-title": "Café Elektra",
+		"clients-cafeelektra-text": "A well-known local café, which serves excellent coffee. Their website was nonetheless left to us."
 	}
-}
+}  
