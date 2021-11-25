@@ -1,5 +1,0 @@
-RewriteEngine On
-
-RewriteCond %{HTTPS} off
-
-RewriteRule ^(.*)$ https://www.studiodenali.cz%{REQUEST_URI} [L,R=301]
