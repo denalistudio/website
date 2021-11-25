@@ -802,7 +802,7 @@ nav a:hover {
 
 .con-img {
   grid-area: con-img;
-  background-image: url("https://dev.studiodenali.cz/src/contact.jpg");
+  background-image: url("https://src.studiodenali.cz/contact.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
