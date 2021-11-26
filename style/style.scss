@@ -211,7 +211,7 @@ noscript {
 ul,
 nav,
 .card,
-.client-img {
+.client-img img {
   @include shadow();
 }
 
@@ -692,13 +692,19 @@ nav {
     padding: 1.5625em 1.5625em 0 1.5625em;
     margin-right: 1.25em;
     display: grid;
-    grid-template-rows: 1.25em 2.5em auto auto;
+    grid-template-rows: 1.3em 2.03125em auto auto;
     grid-template-columns: 1fr;
     &:hover {
       cursor: grab;
     }
     &:active {
       cursor: grabbing;
+    }
+    h2 {
+      margin: 0;
+    }
+    p {
+      margin: 0.5em 0 1em 0;
     }
   }
   .card:last-child {
@@ -740,8 +746,9 @@ nav {
 }
 
 .client-img {
-  width: 80%;
-  margin: 0.8125em 10% 0 10%;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 10%;
 }
 
 /* Footer */
