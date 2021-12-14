@@ -4,4 +4,4 @@ At Studio Denali, we open-source our website and most of our client's projects f
 
 | id | project name | date |
 | - | - | - |
-| [kouzlokvetin](kouzlokvetin/kouzlokvetin.md) | Kouzlo Květin | 5/12/2021 |
+| [kouzlokvetin](docs/kouzlokvetin/kouzlokvetin.md) | Kouzlo Květin | 5/12/2021 |
