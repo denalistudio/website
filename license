@@ -1,17 +1,1 @@
 Copyright © 2021 Jakub Klapka & David Brzý. All rights reserved.
-
-```html
-    <h1 id="pricing-heading"></h1>
-    <div class="pricing">
-        <div class="card pricing-1">
-            <h2 id="pricing-section1-title"></h2>
-            <p id="pricing-section1-text"></p>
-        </div>
-        <div class="card pricing-2">
-            <h1>pricing-2</h1>
-        </div>
-        <div class="card pricing-3">
-            <h1>pricing-3</h1>
-        </div>
-    </div>
-```
