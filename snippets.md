@@ -1,4 +1,6 @@
-### age-counter
+# Snippets
+
+## age-counter
 
 A year counter that counts the exact year count from a specified date and prints it in the document. **Use inline** - "We are a *25* year old company."
 
@@ -20,9 +22,9 @@ A year counter that counts the exact year count from a specified date and prints
 </p>
 ```
 
-### copyright
+## copyright
 
-A simple copyright text with a clickable copyright symbol reffering you to the Wikipedia copyright page and an automatically adapting copyright year changing with device time. **Use inline** - In the *footer* sections of webpages.
+A simple copyright text with a clickable copyright symbol referring you to the Wikipedia copyright page and an automatically adapting copyright year changing with device time. **Use inline** - In the *footer* sections of webpages.
 
 ```html
 <div class="copyright">
@@ -38,7 +40,7 @@ A simple copyright text with a clickable copyright symbol reffering you to the W
 }
 ```
 
-### nav-top
+## nav-top
 
 A great but simple navigation bar with drop-down functionality. Amazing for almost every website. **Use inline** - In a website *navigation* bar
 
@@ -126,7 +128,7 @@ nav a:hover, .drop:hover .drop-button {
 }
 ```
 
-### social-tags
+## social-tags
 
 Basic Open Graph and Twitter Cards tags, more Open Graph [here](https://ogp.me/) and Twitter Cards [here](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup). **Use in head** - For better *social presence*
 
@@ -146,7 +148,7 @@ Basic Open Graph and Twitter Cards tags, more Open Graph [here](https://ogp.me/)
 <meta name="twitter:image" content="great-image.png">
 ```
 
-### search-simple
+## search-simple
 
 Basic search form with a simple search input and a submit button. **Use inline** - In the *navigation* sections of webpages.
 
