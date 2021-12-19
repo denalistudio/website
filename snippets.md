@@ -145,3 +145,34 @@ Basic Open Graph and Twitter Cards tags, more Open Graph [here](https://ogp.me/)
 <meta name="twitter:description" content="Great description">
 <meta name="twitter:image" content="great-image.png">
 ```
+
+### search-simple
+
+Basic search form with a simple search input and a submit button. **Use inline** - In the *navigation* sections of webpages.
+
+```html
+<input type="text" id="search" onkeyup="myFunction()" placeholder="Search">
+```
+
+```javascript
+    function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("search");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("list");
+      li = ul.getElementsByTagName("li");
+
+      const cb = document.getElementById('checkbox-h1');
+      console.log(cb.checked);
+
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("h1")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+```
