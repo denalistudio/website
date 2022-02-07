@@ -7,7 +7,7 @@
     <!--REMOVE FROM FINAL-->
     <meta name="robots" content="noindex">
     <!--REMOVE FROM FINAL-->
-    
+
     <!--Basics-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
@@ -23,9 +23,12 @@
     <!--Favicon-->
     <meta name="msapplication-TileColor" content="#4f54ff">
     <meta name="msapplication-config" content="favicon/browserconfig.xml">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://src.studiodenali.cz/website/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://src.studiodenali.cz/website/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://src.studiodenali.cz/website/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://src.studiodenali.cz/website/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://src.studiodenali.cz/website/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://src.studiodenali.cz/website/favicon/favicon-16x16.png">
     <link rel="manifest" href="https://src.studiodenali.cz/website/favicon/site.webmanifest">
     <link rel="mask-icon" href="https://src.studiodenali.cz/website/favicon/safari-pinned-tab.svg" color="#4f54ff">
     <link rel="shortcut icon" href="https://src.studiodenali.cz/website/favicon/favicon.ico">
@@ -224,7 +227,7 @@
             <script>document.write(new Date().getFullYear())</script> Studio Denali, David Brzý &amp; Jakub Klapka
         </p>
     </footer>
-    
+
     <select class="listlanguages" name="listlanguages" onmouseup="langSelectChange(this)">
     </select>
 
@@ -426,6 +429,18 @@
             if (this.phrases[this.selectedLanguage]) str = this.phrases[this.selectedLanguage][key];
             str = (str || key);
             return str;
+        }
+    }
+
+    // linkHandler, Copyright © 2021 Studio Denali, All rights reserved.
+</script>
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    if (urlParams.has('l') == true) {
+        var parameter = urlParams.get('l');
+        if (parameter == "klapka") {
+            window.location.replace("https://src.studiodenali.cz/jakubklapka.vcf");
         }
     }
 </script>
