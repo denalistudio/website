@@ -8,6 +8,3 @@ Main page link
 
 ###### DESCRIPTION
 Link we use on QR codes, it downloads the .vcf file and opens it for the user to save David Brzy's contact information into their device.
-
-
-
