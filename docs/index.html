@@ -51,14 +51,14 @@
 
 <script> // URL parameter resolver
     function vcfDownload(uri, name) {
-        var link = document.createElement("a");
+        var atag = document.createElement("a");
         // If you don't know the name or want to use
         // the webserver default set name = ''
-        link.setAttribute('download', name);
-        link.href = uri;
+        atag.setAttribute('download', name);
+        atag.href = uri;
         document.body.appendChild(link);
-        link.click();
-        link.remove();
+        atag.click();
+        atag.remove();
     }
     const urlParams = new URLSearchParams(window.location.search);
     const link = urlParams.get('l');
