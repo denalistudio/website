@@ -50,22 +50,23 @@
 </head>
 
 <script> // URL parameter resolver
+    function reload() {
+        window.location.href = "https://www.studiodenali.cz/";
+    }
     const urlParams = new URLSearchParams(window.location.search);
     const link = urlParams.get('l');
     switch (link) {
         case 'j':
             window.location.href = "https://src.studiodenali.cz/jakubklapka.vcf";
+            setTimeout(reload, 2000);
             break;
         case 'd':
             window.location.href = "https://src.studiodenali.cz/davidbrzy.vcf";
+            setTimeout(reload, 2000);
             break;
         default:
             console.error("The URL parameter " + link + " is not recognized or valid.");
     }
-    function reload() {
-        window.location.href = "https://www.studiodenali.cz/";
-    }
-    setTimeout(reload, 2000);
 </script>
 
 <body onload="onLoad()" translate="no">
