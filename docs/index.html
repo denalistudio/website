@@ -49,20 +49,23 @@
     <meta name="twitter:image" content="https://src.studiodenali.cz/website/opengraph.png">
 </head>
 
-<a id="vcfJakub" style="display: none;" href="https://src.studiodenali.cz/jakubklapka.vcf" download="jakubklapka.vcf"></a>
-<a id="vcfDavid" style="display: none;" href="https://src.studiodenali.cz/davidbrzy.vcf" download="davidbrzy.vcf"></a>
 <script> // URL parameter resolver
     const urlParams = new URLSearchParams(window.location.search);
     const link = urlParams.get('l');
-    if (link == "j") {
-        window.location.href = "https://src.studiodenali.cz/jakubklapka.vcf";
+    switch (link) {
+        case 'j':
+            window.location.href = "https://src.studiodenali.cz/jakubklapka.vcf";
+            break;
+        case 'd':
+            window.location.href = "https://src.studiodenali.cz/davidbrzy.vcf";
+            break;
+        default:
+            console.error("The URL parameter " + link + " is not recognized or valid.");
     }
-    if (link == "d") {
-       window.location.href = "https://src.studiodenali.cz/davidbrzy.vcf";
+    function greet() {
+        window.location.href = "https://www.studiodenali.cz/";
     }
-    else {
-        console.error("The URL parameter " + link + " is not recognized or valid.");
-    }
+    setTimeout(greet, 2000); //execute greet after 2000 milliseconds (2 seconds)
 </script>
 
 <body onload="onLoad()" translate="no">
@@ -448,15 +451,5 @@
         }
     }
 </script>
-<!-- <script>
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    if (urlParams.has('l') == true) {
-        var parameter = urlParams.get('l');
-        if (parameter == "klapka") {
-            window.location.replace("https://src.studiodenali.cz/jakubklapka.vcf");
-        }
-    }
-</script> -->
 
 </html>
