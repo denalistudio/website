@@ -56,7 +56,7 @@
         // the webserver default set name = ''
         atag.setAttribute('download', name);
         atag.href = uri;
-        document.body.appendChild(link);
+        document.body.appendChild(atag);
         atag.click();
         atag.remove();
     }
