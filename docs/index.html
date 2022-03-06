@@ -52,20 +52,13 @@
 <a id="vcfJakub" style="display: none;" href="https://src.studiodenali.cz/jakubklapka.vcf" download="jakubklapka.vcf"></a>
 <a id="vcfDavid" style="display: none;" href="https://src.studiodenali.cz/davidbrzy.vcf" download="davidbrzy.vcf"></a>
 <script> // URL parameter resolver
-    function download(fileUrl, fileName) {
-        var a = document.createElement("a");
-        a.href = fileUrl;
-        a.setAttribute("download", fileName);
-        a.click();
-        a.remove();
-    }
     const urlParams = new URLSearchParams(window.location.search);
     const link = urlParams.get('l');
     if (link == "j") {
-        document.getElementById("vcfJakub").click();
+        window.location.href = "https://src.studiodenali.cz/jakubklapka.vcf";
     }
     if (link == "d") {
-        document.getElementById("vcfJakub").click();
+       window.location.href = "https://src.studiodenali.cz/davidbrzy.vcf";
     }
     else {
         console.error("The URL parameter " + link + " is not recognized or valid.");
