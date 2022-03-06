@@ -49,6 +49,12 @@
     <meta name="twitter:image" content="https://src.studiodenali.cz/website/opengraph.png">
 </head>
 
+<script> // URL parameter resolver
+    const urlParams = new URLSearchParams(window.location.search);
+    const link = urlParams.get('l');
+    console.log(link);
+</script>
+
 <body onload="onLoad()" translate="no">
     <nav>
         <div class="nav-content">

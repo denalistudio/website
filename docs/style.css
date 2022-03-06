@@ -74,7 +74,7 @@ body {
       grid-template-columns: 1.25em 1fr 1.25em;
   -ms-grid-rows: auto auto auto 2.4em 22.421875em 2.4em 11.375em auto 25em 2.4em auto auto;
       grid-template-rows: auto auto auto 2.4em 22.421875em 2.4em 11.375em auto 25em 2.4em auto auto;
-      grid-template-areas: "nav nav nav" ". hero ." ". hero ." ". services-heading ." "services services services" ". contact-heading ." ". contact ." ". contact ." ". contact ." ". clients-heading ." "clients clients clients" ". footer .";
+      grid-template-areas: "nav nav nav" ". hero ." ". hero ." ". services-heading ." "services services services" ". contact-heading ." ". contact ." ". contact ." ". contact ." ". clients-heading ." "clients clients clients" ". footer .";
 }
 
 @media (min-width: 36em) {
@@ -83,7 +83,7 @@ body {
         grid-template-columns: 1.25em 1fr 1fr 1.25em;
     -ms-grid-rows: auto auto auto 2.4em 22.421875em 2.4em 11.375em auto 18.75em 2.4em auto auto;
         grid-template-rows: auto auto auto 2.4em 22.421875em 2.4em 11.375em auto 18.75em 2.4em auto auto;
-        grid-template-areas: "nav nav nav nav" ". hero hero ." ". hero hero ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer .";
+        grid-template-areas: "nav nav nav nav" ". hero hero ." ". hero hero ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer .";
   }
 }
 
@@ -93,7 +93,7 @@ body {
         grid-template-columns: 1.25em 1fr 1fr 1.25em;
     -ms-grid-rows: auto auto 2.4em 22.421875em 2.4em 11.375em 12.5em 18.75em 2.4em auto auto;
         grid-template-rows: auto auto 2.4em 22.421875em 2.4em 11.375em 12.5em 18.75em 2.4em auto auto;
-        grid-template-areas: "nav nav nav nav" ". hero hero ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer .";
+        grid-template-areas: "nav nav nav nav" ". hero hero ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer .";
   }
 }
 
@@ -103,7 +103,7 @@ body {
         grid-template-columns: 1.25em 1fr 1fr 1.25em;
     -ms-grid-rows: auto auto 2.4em 22.421875em 2.4em 11.375em 12.5em 25em 2.4em auto auto;
         grid-template-rows: auto auto 2.4em 22.421875em 2.4em 11.375em 12.5em 25em 2.4em auto auto;
-        grid-template-areas: "nav nav nav nav" ". hero hero ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer .";
+        grid-template-areas: "nav nav nav nav" ". hero hero ." ". services-heading services-heading ." "services services services services" ". contact-heading contact-heading ." ". contact contact ." ". contact contact ." ". contact contact ." ". clients-heading clients-heading ." "clients clients clients clients" ". footer footer .";
   }
 }
 
@@ -116,7 +116,7 @@ body {
         grid-template-columns: 0.5fr 2.25fr 2.25fr 2.25fr 2.25fr 0.5fr;
     -ms-grid-rows: auto auto 2.4em 22.421875em 2.4em 12.5em 12.5em 2.4em auto auto;
         grid-template-rows: auto auto 2.4em 22.421875em 2.4em 12.5em 12.5em 2.4em auto auto;
-        grid-template-areas: "nav nav nav nav nav nav" ". hero hero hero hero ." ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" ". footer footer footer footer .";
+        grid-template-areas: "nav nav nav nav nav nav" ". hero hero hero hero ." ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" ". footer footer footer footer .";
   }
 }
 
@@ -128,7 +128,7 @@ body {
         grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
     -ms-grid-rows: auto auto 2.4em 22.421875em 2.4em 12.5em 12.5em 2.4em auto auto;
         grid-template-rows: auto auto 2.4em 22.421875em 2.4em 12.5em 12.5em 2.4em auto auto;
-        grid-template-areas: "nav nav nav nav nav nav" ". hero hero hero hero ." ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" ". footer footer footer footer .";
+        grid-template-areas: "nav nav nav nav nav nav" ". hero hero hero hero ." ". services-heading services-heading services-heading services-heading ." "services services services services services services" ". contact-heading contact-heading contact-heading contact-heading ." ". contact contact contact contact ." ". contact contact contact contact ." ". clients-heading clients-heading clients-heading clients-heading ." "clients clients clients clients clients clients" ". footer footer footer footer .";
   }
 }
 
@@ -310,7 +310,7 @@ nav a:hover {
       grid-template-rows: 3.75em auto;
   -ms-grid-columns: 13.9375em auto;
       grid-template-columns: 13.9375em auto;
-      grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
+      grid-template-areas: "nav-svg menu-btn" "mobile-menu mobile-menu";
   padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
 }
 
@@ -483,7 +483,7 @@ nav a:hover {
       grid-template-rows: auto auto;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: "hero-left" "hero-right";
+      grid-template-areas: "hero-left" "hero-right";
   padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
 }
 
@@ -493,7 +493,7 @@ nav a:hover {
         grid-template-rows: auto auto;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "hero-left hero-left" "hero-right hero-right";
+        grid-template-areas: "hero-left hero-left" "hero-right hero-right";
   }
 }
 
@@ -731,7 +731,7 @@ nav a:hover {
       grid-template-rows: 11.375em auto 25em;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: "con-contact" "con-text" "con-map";
+      grid-template-areas: "con-contact" "con-text" "con-map";
 }
 
 @media (min-width: 36em) {
@@ -740,7 +740,7 @@ nav a:hover {
         grid-template-rows: 11.375em auto 18.75em;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "con-contact con-img" "con-text con-text" "con-map con-map";
+        grid-template-areas: "con-contact con-img" "con-text con-text" "con-map con-map";
     margin: 0 env(safe-area-inset-right) 0 env(safe-area-inset-right);
   }
 }
@@ -751,7 +751,7 @@ nav a:hover {
         grid-template-rows: 11.375em 12.5em 18.75em;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "con-contact con-text" "con-img con-text" "con-map con-map";
+        grid-template-areas: "con-contact con-text" "con-img con-text" "con-map con-map";
   }
 }
 
@@ -759,7 +759,7 @@ nav a:hover {
   .contact {
     -ms-grid-rows: 11.375em 12.5em 25em;
         grid-template-rows: 11.375em 12.5em 25em;
-        grid-template-areas: "con-contact con-text" "con-img con-text" "con-map con-map";
+        grid-template-areas: "con-contact con-text" "con-img con-text" "con-map con-map";
   }
 }
 
@@ -769,7 +769,7 @@ nav a:hover {
         grid-template-rows: 12.5em 12.5em;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "con-contact con-text con-map con-map" "con-img con-text con-map con-map";
+        grid-template-areas: "con-contact con-text con-map con-map" "con-img con-text con-map con-map";
   }
 }
 
