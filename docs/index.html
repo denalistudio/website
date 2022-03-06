@@ -50,13 +50,23 @@
 </head>
 
 <script> // URL parameter resolver
+    function vcfDownload(uri, name) {
+        var link = document.createElement("a");
+        // If you don't know the name or want to use
+        // the webserver default set name = ''
+        link.setAttribute('download', name);
+        link.href = uri;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+    }
     const urlParams = new URLSearchParams(window.location.search);
     const link = urlParams.get('l');
     if (link == "j") {
-        window.location.href = "https://src.studiodenali.cz/jakubklapka.vcf";
+        vcfDownload("https://src.studiodenali.cz/jakubklapka.vcf", "jakubklapka.vcf");
     }
     if (link == "d") {
-        window.location.href = "https://src.studiodenali.cz/davidbrzy.vcf";
+        vcfDownload("https://src.studiodenali.cz/davidbrzy.vcf", "davidbrzy.vcf");
     }
     else {
         console.error("The URL parameter " + link + " is not recognized or valid.");
