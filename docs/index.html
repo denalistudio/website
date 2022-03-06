@@ -50,23 +50,19 @@
 </head>
 
 <script> // URL parameter resolver
-    function vcfDownload(uri, name) {
-        var atag = document.createElement("a");
-        // If you don't know the name or want to use
-        // the webserver default set name = ''
-        atag.setAttribute('download', name);
-        atag.href = uri;
-        document.body.appendChild(atag);
-        atag.click();
-        atag.remove();
+    function download(fileUrl, fileName) {
+        var a = document.createElement("a");
+        a.href = fileUrl;
+        a.setAttribute("download", fileName);
+        a.click();
     }
     const urlParams = new URLSearchParams(window.location.search);
     const link = urlParams.get('l');
     if (link == "j") {
-        vcfDownload("https://src.studiodenali.cz/jakubklapka.vcf", "jakubklapka.vcf");
+        download("https://src.studiodenali.cz/jakubklapka.vcf", "jakubklapka.vcf");
     }
     if (link == "d") {
-        vcfDownload("https://src.studiodenali.cz/davidbrzy.vcf", "davidbrzy.vcf");
+        download("https://src.studiodenali.cz/davidbrzy.vcf", "davidbrzy.vcf");
     }
     else {
         console.error("The URL parameter " + link + " is not recognized or valid.");
