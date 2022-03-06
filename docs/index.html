@@ -52,7 +52,15 @@
 <script> // URL parameter resolver
     const urlParams = new URLSearchParams(window.location.search);
     const link = urlParams.get('l');
-    console.log(link);
+    if (link == "j") {
+        window.location.href = "https://src.studiodenali.cz/jakubklapka.vcf";
+    }
+    if (link == "d") {
+        window.location.href = "https://src.studiodenali.cz/davidbrzy.vcf";
+    }
+    else {
+        console.error("The URL parameter " + link + " is not recognized or valid.");
+    }
 </script>
 
 <body onload="onLoad()" translate="no">
