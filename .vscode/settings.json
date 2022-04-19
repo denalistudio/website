@@ -1,6 +1,4 @@
 {
-    "liveServer.settings.port": 5500,
-    "liveServer.settings.donotShowInfoMessage": true,
     "liveSassCompile.settings.formats": [
         {
         "format": "expanded",
