@@ -45,7 +45,9 @@
 		"clients-elektra-title": "Kavárna Elektra",
 		"clients-elektra-text": "Známá lokální kavárna, která nabízí vynikající kávu. Jejich nové webové stránky ale nechali na nás.",
 		"clients-udimedoma-title": "Udíme doma",
-		"clients-udimedoma-text": "E-shop, který prodává revoluční generátory kouře do udíren a podobné příslušenství pro každého milovníka uzení."
+		"clients-udimedoma-text": "E-shop, který prodává revoluční generátory kouře do udíren a podobné příslušenství pro každého milovníka uzení.",
+		"clients-quatro-title": "Reklamka Quatro",
+		"clients-quatro-text": "Reklamka, které chyběly modernější a přehlednější stránky."
 	},
 	"en": {
 		"langdesc": "en",
@@ -93,6 +95,8 @@
 		"clients-elektra-title": "Café Elektra",
 		"clients-elektra-text": "A well-known local café, which serves excellent coffee. Their website was nonetheless left to us.",
 		"clients-udimedoma-title": "Udíme doma",
-		"clients-udimedoma-text": "E-shop, which sells smoke generators for smoking rooms and similar accessories for every lover of smoked food."
+		"clients-udimedoma-text": "E-shop, which sells smoke generators for smoking rooms and similar accessories for every lover of smoked food.",
+		"clients-quatro-title": "Ad agency Quatro",
+		"clients-quatro-text": "An ad agency, that needed a more modern and clean website."
 	}
 }
