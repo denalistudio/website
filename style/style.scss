@@ -32,6 +32,7 @@ $safe-area-inset-left: env(safe-area-inset-left);
 
 html {
   font-size: 100%;
+  -webkit-text-size-adjust: none;
 }
 
 body {
