@@ -1,49 +1,6 @@
 @charset "UTF-8";
 /* Copyright © 2022 Studio Denali. All rights reserved. */
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-regular.eot?bf67d9a025147d6a21e8f4b227c93d5d);
-  /* IE9 Compat Modes */
-  src: local(""), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-regular.eot?bf67d9a025147d6a21e8f4b227c93d5d) format("embedded-opentype"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-regular.woff2?671b8a3375d3edd1e0e00d3d6f547cbd) format("woff2"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-regular.woff?5bfc683d7010de0511e3a5bf72777476) format("woff"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-regular.ttf?15f198bc69486e515662dae02ece15cb) format("truetype"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-regular.svg?1b1af1e4b3a278058097e96a21f80371) format("svg");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-500.eot?4f7c2d1c0eeaba94f52e8b66191a1c8f);
-  /* IE9 Compat Modes */
-  src: local(""), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-500.eot?4f7c2d1c0eeaba94f52e8b66191a1c8f) format("embedded-opentype"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-500.woff2?d79d191e69424d713e23823a158babb0) format("woff2"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-500.woff?3dc2c79451097edaf771aa2959357123) format("woff"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-500.ttf?1b2196a5fd069390f1447dc3be31584d) format("truetype"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-500.svg?29ec91e5b4e3ec4c32004f082b447329) format("svg");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-700.eot?adad44ffe666baf2a55c45ce601e17bd);
-  /* IE9 Compat Modes */
-  src: local(""), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-700.eot?adad44ffe666baf2a55c45ce601e17bd) format("embedded-opentype"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-700.woff2?02efd1dc19dbb85f5831613991f3450c) format("woff2"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-700.woff?1b274fb02df91effa8d8354eefd6be05) format("woff"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-700.ttf?96fb238c4b4dbfb0e4d09d614065e0e9) format("truetype"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-700.svg?32f463535c0a507946f737940bfc8595) format("svg");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-900.eot?07e09e4089e00ae3a473ef7f28dafb99);
-  /* IE9 Compat Modes */
-  src: local(""), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-900.eot?07e09e4089e00ae3a473ef7f28dafb99) format("embedded-opentype"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-900.woff2?74c027146b60623153348001144cdc15) format("woff2"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-900.woff?a8f7983fafe21ba524c7a56ab1405dc7) format("woff"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-900.ttf?6bcc1332d58f80bb8783dde070c2f50e) format("truetype"), url(https://src.studiodenali.cz/fonts/roboto-v27-latin-ext_latin-900.svg?65e4130af17899facd7ef501165985a9) format("svg");
-  /* Legacy iOS */
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --safe-area-inset-right: env(safe-area-inset-right);
   --safe-area-inset-left: env(safe-area-inset-left);
@@ -69,11 +26,106 @@ body {
   line-height: 1.3;
 }
 
+a {
+  color: #4f54ff;
+}
+
+.notice {
+  width: 100%;
+  height: 2.5em;
+  gap: 0.5em;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 0.5em 1em;
+  z-index: 1;
+  background-color: yellow;
+  grid-area: notice;
+}
+
+.notice svg {
+  display: block;
+}
+
+.notice a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.notice a:hover, .notice a:focus {
+  text-decoration: none;
+}
+
 header {
-  margin: 1em;
+  margin: 3.5em 1em 1em 1em;
 }
 
 header #logo {
-  width: 2em;
+  width: 3em;
   display: block;
+}
+
+@media only screen and (min-width: 62em) {
+  header {
+    width: 85%;
+    margin: 6.5em auto 4em auto;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  header {
+    width: 80%;
+  }
+}
+
+.post {
+  margin: 0 1em;
+}
+
+.post .post__title {
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 36em) {
+  .post {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .post {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .post {
+    width: 55%;
+    margin: auto;
+  }
+}
+
+footer {
+  margin: auto;
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
+}
+
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 3em auto;
+}
+
+footer p a {
+  color: #000000;
+  text-decoration: none;
+}
+
+footer p a:hover, footer p a:focus {
+  text-decoration: underline;
 }
