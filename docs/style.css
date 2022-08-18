@@ -251,7 +251,7 @@ li a:hover {
   top: 0;
   padding: 0.5em 1em;
   z-index: 9999;
-  background-color: yellow;
+  background-color: #fcd706;
   grid-area: notice;
 }
 
