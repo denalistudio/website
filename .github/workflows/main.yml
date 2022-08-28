@@ -15,5 +15,5 @@ jobs:
         user: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         localDir: "./docs/"
-        remoteDir: "./www/"
+        remoteDir: "./public_html/"
         options: "--delete"  
