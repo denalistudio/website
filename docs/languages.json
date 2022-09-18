@@ -36,6 +36,7 @@
 		"clients-category-restaurantsandcafes": "Restaurace a kavárny",
 		"clients-category-shopsandretail": "Obchody a prodej",
 		"clients-category-funandleisure": "Zábava a volný čas",
+		"clients-category-construction": "Stavebnictví",
 		"clients-globegk-title": "Globe GK",
 		"clients-globegk-text": "Školní zájmový kroužek Gymnázia Karviná, který na své nové stránky publikuje probíhající projekty a články o nich.",
 		"clients-kouzlokvetin-title": "Kouzlo květin",
@@ -51,7 +52,9 @@
 		"clients-f4k-title": "Family for kids",
 		"clients-f4k-text": "Spolek rodiny Reisových, který potřeboval dostat všechny své aktivity pod jednu střechu.",
 		"clients-prckuvraj-title": "Prckův ráj",
-		"clients-prckuvraj-text": "Známé zábavní centrum pro děti s kavárnou v Havířově."
+		"clients-prckuvraj-text": "Známé zábavní centrum pro děti s kavárnou v Havířově.",
+		"clients-izolejsn-title": "izolejsn.cz",
+		"clients-izolejsn-text": "Ve světě padouchů je BaryFerko jeden z mála posledních superhrdinů - nestříkají pavučiny, ale izolace. Přidali jsme se do boje s nimi."
 	},
 	"en": {
 		"langdesc": "en",
@@ -90,6 +93,7 @@
 		"clients-category-restaurantsandcafes": "Restaurant and café",
 		"clients-category-shopsandretail": "Shopping and retail",
 		"clients-category-funandleisure": "Fun and leisure",
+		"clients-category-construction": "Construction",
 		"clients-globegk-title": "Globe GK",
 		"clients-globegk-text": "A Karviná grammar school hobby group, that publishes its ongoing projects and articles on their new website.",
 		"clients-kouzlokvetin-title": "Flower magic",
@@ -105,6 +109,8 @@
 		"clients-f4k-title": "Family for kids",
 		"clients-f4k-text": "A family-run club which needed to unite all its activities under one roof.",
 		"clients-prckuvraj-title": "Prckův ráj",
-		"clients-prckuvraj-text": "A well-known entertainment centre for kids and children with a café in Havířov"
+		"clients-prckuvraj-text": "A well-known entertainment centre for kids and children with a café in Havířov",
+		"clients-izolejsn-title": "izolejsn.cz",
+		"clients-izolejsn-text": "In the world of villains, BaryFerko is one of the last few superheroes - it's not the cobwebs that splash, it's the isolation. We joined the fight with them."
 	}
 }
