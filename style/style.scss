@@ -22,9 +22,14 @@ body {
 
 .hero {
     width: 100%;
-    height: 100vh;
+    height: 50em;
+    position: relative;
     background-color: $black;
     color: $white;
+
+    @media only screen and (min-height: 48em) {
+        height: 100vh;
+    }
 
     header {
         gap: 4em;
@@ -103,5 +108,12 @@ body {
 
     h1 {
         font-family: $primary-font;
+    }
+
+    .arrow-down {
+        position: absolute;
+        bottom: 5em;
+        left: 50%;
+        transform: translateZ(-50%);
     }
 }
