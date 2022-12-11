@@ -10,6 +10,7 @@ $white: #fff;
     box-sizing: border-box;
     line-height: 1.3;
     font-family: $secondary-font;
+    font-weight: 400;
 }
 
 html {
@@ -297,6 +298,7 @@ html {
         }
 
         h1.hero__title {
+            width: 100%;
             font-family: $primary-font;
             font-size: 4.5rem;
             text-align: center;
