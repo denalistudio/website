@@ -20,6 +20,11 @@ body {
     font-family: $secondary-font;
 }
 
+// Font size classes
+.fs-d {
+    font-size: 1.25rem;
+}
+
 .btn {
     gap: .75em;
     display: inline-flex;
@@ -27,7 +32,7 @@ body {
     align-items: center;
 
     svg {
-        transform: translateY(.12em);
+        transform: translateY(.1em);
     }
 }
 
@@ -130,9 +135,15 @@ body {
         text-decoration: none;
         transition: all 300ms ease-in-out;
 
-        svg path {
-            fill: $white;
-            transition: fill 300ms ease-in-out;
+        svg {
+            width: 2em;
+
+            path {
+                fill: none;
+                stroke: $white;
+                stroke-width: 1px;
+                transition: stroke 300ms ease-in-out;
+            }
         }
 
         &:hover {
@@ -140,7 +151,7 @@ body {
             color: $black;
 
             svg path {
-                fill: $black;
+                stroke: $black;
             }
         }
     }
@@ -161,5 +172,51 @@ body {
         bottom: 5em;
         left: 50%;
         transform: translateZ(-50%);
+
+        svg {
+            height: 4em;
+
+            path {
+                fill: none;
+                stroke: $white;
+                stroke-width: 1px;
+            }
+        }
+    }
+}
+
+section.about-us {
+    gap: 4em;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "about-us__textboxes about-us__wireframe" ". about-us__wireframe";
+    padding: 5em 4.5em 0 4.5em;
+
+    .about-us__textboxes {
+        gap: 1.5em;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-area: about-us__textboxes;
+
+        .about-us__textbox {
+            padding: 1em;
+            border: 1px solid $black;
+            border-radius: 1em;
+    
+            h2 {
+                font-family: $primary-font;
+                font-size: 2rem;
+                margin-bottom: .5em;
+            }
+        }
+    }
+
+    .about-us__wireframe {
+        grid-area: about-us__wireframe;
+
+        svg {
+            width: 100%;
+        }
     }
 }
