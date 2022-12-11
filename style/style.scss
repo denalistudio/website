@@ -51,8 +51,8 @@ body {
         gap: 4em;
         width: 100%;
         display: grid;
-        grid-template-rows: 5em;
-        grid-template-columns: auto 1fr auto 5em;
+        grid-template-rows: 4.5em;
+        grid-template-columns: auto 1fr auto 4.5em;
         grid-template-areas: "header__logo . header__showreel header__menu-btn";
         align-items: center;
         padding: 5em 4.5em;
@@ -70,8 +70,8 @@ body {
         }
 
         #menu-btn {
-            width: 5em;
-            height: 5em;
+            width: 4.5em;
+            height: 4.5em;
             position: relative;
             border: 1px solid $white;
             border-radius: 100em;
@@ -93,7 +93,7 @@ body {
             span,
             span::before,
             span::after {
-                width: 2em;
+                width: 1.8em;
                 height: 1px;
                 position: absolute;
                 background-color: $black;
