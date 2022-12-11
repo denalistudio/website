@@ -20,6 +20,17 @@ body {
     font-family: $secondary-font;
 }
 
+.btn {
+    gap: .75em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        transform: translateY(.12em);
+    }
+}
+
 .hero {
     width: 100%;
     height: 50em;
@@ -106,8 +117,43 @@ body {
         }
     }
 
-    h1 {
+    a.hero__btn {
+        position: absolute;
+        top: calc(50% - 8em);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1em 3em;
+        border: 1px solid $white;
+        border-radius: 1em;
+        background-color: $black;
+        color: $white;
+        text-decoration: none;
+        transition: all 300ms ease-in-out;
+
+        svg path {
+            fill: $white;
+            transition: fill 300ms ease-in-out;
+        }
+
+        &:hover {
+            background-color: $white;
+            color: $black;
+
+            svg path {
+                fill: $black;
+            }
+        }
+    }
+
+    h1.hero__title {
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         font-family: $primary-font;
+        font-size: 6rem;
+        text-align: center;
     }
 
     .arrow-down {
