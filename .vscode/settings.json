@@ -3,8 +3,8 @@
     "liveServer.settings.donotShowInfoMessage": true,
     "liveSassCompile.settings.formats": [
         {
-        "format": "expanded",
-        "extensionName": ".css",
+        "format": "compressed",
+        "extensionName": ".min.css",
         "savePath": "./docs/"
     }
     ]
