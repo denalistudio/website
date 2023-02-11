@@ -38,7 +38,7 @@ p {
 
 .hero {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     position: relative;
 
     figure {
@@ -57,11 +57,12 @@ p {
 
     header {
         display: grid;
-        grid-template-rows: 6em;
-        grid-template-columns: 7.68em 1fr 6em;
+        grid-template-rows: 5em;
+        grid-template-columns: 7.68em 1fr 5em;
         grid-template-areas: "logo . menu-btn";
         align-items: center;
-        padding: 2.625em 4em;
+        padding: 1.5em;
+        //padding: 2.625em 4em;
 
         a.logo {
             grid-area: logo;
@@ -72,16 +73,16 @@ p {
         }
 
         .menu-btn {
-            width: 6em;
-            height: 6em;
+            width: 5em;
+            height: 5em;
             position: relative;
             grid-area: menu-btn;
-            border-radius: 6em;
+            border-radius: 5em;
             background-color: $white;
             cursor: pointer;
 
             .line {
-                width: 2.3em;
+                width: 2em;
                 height: .1em;
                 position: absolute;
                 top: 50%;
@@ -92,7 +93,7 @@ p {
                 &::before,
                 &::after {
                     content: "";
-                    width: 2.3em;
+                    width: 2em;
                     height: 0.1em;
                     display: block;
                     position: absolute;
@@ -106,19 +107,91 @@ p {
                 &::after {
                     top: .75em;
                 }
+
+                @media only screen and (min-width: 62em) {
+                    width: 2.3em;
+
+                    &::before,
+                    &::after {
+                        width: 2.3em;
+                    }
+                }
             }
+
+            @media only screen and (min-width: 62em) {
+                width: 6em;
+                height: 6em;
+                border-radius: 6em;
+            }
+        }
+
+        @media only screen and (min-width: 36em) {
+            padding: 2em;
+        }
+    
+        @media only screen and (min-width: 48em) {
+            padding: 2.125em 3em;
+        }
+    
+        @media only screen and (min-width: 62em) {
+            grid-template-columns: 7.68em 1fr 6em;
+            padding: 2.125em 3.5em;
+        }
+    
+        @media only screen and (min-width: 75em) {
+            padding: 2.375em 4em;
         }
     }
 
     .content {
-        left: 4em;
-        bottom: 4em;
+        left: 1.5em;
+        bottom: 1.5em;
         position: absolute;
         color: $white;
 
         h1 {
-            font-size: 4rem;
+            font-size: 3rem;
+
+            @media only screen and (min-width: 48em) {
+                font-size: 3.5rem;
+            }
+
+            @media only screen and (min-width: 62em) {
+                font-size: 4rem;
+            }
         }
+
+        @media only screen and (min-width: 36em) {
+            left: 2em;
+            bottom: 2em;
+        }
+    
+        @media only screen and (min-width: 48em) and (min-height: 40em) {
+            left: 3em;
+            bottom: 3em;
+        }
+    
+        @media only screen and (min-width: 62em) {
+            left: 3.5em;
+            bottom: 3.5em;
+        }
+    
+        @media only screen and (min-width: 75em) {
+            left: 4em;
+            bottom: 4em;
+        }
+    }
+
+    @media only screen and (min-width: 36em) and (max-height: 40em) {
+        height: 100vh;
+    }
+
+    @media only screen and (min-width: 36em) and (min-height: 40em) {
+        height: 30em;
+    }
+
+    @media only screen and (min-width: 62em) and (min-height: 0) {
+        height: 100vh;
     }
 }
 
@@ -214,5 +287,35 @@ main {
 
     @media only screen and (min-width: 75em) {
         padding: 4em;
+    }
+
+    .grey-rect {
+        width: 100%;
+        aspect-ratio: 16/9;
+        margin-top: 8em;
+        background-color: #b0b0b0;
+
+        @media only screen and (min-width: 48em) {
+            margin-top: 10em;
+        }
+
+        @media only screen and (min-width: 62em) {
+            margin-top: 12em;
+        }
+    }
+}
+
+.black-rect {
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin: 6em 0 8em 0;
+    background-color: $black;
+
+    @media only screen and (min-width: 48em) {
+        margin: 8em 0 10em 0;
+    }
+
+    @media only screen and (min-width: 62em) {
+        margin: 10em 0 12em 0;
     }
 }
