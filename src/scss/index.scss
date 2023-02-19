@@ -55,8 +55,8 @@ h6 {
         width: 100%;
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: auto 1fr 6em;
-        grid-template-areas: "logo . menu-btn";
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "logo . buttons";
 
         a.logo {
             grid-area: logo;
@@ -67,13 +67,18 @@ h6 {
             text-decoration: none;
         }
 
+        .buttons {
+            gap: 3em;
+            display: flex;
+            grid-area: buttons;
+        }
+
         a.menu-btn {
             width: 6em;
             height: 6em;
             display: flex;
             justify-content: center;
             align-items: center;
-            grid-area: menu-btn;
             border-radius: 6em;
             background-color: $white;
 
@@ -103,6 +108,18 @@ h6 {
                     top: .75em;
                 }
             }
+        }
+
+        a.btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2.5em;
+            border-radius: 6em;
+            background-color: $white;
+            color: $black;
+            font-size: 1.25rem;
+            text-decoration: none;
         }
     }
 
@@ -145,21 +162,23 @@ h6 {
             }
         }
 
-        h1 {
-            color: $white;
-            font-size: 5.5rem;
-            text-align: center;
-            margin: 1em 0 2.25em 0;
+        .text-wrapper {
+            margin: 5.5em 0 12.275em 0;
 
-            u {
-                font-family: inherit;
+            h1 {
+                color: $white;
+                font-size: 5.5rem;
+                text-align: center;
             }
-        }
-
-        p {
-            color: $white;
-            font-size: 1.125rem;
-            margin-top: 1.25em;
+    
+            p {
+                max-width: 40em;
+                margin: auto;
+                color: $white;
+                font-size: 1.4rem;
+                text-align: center;
+                margin-top: 1.25em;
+            }
         }
     }
 }
