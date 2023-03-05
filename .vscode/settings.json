@@ -3,7 +3,7 @@
         {
         "format": "compressed",
         "extensionName": ".min.css",
-        "savePath": "./docs/assets/css/"
+        "savePath": "./docs/"
     }
     ]
 }
