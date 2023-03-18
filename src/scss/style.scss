@@ -42,7 +42,7 @@ body {
     grid-template-columns: 100%;
     scroll-snap-align: start;
 
-    @media only screen and (min-height: 50vw) {
+    @media only screen and (min-width: 48em) and (min-height: 50vw) {
         height: 100vh;
     }
 
@@ -151,13 +151,10 @@ body {
             position: relative;
             overflow-x: hidden;
 
-            .wrapper {
+            .rows-wrapper {
                 row-gap: 1.25em;
                 display: flex;
                 flex-wrap: wrap;
-                position: absolute;
-                top: 0;
-                left: 0;
 
                 .row {
                     column-gap: 1.25em;
@@ -178,14 +175,10 @@ body {
                         }
 
                         &.tag-sm {
-                            @media only screen and (min-width: 36px) {
+                            @media only screen and (min-width: 36em) {
                                 display: none;
                             }
                         }
-                    }
-
-                    @media only screen and (max-width: 35.9375em) {
-                        transform: translateX(1em);
                     }
                 }
 
@@ -199,7 +192,7 @@ body {
                             }
 
                             to {
-                                transform: translateX(-41.1064375em);
+                                transform: translateX(-40.605em);
                             }
                         }
                     }
@@ -213,7 +206,7 @@ body {
                             }
 
                             to {
-                                transform: translateX(-36.3818125em);
+                                transform: translateX(-35.818875em);
                             }
                         }
                     }
