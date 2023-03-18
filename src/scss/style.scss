@@ -12,7 +12,6 @@ html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: none;
     scroll-snap-type: y mandatory;
-
 }
 
 body {
@@ -154,4 +153,10 @@ section {
             }
         }
     }
+}
+
+#bottom-section {
+    width: 100%;
+    min-height: 100vh;
+    scroll-snap-align: start;
 }
