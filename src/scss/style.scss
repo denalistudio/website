@@ -312,6 +312,7 @@ section {
 
 #bottom-section {
     width: 100%;
+    min-height: 100vh;
     scroll-snap-align: start;
 
     .container {
@@ -327,7 +328,7 @@ section {
             display: grid;
             grid-template-rows: auto 25em;
             grid-template-columns: 100%;
-            margin-bottom: 3em;
+            margin: 2em 0 5em 0;
             align-items: center;
 
             .col {
@@ -393,7 +394,7 @@ section {
         }
 
         #partners {
-            margin: 3em 0;
+            margin: 5em 0 7em 0;
 
             h2 {
                 margin-bottom: 1em;
@@ -443,8 +444,10 @@ section {
         }
 
         footer {
+            margin-top: 7em;
+
             p {
-                font-size: 1.1rem;
+                font-size: 1.25rem;
                 text-align: center;
             }
         }
