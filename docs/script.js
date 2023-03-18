@@ -1,3 +1,5 @@
+document.getElementById("copyright_year").innerHTML = new Date().getFullYear();
+
 $(window).scroll(function() {
     $("video").each(function() {
         const video = $(this);
