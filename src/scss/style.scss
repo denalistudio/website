@@ -307,39 +307,74 @@ section {
 
 #bottom-section {
     width: 100%;
-    min-height: 100vh;
     scroll-snap-align: start;
 
-    #partners h2,
-    #contact h2 {
+    .container {
+        height: 100%;
+    }
+
+    #contact h2,
+    #partners h2 {
         font-size: 2rem;
-        text-align: center;
+    }
+
+    #contact {
+        margin-bottom: 3em;
     }
 
     #partners {
+        margin: 3em 0;
+
+        h2 {
+            margin-bottom: 1em;
+        }
+
         .logos {
             width: 100%;
-
-            gap: 5em;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+            gap: 1.5em;
+            display: grid;
+            grid-template-columns: repeat(2, calc(50% - .75em));
+            justify-items: center;
 
             .logo {
-                height: 2em;
+                width: 100%;
 
                 svg {
-                    width: auto;
-                    height: 100%;
+                    width: 100%;
+                    height: auto;
                     display: block;
+
+                    @media only screen and (min-width: 36em) {
+                        width: auto;
+                        height: 100%;
+                    }
                 }
+
+                @media only screen and (min-width: 36em) {
+                    width: auto;
+                    height: 3em;
+                }
+            }
+
+            @media only screen and (min-width: 36em) {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            @media only screen and (min-width: 48em) {
+                gap: 2em;
+            }
+
+            @media only screen and (min-width: 62em) {
+                gap: 2.5em;
             }
         }
     }
 
     footer {
-        p#copyright {
+        p {
+            font-size: 1.1rem;
             text-align: center;
         }
     }
