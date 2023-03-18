@@ -311,71 +311,132 @@ section {
 
     .container {
         height: 100%;
-    }
 
-    #contact h2,
-    #partners h2 {
-        font-size: 2rem;
-    }
-
-    #contact {
-        margin-bottom: 3em;
-    }
-
-    #partners {
-        margin: 3em 0;
-
-        h2 {
-            margin-bottom: 1em;
+        #contact h2,
+        #partners h2 {
+            font-size: 2rem;
         }
 
-        .logos {
-            width: 100%;
-            gap: 1.5em;
+        #contact {
+            gap: 2em;
             display: grid;
-            grid-template-columns: repeat(2, calc(50% - .75em));
-            justify-items: center;
+            grid-template-rows: auto 25em;
+            grid-template-columns: 100%;
+            margin-bottom: 3em;
+            align-items: center;
 
-            .logo {
-                width: 100%;
+            .col {
+                h2 {
+                    margin-bottom: 1em;
+                }
 
-                svg {
-                    width: 100%;
-                    height: auto;
-                    display: block;
+                h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: .5em;
+                }
 
-                    @media only screen and (min-width: 36em) {
-                        width: auto;
-                        height: 100%;
+                p {
+                    font-size: 1.1rem;
+                    
+                    a {
+                        color: $black;
+                        text-decoration: none;
+                    }
+
+                    &:first-of-type {
+                        margin-bottom: .3em;
                     }
                 }
 
+                address {
+                    margin-top: 1.25em;
+
+                    p {
+                        font-size: 1.1rem;
+                        font-style: normal;
+
+                        &:first-of-type {
+                            margin-bottom: .3em;
+                        }
+                    }
+                }
+            }
+
+            iframe {
+                height: 100%;
+                border: 0;
+
                 @media only screen and (min-width: 36em) {
-                    width: auto;
-                    height: 3em;
+                    height: 20em;
                 }
             }
 
             @media only screen and (min-width: 36em) {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
+                grid-template-rows: 1fr;
+                grid-template-columns: 6fr 4fr;
             }
 
             @media only screen and (min-width: 48em) {
-                gap: 2em;
-            }
-
-            @media only screen and (min-width: 62em) {
-                gap: 2.5em;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr 1fr;
             }
         }
-    }
 
-    footer {
-        p {
-            font-size: 1.1rem;
-            text-align: center;
+        #partners {
+            margin: 3em 0;
+
+            h2 {
+                margin-bottom: 1em;
+            }
+
+            .logos {
+                width: 100%;
+                gap: 1.5em;
+                display: grid;
+                grid-template-columns: repeat(2, calc(50% - .75em));
+                justify-items: center;
+
+                .logo {
+                    width: 100%;
+
+                    svg {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+
+                        @media only screen and (min-width: 36em) {
+                            width: auto;
+                            height: 100%;
+                        }
+                    }
+
+                    @media only screen and (min-width: 36em) {
+                        width: auto;
+                        height: 3em;
+                    }
+                }
+
+                @media only screen and (min-width: 36em) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+
+                @media only screen and (min-width: 48em) {
+                    gap: 2em;
+                }
+
+                @media only screen and (min-width: 62em) {
+                    gap: 2.5em;
+                }
+            }
+        }
+
+        footer {
+            p {
+                font-size: 1.1rem;
+                text-align: center;
+            }
         }
     }
 }
