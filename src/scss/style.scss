@@ -12,7 +12,10 @@ html {
     font-size: 100%;
     scroll-behavior: smooth;
     -webkit-text-size-adjust: none;
-    scroll-snap-type: y mandatory;
+
+    @media only screen and (min-height: 37em) {
+        scroll-snap-type: y mandatory;
+    }
 }
 
 body {
@@ -37,20 +40,19 @@ body {
 
 #hero {
     width: 100%;
+    min-height: 100vh;
+    row-gap: 2em;
     display: grid;
-    grid-template-rows: 4.875em 1fr;
+    grid-template-rows: 8.75em 1fr;
     grid-template-columns: 100%;
     scroll-snap-align: start;
 
-    @media only screen and (min-width: 48em) and (min-height: 50vw) {
-        height: 100vh;
-    }
-
     header {
+        row-gap: 1em;
         display: grid;
-        grid-template-rows: 2.875em;
-        grid-template-columns: auto 1fr auto;
-        grid-template-areas: "logo . btn";
+        grid-template-rows: 2.875em 2.875em;
+        grid-template-columns: 100%;
+        grid-template-areas: "logo" "btn";
 
         a#logo {
             height: 100%;
@@ -93,6 +95,12 @@ body {
                 }
             }
         }
+
+        @media only screen and (min-width: 23em) {
+            grid-template-rows: 2.875em;
+            grid-template-columns: auto 1fr auto;
+            grid-template-areas: "logo . btn";
+        }
     }
 
     .content {
@@ -110,12 +118,12 @@ body {
             @media only screen and (min-width: 36em) {
                 top: -2.4375em;
             }
-        
+
             @media only screen and (min-width: 62em) {
                 width: 60%;
                 top: -4.9375em;
             }
-        
+
             @media only screen and (min-width: 75em) {
                 width: 50%;
                 top: -5.4375em;
@@ -135,7 +143,7 @@ body {
 
         .container-tags {
             padding-right: 0;
-        
+
             @media only screen and (max-width: 35.9375em) {
                 padding-left: 0;
             }
@@ -175,14 +183,14 @@ body {
                         }
 
                         &.tag-sm {
-                            @media only screen and (min-width: 36em) {
+                            @media only screen and (min-width: 44em) {
                                 display: none;
                             }
                         }
                     }
                 }
 
-                @media only screen and (max-width: 35.9375em) {
+                @media only screen and (max-width: 43.9375em) {
                     .row-1 {
                         animation: row-1 15s linear infinite;
 
@@ -212,17 +220,33 @@ body {
                     }
                 }
 
-                @media only screen and (min-width: 36em) {
+                @media only screen and (min-width: 44em) {
                     position: static;
                 }
             }
 
-            @media only screen and (min-width: 36em) {
+            @media only screen and (min-width: 44em) {
                 height: auto;
                 position: static;
                 overflow-x: auto;
             }
         }
+    }
+
+    @media only screen and (min-width: 23em) {
+        grid-template-rows: 4.875em 1fr;
+    }
+
+    @media only screen and (min-height: 44em) {
+        row-gap: 0;
+    }
+
+    @media only screen and (min-width: 36em) and (max-height: 36.9375em) {
+        height: auto;
+    }
+
+    @media only screen and (min-width: 48em) and (min-height: 37em) {
+        height: 100vh;
     }
 
     @media only screen and (min-width: 36em) {
@@ -240,7 +264,7 @@ body {
 
 section {
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: 100%;
@@ -301,6 +325,10 @@ section {
         .mobile {
             height: 100%;
 
+            header {
+                margin-bottom: .75em;
+            }
+
             .tags .tag {
                 border: 1.5px solid $black;
 
@@ -359,6 +387,14 @@ section {
             left: 0;
             z-index: 1;
         }
+    }
+
+    @media only screen and (min-width: 36em) and (max-height: 36.9375em) {
+        aspect-ratio: 16/9;
+    }
+
+    @media only screen and (min-height: 37em) {
+        height: 100vh;
     }
 }
 
@@ -436,7 +472,7 @@ section {
 
             @media only screen and (min-width: 36em) {
                 grid-template-rows: 1fr;
-                grid-template-columns: 6fr 4fr;
+                grid-template-columns: 55fr 45fr;
             }
 
             @media only screen and (min-width: 48em) {
@@ -454,9 +490,10 @@ section {
 
             .logos {
                 width: 100%;
-                gap: 1.5em;
+                row-gap: 2.5em;
+                column-gap: 2em;
                 display: grid;
-                grid-template-columns: repeat(2, calc(50% - .75em));
+                grid-template-columns: repeat(2, 1fr);
                 justify-items: center;
 
                 .logo {
@@ -467,30 +504,26 @@ section {
                         height: auto;
                         display: block;
 
-                        @media only screen and (min-width: 36em) {
+                        @media only screen and (min-width: 62em) {
                             width: auto;
                             height: 100%;
                         }
                     }
 
-                    @media only screen and (min-width: 36em) {
+                    @media only screen and (min-width: 62em) {
                         width: auto;
-                        height: 3em;
+                        height: 3.5em;
                     }
                 }
 
-                @media only screen and (min-width: 36em) {
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-                }
-
                 @media only screen and (min-width: 48em) {
-                    gap: 2em;
+                    grid-template-columns: repeat(3, 1fr);
                 }
 
                 @media only screen and (min-width: 62em) {
                     gap: 2.5em;
+                    display: flex;
+                    flex-wrap: wrap;
                 }
             }
         }
