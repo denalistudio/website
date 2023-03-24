@@ -1,7 +1,7 @@
 document.getElementById("copyright_year").innerHTML = new Date().getFullYear();
 
-$(window).scroll(function() {
-    $("video").each(function() {
+$(window).scroll(function () {
+    $("video").each(function () {
         const video = $(this);
         if (video.visible(true)) {
             video[0].play();

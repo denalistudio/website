@@ -269,7 +269,7 @@ h3 {
     }
 }
 
-section {
+section.project {
     width: 100%;
     height: auto;
     display: grid;
@@ -399,6 +399,41 @@ section {
             top: 0;
             left: 0;
             z-index: 1;
+        }
+    }
+
+    @media only screen and (min-width: 36em) and (max-height: 36.9375em) {
+        aspect-ratio: 16/9;
+    }
+
+    @media only screen and (min-height: 34em) {
+        height: 100vh;
+    }
+}
+
+section#prohlidky {
+    width: 100%;
+    height: auto;
+    position: relative;
+    scroll-snap-align: start;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+        h2 {
+            color: $white;
+            font-size: 2.5rem;
+            text-align: center;
         }
     }
 
