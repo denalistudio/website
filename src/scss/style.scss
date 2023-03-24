@@ -22,6 +22,12 @@ body {
     font-family: "Golos Text", sans-serif;
 }
 
+h1,
+h2,
+h3 {
+    font-weight: 500;
+}
+
 .container {
     padding: 1em;
 
@@ -399,7 +405,7 @@ section {
         aspect-ratio: 16/9;
     }
 
-    @media only screen and (min-height: 37em) {
+    @media only screen and (min-height: 34em) {
         height: 100vh;
     }
 }
