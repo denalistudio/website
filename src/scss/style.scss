@@ -87,7 +87,7 @@ h3 {
             align-items: center;
             grid-area: btn;
 
-            a {
+            #kontakt-anchor {
                 display: block;
                 padding: .75em 1.75em;
                 border: 1.5px solid $black;
@@ -95,6 +95,7 @@ h3 {
                 color: $black;
                 text-decoration: none;
                 transition: background-color 125ms ease-in-out, color 125ms ease-in-out;
+                cursor: pointer;
 
                 &:hover {
                     background-color: $black;
