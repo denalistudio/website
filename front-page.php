@@ -14,7 +14,14 @@
 get_header();
 ?>
 <div class="container">
-    <h1 class="page_title">We help companies thrive in our ever-changing world</h1>
+    <h1 class="page_title">
+        <div class="row_1">We help companies thrive</div>
+        <div class="row_2">in our</div>
+        <div class="gradient">
+            <canvas id="page_title_canvas"></canvas>
+            <span id="page_title_mask" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/page-title-mask.svg)">ever-changing world</span>
+        </div>
+    </h1>
     <figure class="hero">
         <picture>
             <source srcset="./images/hero.webp" type="image/webp">
