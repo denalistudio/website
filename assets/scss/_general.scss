@@ -14,3 +14,17 @@ html {
 body {
     font-family: $font;
 }
+
+.container {
+    @media only screen and (min-width: 120em) {
+        width: 100em;
+        margin: auto;
+    }
+}
+
+.btn-black {
+    padding: .75em 1.75em;
+    border-radius: 5em;
+    background-color: map-get($colors, "black");
+    color: map-get($colors, "white");
+}
