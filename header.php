@@ -1,3 +1,15 @@
+<?php
+
+/**
+ * The header for this theme
+ * 
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ * 
+ * @package Denali studio
+ * @since Denali studio 1.0
+ */
+
+?>
 <!DOCTYPE html>
 <html lang="cs">
 

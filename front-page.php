@@ -1,4 +1,18 @@
-<?php get_header(); ?>
+<?php
+
+/**
+ * The front page template file
+ * 
+ * If the user has selected a static page for their homepage, this is what will
+ * appear.
+ * Learn more: https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * 
+ * @package Denali studio
+ * @since Denali studio 1.0
+ */
+
+get_header();
+?>
 <div class="container">
     <header id="header-desktop">
         <a href="./" class="logo">Denali studio</a>

@@ -1,3 +1,14 @@
+<?php
+
+/**
+ * The template for displaying the footer
+ * 
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ * 
+ * @package Denali studio
+ * @since Denali studio 1.0
+ */
+?>
 <footer>
     <div class="container">
         <div class="row"></div>
