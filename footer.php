@@ -25,19 +25,16 @@
 <?php if (is_front_page()) : ?>
     <script>
         var granimInstance = new Granim({
-            element: '#page_title_canvas',
-            direction: 'left-right',
+            element: '#contact_bg',
+            direction: 'diagonal',
+            isPausedWhenNotInView: true,
             states: {
                 "default-state": {
                     gradients: [
-                        ['#EB3349', '#F45C43'],
-                        ['#FF8008', '#FFC837'],
-                        ['#4CB8C4', '#3CD3AD'],
-                        ['#24C6DC', '#514A9D'],
-                        ['#FF512F', '#DD2476'],
-                        ['#DA22FF', '#9733EE']
-                    ],
-                    transitionSpeed: 2000
+                        ['#4A67E2', '#CFA2FF'],
+                        ['#EED4FF', '#EE70FF'],
+                        ['#4A67E2', '#D2D7FF']
+                    ]
                 }
             }
         });

@@ -26,8 +26,9 @@ get_header();
         experiences that impress and stories that inspire.</p>
 </div>
 <div class="contact" data-anchor="contact">
+    <canvas id="contact_bg"></canvas>
     <div class="container">
-        <div>
+        <div class="content">
             <h2>Are you ready?</h2>
             <div class="white_btn">Contact Us</div>
         </div>
