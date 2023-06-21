@@ -18,6 +18,22 @@ p.hero_text {
         display: flex;
         flex-wrap: nowrap;
         transform: translateX(calc((100vw - 100em) / 2));
+        animation-name: marquee;
+        animation-duration: 30s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 5s;
+        animation-iteration-count: infinite;
+
+        @keyframes marquee {
+            from {
+                transform: translateX(calc((100vw - 100em) / 2));
+            }
+
+            to {
+                transform: translateX(calc(((100vw - 100em) / 2) - 126em));
+            }
+        }
 
         .item {
             width: 30em;
