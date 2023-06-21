@@ -1,11 +1,5 @@
 @import "_variables";
 
-h1.page_title {
-    margin: 1em 0;
-    font-size: 6rem;
-    font-weight: map-get($font-weight, "regular");
-}
-
 p.hero_text {
     max-width: 40em;
     margin: 2em 0;

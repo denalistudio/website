@@ -22,6 +22,12 @@ body {
     }
 }
 
+h1.page_title {
+    margin: 1em 0;
+    font-size: 6rem;
+    font-weight: map-get($font-weight, "regular");
+}
+
 span.gradient {
     background: linear-gradient(to right,
             #e0e7ff 20%,

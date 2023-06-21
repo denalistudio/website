@@ -10,6 +10,7 @@ h1.page_title {
     gap: 2.5em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 14em;
 
     a.post {
         color: map-get($colors, "black");

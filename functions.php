@@ -34,7 +34,7 @@ function load_js()
 {
     wp_enqueue_script('jquery');
 
-    wp_register_script('main', get_template_directory_uri() . '/assets/js/main.min.js', 'jquery', false, true);
+    wp_register_script('main', get_template_directory_uri() . '/assets/js/main.js', 'jquery', false, true);
    
     wp_register_script('granimjs', get_template_directory_uri() . '/assets/js/granim.min.js', 'jquery', false, true);
 

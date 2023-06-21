@@ -5,8 +5,8 @@
  * 
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  * 
- * @package Veronika Zvonečková
- * @since Veronika Zvonečková 1.0
+ * @package Denali studio
+ * @since Denali studio 1.0
  */
 
 get_header();
