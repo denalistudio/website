@@ -14,19 +14,12 @@
 get_header();
 ?>
 <div class="container">
-    <h1 class="page_title">
-        <div class="row_1">We help companies thrive</div>
-        <div class="row_2">in our</div>
-        <div class="gradient">
-            <canvas id="page_title_canvas"></canvas>
-            <span id="page_title_mask" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/page-title-mask.svg)">ever-changing world</span>
-        </div>
-    </h1>
+    <h1 class="page_title">We help companies thrive <br>in our <span class="gradient">ever-changing world</span></h1>
     <figure class="hero">
         <picture>
-            <source srcset="./images/hero.webp" type="image/webp">
-            <source srcset="./images/hero.png" type="image/png">
-            <img src="./images/hero.png" alt="">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero.webp" type="image/webp">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero.png" type="image/png">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero.png" alt="">
         </picture>
     </figure>
     <p>We are a multidisiplinary digital agency that helps companies succeed by crafting brands that last, creating
