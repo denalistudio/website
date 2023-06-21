@@ -4,30 +4,6 @@ h1.page_title {
     margin: 1em 0;
     font-size: 6rem;
     font-weight: map-get($font-weight, "regular");
-
-    span.gradient {
-        background: linear-gradient(to right,
-                #e0e7ff 20%,
-                #edbfff 30%,
-                #a18af5 70%,
-                #5862e7 80%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-fill-color: transparent;
-        background-size: 500% auto;
-        animation: textShine 5s ease-in-out infinite alternate;
-
-        @keyframes textShine {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            100% {
-                background-position: 100% 50%;
-            }
-        }
-    }
 }
 
 p.hero_text {

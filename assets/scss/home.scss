@@ -1,1 +1,38 @@
 @import "_variables";
+
+h1.page_title {
+    font-size: 6rem;
+    font-weight: map-get($font-weight, "regular");
+    margin: 1em 0;
+}
+
+.posts {
+    gap: 2.5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    a.post {
+        color: map-get($colors, "black");
+        text-decoration: none;
+
+        figure.thumbnail {
+            width: 100%;
+            aspect-ratio: 16/9;
+            margin-bottom: 1em;
+            background-color: map-get($colors, "lightgray");
+        }
+
+        h4 {
+            margin-bottom: .5em;
+            color: map-get($colors, "darkgray");
+            font-size: 1.25rem;
+            font-weight: map-get($font-weight, "regular");
+        }
+    
+        h2 {
+            line-height: 1.5;
+            font-size: 2.5rem;
+            font-weight: map-get($font-weight, "regular");
+        }
+    }
+}

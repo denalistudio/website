@@ -13,17 +13,16 @@ get_header();
 if (have_posts()) : while (have_posts()) : the_post();
         // Get the post categories
         $categories = get_the_category();
-        // Get the first category
-        $category = $categories[0];
-        // Get the category name
-        $category_name = $category->name;
 ?>
         <figure class="thumbnail">
         </figure>
         <div class="container">
             <?php
+            // If the post has categories assigned to it
             if (!empty($categories)) :
+                // Get the first category
                 $category = $categories[0];
+                // Get the category name
                 $category_name = $category->name;
             ?>
                 <h3><?php echo $category_name; ?></h3>
