@@ -15,6 +15,15 @@ body {
     font-family: $font;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: map-get($font-weight, "regular");
+}
+
 .container {
     @media only screen and (min-width: 120em) {
         width: 100em;
@@ -25,7 +34,6 @@ body {
 h1.page_title {
     margin: 1em 0;
     font-size: 6rem;
-    font-weight: map-get($font-weight, "regular");
 }
 
 span.gradient {
