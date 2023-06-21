@@ -1,8 +1,61 @@
 @import "_variables";
 
 footer {
-    padding: 5em 0;
+    padding: 6em 0;
     background-color: map-get($colors, "lightgray");
+
+    .row-1 {
+        column-gap: 2em;
+        display: grid;
+        grid-template: 1fr / 7fr 4fr 4fr 8fr;
+        margin-bottom: 6em;
+
+        h3 {
+            margin-bottom: .6em;
+            font-size: 1.25rem;
+            font-weight: map-get($font-weight, "semibold");
+        }
+
+        .about_denali {
+            h2 {
+                margin-bottom: .25em;
+                font-size: 1.75rem;
+                font-weight: map-get($font-weight, "semibold");
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+        .sitemap ul,
+        .social ul.social,
+        .popular_on_blog ul.popular_on_blog {
+            list-style-type: none;
+
+            li {
+                margin: .6em 0;
+                font-size: 1.25rem;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    color: map-get($colors, "black");
+                    text-decoration: none;
+                }
+
+                span {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 
     .row-2 {
         display: grid;

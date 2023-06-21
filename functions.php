@@ -54,7 +54,7 @@ add_theme_support('title-tag');
 // Menus
 register_nav_menus(
     array(
-        'top-menu-mobile' => 'Hlavička - mobile',
-        'top-menu-desktop' => 'Hlavička - desktop',
+        'social' => 'Sociální sítě',
+        'popular_on_blog' => 'Populární na blogu'
     )
 );
