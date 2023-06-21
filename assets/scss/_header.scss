@@ -4,7 +4,7 @@ header#header-desktop {
     display: grid;
     grid-template: 1fr / auto 1fr auto;
     align-items: center;
-    margin: 4em 0 10em 0;
+    margin: 4em 0;
 
     a#logo {
         color: map-get($colors, "black");

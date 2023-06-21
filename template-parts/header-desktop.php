@@ -8,8 +8,8 @@
                 <a href="<?php echo home_url('blog'); ?>" class="link">Blog</a>
                 <a href="<?php echo home_url('kontakt'); ?>" class="btn btn-black">Kontaktujte nás</a>
             <?php else : ?>
-                <a href="<?php echo home_url(); ?>#sluzby" class="link"></a>
-                <a href="<?php echo home_url(); ?>#projekty" class="link"></a>
+                <a href="<?php echo home_url(); ?>#sluzby" class="link">Služby</a>
+                <a href="<?php echo home_url(); ?>#projekty" class="link">Projekty</a>
                 <a href="<?php echo home_url('blog'); ?>" class="link">Blog</a>
                 <a href="<?php echo home_url('kontakt'); ?>" class="btn btn-black">Kontaktujte nás</a>
             <?php endif; ?>
