@@ -10,15 +10,14 @@ p.hero_text {
 
 .services {
     width: 100%;
-    position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
     margin-bottom: 7em;
 
     .row-1 {
         gap: 2em;
         display: flex;
         transform: translateX(calc((100vw - 100em) / 2));
-        animation: marquee 15s linear;
+        animation: marquee 15s linear infinite;
 
         @keyframes marquee {
             0% {
