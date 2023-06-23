@@ -50,10 +50,11 @@
             </div>
         </div>
         <div class="row-2">
-            <p class="copyright">Copyright <span id="copyright_year"></span> Jakub Klapka, všechna práva vyhrazena</p>
+            <p class="copyright">Copyright &copy; <span id="copyright_year"></span> Jakub Klapka, všechna práva vyhrazena</p>
             <div class="links">
                 <a href="javascript:void(0)">Obchodní podmínky</a>
                 <a href="javascript:void(0)">Zásady ochrany osobních údajů</a>
+                <a href="javascript:void(0)">Nastavení cookies</a>
             </div>
         </div>
     </div>

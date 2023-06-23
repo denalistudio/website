@@ -1,7 +1,7 @@
 function heroImage() {
-    const element = document.getElementById("hero_image");
+    const image = document.getElementById("hero_image");
     let scrolled = window.scrollY;
-    let top = element.offsetTop;
+    let top = image.offsetTop;
     let percents;
 
     function zoomImage() {
@@ -9,13 +9,16 @@ function heroImage() {
         if ((scrolled >= top / 2) && (scrolled <= top)) {
             percents = (scrolled - top / 2) / (top / 2);
             percents = 1 - percents;
-            element.querySelector("img").style.setProperty("--zoom", percents);
-        };
+            image.querySelector("img").style.setProperty("--zoom", percents);
+        } else if (scrolled >= top) {
+            percents = 0;
+            image.querySelector("img").style.setProperty("--zoom", percents);
+        }
     };
 
     function recalculateOnResize() {
         scrolled = window.scrollY;
-        top = element.offsetTop;
+        top = image.offsetTop;
         zoomImage();
     };
 
