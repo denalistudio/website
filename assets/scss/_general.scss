@@ -25,15 +25,54 @@ h6 {
 }
 
 .container {
+    padding: 0 1em;
+
+    @media only screen and (min-width: map-get($breakpoints, "sm")) {
+        padding: 0 1.5em;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "md")) {
+        padding: 0 2em;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "lg")) {
+        padding: 0 3em;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "xl")) {
+        padding: 0 4em;
+    }
+
     @media only screen and (min-width: 120em) {
         width: 100em;
         margin: auto;
+        padding: 0;
     }
 }
 
 h1.page_title {
     margin: 1em 0;
-    font-size: 6rem;
+    font-size: 2.5rem;
+
+    @media only screen and (min-width: map-get($breakpoints, "sm")) {
+        font-size: 3rem;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "md")) {
+        font-size: 3.5rem;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "xl")) {
+        font-size: 4rem;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "xxl")) {
+        font-size: 5rem;
+    }
+
+    @media only screen and (min-width: 120em) {
+        font-size: 6rem;
+    }
 }
 
 span.gradient {

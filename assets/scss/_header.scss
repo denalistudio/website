@@ -1,16 +1,20 @@
 @import "_variables";
 
 header#header-desktop {
-    display: grid;
+    display: none;
     grid-template: 1fr / auto 1fr auto;
     align-items: center;
     margin: 4em 0;
 
     a#logo {
         color: map-get($colors, "black");
-        font-size: 2rem;
+        font-size: 1.85rem;
         font-weight: map-get($font-weight, "semibold");
         text-decoration: none;
+
+        @media only screen and (min-width: map-get($breakpoints, "xl")) {
+            font-size: 2rem;
+        }
     }
 
     nav {
@@ -31,8 +35,16 @@ header#header-desktop {
         a.link,
         a.btn,
         div.anchor {
-            font-size: 1.5rem;
+            font-size: 1.35rem;
             cursor: pointer;
+
+            @media only screen and (min-width: map-get($breakpoints, "xl")) {
+                font-size: 1.4rem;
+            }
         }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "lg")) {
+        display: grid;
     }
 }
