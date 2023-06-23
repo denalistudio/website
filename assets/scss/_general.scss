@@ -24,6 +24,10 @@ h6 {
     font-weight: map-get($font-weight, "regular");
 }
 
+figure {
+    margin: 0;
+}
+
 .container {
     padding: 0 1em;
 

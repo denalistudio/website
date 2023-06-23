@@ -1,5 +1,41 @@
 @import "_variables";
 
+figure#hero_image {
+    width: 100%;
+    aspect-ratio: 21/9;
+    overflow: hidden;
+
+    img {
+        --zoom: 1;
+        width: calc(100% - (2em * var(--zoom)));
+        height: 100%;
+        display: block;
+        margin: auto;
+        object-fit: cover;
+        object-position: center;
+
+        @media only screen and (min-width: map-get($breakpoints, "sm")) {
+            width: calc(100% - (3em * var(--zoom)));
+        }
+    
+        @media only screen and (min-width: map-get($breakpoints, "md")) {
+            width: calc(100% - (4em * var(--zoom)));
+        }
+    
+        @media only screen and (min-width: map-get($breakpoints, "lg")) {
+            width: calc(100% - (6em * var(--zoom)));
+        }
+    
+        @media only screen and (min-width: map-get($breakpoints, "xl")) {
+            width: calc(100% - (8em * var(--zoom)));
+        }
+    
+        @media only screen and (min-width: 120em) {
+            width: calc(100% - ((100vw - 100em / 2) * var(--zoom)));
+        }
+    }
+}
+
 p.hero_text {
     max-width: 40em;
     margin: 2em 0;
