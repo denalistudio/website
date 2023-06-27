@@ -12,7 +12,7 @@ if (have_posts()) :
 ?>
     <div class="container">
         <main class="contact_page">
-            <h1>Dobrý den, řekněte nám něco o sobě</h1>
+            <h1>Dobrý den, řekněte nám něco o sobě.</h1>
             <div class="contact_form">
                 <p>Jmenuji se <input type="text" name="first_name" id="first_name" placeholder="jméno"><input type="text" name="last_name" id="last_name" placeholder="příjmení"></p>
                 <p>Můžete mě zastihnout na e-mailové adrese <input type="email" name="email" id="email" placeholder="e-mailová adresa"></p>
