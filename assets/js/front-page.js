@@ -1,3 +1,20 @@
+// Function for links to anchors on the front page
+function navLinks() {
+    document.querySelectorAll("[data-link]").forEach((link) => {
+        const target = document.querySelector(`[data-anchor="${link.dataset.link}"]`);
+        link.onclick = () => {
+            if (target) {
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            };
+        };
+    });
+};
+navLinks();
+
+// Function for zooming the hero image when scrolled
 function heroImage() {
     const image = document.getElementById("hero_image");
     let scrolled = window.scrollY;
