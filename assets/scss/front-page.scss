@@ -54,7 +54,7 @@ p.hero_text {
         overflow-x: hidden;
 
         #marquee-1 {
-            margin-bottom: 3em;
+            margin-bottom: 2.5em;
 
             .marquee-group {
                 animation-name: marquee1;
@@ -64,7 +64,7 @@ p.hero_text {
                         transform: translateX(0);
                     }
                     to {
-                        transform: translateX(-132em);
+                        transform: translateX(-130em);
                     }
                 }
             }
@@ -79,20 +79,20 @@ p.hero_text {
                     transform: translateX(-6em);
                 }
                 to {
-                    transform: translateX(-138em);
+                    transform: translateX(-136em);
                 }
             }
         }
     
         .marquee {
             display: flex;
-            gap: 3em;
+            gap: 2.5em;
     
             .marquee-group {
                 display: flex;
                 flex-shrink: 0;
                 align-items: center;
-                gap: 3em;
+                gap: 2.5em;
                 animation-duration: 20s;
                 animation-timing-function: linear;
                 animation-iteration-count: infinite;
