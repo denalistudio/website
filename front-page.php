@@ -189,6 +189,34 @@ get_header();
     </div>
 </div>
 
+<div class="projects" data-anchor="projekty">
+    <div class="container">
+        <h2>Projects &ndash; <br>Companies that <br> work with us</h2>
+        <div class="masonry">
+            <div class="project">
+                <figure></figure>
+                <h4>Udíme doma</h4>
+                <h3></h3>
+            </div>
+            <div class="project">
+                <figure></figure>
+                <h4>Petrklíč help</h4>
+                <h3></h3>
+            </div>
+            <div class="project">
+                <figure></figure>
+                <h4>Umyj.to</h4>
+                <h3></h3>
+            </div>
+            <div class="project">
+                <figure></figure>
+                <h4>izolejsn.cz</h4>
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="contact">
     <canvas id="contact_bg"></canvas>
     <div class="container">
