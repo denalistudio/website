@@ -23,9 +23,48 @@ figure.thumbnail {
         margin: 4em 0 14em 0;
 
         p {
-            margin: .5em 0;
+            max-width: 40em;
+            margin: 1em 0;
             line-height: 2;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
+        }
+
+        h2.wp-block-heading {
+            margin: 2em 0 1em 0;
+            font-size: 2rem;
+        }
+
+        .caption {
+            font-size: 1rem;
+        }
+
+        figure.wp-block-gallery {
+            all: unset !important;
+            gap: 3em !important;
+            display: grid !important;
+            align-items: center !important;
+            margin: 2em 0 !important;
+
+            * {
+                all: unset !important;
+            }
+
+            figure {
+                width: 100% !important;
+            }
+
+            &.columns-3,
+            &.wp-block-gallery-3 {
+                grid-template: auto auto auto / 100% !important;
+
+                @media only screen and (min-width: map-get($breakpoints, "sm")) {
+                    grid-template: auto auto / 1fr 1fr !important;
+                }
+
+                @media only screen and (min-width: map-get($breakpoints, "lg")) {
+                    grid-template: 1fr / auto auto auto 1fr !important;
+                }
+            }
         }
     }
 }
