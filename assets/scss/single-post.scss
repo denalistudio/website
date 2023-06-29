@@ -22,6 +22,16 @@ figure.thumbnail {
     article {
         margin: 4em 0 14em 0;
 
+        a {
+            color: #0052a4;
+            text-decoration: none;
+            transition: color 200ms ease-in-out;
+
+            &:hover {
+                color: #003366;
+            }
+        }
+
         p {
             max-width: 40em;
             margin: 1em 0;

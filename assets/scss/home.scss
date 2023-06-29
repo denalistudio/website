@@ -6,15 +6,49 @@ h1.page_title {
     margin: 1em 0;
 }
 
+.filters {
+    gap: 5em;
+    display: flex;
+    margin: 4em 0;
+
+    #all_posts,
+    .category {
+        font-size: 1.75rem;
+        transition: color 200ms ease-in-out;
+        cursor: pointer;
+
+        &[data-active=true] {
+            color: map-get($colors, "black");
+        }
+
+        &[data-active=false] {
+            color: map-get($colors, "darkgray");
+
+            &:hover {
+                color: map-get($colors, "black");
+            }
+        }
+    }
+}
+
 .posts {
     gap: 2.5em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 14em;
 
     a.post {
+        width: calc(33.3333% - 1.6666em);
         color: map-get($colors, "black");
         text-decoration: none;
+
+        &[data-visible=true] {
+            display: block;
+        }
+
+        &[data-visible=false] {
+            display: none;
+        }
 
         figure.thumbnail {
             width: 100%;

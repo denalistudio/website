@@ -41,6 +41,7 @@ function load_js()
 
     wp_register_script('main', get_template_directory_uri() . '/assets/js/main.js', '', false, true);
     wp_register_script('front_page', get_template_directory_uri() . '/assets/js/front-page.js', '', false, true);
+    wp_register_script('posts_filtering', get_template_directory_uri() . '/assets/js/posts-filtering.js', '', false, true);
     wp_register_script('contact_form', get_template_directory_uri() . '/assets/js/contact-form.js', '', false, true);
    
     wp_register_script('granimjs', get_template_directory_uri() . '/assets/js/granim.min.js', '', false, true);
@@ -50,6 +51,10 @@ function load_js()
     if (is_front_page()) {
         wp_enqueue_script('granimjs');
         wp_enqueue_script('front_page');
+    }
+
+    if (is_home()) {
+        wp_enqueue_script('posts_filtering');
     }
 
     if (is_page('kontakt')) {

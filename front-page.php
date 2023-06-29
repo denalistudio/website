@@ -28,7 +28,7 @@ get_header();
         experiences that impress and stories that inspire.</p>
 </div>
 
-<div class="services" data-anchor="sluzby">
+<div id="sluzby" class="services" data-anchor="sluzby">
     <div class="marquee-wrapper">
         <div id="marquee-1" class="marquee">
             <div class="marquee-group">
