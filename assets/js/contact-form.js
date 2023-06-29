@@ -1,3 +1,18 @@
+function services() {
+    const services = document.querySelectorAll(".service");
+
+    services.forEach((service) => {
+        service.onclick = () => {
+            if (service.dataset.selected === "true") {
+                service.dataset.selected = "false";
+            } else if (service.dataset.selected === "false") {
+                service.dataset.selected = "true";
+            };
+        };
+    });
+};
+services();
+
 function contactFormMessage() {
     const grower = document.getElementById("message_wrapper");
     const textarea = document.getElementById("message");

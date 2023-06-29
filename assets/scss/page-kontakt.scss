@@ -30,53 +30,108 @@ main.contact_page {
             &#email {
                 width: 20em;
             }
+
+            &#company {
+                width: 25em;
+            }
         }
 
-        .message {
+        section {
             margin: 4em 0;
+        }
 
-            #message_wrapper {
-                display: grid;
-                grid-template: 1fr/ 55em 1fr;
+        .services {
+            gap: 2em;
+            display: flex;
 
-                * {
-                    grid-area: 1/1/1/1;
+            .service {
+                display: inline-block;
+                position: relative;
+                overflow: hidden;
+                padding: 20px;
+                border-radius: 50px;
+                background-color: map-get($colors, "lightgray");
+                color: map-get($colors, "black");
+                font-size: 20px;
+                transition: 400ms;
+                -webkit-mask-image: -webkit-radial-gradient(map-get($colors, "white"), map-get($colors, "black"));
+                cursor: pointer;
+
+                &:hover::after {
+                    transform: translateX(0);
                 }
 
                 &::after {
-                    content: attr(data-replicated-value) " ";
-                    white-space: pre-wrap;
-                    visibility: hidden;
-                    grid-area: 1/1/1/1;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: map-get($colors, "gray");
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50px;
+                    transform: translateX(-100%);
+                    z-index: 0;
+                    transition: 400ms;
                 }
 
-                textarea#message {
-                    resize: none;
-                    padding: 2em;
-                    border: 0;
-                    border-radius: 2em;
-                    background-color: map-get($colors, "lightgray");
-                    white-space: break-spaces;
-                    font-family: $font;
+                &[data-selected=true] {
+                    color: map-get($colors, "white");
+                    background-color: map-get($colors, "black");
 
-                    &:focus {
-                        outline: none;
+                    &::after {
+                        background: map-get($colors, "black");
                     }
                 }
 
-                &::after,
-                textarea#message {
-                    padding: 2em;
-                    font-size: 1.15rem;
+                span {
+                    position: relative;
+                    z-index: 1;
                 }
             }
         }
 
-        button {
-            border: 0;
-            font-family: $font;
-            font-size: 1.4rem;
-            cursor: pointer;
+        #message_wrapper {
+            display: grid;
+            grid-template: 1fr/ 55em 1fr;
+
+            * {
+                grid-area: 1/1/1/1;
+            }
+
+            &::after {
+                content: attr(data-replicated-value) " ";
+                white-space: pre-wrap;
+                visibility: hidden;
+                grid-area: 1/1/1/1;
+            }
+
+            textarea#message {
+                resize: none;
+                padding: 2em;
+                border: 0;
+                border-radius: 2em;
+                background-color: map-get($colors, "lightgray");
+                white-space: break-spaces;
+                font-family: $font;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            &::after,
+            textarea#message {
+                padding: 2em;
+                font-size: 1.15rem;
+            }
         }
+    }
+
+    button {
+        border: 0;
+        font-family: $font;
+        font-size: 1.4rem;
+        cursor: pointer;
     }
 }
