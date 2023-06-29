@@ -14,7 +14,7 @@
 get_header();
 ?>
 <div class="container">
-    <h1 class="page_title">We help companies thrive <br>in our <span class="gradient">ever-changing world</span></h1>
+    <h1 class="front_page_title">We help companies thrive <br>in our <span class="gradient">ever-changing world</span></h1>
 </div>
 <figure id="hero_image">
     <picture>

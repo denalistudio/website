@@ -2,11 +2,15 @@
 
 main.contact_page {
     .contact_form {
-        margin: 4em 0 6em 0;
+        margin-bottom: 6em;
 
         p {
-            margin-bottom: 1em;
+            color: map-get($colors, "darkest-gray");
             font-size: 1.5rem;
+
+            &.margin {
+                margin: 1.5em 0;
+            }
         }
 
         input {
@@ -16,7 +20,19 @@ main.contact_page {
             border-radius: 10em;
             background-color: map-get($colors, "lightgray");
             font-family: $font;
-            font-size: 1.15rem;
+            font-size: 1.4rem;
+
+            &.ml-1 {
+                margin-left: 1em;
+            }
+
+            &.ml-05 {
+                margin-left: .5em
+            }
+
+            &.mr-05 {
+                margin-right: .5em;
+            }
 
             &:focus {
                 outline: none;
@@ -37,22 +53,23 @@ main.contact_page {
         }
 
         section {
-            margin: 4em 0;
+            margin: 3em 0;
         }
 
         .services {
             gap: 2em;
             display: flex;
+            margin-top: 1.5em;
 
             .service {
                 display: inline-block;
                 position: relative;
                 overflow: hidden;
-                padding: 20px;
+                padding: 1em;
                 border-radius: 50px;
                 background-color: map-get($colors, "lightgray");
                 color: map-get($colors, "black");
-                font-size: 20px;
+                font-size: 1.4rem;
                 transition: 400ms;
                 -webkit-mask-image: -webkit-radial-gradient(map-get($colors, "white"), map-get($colors, "black"));
                 cursor: pointer;
@@ -108,6 +125,7 @@ main.contact_page {
 
             textarea#message {
                 resize: none;
+                margin-top: 2em;
                 padding: 2em;
                 border: 0;
                 border-radius: 2em;
