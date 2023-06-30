@@ -217,6 +217,22 @@ get_header();
     </div>
 </div>
 
+<div class="our_partners">
+    <div class="container">
+        <div class="text">
+            <h2>Naši partneři</h2>
+            <p>We are proud to cooperate with these companies, which enables us to deliver the greatest experience to out customers.</p>
+        </div>
+        <div class="partners">
+            <div class="partner" style="background-color: #fd3918;"></div>
+            <div class="partner" style="background-color: #f4cd00;"></div>
+            <div class="partner" style="background-color: #0f175c;"></div>
+            <div class="partner" style="background-color: #ecf9e1"></div>
+            <div class="partner" style="background-color: #fafafa"></div>
+        </div>
+    </div>
+</div>
+
 <div class="contact">
     <canvas id="contact_bg"></canvas>
     <div class="container">

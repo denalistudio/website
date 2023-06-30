@@ -67,14 +67,15 @@ p.hero_text {
     margin: 2em 0;
     line-height: 1.5;
     font-size: 1.5rem;
-    font-weight: map-get($font-weight, "md");
+    font-weight: map-get($font-weight, "regular");
+    color: #afafaf;
 
     @media only screen and (min-width: map-get($breakpoints, "lg")) {
         margin: 2.5em 0;
     }
 
     @media only screen and (min-width: map-get($breakpoints, "2xl")) {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
     }
 
     @media only screen and (min-width: map-get($breakpoints, "3xl")) {
