@@ -3,6 +3,8 @@
 // Load stylesheets
 function load_css()
 {
+    wp_register_style('cookieconsent', 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.9.1/dist/cookieconsent.css', array(), false, 'all');
+
     wp_register_style('main', get_template_directory_uri() . '/assets/css/main.min.css', array(), false, 'all');
     wp_register_style('front_page', get_template_directory_uri() . '/assets/css/front-page.min.css', array(), false, 'all');
     wp_register_style('home', get_template_directory_uri() . '/assets/css/home.min.css', array(), false, 'all');
@@ -10,6 +12,7 @@ function load_css()
     wp_register_style('stylesheet_404', get_template_directory_uri() . '/assets/css/404.min.css', array(), false, 'all');
     wp_register_style('contact', get_template_directory_uri() . '/assets/css/page-kontakt.min.css', array(), false, 'all');
 
+    wp_enqueue_style('cookieconsent');
     wp_enqueue_style('main');
 
     if (is_front_page()) {
@@ -39,13 +42,17 @@ function load_js()
 {
     wp_enqueue_script('jquery');
 
+    wp_register_script('cookieconsent', 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.9.1/dist/cookieconsent.js', '', false, true);
+    wp_register_script('cookieconsent_init', get_template_directory_uri() . '/assets/js/cookieconsent-init.js', 'cookieconsent', false, true);
+    wp_register_script('granimjs', get_template_directory_uri() . '/assets/js/granim.min.js', '', false, true);
+
     wp_register_script('main', get_template_directory_uri() . '/assets/js/main.js', '', false, true);
     wp_register_script('front_page', get_template_directory_uri() . '/assets/js/front-page.js', '', false, true);
     wp_register_script('posts_filtering', get_template_directory_uri() . '/assets/js/posts-filtering.js', '', false, true);
     wp_register_script('contact_form', get_template_directory_uri() . '/assets/js/contact-form.js', '', false, true);
    
-    wp_register_script('granimjs', get_template_directory_uri() . '/assets/js/granim.min.js', '', false, true);
-
+    wp_enqueue_script('cookieconsent');
+    wp_enqueue_script('cookieconsent_init');
     wp_enqueue_script('main');
 
     if (is_front_page()) {

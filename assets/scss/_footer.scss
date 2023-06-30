@@ -128,6 +128,18 @@ footer {
                 font-weight: map-get($font-weight, "md");
                 text-decoration: none;
             }
+
+            button {
+                border: 0;
+                border-radius: 0;
+                background: transparent;
+                color: map-get($colors, "darkgray");
+                font-family: $font;
+                font-size: 1.25rem;
+                font-weight: map-get($font-weight, "md");
+                text-decoration: none;
+                cursor: pointer;
+            }
         }
 
         @media only screen and (min-width: map-get($breakpoints, "3xl")) {

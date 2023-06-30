@@ -52,13 +52,26 @@
         <div class="row-2">
             <p class="copyright">Copyright &copy; <span id="copyright_year"></span> Jakub Klapka, všechna práva vyhrazena</p>
             <div class="links">
-                <a href="javascript:void(0)">Nastavení cookies</a>
+                <button type="button" data-cc="c-settings">Nastavení cookies</button>
             </div>
         </div>
     </div>
 </footer>
 
 <?php wp_footer(); ?>
+
+<!-- Google tag (gtag.js) -->
+<script type="text/plain" data-cookiecategory="analytics" src="https://www.googletagmanager.com/gtag/js?id=G-LR5PJC47WC"></script>
+<script type="text/plain" data-cookiecategory="analytics">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-LR5PJC47WC');
+</script>
 
 <?php if (is_front_page()) : ?>
     <script>
