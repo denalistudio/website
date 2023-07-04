@@ -29,7 +29,10 @@ function Make() {
     const message = document.getElementById("message").value;
 
     if (firstName !== "" & lastName !== "" & email !== "" & message !== "") {
-        const webhook = `https://hook.eu1.make.com/5qy32v9vdu3l3l493jk3xh62nibx3gx8?firstName=${firstName}&lastName=${lastName}&email=${email}&message=${message}`;
-        fetch(webhook);
+        const webhookClickUp = `https://hook.eu1.make.com/5qy32v9vdu3l3l493jk3xh62nibx3gx8?firstName=${firstName}&lastName=${lastName}&email=${email}&message=${message}`;
+        const webhookEcomail = `https://hook.eu1.make.com/ksivdbgtu20m6m5xt1lnkfoehjd459cu?firstName=${firstName}&lastName=${lastName}&email=${email}&message=${message}`;
+        fetch(webhookClickUp);
+        fetch(webhookEcomail);
+        console.log("Data fetched successfully");
     };
 };
