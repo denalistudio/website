@@ -15,6 +15,9 @@ if (have_posts()) :
             <h1 class="page_title">Dobrý den, <br>řekněte nám něco o sobě</h1>
             <div class="contact_form">
                 <section>
+                    <p>Všechna pole v tomto formuláři jsou povinná.</p>
+                </section>
+                <section>
                     <p>Mám zájem o:</p>
                     <div class="services">
                         <div class="service" data-selected="false"><span>Webové stránky</span></div>
@@ -36,9 +39,12 @@ if (have_posts()) :
                         <textarea name="message" id="message" cols="50" rows="5"></textarea>
                     </div>
                 </section>
-                <section>
-                    <input type="checkbox" name="consent" id="consent">
-                    <label for="checkbox">Souhlasím se zasíláním organizačních a informačních e-mailů ohledně Vaší poptávky.</label>
+                <section class="consent_checkbox">
+                    <div class="checkbox">
+                        <input type="checkbox" name="consent" id="consent">
+                        <div class="checkbox_validation"></div>
+                    </div>
+                    <label for="consent">Souhlasím se zasíláním organizačních a informačních e-mailů ohledně Vaší poptávky.</label>
                 </section>
                 <button id="contact_form__btn" class="btn-black" onclick="sendForm();">Odeslat</button>
             </div>

@@ -64,6 +64,39 @@ main.contact_page {
 
         section {
             margin: 3em 0;
+
+            &.consent_checkbox {
+                gap: 0.75em;
+                display: flex;
+                align-items: center;
+
+                .checkbox {
+                    position: relative;
+
+                    .checkbox_validation {
+                        width: 1.5em;
+                        height: 1.5em;
+                        display: none;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 1;
+                        grid-area: 1/1/1/1;
+                        border: 2px solid red;
+                        border-radius: 4px;
+                    }
+
+                    input#consent.error ~ .checkbox_validation {
+                        display: block;
+                    }
+                }
+
+                label {
+                    font-size: 1.25rem;
+                    cursor: pointer;
+                }
+            }
         }
 
         .services {

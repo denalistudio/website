@@ -29,6 +29,7 @@ function sendForm() {
     const company = document.getElementById("company");
     const email = document.getElementById("email");
     const message = document.getElementById("message");
+    const consent = document.getElementById("consent");
 
     let formValid = false;
 
@@ -41,7 +42,11 @@ function sendForm() {
         };
     });
 
-    if (selectedServices.length > 0 && firstName.value !== "" && lastName.value !== "" && company.value !== "" && email.value !== "" && message.value !== "") {
+    if (consent.checked === false) {
+        consent.classList.add("error");
+    }
+
+    if (selectedServices.length > 0 && firstName.value !== "" && lastName.value !== "" && company.value !== "" && email.value !== "" && message.value !== "" && consent.checked === true) {
         formValid = true;
     };
 
