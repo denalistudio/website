@@ -142,9 +142,13 @@ footer {
             }
         }
 
-        @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+        @media only screen and (min-width: map-get($breakpoints, "lg")) {
             grid-template: "copyright . links" 1fr / auto 1fr auto;
         }
+
+        /*@media only screen and (min-width: map-get($breakpoints, "3xl")) {
+            grid-template: "copyright . links" 1fr / auto 1fr auto;
+        }*/
     }
 
     @media only screen and (min-width: map-get($breakpoints, "3xl")) {
