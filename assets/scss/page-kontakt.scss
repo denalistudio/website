@@ -13,14 +13,24 @@ main.contact_page {
             }
         }
 
-        input {
+        input[type=text],
+        input[type=email] {
             margin: 0 .5em;
             padding: .75em 1.5em;
-            border: 0;
+            border: 2px solid map-get($colors, "lightgray");
             border-radius: 10em;
             background-color: map-get($colors, "lightgray");
             font-family: $font;
             font-size: 1.4rem;
+            transition: border 100ms ease-in-out;
+
+            &.error {
+                border: 2px solid red
+            }
+
+            &.success {
+                border: 2px solid green;
+            }
 
             &.ml-1 {
                 margin-left: 1em;
@@ -127,14 +137,23 @@ main.contact_page {
                 resize: none;
                 margin-top: 2em;
                 padding: 2em;
-                border: 0;
+                border: 2px solid map-get($colors, "lightgray");
                 border-radius: 2em;
                 background-color: map-get($colors, "lightgray");
                 white-space: break-spaces;
                 font-family: $font;
+                transition: border 100ms ease-in-out;
 
                 &:focus {
                     outline: none;
+                }
+
+                &.error {
+                    border: 2px solid red;
+                }
+
+                &.success {
+                    border: 2px solid green;
                 }
             }
 
