@@ -9,5 +9,10 @@
 
 get_header();
 ?>
-<p>Stránka s potvrzením o odeslání formuláře.</p>
+<main class="form-sent">
+    <div class="container">
+        <h1>Vaše poptávka byla <span class="gradient">odeslána!</span></h1>
+        <p>Brzy se s Vámi spojíme.</p>
+    </div>
+</main>
 <?php get_footer(); ?>
