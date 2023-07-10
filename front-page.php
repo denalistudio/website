@@ -194,41 +194,47 @@ get_header();
         <h2>Projekty &ndash; <br>Firmy, které <br> s námi pracují</h2>
         <div class="masonry">
             <div class="project">
-                <figure></figure>
-                <h4>Udíme doma</h4>
+                <a href="https://www.udimedoma.cz" target="_blank" rel="noopener">
+                    <picture>
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/projects/udimedoma.webp" type="image/webp">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/projects/udimedoma.png" type="image/png">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/projects/udimedoma.png" alt="">
+                    </picture>
+                </a>
+                <a href="https://www.udimedoma.cz" target="_blank" rel="noopener"><h4>Udíme doma</h4></a>
                 <h3>Z koníčku významným hráčem na českém trhu</h3>
             </div>
             <div class="project">
-                <figure>
+                <a href="https://www.petrklichelp.cz/cs/" target="_blank" rel="noopener">
                     <picture>
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/projects/petrklic_help.webp" type="image/webp">
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/projects/petrklic_help.png" type="image/png">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/projects/petrklic_help.png" alt="">
                     </picture>
-                </figure>
-                <h4>Petrklíč help</h4>
+                </a>
+                <a href="https://www.petrklichelp.cz/cs/" target="_blank" rel="noopener"><h4>Petrklíč help</h4></a>
                 <h3>Pomáhají rozvíjet lidský potenciál v regionu</h3>
             </div>
             <div class="project">
-                <figure>
+                <a href="https://umyj.to" target="_blank" rel="noopener">
                     <picture>
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/projects/umyjto.webp" type="image/webp">
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/projects/umyjto.png" type="image/png">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/projects/umyjto.png" alt="">
                     </picture>
-                </figure>
-                <h4>Umyj.to</h4>
+                </a>
+                <a href="https://umyj.to" target="_blank" rel="noopener"><h4>Umyj.to</h4></a>
                 <h3>Pro perfektně vyčištěné auto zajeďte sem</h3>
             </div>
             <div class="project">
-                <figure>
+                <a href="https://izolejsn.cz/" target="_blank" rel="noopener">
                     <picture>
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/projects/izolejsn.webp" type="image/webp">
                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/projects/izolejsn.png" type="image/png">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/projects/izolejsn.png" alt="">
                     </picture>
-                </figure>
-                <h4>izolejsn.cz</h4>
+                </a>
+                <a href="https://izolejsn.cz/" target="_blank" rel="noopener"><h4>izolejsn.cz</h4></a>
                 <h3></h3>
             </div>
         </div>
