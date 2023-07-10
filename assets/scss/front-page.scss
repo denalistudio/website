@@ -179,6 +179,21 @@ p.hero_text {
 }
 
 .projects {
+
+    h2 {
+        margin-bottom: 1em;
+        font-size: 2.5rem;
+        font-weight: map-get($font-weight, "md");
+
+        @media only screen and (min-width: map-get($breakpoints, "2xl")) {
+            font-size: 2.75rem;
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+            font-size: 3rem;
+        }
+    }
+
     .masonry {
         columns: 1;
         gap: 3em;
@@ -191,10 +206,24 @@ p.hero_text {
                 width: 100%;
                 aspect-ratio: 16/9;
                 background-color: map-get($colors, "lightgray");
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            h4 {
+                margin: .75em 0 .5em 0;
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 2rem;
             }
 
             &:nth-child(3) {
-                padding-top: 3em;
+                padding-top: 5em;
             }
         }
 

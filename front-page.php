@@ -191,25 +191,43 @@ get_header();
 
 <div class="projects" data-anchor="projekty">
     <div class="container">
-        <h2>Projects &ndash; <br>Companies that <br> work with us</h2>
+        <h2>Projekty &ndash; <br>Firmy, které <br> s námi pracují</h2>
         <div class="masonry">
             <div class="project">
                 <figure></figure>
                 <h4>Udíme doma</h4>
-                <h3></h3>
+                <h3>Z koníčku významným hráčem na českém trhu</h3>
             </div>
             <div class="project">
-                <figure></figure>
+                <figure>
+                    <picture>
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/projects/petrklic_help.webp" type="image/webp">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/projects/petrklic_help.png" type="image/png">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/projects/petrklic_help.png" alt="">
+                    </picture>
+                </figure>
                 <h4>Petrklíč help</h4>
-                <h3></h3>
+                <h3>Pomáhají rozvíjet lidský potenciál v regionu</h3>
             </div>
             <div class="project">
-                <figure></figure>
+                <figure>
+                    <picture>
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/projects/umyjto.webp" type="image/webp">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/projects/umyjto.png" type="image/png">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/projects/umyjto.png" alt="">
+                    </picture>
+                </figure>
                 <h4>Umyj.to</h4>
-                <h3></h3>
+                <h3>Pro perfektně vyčištěné auto zajeďte sem</h3>
             </div>
             <div class="project">
-                <figure></figure>
+                <figure>
+                    <picture>
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/projects/izolejsn.webp" type="image/webp">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/projects/izolejsn.png" type="image/png">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/projects/izolejsn.png" alt="">
+                    </picture>
+                </figure>
                 <h4>izolejsn.cz</h4>
                 <h3></h3>
             </div>
