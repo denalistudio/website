@@ -5,7 +5,7 @@ main.contact_page {
         margin-bottom: 6em;
 
         p {
-            color: map-get($colors, "darkest-gray");
+            color: map-get($colors, "darker-gray");
             font-size: 1.5rem;
 
             &.margin {

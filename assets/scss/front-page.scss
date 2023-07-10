@@ -68,7 +68,7 @@ p.hero_text {
     line-height: 1.5;
     font-size: 1.5rem;
     font-weight: map-get($font-weight, "regular");
-    color: #afafaf;
+    color: map-get($colors, "text-gray");
 
     @media only screen and (min-width: map-get($breakpoints, "lg")) {
         margin: 2.5em 0;
@@ -200,6 +200,48 @@ p.hero_text {
 
         @media only screen and (min-width: map-get($breakpoints, "lg")) {
             columns: 2;
+        }
+    }
+}
+
+.our_partners {
+    margin: 8em 0;
+
+    .container {
+        gap: 4em;
+        display: grid;
+        grid-template: 1fr / 2fr 3fr;
+        align-items: center;
+
+        .text {
+
+            h2 {
+                margin-bottom: .5em;
+                font-size: 3rem;
+                font-weight: map-get($font-weight, "md");
+            }
+
+            p {
+                max-width: 25em;
+                line-height: 1.5;
+                color: map-get($colors, "text-gray");
+                font-size: 1.5rem;
+            }
+        }
+
+        .partners {
+            gap: 2em;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 1fr;
+
+            .partner {
+                width: 100%;
+                aspect-ratio: 1;
+                display: grid;
+                place-items: center;
+                padding: 20%;
+            }
         }
     }
 }
