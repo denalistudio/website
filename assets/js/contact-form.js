@@ -23,6 +23,7 @@ function contactFormMessage() {
 contactFormMessage();
 
 function sendForm() {
+    // Elements
     const selectedServices = document.querySelectorAll('.service[data-selected="true"]');
     const firstName = document.getElementById("first_name");
     const lastName = document.getElementById("last_name");
@@ -31,8 +32,17 @@ function sendForm() {
     const message = document.getElementById("message");
     const consent = document.getElementById("consent");
 
+    // Validation variable
     let formValid = false;
 
+    // Validate if services are selected
+    if (selectedServices.length === 0) {
+        document.getElementById("services_error").className = "visible";
+    } else {
+        document.getElementById("services_error").className = "hidden";
+    }
+
+    // Validate if inputs and textarea are not empty
     document.querySelectorAll("#first_name, #last_name, #company, #email, #message").forEach((input) => {
         const value = input.value;
         if (value === "") {
@@ -42,14 +52,17 @@ function sendForm() {
         };
     });
 
+    // Validate if consent is checked
     if (consent.checked === false) {
         consent.classList.add("error");
     }
 
+    // Validate the form
     if (selectedServices.length > 0 && firstName.value !== "" && lastName.value !== "" && company.value !== "" && email.value !== "" && message.value !== "" && consent.checked === true) {
         formValid = true;
     };
 
+    // If the form is valid proceed with sending the form
     if (formValid) {
         console.log("Form is valid");
 

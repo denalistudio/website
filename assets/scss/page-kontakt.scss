@@ -15,7 +15,7 @@ main.contact_page {
 
         input[type=text],
         input[type=email] {
-            margin: 0 .5em;
+            margin: .5em;
             padding: .75em 1.5em;
             border: 2px solid map-get($colors, "lightgray");
             border-radius: 10em;
@@ -25,11 +25,11 @@ main.contact_page {
             transition: border 100ms ease-in-out;
 
             &.error {
-                border: 2px solid red
+                border: 2px solid map-get($colors, "red");
             }
 
             &.success {
-                border: 2px solid green;
+                border: 2px solid map-get($colors, "green");
             }
 
             &.ml-1 {
@@ -65,6 +65,22 @@ main.contact_page {
         section {
             margin: 3em 0;
 
+            p#services_error {
+                display: none;
+                margin-top: 1.25em;
+                color: map-get($colors, "red");
+                font-size: 1.15rem;
+                transition: opacity 200ms ease-in-out;
+
+                &.hidden {
+                    display: none;
+                }
+
+                &.visible {
+                    display: block;
+                }
+            }
+
             &.consent_checkbox {
                 gap: 0.75em;
                 display: flex;
@@ -83,7 +99,7 @@ main.contact_page {
                         transform: translate(-50%, -50%);
                         z-index: 1;
                         grid-area: 1/1/1/1;
-                        border: 2px solid red;
+                        border: 2px solid map-get($colors, "red");
                         border-radius: 4px;
                     }
 
@@ -102,6 +118,7 @@ main.contact_page {
         .services {
             gap: 2em;
             display: flex;
+            flex-wrap: wrap;
             margin-top: 1.5em;
 
             .service {
@@ -182,11 +199,11 @@ main.contact_page {
                 }
 
                 &.error {
-                    border: 2px solid red;
+                    border: 2px solid map-get($colors, "red");
                 }
 
                 &.success {
-                    border: 2px solid green;
+                    border: 2px solid map-get($colors, "green");
                 }
             }
 

@@ -17,7 +17,7 @@ if (have_posts()) :
                 <section>
                     <p>Všechna pole v tomto formuláři jsou povinná.</p>
                 </section>
-                <section>
+                <section class="section-services">
                     <p>Mám zájem o:</p>
                     <div class="services">
                         <div class="service" data-selected="false"><span>Webové stránky</span></div>
@@ -27,6 +27,7 @@ if (have_posts()) :
                         <div class="service" data-selected="false"><span>Grafiku</span></div>
                         <div class="service" data-selected="false"><span>Sociální sítě</span></div>
                     </div>
+                    <p id="services_error" class="hidden">Musíte vybrat alespoň jednu možnost.</p>
                 </section>
                 <section>
                     <p class="margin">Jmenuji se <input type="text" name="first_name" id="first_name" placeholder="jméno" class="ml-1 mr-05"><input type="text" name="last_name" id="last_name" placeholder="příjmení" class="ml-05 mr-05"></p>
