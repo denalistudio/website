@@ -20,12 +20,12 @@ if (have_posts()) :
                 <section class="section-services">
                     <p>Mám zájem o:</p>
                     <div class="services">
-                        <div class="service" data-selected="false"><span>Webové stránky</span></div>
-                        <div class="service" data-selected="false"><span>E-shop</span></div>
-                        <div class="service" data-selected="false"><span>Branding</span></div>
-                        <div class="service" data-selected="false"><span>Marketing</span></div>
-                        <div class="service" data-selected="false"><span>Grafiku</span></div>
-                        <div class="service" data-selected="false"><span>Sociální sítě</span></div>
+                        <div class="service" data-selected="false" data-slug="webove-stranky"><span>Webové stránky</span></div>
+                        <div class="service" data-selected="false" data-slug="eshop"><span>E-shop</span></div>
+                        <div class="service" data-selected="false" data-slug="branding"><span>Branding</span></div>
+                        <div class="service" data-selected="false" data-slug="marketing"><span>Marketing</span></div>
+                        <div class="service" data-selected="false" data-slug="grafika"><span>Grafiku</span></div>
+                        <div class="service" data-selected="false" data-slug="socialni-site"><span>Sociální sítě</span></div>
                     </div>
                     <p id="services_error" class="hidden">Musíte vybrat alespoň jednu možnost.</p>
                 </section>

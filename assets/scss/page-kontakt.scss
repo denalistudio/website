@@ -103,7 +103,7 @@ main.contact_page {
                         border-radius: 4px;
                     }
 
-                    input#consent.error ~ .checkbox_validation {
+                    input#consent.error~.checkbox_validation {
                         display: block;
                     }
                 }

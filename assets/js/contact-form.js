@@ -62,10 +62,18 @@ function sendForm() {
         formValid = true;
     };
 
+    let tags = [];
+
+    selectedServices.forEach((service) => {
+        tags.push(service.dataset.slug);
+    });
+
+    
+
+    console.log(tags);
+
     // If the form is valid proceed with sending the form
     if (formValid) {
-        console.log("Form is valid");
-
         document.querySelectorAll("#first_name, #last_name, #company, #email, #message").forEach((input) => {
             input.classList.remove("error");
             input.classList.add("success");
@@ -76,15 +84,20 @@ function sendForm() {
                 company.value = "";
                 email.value = "";
                 message.value = "";
+                consent.checked = false;
                 input.classList.remove("success");
             }, 100);
         });
 
-        window.location.href = "http://localhost/denali/odeslany-formular";
-    };
-    
-    if (firstName !== "" & lastName !== "" & email !== "" & message !== "") {
-        const webhook = `https://hook.eu1.make.com/5qy32v9vdu3l3l493jk3xh62nibx3gx8?firstName=${firstName}&lastName=${lastName}&email=${email}&message=${message}`;
-        fetch(webhook);
+        document.getElementById("contact_form__btn").innerHTML = "Odesílání";
+
+        //const webhook = `https://hook.eu1.make.com/5qy32v9vdu3l3l493jk3xh62nibx3gx8?firstName=${firstName}&lastName=${lastName}&company=${company}&email=${email}&message=${message}&tags=${selectedServices}`;
+
+        /*try {
+            fetch(webhook);
+            window.location.href = "http://localhost/denali/odeslany-formular/";
+        } catch (error) {
+            console.log(error);
+        };*/
     };
 };

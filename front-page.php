@@ -197,7 +197,9 @@ get_header();
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/projects/udimedoma.png" alt="">
                     </picture>
                 </a>
-                <a href="https://www.udimedoma.cz" target="_blank" rel="noopener"><h4>Udíme doma</h4></a>
+                <a href="https://www.udimedoma.cz" target="_blank" rel="noopener">
+                    <h4>Udíme doma</h4>
+                </a>
                 <h3>Z koníčku významným hráčem na českém trhu</h3>
             </div>
             <div class="project">
@@ -208,7 +210,9 @@ get_header();
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/projects/petrklic_help.png" alt="">
                     </picture>
                 </a>
-                <a href="https://www.petrklichelp.cz/cs/" target="_blank" rel="noopener"><h4>Petrklíč help</h4></a>
+                <a href="https://www.petrklichelp.cz/cs/" target="_blank" rel="noopener">
+                    <h4>Petrklíč help</h4>
+                </a>
                 <h3>Pomáhají rozvíjet lidský potenciál v regionu</h3>
             </div>
             <div class="project">
@@ -219,7 +223,9 @@ get_header();
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/projects/umyjto.png" alt="">
                     </picture>
                 </a>
-                <a href="https://umyj.to" target="_blank" rel="noopener"><h4>Umyj.to</h4></a>
+                <a href="https://umyj.to" target="_blank" rel="noopener">
+                    <h4>Umyj.to</h4>
+                </a>
                 <h3>Pro perfektně vyčištěné auto zajeďte sem</h3>
             </div>
             <div class="project">
@@ -230,10 +236,25 @@ get_header();
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/projects/izolejsn.png" alt="">
                     </picture>
                 </a>
-                <a href="https://izolejsn.cz/" target="_blank" rel="noopener"><h4>izolejsn.cz</h4></a>
+                <a href="https://izolejsn.cz/" target="_blank" rel="noopener">
+                    <h4>izolejsn.cz</h4>
+                </a>
                 <h3></h3>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="gray">
+    <div class="container">
+        <div class="text">
+            <h2>Naši partneři</h2>
+            <p>We are proud to cooperate with these companies, which enables us to deliver the greatest experience to out customers.</p>
+            <button class="btn btn-black">Přečíst</button>
+        </div>
+        <figure>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/udimedoma.png" alt="">
+        </figure>
     </div>
 </div>
 
