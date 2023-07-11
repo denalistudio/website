@@ -5,6 +5,14 @@ h1.front_page_title {
     font-size: 2.5rem;
     font-weight: map-get($font-weight, "regular");
 
+    br {
+        display: none;
+
+        @media only screen and (min-width: map-get($breakpoints, "lg")) {
+            display: inline;
+        }
+    }
+
     @media only screen and (min-width: map-get($breakpoints, "sm")) {
         font-size: 3rem;
     }

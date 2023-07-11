@@ -73,6 +73,23 @@
     gtag('config', 'G-LR5PJC47WC');
 </script>
 
+<script>
+    var granimInstance = new Granim({
+        element: '#slide',
+        direction: 'diagonal',
+        isPausedWhenNotInView: true,
+        states: {
+            "default-state": {
+                gradients: [
+                    ['#4A67E2', '#CFA2FF'],
+                    ['#EED4FF', '#EE70FF'],
+                    ['#4A67E2', '#D2D7FF']
+                ]
+            }
+        }
+    });
+</script>
+
 <?php if (is_front_page()) : ?>
     <script>
         var granimInstance = new Granim({
