@@ -15,31 +15,31 @@ function navLinks() {
 navLinks();
 
 // Function for zooming the hero image when scrolled
-function heroImage() {
-    const image = document.getElementById("hero_image");
+function heroVideo() {
+    const video = document.getElementById("hero_video");
     let scrolled = window.scrollY;
-    let top = image.offsetTop;
+    let top = video.offsetTop;
     let percents;
 
-    function zoomImage() {
+    function zoomVideo() {
         scrolled = window.scrollY;
         if ((scrolled >= top / 2) && (scrolled <= top)) {
             percents = (scrolled - top / 2) / (top / 2);
             percents = 1 - percents;
-            image.querySelector("img").style.setProperty("--zoom", percents);
+            video.querySelector("video").style.setProperty("--zoom", percents);
         } else if (scrolled >= top) {
             percents = 0;
-            image.querySelector("img").style.setProperty("--zoom", percents);
+            video.querySelector("video").style.setProperty("--zoom", percents);
         }
     };
 
     function recalculateOnResize() {
         scrolled = window.scrollY;
-        top = image.offsetTop;
-        zoomImage();
+        top = video.offsetTop;
+        zoomVideo();
     };
 
-    window.addEventListener("scroll", zoomImage);
+    window.addEventListener("scroll", zoomVideo);
     window.addEventListener("resize", recalculateOnResize);
 };
-heroImage();
+heroVideo();

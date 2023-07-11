@@ -16,13 +16,9 @@ get_header();
 <div class="container">
     <h1 class="front_page_title">We help companies thrive <br>in our <span class="gradient">ever-changing world</span></h1>
 </div>
-<figure id="hero_image">
-    <picture>
-        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero.webp" type="image/webp">
-        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/hero.png" type="image/png">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero.png" alt="">
-    </picture>
-</figure>
+<div id="hero_video">
+    <video src="<?php echo get_template_directory_uri(); ?>/assets/hero.mov" autoplay loop muted></video>
+</div>
 <div class="container">
     <p class="hero_text">We are a multidisiplinary digital agency that helps companies succeed by crafting brands that last, creating
         experiences that impress and stories that inspire.</p>
@@ -191,7 +187,7 @@ get_header();
 
 <div class="projects" data-anchor="projekty">
     <div class="container">
-        <h2>Projekty &ndash; <br>Firmy, které <br> s námi pracují</h2>
+        <h2>Projekty <span><br>&ndash; Firmy, které <br> s námi pracují</span></h2>
         <div class="masonry">
             <div class="project">
                 <a href="https://www.udimedoma.cz" target="_blank" rel="noopener">
