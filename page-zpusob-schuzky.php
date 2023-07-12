@@ -7,7 +7,7 @@
  * @since Denali studio 1.0
  */
 
-if (isset($_GET['meeting']) && ($_GET['meeting'] == 'in-person' || $_GET['meeting'] == 'online')) {
+if (isset($_GET['meeting']) && ($_GET['meeting'] == 'prezencni' || $_GET['meeting'] == 'online')) {
     $meeting_type = $_GET['meeting'];
 } else {
     global $wp_query;
@@ -23,7 +23,7 @@ get_header();
 <main class="meeting_type">
     <div class="container">
         <?php
-        if ($meeting_type == 'in-person') : ?>
+        if ($meeting_type == 'prezencni') : ?>
             <h1>Děkujeme, že jste nám upřesnili, že preferujete <span class="gradient">prezenční</span> schůzku.</h1>
         <?php elseif ($meeting_type == 'online') : ?>
             <h1>Děkujeme, že jste nám upřesnili, že preferujete <span class="gradient">online</span> schůzku.</h1>
