@@ -14,7 +14,7 @@
         <div class="row-1">
             <div class="about_denali">
                 <h2>Denali studio</h2>
-                <p>&ndash; Challenging <br>conformity since <br>the year 2020</p>
+                <p>&ndash; Budujeme <br>na internetu <br>již od roku 2020</p>
             </div>
             <div class="sitemap">
                 <h3>Mapa stránek</h3>
@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="row-2">
-            <p class="copyright">Copyright &copy; <span id="copyright_year"></span> Jakub Klapka, všechna práva vyhrazena</p>
+            <p class="copyright">Copyright &copy; <span id="copyright_year"></span> Denali studio, všechna práva vyhrazena</p>
             <div class="links">
                 <button type="button" data-cc="c-settings">Nastavení cookies</button>
             </div>
