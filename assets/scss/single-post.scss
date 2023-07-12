@@ -23,12 +23,12 @@ figure.thumbnail {
         margin: 4em 0 14em 0;
 
         a {
-            color: #0052a4;
+            color: map-get($colors, "blue");
             text-decoration: none;
             transition: color 200ms ease-in-out;
 
             &:hover {
-                color: #003366;
+                color: map-get($colors, "navy");
             }
         }
 

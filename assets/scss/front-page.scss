@@ -218,6 +218,12 @@ p.hero_text {
                 display: block;
                 color: inherit;
                 text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-thickness: 2px;
+                    text-underline-offset: 1px;
+                }
             }
 
             figure {
@@ -407,7 +413,12 @@ p.hero_text {
                 height: 4em;
                 display: inline-block;
                 grid-area: contact_btn;
+                transition: filter 200ms ease-in-out;
                 cursor: pointer;
+
+                &:hover {
+                    filter: drop-shadow(0 0 2px #969696);
+                }
 
                 @media only screen and (min-width: map-get($breakpoints, "lg")) {
                     height: 5em;

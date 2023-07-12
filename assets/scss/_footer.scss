@@ -73,6 +73,12 @@ footer {
                 span {
                     cursor: pointer;
                 }
+
+                a:hover,
+                span:hover {
+                    text-decoration: underline;
+                    text-decoration-thickness: 2px;
+                }
             }
         }
 
@@ -127,6 +133,11 @@ footer {
                 font-size: 1.25rem;
                 font-weight: map-get($font-weight, "md");
                 text-decoration: none;
+                transition: color 200ms ease-in-out;
+
+                &:hover {
+                    color: map-get($colors, "darker-gray");
+                }
             }
 
             button {
@@ -138,7 +149,12 @@ footer {
                 font-size: 1.25rem;
                 font-weight: map-get($font-weight, "md");
                 text-decoration: none;
+                transition: color 200ms ease-in-out;
                 cursor: pointer;
+
+                &:hover {
+                    color: map-get($colors, "darker-gray");
+                }
             }
         }
 

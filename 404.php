@@ -12,4 +12,11 @@
 get_header();
 ?>
 
+<main class="page_404">
+    <div class="container">
+        <h1>Tady bohužel nic nenajdete.</h1>
+        <h3>Podívejte se na naši <a href="<?php echo home_url(); ?>">hlavní stránku</a> a zjistěte více o tom, co děláme.</h3>
+    </div>
+</main>
+
 <?php get_footer(); ?>

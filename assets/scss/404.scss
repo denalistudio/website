@@ -1,0 +1,26 @@
+@import "_variables";
+
+main.page_404 {
+    margin: 8em 0;
+
+    h1 {
+        margin-bottom: .5em;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2rem;
+        text-align: center;
+
+        a {
+            color: map-get($colors, "blue");
+            text-decoration: none;
+            transition: color 200ms ease-in-out;
+
+            &:hover {
+                color: map-get($colors, "navy")
+            }
+        }
+    }
+}
