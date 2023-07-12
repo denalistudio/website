@@ -10,7 +10,7 @@
 get_header();
 if (have_posts()) : ?>
     <div class="container">
-        <h1 class="page_title">Přečtěte si více <br>o tom <span class="gradient">co děláme</span></h1>
+        <h1 class="page_title">Přečtěte si <br class="break_1">více <br class="break_2">o tom <br class="break_3"><span class="gradient">co děláme</span></h1>
         <div class="posts">
             <?php
             while (have_posts()) : the_post();

@@ -2,6 +2,37 @@
 
 h1.page_title {
     margin: 1em 0;
+    font-size: 3rem;
+
+    br {
+        &.break_2 {
+            display: none;
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, "sm")) {
+
+            &.break_1,
+            &.break_3 {
+                display: none;
+            }
+
+            &.break_2 {
+                display: inline;
+            }
+        }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "md")) {
+        font-size: 3.5rem;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "md")) and (orientation: portrait) {
+        margin: 1.5em 0;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "lg")) {
+        margin: 1.5em 0;
+    }
 }
 
 /*.filters {
@@ -30,12 +61,12 @@ h1.page_title {
 }*/
 
 .posts {
-    gap: 4em;
+    gap: 3em;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     //display: flex;
     //flex-wrap: wrap;
-    margin-bottom: 14em;
+    margin-bottom: 4em;
 
     a.post {
         //width: calc(33.3333% - 1.6666em);
@@ -51,28 +82,51 @@ h1.page_title {
         }
 
         h4 {
+            margin-bottom: .25em;
             color: map-get($colors, "text-gray");
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             font-weight: map-get($font-weight, "regular");
+
+            @media only screen and (min-width: map-get($breakpoints, "md")) {
+                font-size: 1.25rem;
+            }
         }
-    
+
         h2 {
             line-height: 1.5;
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: map-get($font-weight, "regular");
+
+            @media only screen and (min-width: map-get($breakpoints, "md")) {
+                font-size: 2.2rem;
+            }
+
+            @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+                font-size: 2.5rem;
+            }
         }
 
         p.info {
-            margin-top: .25em;
+            margin-top: .5em;
             color: map-get($colors, "text-gray");
         }
 
         .excerpt {
-            margin-top: .4em;
+            max-width: 50em;
+            margin-top: .5em;
 
             p {
                 color: map-get($colors, "text-gray");
             }
         }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "md")) and (orientation: portrait) {
+        gap: 3.5em;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "lg")) {
+        gap: 4em;
+        margin-bottom: 6em;
     }
 }
