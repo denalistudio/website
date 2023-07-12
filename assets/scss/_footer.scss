@@ -105,6 +105,12 @@ footer {
         }
     }
 
+    .container>p {
+        margin: 2em 0;
+        color: map-get($colors, "darkgray");
+        font-weight: map-get($font-weight, "md");
+    }
+
     .row-2 {
         column-gap: 2em;
         row-gap: 2em;

@@ -361,6 +361,8 @@ p.hero_text {
                 justify-content: center;
                 align-items: center;
                 padding: 20%;
+                color: inherit;
+                text-decoration: none;
 
                 svg {
                     width: 100%;
@@ -369,6 +371,16 @@ p.hero_text {
 
                 &:hover svg {
                     transform: scale(0.95);
+                }
+
+                &#partner-karvina {
+                    position: relative;
+
+                    span {
+                        position: absolute;
+                        top: 1em;
+                        right: 1em;
+                    }
                 }
             }
 
