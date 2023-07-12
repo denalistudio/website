@@ -13,7 +13,6 @@ function load_css()
     wp_register_style('contact', get_template_directory_uri() . '/assets/css/page-kontakt.min.css', array(), false, 'all');
     wp_register_style('thank_you', get_template_directory_uri() . '/assets/css/page-dekujeme.min.css', array(), false, 'all');
     wp_register_style('email_confirmation', get_template_directory_uri() . '/assets/css/page-overeno.min.css', array(), false, 'all');
-    wp_register_style('meeting_type', get_template_directory_uri() . '/assets/css/page-zpusob-schuzky.min.css', array(), false, 'all');
 
     wp_enqueue_style('cookieconsent');
     wp_enqueue_style('main');
@@ -44,10 +43,6 @@ function load_css()
 
     if (is_page('overeno')) {
         wp_enqueue_style('email_confirmation');
-    }
-
-    if (is_page('zpusob-schuzky')) {
-        wp_enqueue_style('meeting_type');
     }
 }
 add_action('wp_enqueue_scripts', 'load_css');
