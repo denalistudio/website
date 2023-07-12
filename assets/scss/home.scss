@@ -33,6 +33,14 @@ h1.page_title {
     @media only screen and (min-width: map-get($breakpoints, "lg")) {
         margin: 1.5em 0;
     }
+
+    @media only screen and (min-width: map-get($breakpoints, "xl")) {
+        font-size: 3.75rem;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "2xl")) {
+        font-size: 4rem;
+    }
 }
 
 /*.filters {
