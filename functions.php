@@ -12,6 +12,7 @@ function load_css()
     wp_register_style('stylesheet_404', get_template_directory_uri() . '/assets/css/404.min.css', array(), false, 'all');
     wp_register_style('contact', get_template_directory_uri() . '/assets/css/page-kontakt.min.css', array(), false, 'all');
     wp_register_style('form_sent', get_template_directory_uri() . '/assets/css/page-odeslany-formular.min.css', array(), false, 'all');
+    wp_register_style('email_confirmation', get_template_directory_uri() . '/assets/css/page-potvrzeni.min.css', array(), false, 'all');
 
     wp_enqueue_style('cookieconsent');
     wp_enqueue_style('main');
@@ -38,6 +39,10 @@ function load_css()
 
     if (is_page('odeslany-formular')) {
         wp_enqueue_style('form_sent');
+    }
+
+    if (is_page('potvrzeni')) {
+        wp_enqueue_style('email_confirmation');
     }
 }
 add_action('wp_enqueue_scripts', 'load_css');
