@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The template for displaying 'dekujeme' page
+ * The template for displaying 'zpusob-schuzky' page
  * 
  * @package Denali studio
  * @since Denali studio 1.0

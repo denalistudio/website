@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The template for displaying 'potvrzeni' page
+ * The template for displaying 'overeno' page
  * 
  * @package Denali studio
  * @since Denali studio 1.0
