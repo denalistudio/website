@@ -22,7 +22,8 @@ main.page_404 {
         }
     }
 
-    h3 {
+    p {
+        color: map-get($colors, "darker-gray");
         font-size: 1.5rem;
         text-align: center;
 
@@ -32,7 +33,7 @@ main.page_404 {
             transition: color 200ms ease-in-out;
 
             &:hover {
-                color: map-get($colors, "navy")
+                color: map-get($colors, "navy");
             }
         }
 
@@ -40,7 +41,12 @@ main.page_404 {
             font-size: 1.75rem;
         }
 
-        @media only screen and (min-width: map-get($breakpoints, "2xl")) {
+        @media only screen and (min-width: map-get($breakpoints, "lg")) {
+            max-width: 25em;
+            margin: auto;
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, "xl")) {
             font-size: 2rem;
         }
     }
