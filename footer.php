@@ -20,7 +20,6 @@
                 <h3>Mapa stránek</h3>
                 <ul>
                     <?php if (is_front_page()) : ?>
-                        <li><span data-link="sluzby">Služby</span></li>
                         <li><span data-link="projekty">Projekty</span></li>
                     <?php else : ?>
                         <li><a href="<?php echo home_url(); ?>#sluzby"></a>Služby</li>
@@ -75,7 +74,7 @@
 
 <script>
     var granimInstance = new Granim({
-        element: '#slide',
+        element: '#header_slide',
         direction: 'diagonal',
         isPausedWhenNotInView: true,
         states: {

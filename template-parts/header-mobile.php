@@ -8,8 +8,8 @@
         </div>
     </header>
 </div>
-<canvas id="slide"></canvas>
-<div id="menu">
+<canvas id="header_slide"></canvas>
+<div id="header_menu">
     <div class="container">
         <header>
             <a href="<?php echo home_url(); ?>" id="logo">Denali studio</a>
@@ -21,10 +21,8 @@
         </header>
         <ul>
             <?php if (is_front_page()) : ?>
-                <li data-link="sluzby">Služby</li>
                 <li data-link="projekty">Projekty</li>
             <?php else : ?>
-                <li><a href="<?php echo home_url(); ?>#sluzby">Služby</a></li>
                 <li><a href="<?php echo home_url(); ?>#projekty">Projekty</a></li>
             <?php endif; ?>
             <li><a href="<?php echo home_url('blog'); ?>">Blog</a></li>

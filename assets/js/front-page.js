@@ -1,21 +1,30 @@
 // Function for links to anchors on the front page
 function mobileNavLinks() {
-    document.querySelectorAll("#header-mobile [data-link]").forEach((link) => {
+    document.querySelectorAll("#menu [data-link]").forEach((link) => {
         const target = document.querySelector(`[data-anchor="${link.dataset.link}"]`);
         link.onclick = () => {
             if (target) {
-                /*target.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });*/
+                slide.classList.remove("hidden");
+                slide.classList.add("visible");
+                setTimeout(() => {
+                    slide.classList.remove("visible");
+                    menu.classList.remove("visible");
+                }, 300);
+                setTimeout(() => {
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }, 550);
+                menuOpen = false;
             };
         };
     });
 };
 mobileNavLinks();
 
-function desktopNavLinks() {
-    document.querySelectorAll("#header-desktop [data-link]").forEach((link) => {
+function anchorLinks() {
+    document.querySelectorAll("#header-desktop [data-link], footer [data-link]").forEach((link) => {
         const target = document.querySelector(`[data-anchor="${link.dataset.link}"]`);
         link.onclick = () => {
             if (target) {
@@ -27,7 +36,7 @@ function desktopNavLinks() {
         };
     });
 };
-desktopNavLinks();
+anchorLinks();
 
 // Function for zooming the hero image when scrolled
 function heroVideo() {
