@@ -8,83 +8,124 @@
 }*/
 
 main.single_post {
-    margin-top: 5em;
-}
+    margin-top: 3em;
 
-.container {
-    h3 {
-        margin-bottom: .5em;
-        color: map-get($colors, "darkgray");
-        font-size: 1.5rem;
-        font-weight: map-get($font-weight, "regular");
-    }
-
-    h1 {
-        font-size: 2.75rem;
-        font-weight: map-get($font-weight, "regular");
-    }
-
-    p.info {
-        margin-top: 1em;
-        color: map-get($colors, "text-gray");
-    }
-
-    article {
-        margin: 3em 0 8em 0;
-
-        a {
-            color: map-get($colors, "blue");
-            text-decoration: none;
-            transition: color 200ms ease-in-out;
-
-            &:hover {
-                color: map-get($colors, "navy");
+    .container {
+        h3 {
+            margin-bottom: .5em;
+            color: map-get($colors, "darkgray");
+            font-size: 1.4rem;
+            font-weight: map-get($font-weight, "regular");
+    
+            @media only screen and (min-width: map-get($breakpoints, "lg")) {
+                font-size: 1.5rem;
             }
         }
-
-        p {
-            max-width: 40em;
-            margin: 1em 0;
-            line-height: 2;
-            font-size: 1.25rem;
+    
+        h1 {
+            font-size: 2.25rem;
+            font-weight: map-get($font-weight, "regular");
+    
+            @media only screen and (min-width: map-get($breakpoints, "md")) {
+                font-size: 2.5rem;
+            }
+    
+            @media only screen and (min-width: map-get($breakpoints, "xl")) {
+                font-size: 2.75rem;
+            }
         }
-
-        h2.wp-block-heading {
-            margin: 2em 0 1em 0;
-            font-size: 2rem;
+    
+        p.info {
+            margin-top: 1em;
+            color: map-get($colors, "text-gray");
+            font-size: 1.15rem;
         }
-
-        .caption {
-            font-size: 1rem;
-        }
-
-        figure.wp-block-gallery {
-            all: unset !important;
-            gap: 3em !important;
-            display: grid !important;
-            align-items: center !important;
-            margin: 2em 0 !important;
-
-            * {
+    
+        article {
+            margin: 2em 0 4em 0;
+    
+            a {
+                color: map-get($colors, "blue");
+                text-decoration: none;
+                transition: color 200ms ease-in-out;
+    
+                &:hover {
+                    color: map-get($colors, "navy");
+                }
+            }
+    
+            p {
+                max-width: 40em;
+                margin: 1em 0;
+                line-height: 2;
+                font-size: 1.15rem;
+    
+                @media only screen and (min-width: map-get($breakpoints, "2xl")) {
+                    font-size: 1.25rem;
+                }
+            }
+    
+            h2.wp-block-heading {
+                margin: 1.5em 0 .75em 0;
+                font-size: 1.8rem;
+    
+                @media only screen and (min-width: map-get($breakpoints, "md")) {
+                    font-size: 2rem;
+                }
+    
+                @media only screen and (min-width: map-get($breakpoints, "2xl")) {
+                    margin: 2em 0 .75em 0;
+                }
+            }
+    
+            .caption {
+                font-size: 1rem;
+            }
+    
+            figure.wp-block-gallery {
                 all: unset !important;
+                gap: 3em !important;
+                display: grid !important;
+                align-items: center !important;
+                margin: 2em 0 !important;
+    
+                * {
+                    all: unset !important;
+                }
+    
+                figure {
+                    width: 100% !important;
+                }
+    
+                &.columns-3,
+                &.wp-block-gallery-3 {
+                    grid-template: auto auto auto / 100% !important;
+    
+                    @media only screen and (min-width: map-get($breakpoints, "sm")) {
+                        grid-template: auto auto / 1fr 1fr !important;
+                    }
+    
+                    @media only screen and (min-width: map-get($breakpoints, "lg")) {
+                        grid-template: 1fr / auto auto auto 1fr !important;
+                    }
+                }
             }
 
-            figure {
-                width: 100% !important;
+            @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+                margin: 3em 0 5em 0;
             }
 
-            &.columns-3,
-            &.wp-block-gallery-3 {
-                grid-template: auto auto auto / 100% !important;
-
-                @media only screen and (min-width: map-get($breakpoints, "sm")) {
-                    grid-template: auto auto / 1fr 1fr !important;
-                }
-
-                @media only screen and (min-width: map-get($breakpoints, "lg")) {
-                    grid-template: 1fr / auto auto auto 1fr !important;
-                }
+            @media only screen and (min-width: map-get($breakpoints, "4xl")) {
+                margin: 3em 0 6em 0;
             }
         }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+        margin-top: 4em;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "4xl")) {
+        margin-top: 5em;
     }
 }
