@@ -1,8 +1,11 @@
+// REM unit
+const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+
 // Mobile header
 const menuOpenBtn = document.getElementById("menu_open_btn");
 const menuCloseBtn = document.getElementById("menu_close_btn");
-const slide = document.getElementById("slide");
-const menu = document.getElementById("menu");
+const slide = document.getElementById("header_slide");
+const menu = document.getElementById("header_menu");
 let menuOpen = false;
 
 menuOpenBtn.onclick = () => {
@@ -29,6 +32,15 @@ menuCloseBtn.onclick = () => {
         menuOpen = false;
     };
 };
+
+function hideMenuOnResize() {
+    if (window.innerWidth > (62 * rem) && menuOpen) {
+        slide.classList.remove("hidden");
+        menu.classList.remove("visible");
+        menuOpen = false;
+    };
+};
+window.addEventListener("resize", hideMenuOnResize);
 
 // Write current year into the copyright claim
 document.getElementById("copyright_year").innerHTML = new Date().getFullYear();

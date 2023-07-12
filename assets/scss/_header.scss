@@ -47,6 +47,10 @@ header#header-mobile {
     &.hidden {
         transform: translateY(200%);
     }
+
+    @media only screen and (min-width: map-get($breakpoints, "lg")) {
+        display: none;
+    }
 }
 
 #header_menu {
@@ -135,6 +139,10 @@ header#header-mobile {
                 }
             }
         }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "lg")) {
+        display: none;
     }
 }
 
