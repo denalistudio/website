@@ -78,7 +78,7 @@ cc.run({
                                 is_regex: true
                             },
                             {
-                                col1: "_ga_LR5PJC47WC",
+                                col1: "_ga_P6M4FM1Y0W",
                                 col2: "google.com",
                                 col3: "2 roky",
                                 col4: "Slouží k zachování stavu relace.",
