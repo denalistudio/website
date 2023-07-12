@@ -162,12 +162,12 @@ footer {
             grid-template: "copyright . links" 1fr / auto 1fr auto;
         }
 
-        /*@media only screen and (min-width: map-get($breakpoints, "3xl")) {
+        /*@media only screen and (min-width: map-get($breakpoints, "4xl")) {
             grid-template: "copyright . links" 1fr / auto 1fr auto;
         }*/
     }
 
-    @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+    @media only screen and (min-width: map-get($breakpoints, "4xl")) {
         padding: 6em 0;
     }
 }

@@ -1,7 +1,6 @@
 @import "_variables";
 
 h1.front_page_title {
-    //margin: 1.5em 0;
     margin: 1.25em 0;
     font-size: 2.5rem;
     font-weight: map-get($font-weight, "regular");
@@ -22,11 +21,15 @@ h1.front_page_title {
         font-size: 3.5rem;
     }
 
+    @media only screen and (min-width: map-get($breakpoints, "lg")) {
+        margin: 1.5em 0;
+    }
+
     @media only screen and (min-width: map-get($breakpoints, "xl")) {
         font-size: 4rem;
     }
 
-    @media only screen and (min-width: map-get($breakpoints, "2xl")) {
+    @media only screen and (min-width: map-get($breakpoints, "3xl")) {
         font-size: 5rem;
     }
 
@@ -74,10 +77,8 @@ h1.front_page_title {
 p.hero_text {
     max-width: 40em;
     margin: 1.5em 0 2em 0;
-    //margin: 2em 0;
     line-height: 1.5;
     font-size: 1.25rem;
-    //font-size: 1.5rem;
     font-weight: map-get($font-weight, "regular");
     color: map-get($colors, "text-gray");
 
@@ -85,15 +86,20 @@ p.hero_text {
         font-size: 1.4rem;
     }
 
+    @media only screen and (min-width: map-get($breakpoints, "md")) {
+        margin: 2em 0 2.25em 0;
+        font-size: 1.5rem;
+    }
+
     @media only screen and (min-width: map-get($breakpoints, "lg")) {
         margin: 2.5em 0;
     }
 
-    @media only screen and (min-width: map-get($breakpoints, "2xl")) {
+    @media only screen and (min-width: map-get($breakpoints, "3xl")) {
         font-size: 1.6rem;
     }
 
-    @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+    @media only screen and (min-width: map-get($breakpoints, "4xl")) {
         margin: 3em 0;
     }
 }
@@ -198,25 +204,31 @@ p.hero_text {
     h2 {
         margin-bottom: 1em;
         font-size: 2.25rem;
-        //font-size: 2.5rem;
         font-weight: map-get($font-weight, "md");
 
         span {
             font-weight: map-get($font-weight, "regular");
         }
 
+        @media only screen and (min-width: map-get($breakpoints, "md")) {
+            font-size: 2.5rem;
+        }
+
         @media only screen and (min-width: map-get($breakpoints, "2xl")) {
-            font-size: 2.75rem;
+            margin-bottom: 1.5em;
         }
 
         @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+            font-size: 2.75rem;
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, "4xl")) {
             font-size: 3rem;
         }
     }
 
     .masonry {
         columns: 1;
-        gap: 4em;
 
         .project {
             break-inside: avoid;
@@ -252,33 +264,47 @@ p.hero_text {
 
             h4 {
                 margin: .75em 0 .5em 0;
-                //font-size: 1.5rem;
                 font-size: 1.4rem;
+
+                @media only screen and (min-width: map-get($breakpoints, "md")) {
+                    font-size: 1.5rem;
+                }
             }
 
             h3 {
-                //font-size: 2rem;
                 font-size: 1.75rem;
 
                 @media only screen and (min-width: map-get($breakpoints, "sm")) {
                     font-size: 1.8rem;
                 }
+
+                @media only screen and (min-width: map-get($breakpoints, "md")) {
+                    font-size: 2rem;
+                }
+            }
+
+            @media only screen and (min-width: map-get($breakpoints, "2xl")) {
+                margin-bottom: 4em;
             }
         }
 
         @media only screen and (min-width: map-get($breakpoints, "lg")) {
+            gap: 3em;
             columns: 2;
 
             .project:nth-child(3) {
                 padding-top: 6em;
             }
         }
+
+        @media only screen and (min-width: map-get($breakpoints, "2xl")) {
+            gap: 4em;
+        }
     }
 }
 
 .our_partners {
     margin: 4em 0;
-    //margin: 8em 0;
 
     .container {
         row-gap: 2em;
@@ -291,14 +317,17 @@ p.hero_text {
             h2 {
                 margin-bottom: .5em;
                 font-size: 2.25rem;
-                //font-size: 2.5rem;
                 font-weight: map-get($font-weight, "md");
 
-                @media only screen and (min-width: map-get($breakpoints, "2xl")) {
-                    font-size: 2.75rem;
+                @media only screen and (min-width: map-get($breakpoints, "md")) {
+                    font-size: 2.5rem;
                 }
 
                 @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+                    font-size: 2.75rem;
+                }
+
+                @media only screen and (min-width: map-get($breakpoints, "4xl")) {
                     font-size: 3rem;
                 }
             }
@@ -312,7 +341,7 @@ p.hero_text {
                     max-width: 30em;
                 }
 
-                @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+                @media only screen and (min-width: map-get($breakpoints, "4xl")) {
                     max-width: 25em;
                     font-size: 1.5rem;
                 }
@@ -346,8 +375,11 @@ p.hero_text {
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            @media only screen and (min-width: map-get($breakpoints, "lg")) {
+            @media only screen and (min-width: map-get($breakpoints, "md")) {
                 gap: 2em;
+            }
+
+            @media only screen and (min-width: map-get($breakpoints, "lg")) {
                 grid-template-columns: repeat(3, 1fr);
             }
 
@@ -355,11 +387,11 @@ p.hero_text {
                 gap: 1.5em;
             }
 
-            @media only screen and (min-width: map-get($breakpoints, "2xl")) {
+            @media only screen and (min-width: map-get($breakpoints, "3xl")) {
                 gap: 2em;
             }
 
-            @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+            @media only screen and (min-width: map-get($breakpoints, "4xl")) {
                 gap: 2.5em;
             }
 
@@ -368,10 +400,30 @@ p.hero_text {
             }
         }
 
+        @media only screen and (min-width: map-get($breakpoints, "md")) {
+            row-gap: 2.5em;
+        }
+
         @media only screen and (min-width: map-get($breakpoints, "xl")) {
             grid-template: 1fr / 2fr 3fr;
             column-gap: 4em;
         }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "sm")) {
+        margin: 5em 0 4em 0;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "xl")) {
+        margin: 5.5em 0;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "2xl")) {
+        margin: 6em 0;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+        margin: 8em 0 6em 0;
     }
 }
 
@@ -420,7 +472,7 @@ p.hero_text {
                     font-size: 4.5rem;
                 }
 
-                @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+                @media only screen and (min-width: map-get($breakpoints, "4xl")) {
                     font-size: 5.5rem;
                 }
 
@@ -448,7 +500,7 @@ p.hero_text {
                     height: 6em;
                 }
 
-                @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+                @media only screen and (min-width: map-get($breakpoints, "4xl")) {
                     height: 7em;
                 }
             }
@@ -475,7 +527,7 @@ p.hero_text {
             padding-bottom: 4em;
         }
 
-        @media only screen and (min-width: map-get($breakpoints, "lg")) {
+        @media only screen and (min-width: map-get($breakpoints, "md")) {
             padding-top: 6em;
             padding-bottom: 6em;
         }
@@ -486,6 +538,11 @@ p.hero_text {
         }
 
         @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+            padding-top: 9em;
+            padding-bottom: 9em;
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, "4xl")) {
             padding-top: 10em;
             padding-bottom: 10em;
         }

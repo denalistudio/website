@@ -14,7 +14,7 @@
 get_header();
 ?>
 <div class="container">
-    <h1 class="front_page_title">Pomáháme firmám budovat jejich <span class="gradient">přítomnost na internetu</span></h1>
+    <h1 class="front_page_title">Pomáháme firmám budovat <br>jejich <span class="gradient">přítomnost na internetu</span></h1>
 </div>
 <div id="hero_video">
     <video src="<?php echo get_template_directory_uri(); ?>/assets/hero.mov" autoplay loop muted></video>

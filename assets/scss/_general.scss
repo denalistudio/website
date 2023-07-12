@@ -72,7 +72,7 @@ h1.page_title {
         font-size: 4rem;
     }
 
-    @media only screen and (min-width: map-get($breakpoints, "2xl")) {
+    @media only screen and (min-width: map-get($breakpoints, "3xl")) {
         font-size: 5rem;
     }
 
