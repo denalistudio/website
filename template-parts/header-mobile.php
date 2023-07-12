@@ -20,8 +20,13 @@
             </div>
         </header>
         <ul>
-            <li>Služby</li>
-            <li>Projekty</li>
+            <?php if (is_front_page()) : ?>
+                <li data-link="sluzby">Služby</li>
+                <li data-link="projekty">Projekty</li>
+            <?php else : ?>
+                <li><a href="<?php echo home_url(); ?>#sluzby">Služby</a></li>
+                <li><a href="<?php echo home_url(); ?>#projekty">Projekty</a></li>
+            <?php endif; ?>
             <li><a href="<?php echo home_url('blog'); ?>">Blog</a></li>
             <li class="btn"><a href="<?php echo home_url('kontakt'); ?>" class="btn btn-black">Kontaktujte nás</a></li>
         </ul>

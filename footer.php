@@ -17,7 +17,7 @@
                 <p>&ndash; Challenging <br>conformity since <br>the year 2020</p>
             </div>
             <div class="sitemap">
-                <h3>Sitemapa</h3>
+                <h3>Mapa stránek</h3>
                 <ul>
                     <?php if (is_front_page()) : ?>
                         <li><span data-link="sluzby">Služby</span></li>

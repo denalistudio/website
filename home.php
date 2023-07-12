@@ -10,7 +10,7 @@
 get_header();
 if (have_posts()) : ?>
     <div class="container">
-        <h1 class="page_title">Read more about <br><span class="gradient">what we do</span></h1>
+        <h1 class="page_title">Přečtěte si více <br>o tom <span class="gradient">co děláme</span></h1>
         <div class="filters">
             <div id="all_posts" data-active="true">Všechno</div>
             <?php
