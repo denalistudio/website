@@ -129,6 +129,11 @@ header#header-mobile {
                 &.btn {
                     margin-top: 2em;
                 }
+
+                @media only screen and (min-width: map-get($breakpoints, "md")) and (orientation: portrait) {
+                    margin: 1.25em 0;
+                    font-size: 1.75rem;
+                }
             }
         }
 
@@ -146,7 +151,19 @@ header#header-mobile {
                     height: 100%;
                     display: block;
                 }
+
+                @media only screen and (min-width: map-get($breakpoints, "md")) and (orientation: portrait) {
+                    height: 2.75em;
+                }
             }
+
+            @media only screen and (min-width: map-get($breakpoints, "md")) and (orientation: portrait) {
+                gap: 1.5;
+            }
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, "md")) and (orientation: portrait) {
+            row-gap: 3em;
         }
     }
 
