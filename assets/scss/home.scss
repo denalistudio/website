@@ -4,7 +4,7 @@ h1.page_title {
     margin: 1em 0;
 }
 
-.filters {
+/*.filters {
     gap: 5em;
     display: flex;
     margin: 4em 0;
@@ -27,16 +27,18 @@ h1.page_title {
             }
         }
     }
-}
+}*/
 
 .posts {
-    gap: 2.5em;
-    display: flex;
-    flex-wrap: wrap;
+    gap: 4em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    //display: flex;
+    //flex-wrap: wrap;
     margin-bottom: 14em;
 
     a.post {
-        width: calc(33.3333% - 1.6666em);
+        //width: calc(33.3333% - 1.6666em);
         color: map-get($colors, "black");
         text-decoration: none;
 
@@ -48,16 +50,8 @@ h1.page_title {
             display: none;
         }
 
-        figure.thumbnail {
-            width: 100%;
-            aspect-ratio: 16/9;
-            margin-bottom: 1em;
-            background-color: map-get($colors, "lightgray");
-        }
-
         h4 {
-            margin-bottom: .5em;
-            color: map-get($colors, "darkgray");
+            color: map-get($colors, "text-gray");
             font-size: 1.25rem;
             font-weight: map-get($font-weight, "regular");
         }
@@ -66,6 +60,19 @@ h1.page_title {
             line-height: 1.5;
             font-size: 2.5rem;
             font-weight: map-get($font-weight, "regular");
+        }
+
+        p.info {
+            margin-top: .25em;
+            color: map-get($colors, "text-gray");
+        }
+
+        .excerpt {
+            margin-top: .4em;
+
+            p {
+                color: map-get($colors, "text-gray");
+            }
         }
     }
 }
