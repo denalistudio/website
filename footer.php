@@ -60,7 +60,7 @@
 <?php wp_footer(); ?>
 
 <!-- Google tag (gtag.js) -->
-<script type="text/plain" data-cookiecategory="analytics" src="https://www.googletagmanager.com/gtag/js?id=G-LR5PJC47WC"></script>
+<script type="text/plain" data-cookiecategory="analytics" src="https://www.googletagmanager.com/gtag/js?id=G-P6M4FM1Y0W"></script>
 <script type="text/plain" data-cookiecategory="analytics">
     window.dataLayer = window.dataLayer || [];
 
@@ -69,7 +69,7 @@
     }
     gtag('js', new Date());
 
-    gtag('config', 'G-LR5PJC47WC');
+    gtag('config', 'G-P6M4FM1Y0W');
 </script>
 
 <script>
