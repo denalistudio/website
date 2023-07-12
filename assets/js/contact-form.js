@@ -90,10 +90,12 @@ function sendForm() {
 
         const webhook = `https://hook.eu1.make.com/5qy32v9vdu3l3l493jk3xh62nibx3gx8?firstName=${firstName.value}&lastName=${lastName.value}&company=${company.value}&email=${email.value}&message=${message.value}&tags[]=${tagsParam}`;
 
-        try {
-            fetch(webhook);
-        } catch (error) {
-            console.log(error);
-        };
+        fetch(webhook)
+            .then((response) => {
+                window.location.href = "https://denali.studio/dekujeme/";
+            })
+            .catch((error) => {
+                console.log(error);
+            });
     };
 };

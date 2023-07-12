@@ -12,7 +12,7 @@ get_header();
 <main class="thank_you">
     <div class="container">
         <h1>Vaše poptávka byla <span class="gradient">odeslána!</span></h1>
-        <p>Více informací najdete v e-mailu.</p>
+        <p>Více informací najdete v e-mailu. Pro jistotu si zkontrolujte i složku se spamem.</p>
         <div class="btn"><a href="<?php echo home_url(); ?>" class="btn-black">Zpět na hlavní stránku</a></div>
         <?php
         $posts = new WP_Query(array(
