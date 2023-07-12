@@ -60,6 +60,7 @@ header#header-mobile {
     top: -100vh;
     left: 0;
     z-index: 1;
+    overflow-y: auto;
     transform: translateY(0);
     padding-bottom: 6em;
     background-color: map-get($colors, "white");

@@ -46,7 +46,7 @@ cc.run({
                 }
             },
             settings_modal: {
-                title: 'Cookie preferences',
+                title: "Nastavení cookies",
                 save_settings_btn: "Uložit nastavení",
                 accept_all_btn: "Přijmout vše",
                 reject_all_btn: "Odmítnout še",
