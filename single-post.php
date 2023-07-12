@@ -23,9 +23,13 @@ if (have_posts()) : while (have_posts()) : the_post();
                     $category = $categories[0];
                     // Get the category name
                     $category_name = $category->name;
+                    // Get the category slug
+                    $category_slug = $category->slug;
+                    if ($category_slug !== 'nezarazene') :
                 ?>
-                    <h3><?php echo $category_name; ?></h3>
-                <?php endif; ?>
+                        <h3><?php echo $category_name; ?></h3>
+                <?php endif;
+                endif; ?>
                 <h1><?php the_title(); ?></h1>
                 <p class="info"><?php echo get_the_date(); ?> &ndash; <?php echo get_the_author(); ?></p>
                 <article>
