@@ -1,48 +1,5 @@
 @import "_variables";
 
-h1.page_title {
-    margin: 1em 0;
-    font-size: 3rem;
-
-    br {
-        &.break_2 {
-            display: none;
-        }
-
-        @media only screen and (min-width: map-get($breakpoints, "sm")) {
-
-            &.break_1,
-            &.break_3 {
-                display: none;
-            }
-
-            &.break_2 {
-                display: inline;
-            }
-        }
-    }
-
-    @media only screen and (min-width: map-get($breakpoints, "md")) {
-        font-size: 3.5rem;
-    }
-
-    @media only screen and (min-width: map-get($breakpoints, "md")) and (orientation: portrait) {
-        margin: 1.5em 0;
-    }
-
-    @media only screen and (min-width: map-get($breakpoints, "lg")) {
-        margin: 1.5em 0;
-    }
-
-    @media only screen and (min-width: map-get($breakpoints, "xl")) {
-        font-size: 3.75rem;
-    }
-
-    @media only screen and (min-width: map-get($breakpoints, "2xl")) {
-        font-size: 4rem;
-    }
-}
-
 /*.filters {
     gap: 5em;
     display: flex;

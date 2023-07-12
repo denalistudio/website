@@ -12,7 +12,7 @@ if (have_posts()) :
 ?>
     <div class="container">
         <main class="contact_page">
-            <h1 class="page_title">Dobrý den, <br>řekněte nám něco o sobě</h1>
+            <h1 class="page_title"><span class="gradient">Dobrý den,</span> <br>řekněte nám něco o sobě</h1>
             <div class="contact_form">
                 <section>
                     <p>Všechna pole v tomto formuláři jsou povinná.</p>
@@ -30,9 +30,9 @@ if (have_posts()) :
                     <p id="services_error" class="hidden">Musíte vybrat alespoň jednu možnost.</p>
                 </section>
                 <section>
-                    <p class="margin">Jmenuji se <input type="text" name="first_name" id="first_name" placeholder="jméno" class="ml-1 mr-05"><input type="text" name="last_name" id="last_name" placeholder="příjmení" class="ml-05 mr-05"></p>
-                    <p class="margin">a zastupuji <input type="text" name="company" id="company" placeholder="název firmy nebo obchodní jméno" class="ml-1"></p>
-                    <p class="margin">Můžete mě zastihnout na e-mailové adrese <input type="email" name="email" id="email" placeholder="vaše e-mailová adresa" class="ml-1"></p>
+                    <p class="margin two_fields">Jmenuji se <input type="text" name="first_name" id="first_name" placeholder="jméno"><input type="text" name="last_name" id="last_name" placeholder="příjmení"></p>
+                    <p class="margin one_field">a zastupuji <input type="text" name="company" id="company" placeholder="název firmy nebo obchodní jméno"></p>
+                    <p class="margin one_field">Můžete mě zastihnout na e-mailové adrese <input type="email" name="email" id="email" placeholder="vaše e-mailová adresa"></p>
                 </section>
                 <section>
                     <p>Popište nám, co pro Vás máme vytvořit:</p>
