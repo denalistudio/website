@@ -58,10 +58,10 @@ function load_js()
    
     wp_enqueue_script('cookieconsent');
     wp_enqueue_script('cookieconsent_init');
+    wp_enqueue_script('granimjs');
     wp_enqueue_script('main');
 
     if (is_front_page()) {
-        wp_enqueue_script('granimjs');
         wp_enqueue_script('front_page');
     }
 

@@ -62,15 +62,12 @@ function sendForm() {
         formValid = true;
     };
 
+    // Create tags parameter
     let tags = [];
-
     selectedServices.forEach((service) => {
         tags.push(service.dataset.slug);
     });
-
-    
-
-    console.log(tags);
+    const tagsParam = tags.join("&tags[]=");
 
     // If the form is valid proceed with sending the form
     if (formValid) {
@@ -91,13 +88,12 @@ function sendForm() {
 
         document.getElementById("contact_form__btn").innerHTML = "Odesílání";
 
-        //const webhook = `https://hook.eu1.make.com/5qy32v9vdu3l3l493jk3xh62nibx3gx8?firstName=${firstName}&lastName=${lastName}&company=${company}&email=${email}&message=${message}&tags=${selectedServices}`;
+        const webhook = `https://hook.eu1.make.com/5qy32v9vdu3l3l493jk3xh62nibx3gx8?firstName=${firstName.value}&lastName=${lastName.value}&company=${company.value}&email=${email.value}&message=${message.value}&tags[]=${tagsParam}`;
 
-        /*try {
+        try {
             fetch(webhook);
-            window.location.href = "http://localhost/denali/odeslany-formular/";
         } catch (error) {
             console.log(error);
-        };*/
+        };
     };
 };
