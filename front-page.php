@@ -14,7 +14,7 @@
 get_header();
 ?>
 <div class="container">
-    <h1 class="front_page_title">We help companies thrive <br>in our <span class="gradient">ever-changing world</span></h1>
+    <h1 class="front_page_title">Pomáháme firmám budovat jejich <span class="gradient">přítomnost na internetu</span></h1>
 </div>
 <div id="hero_video">
     <video src="<?php echo get_template_directory_uri(); ?>/assets/hero.mov" autoplay loop muted></video>
@@ -77,7 +77,7 @@ get_header();
                 <a href="https://izolejsn.cz/" target="_blank" rel="noopener">
                     <h4>izolejsn.cz</h4>
                 </a>
-                <h3></h3>
+                <h3>Stříkaná izolace pro váš dům</h3>
             </div>
         </div>
     </div>

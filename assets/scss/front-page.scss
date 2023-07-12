@@ -240,14 +240,14 @@ p.hero_text {
             h3 {
                 font-size: 2rem;
             }
-
-            &:nth-child(3) {
-                padding-top: 5em;
-            }
         }
 
         @media only screen and (min-width: map-get($breakpoints, "lg")) {
             columns: 2;
+
+            .project:nth-child(3) {
+                padding-top: 6em;
+            }
         }
     }
 }
