@@ -49,7 +49,7 @@ cc.run({
                 title: "Nastavení cookies",
                 save_settings_btn: "Uložit nastavení",
                 accept_all_btn: "Přijmout vše",
-                reject_all_btn: "Odmítnout še",
+                reject_all_btn: "Odmítnout vše",
                 close_btn_label: "Zavřít",
                 cookie_table_headers: [
                     { col1: "Název" },

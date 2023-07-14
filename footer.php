@@ -14,7 +14,7 @@
         <div class="row-1">
             <div class="about_denali">
                 <h2>Denali studio</h2>
-                <p>&ndash; Budujeme <br>na internetu <br>již od roku 2020</p>
+                <p>&ndash; Budujeme <br>vaši přítomnost <br>na internetu</p>
             </div>
             <div class="sitemap">
                 <h3>Mapa stránek</h3>
