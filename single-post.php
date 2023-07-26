@@ -14,6 +14,7 @@ if (have_posts()) : while (have_posts()) : the_post();
         // Get the post categories
         $categories = get_the_category();
 ?>
+        <div id="progress_bar"></div>
         <main class="single_post">
             <div class="container">
                 <?php

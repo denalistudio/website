@@ -59,6 +59,7 @@ function load_js()
     wp_register_script('main', get_template_directory_uri() . '/assets/js/main.js', '', false, true);
     wp_register_script('front_page', get_template_directory_uri() . '/assets/js/front-page.js', '', false, true);
     wp_register_script('posts_filtering', get_template_directory_uri() . '/assets/js/posts-filtering.js', '', false, true);
+    wp_register_script('post_progress_bar', get_template_directory_uri() . '/assets/js/post-progress-bar.js', '', false, true);
     wp_register_script('contact_form', get_template_directory_uri() . '/assets/js/contact-form.js', '', false, true);
    
     wp_enqueue_script('cookieconsent');
@@ -72,6 +73,10 @@ function load_js()
 
     if (is_home()) {
         wp_enqueue_script('posts_filtering');
+    }
+
+    if (is_single()) {
+        wp_enqueue_script('post_progress_bar');
     }
 
     if (is_page('kontakt')) {
