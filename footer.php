@@ -52,7 +52,7 @@
             <p>&ast; Tento projekt je spolufinancován ze strany Statutárního města Karviná.</p>
         <?php endif; ?>
         <div class="row-2">
-            <p class="copyright">Copyright &copy; <span id="copyright_year"></span> Denali studio, všechna práva vyhrazena</p>
+            <p class="copyright">Copyright &copy; <span id="copyright_year"></span> Denali studio s.r.o., všechna práva vyhrazena</p>
             <div class="links">
                 <button type="button" data-cc="c-settings">Nastavení cookies</button>
             </div>
