@@ -1,0 +1,39 @@
+:root {
+    --cc-font-family: "Poppins", sans-serif;
+    --cc-font-size: 1rem;
+    --cc-bg: #fff;
+    --cc-text: #000;
+    --cc-border-radius: 1em;
+    --cc-btn-primary-bg: #000;
+    --cc-btn-primary-text: #fff;
+    --cc-btn-primary-hover-bg: #000;
+    --cc-btn-primary-hover-text: #fff;
+    --cc-btn-secondary-bg: #e5e5e5;
+    --cc-btn-secondary-text: var(--cc-text);
+    --cc-btn-secondary-hover-bg: #cecece;
+    --cc-btn-secondary-hover-text: var(--cc-btn-secondary-text);
+    --cc-btn-border-radius: 10em;
+    --cc-toggle-bg-on: var(--cc-btn-primary-bg);
+    --cc-block-text: var(--cc-text);
+    --cc-cookie-category-block-bg: #e5e5e5;
+    --cc-cookie-category-block-bg-hover: #cecece;
+}
+
+#cm {
+    max-width: 25em;
+    padding: 1.5em;
+}
+
+#c-ttl,
+.cc_div .c-bn span,
+.cc_div .b-tl,
+.cc_div .b-tl:hover,
+#s-bns .c-bn,
+#s-cnt .b-bn .b-tl {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 500 !important;
+}
+
+#s-bns {
+    height: auto;
+}

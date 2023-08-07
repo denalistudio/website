@@ -1,11 +1,9 @@
 {
-    "liveServer.settings.port": 5500,
-    "liveServer.settings.donotShowInfoMessage": true,
     "liveSassCompile.settings.formats": [
         {
-        "format": "expanded",
-        "extensionName": ".css",
-        "savePath": "./docs/"
-    }
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "./assets/css"
+        }
     ]
 }

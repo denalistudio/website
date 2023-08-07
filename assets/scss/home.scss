@@ -1,0 +1,126 @@
+@import "_variables";
+
+h1.page_title br {
+
+    &.break_2 {
+        display: none;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "sm")) {
+
+        &.break_1,
+        &.break_3 {
+            display: none;
+        }
+
+        &.break_2 {
+            display: inline;
+        }
+    }
+}
+
+/*.filters {
+    gap: 5em;
+    display: flex;
+    margin: 4em 0;
+
+    #all_posts,
+    .category {
+        font-size: 1.75rem;
+        transition: color 200ms ease-in-out;
+        cursor: pointer;
+
+        &[data-active=true] {
+            color: map-get($colors, "black");
+        }
+
+        &[data-active=false] {
+            color: map-get($colors, "darkgray");
+
+            &:hover {
+                color: map-get($colors, "black");
+            }
+        }
+    }
+}*/
+
+.posts {
+    gap: 3em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    //display: flex;
+    //flex-wrap: wrap;
+    margin-bottom: 4em;
+
+    a.post {
+        //width: calc(33.3333% - 1.6666em);
+        color: map-get($colors, "black");
+        text-decoration: none;
+
+        &[data-visible=true] {
+            display: block;
+        }
+
+        &[data-visible=false] {
+            display: none;
+        }
+
+        h4 {
+            margin-bottom: .25em;
+            color: map-get($colors, "text-gray");
+            font-size: 1.2rem;
+            font-weight: map-get($font-weight, "regular");
+
+            @media only screen and (min-width: map-get($breakpoints, "md")) {
+                font-size: 1.25rem;
+            }
+        }
+
+        h2 {
+            line-height: 1.5;
+            font-size: 2rem;
+            font-weight: map-get($font-weight, "regular");
+
+            @media only screen and (min-width: map-get($breakpoints, "md")) {
+                font-size: 2.2rem;
+            }
+
+            @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+                font-size: 2.5rem;
+            }
+        }
+
+        p.info {
+            margin-top: .5em;
+            color: map-get($colors, "text-gray");
+            font-size: 1.1rem;
+
+            @media only screen and (min-width: map-get($breakpoints, "md")) {
+                font-size: 1.15rem;
+            }
+        }
+
+        .excerpt {
+            max-width: 50em;
+            margin-top: .5em;
+
+            p {
+                color: map-get($colors, "text-gray");
+                font-size: 1.1rem;
+
+                @media only screen and (min-width: map-get($breakpoints, "md")) {
+                    font-size: 1.15rem;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "md")) and (orientation: portrait) {
+        gap: 3.5em;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "lg")) {
+        gap: 4em;
+        margin-bottom: 6em;
+    }
+}
