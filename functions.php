@@ -97,3 +97,31 @@ register_nav_menus(
         'popular_on_blog' => 'Populární na blogu'
     )
 );
+
+// Custom post type
+add_action('init', 'custom_post_type');
+function custom_post_type() {
+    register_post_type('press_release', array(
+        'labels' => array(
+            'name' => _x('Tiskové zprávy', 'post type general name'),
+            'singular_name' => _x('Tisková zpráva', 'post type singular name'),
+            'add_new' => __('Přidat novou'),
+            'add_new_item' => __('Přidat novou tiskovou zprávu'),
+            'edit_item' => __('Upravit tiskovou zprávu'),
+            'new_item' => __('Nová tisková zpráva'),
+            'all_items' => __('Všechny tiskové zprávy'),
+            'view_item' => __('Zobrazit tiskovou zprávu'),
+            'search_items' => __('Hledat tiskové zprávy'),
+            'not_found' => __('Žádné tiskové zprávy nenalezeny'),
+            'not_found_in_trash' => __('Žádné tiskové zprávy nenalezeny v koši'),
+            'parent_item_colon' => '',
+            'menu_name' => 'Tiskové zprávy'
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'tiskova-zprava'),
+        'show_in_rest' => true,
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'menu_position' => 5,
+    ));
+}
