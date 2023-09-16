@@ -1,13 +1,13 @@
-<div class="container">
-    <header id="header-mobile">
+<header id="header-mobile">
+    <div class="container">
         <a href="<?php echo home_url(); ?>" id="logo">Denali studio</a>
         <div id="menu_open_btn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                 <path d="M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H424c13.3 0 24 10.7 24 24z" />
             </svg>
         </div>
-    </header>
-</div>
+    </div>
+</header>
 <canvas id="header_slide"></canvas>
 <div id="header_menu">
     <div class="container">
@@ -26,7 +26,7 @@
                 <li><a href="<?php echo home_url(); ?>#projekty">Projekty</a></li>
             <?php endif; ?>
             <li><a href="<?php echo home_url('blog'); ?>">Blog</a></li>
-            <li class="btn"><a href="<?php echo home_url('kontakt'); ?>" class="btn btn-black">Kontaktujte nás</a></li>
+            <li class="btn"><a href="<?php echo home_url('kontakt'); ?>" class="btn btn-black">Kontakt</a></li>
         </ul>
         <nav class="socials">
             <a href="https://www.facebook.com/denali.studio" target="_blank" rel="noopener" class="facebook">
