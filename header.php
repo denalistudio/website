@@ -51,6 +51,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <div id="cursor"></div>
     <?php
     get_template_part('template-parts/header-mobile');
     get_template_part('template-parts/header-desktop');

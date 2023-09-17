@@ -13,7 +13,32 @@ html {
 }
 
 body {
+    background-color: map-get($colors, "white");
     font-family: $font;
+}
+
+#cursor {
+    width: 1em;
+    height: 1em;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transform-origin: center;
+    border-radius: 50%;
+    background: map-get($colors, "white");
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transition: 100ms ease-out;
+
+    &.grow {
+        transform: scale(3);
+    }
+
+    @media (hover: hover) {
+        display: block;
+    }
 }
 
 h1,

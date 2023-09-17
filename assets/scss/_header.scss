@@ -7,8 +7,13 @@ header#header-mobile {
     top: 0;
     left: 0;
     z-index: 1;
-    border-bottom: 1px solid map-get($colors, "lightgray");
+    border-bottom: 1px solid map-get($colors, "white");
     background-color: map-get($colors, "white");
+    transition: border-bottom 100ms ease-in-out;
+
+    &.border {
+        border-bottom: 1px solid map-get($colors, "lightgray");
+    }
 
     .container {
         display: grid;
@@ -187,8 +192,13 @@ header#header-desktop {
     top: 0;
     left: 0;
     z-index: 1;
-    border-bottom: 1px solid map-get($colors, "lightgray");
+    border-bottom: 1px solid map-get($colors, "white");
     background-color: map-get($colors, "white");
+    transition: border-bottom 100ms ease-in-out;
+
+    &.border {
+        border-bottom: 1px solid map-get($colors, "lightgray");
+    }
 
     .container {
         display: grid;
