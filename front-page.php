@@ -20,8 +20,7 @@ get_header();
     <video src="<?php echo get_template_directory_uri(); ?>/assets/hero.mov" autoplay loop muted></video>
 </div>
 <div class="container">
-    <!--<p class="hero_text">Jsme digitální agentura, která pomáhá firmám budovat jejich značku a pozici v on-line světě. Vytvoříme pro vás responzivní webové stránky nebo e-shop společně s moderní grafikou a brandingem a zviditelníme vás marketingem, ať už na sociálních sítích nebo rozesíláním marketingových newsletterů.</p>-->
-    <p class="hero_text">Jsme digitální agentura, která vám pomůže vybudovat si značku a pozici v on-line světě.</p>
+    <p class="hero_text">Jsme digitální agentura, která Vám pomůže s budováním značky a přítomnosti na internetu.</p>
 </div>
 
 <div class="projects" data-anchor="projekty">
