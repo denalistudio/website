@@ -2,25 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // REM unit
     const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
-    // Cursor
-    const cursor = document.getElementById("cursor");
-    
-    document.addEventListener("mousemove", function (e) {
-        const x = e.clientX;
-        const y = e.clientY;
-        cursor.style.left = x + "px";
-        cursor.style.top = y + "px";
-    });
-
-    document.querySelectorAll("a, button, [data-cursor='grow']").forEach(function(el) {
-        el.addEventListener("mouseover", function () {
-            cursor.classList.add("grow");
-        });
-        el.addEventListener("mouseleave", function () {
-            cursor.classList.remove("grow");
-        });
-    });
-
     // Mobile header
     const menuOpenBtn = document.getElementById("menu_open_btn");
     const menuCloseBtn = document.getElementById("menu_close_btn");
@@ -64,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Header border bottom
     function headerBorderBottom(y) {
-        console.log("hello");
         if (y >= 1) {
             document.querySelectorAll("#header-mobile, #header-desktop").forEach(function(el) {
                 el.classList.add("border");

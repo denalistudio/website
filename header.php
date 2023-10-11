@@ -47,11 +47,9 @@
     <meta name="twitter:description" content="Budujeme vaši přítomnost na internetu.">
     <meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/assets/images/opengraph.png">
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-
 </head>
 
 <body <?php body_class(); ?>>
-    <div id="cursor"></div>
     <?php
     get_template_part('template-parts/header-mobile');
     get_template_part('template-parts/header-desktop');
