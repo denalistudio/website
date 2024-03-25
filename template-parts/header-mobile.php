@@ -26,7 +26,7 @@
                 <li><a href="<?php echo home_url(); ?>#projekty">Projekty</a></li>
             <?php endif; ?>
             <li><a href="<?php echo home_url('blog'); ?>">Blog</a></li>
-            <li class="btn"><a href="<?php echo home_url('kontakt'); ?>" class="btn btn-black">Kontakt</a></li>
+            <li class="btn"><a href="https://forms.clickup.com/9010068483/f/8cgnf03-7435/DPB8AH6HSY55BBXDTU" target="_blank" rel="noopener" class="btn btn-black">Kontakt</a></li>
         </ul>
         <nav class="socials">
             <a href="https://www.facebook.com/denali.studio" target="_blank" rel="noopener" class="facebook">

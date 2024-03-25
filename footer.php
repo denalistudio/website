@@ -26,7 +26,7 @@
                         <li><a href="<?php echo home_url(); ?>#projekty"></a>Projekty</li>
                     <?php endif; ?>
                     <li><a href="<?php echo home_url('blog'); ?>">Blog</a></li>
-                    <li><a href="<?php echo home_url('kontakt'); ?>">Kontaktujte nás</a></li>
+                    <li><a href="https://forms.clickup.com/9010068483/f/8cgnf03-7435/DPB8AH6HSY55BBXDTU" target="_blank" rel="noopener">Kontaktujte nás</a></li>
                 </ul>
             </div>
             <div class="social">
