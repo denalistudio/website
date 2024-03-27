@@ -37,7 +37,7 @@
     </header>
     <div id="header_space"></div>
     <div class="container">
-        <div id="hero">
+        <div class="hero">
             <div class="col_one">
                 <h1>Překračujeme <br>hranice očekávání</h1>
             </div>
@@ -47,10 +47,23 @@
             </div>
         </div>
     </div>
-    <div id="showreel">
+    <div class="showreel">
         <video autoplay muted loop>
             <source src="./showreel.mov" type="video/mp4">
         </video>
+    </div>
+    <div class="container">
+        <div class="about_us">
+            <h2>Komplexní řešení na míru vašim potřebám</h2>
+            <p>Díky naší široké škále služeb jsme schopni hledat přesahy a tvořit řešení na míru přesně.</p>
+            <ul>
+                <li><a href="./sluzby.php#branding">Branding</a></li>
+                <li><a href="./sluzby.php#webove-stranky">Webové stránky</a></li>
+                <li><a href="./sluzby.php#e-shopy">E&dash;shopy</a></li>
+                <li><a href="./sluzby.php#marketing">Marketing</a></li>
+                <li><a href="./sluzby.php#rizeni-projektu">Řízení projektů</a></li>
+            </ul>
+        </div>
     </div>
     <?php require_once 'footer.php'; ?>
     <script>

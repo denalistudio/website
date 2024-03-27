@@ -44,7 +44,7 @@
     </div>
     <div class="container container-services">
         <div class="services">
-            <div class="service service-left">
+            <div id="branding" class="service service-left">
                 <div class="content">
                     <h2>Branding</h2>
                     <p>Hlavním rysem našeho přístupu k brandingu je důraz na detail a komplexní provázanost mezi jednotlivými prvky. Zajistíme, aby byl branding snadno rozeznatelný, svou vizáží vypovídající a hlavně profesionální.</p>
@@ -67,7 +67,7 @@
                     </figure>
                 </div>
             </div>
-            <div class="service service-right">
+            <div id="webove-stranky" class="service service-right">
                 <div class="image">
                     <figure>
                         <picture>
@@ -89,7 +89,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="service service-left">
+            <div id="e-shopy" class="service service-left">
                 <div class="content">
                     <h2>E&dash;shopy</h2>
                     <p>E&dash;shopy a jejich kompletní tvorba patří mezi naše nejsilnější stránky, s našimi e&dash;shopy bude podnikání vzkvétat, postaráme se o jejich marketingovou, designovou a hlavně technickou funkčnost.</p>
@@ -112,7 +112,7 @@
                     </figure>
                 </div>
             </div>
-            <div class="service service-right">
+            <div id="marketing" class="service service-right">
                 <div class="image">
                     <figure>
                         <picture>
@@ -136,7 +136,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="service service-left">
+            <div id="rizeni-projektu" class="service service-left">
                 <div class="content">
                     <h2>Řízení projektů</h2>
                     <p>Léta zkušeností nám umožňují pomáhat našim klientům na jejich podnikatelské cestě. Sestavíme Vám projektový plán, zvýšíme efektivitu Vaší práce a poradíme Vám, jak dělat věci jinak a lépe.</p>

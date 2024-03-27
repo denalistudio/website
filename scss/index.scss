@@ -1,10 +1,9 @@
 @import "variables";
 
-#hero {
+.hero {
   display: grid;
   grid-template: auto auto / 100%;
   padding: 2em 0;
-  //padding: 12em 0 11em 0;
 
   h1 {
     font-size: 2.25rem;
@@ -107,9 +106,9 @@
   }
 }
 
-#showreel {
+.showreel {
   width: 100%;
-  aspect-ratio: 21/9;
+  aspect-ratio: 16/9;
   position: relative;
 
   video {
@@ -121,8 +120,48 @@
     object-fit: cover;
     object-position: center;
   }
+}
 
-  @media only screen and (min-width: map-get($breakpoints, "lg")) {
-    aspect-ratio: 16/9;
+.about_us {
+  display: grid;
+  grid-template: auto auto / 100%;
+  row-gap: 1em;
+  margin-top: 2em;
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+
+    @media only screen and (min-width: map-get($breakpoints, "sm")) {
+      font-size: 2.5rem;
+    }
+  }
+
+  p {
+    color: map-get($colors, "text");
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1.15em;
+    list-style-type: none;
+
+    li {
+      a {
+        color: map-get($colors, "black");
+        font-size: 1.25rem;
+        font-weight: 500;
+        text-decoration: none;
+
+        @media only screen and (min-width: map-get($breakpoints, "sm")) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "sm")) {
+      row-gap: 1.25em;
+    }
   }
 }
