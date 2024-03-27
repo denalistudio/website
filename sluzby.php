@@ -24,6 +24,8 @@
         <h1>Komplexní řešení <br> na míru Vašim potřebám</h1>
         <p>Díky naší široké škále služeb jsme schopni hledat přesahy a tvořit řešení na míru přesně.</p>
     </div>
+</div>
+<div class="container container-services">
     <div class="services">
         <div class="service service-left">
             <div class="content">

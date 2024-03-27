@@ -1,12 +1,30 @@
 @import "variables";
 
 .hero {
-  padding-top: 10em;
-  padding-bottom: 12em;
+  //padding-top: 10em;
+  //padding-bottom: 12em;
+  padding-top: 4em;
+  padding-bottom: 4em;
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 500;
+
+    br {
+      display: none;
+
+      @media only screen and (min-width: map-get($breakpoints, "lg")) {
+        display: inline;
+      }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "sm")) {
+      font-size: 3rem;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "md")) {
+      font-size: 3.5rem;
+    }
 
     @media only screen and (min-width: map-get($breakpoints, "3xl")) {
       font-size: 4rem;
@@ -14,26 +32,67 @@
   }
 
   p {
-    max-width: 40%;
     margin-top: 1.5em;
     color: map-get($colors, "text");
     line-height: 1.5;
+
+    @media only screen and (min-width: map-get($breakpoints, "md")) {
+      max-width: 80%;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "lg")) {
+      max-width: 40%;
+    }
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, "sm")) {
+    padding-top: 5em;
+    padding-bottom: 7em;
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, "md")) and (min-height: 40em) {
+    padding-top: 6em;
+    padding-bottom: 9em;
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, "lg")) {
+    padding-top: 7em;
+    padding-bottom: 10em;
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+    padding-top: 9em;
+    padding-bottom: 12em;
+  }
+}
+
+@media only screen and (max-width: 47.9999em) {
+  .container-services {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .services {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  row-gap: 10em;
+  row-gap: 4em;
+  margin-bottom: 10em;
 
   .service {
     display: grid;
-    grid-template: 1fr / 1fr 1fr;
-    column-gap: 2em;
+    grid-template:
+      "image" auto
+      "content" auto / 100%;
+    gap: 2em;
 
     .content {
+      grid-area: content;
+      padding-left: 1em;
+      padding-right: 1em;
+
       h2 {
-        font-size: 1.75rem;
+        font-size: 2rem;
         font-weight: 500;
 
         @media only screen and (min-width: map-get($breakpoints, "3xl")) {
@@ -42,8 +101,12 @@
       }
 
       p {
-        width: 80%;
         color: map-get($colors, "text");
+        margin-top: 1.5em;
+
+        @media only screen and (min-width: map-get($breakpoints, "lg")) {
+          width: 80%;
+        }
 
         @media only screen and (min-width: map-get($breakpoints, "3xl")) {
           margin-top: 2em;
@@ -54,6 +117,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1em;
+        margin-top: 2em;
         padding-left: 1em;
         list-style-type: none;
 
@@ -62,8 +126,12 @@
           gap: 1em;
 
           span {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             font-weight: 500;
+
+            @media only screen and (min-width: map-get($breakpoints, "lg")) {
+              font-size: 1.15rem;
+            }
           }
         }
 
@@ -72,35 +140,81 @@
           margin-top: 2.5em;
         }
       }
+
+      @media only screen and (min-width: map-get($breakpoints, "sm")) {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, "md")) {
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
 
     .image {
       display: flex;
+      grid-area: image;
 
       figure {
-        width: 70%;
+        aspect-ratio: 4/3;
 
         img {
           width: 100%;
+          height: 100%;
           display: block;
+          object-fit: cover;
+          object-position: center;
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, "md")) {
+          aspect-ratio: auto;
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, "lg")) {
+          width: 70%;
         }
       }
     }
 
-    &.service-left .image {
-      justify-content: flex-end;
+    @media only screen and (min-width: map-get($breakpoints, "md")) {
+      &.service-left {
+        grid-template:
+          "content image" auto
+          / 1fr 1fr;
 
-      figure {
+        .image {
+          justify-content: flex-end;
+        }
+      }
+
+      &.service-right {
+        grid-template:
+         "image content" auto
+          / 1fr 1fr;
+
+        .image {
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "lg")) {
+      &.service-left .image figure {
         margin-right: 3em;
       }
-    }
 
-    &.service-right .image {
-        justify-content: flex-start;
-
-        figure {
-            margin-left: 3em;
-        }
+      &.service-right .image figure {
+        margin-left: 3em;
+      }
     }
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, "md")) {
+    row-gap: 8em;
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, "lg")) {
+    row-gap: 10em;
   }
 }
