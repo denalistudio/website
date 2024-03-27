@@ -19,7 +19,6 @@
             <li><a href="https://www.facebook.com/denali.studio/" target="_blank" rel="noopener">Facebook</a></li>
         </ul>
         <nav>
-            <button data-cc="show-preferencesModal">Nastavení cookies</button>
             <p>&copy; <?php echo date('Y'); ?> Denali studio s.r.o.</p>
         </nav>
     </div>

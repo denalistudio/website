@@ -1,40 +1,36 @@
-/*header#header-mobile {
+header#header-mobile {
     width: 100%;
-    height: 5em;
+    height: 4.5em;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     border-bottom: 1px solid map-get($colors, "white");
     background-color: map-get($colors, "white");
     transition: border-bottom 100ms ease-in-out;
 
-    &.border {
-        border-bottom: 1px solid map-get($colors, "lightgray");
-    }
-
     .container {
         display: grid;
-        grid-template: 5em / auto 1fr 2.75em;
+        grid-template: 4.5em / auto 1fr 2.75em;
         align-items: center;
-    }
 
-    a#logo {
-        color: map-get($colors, "black");
-        font-size: 1.6rem;
-        font-weight: map-get($font-weight, "semibold");
-        text-decoration: none;
-    }
+        a#logo {
+            color: map-get($colors, "black");
+            font-size: 1.65rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
 
-    #menu_open_btn {
-        height: 2.5em;
-        display: grid;
-        place-items: center;
-        grid-area: 1/3/1/3;
-        cursor: pointer;
+        #menu_btn {
+            height: 2.5em;
+            display: grid;
+            place-items: center;
+            grid-area: 1/3/1/3;
+            cursor: pointer;
 
-        svg {
-            height: 100%;
+            svg {
+                height: 100%;
+            }
         }
     }
 
@@ -43,144 +39,45 @@
     }
 }
 
-#header_slide {
-    width: 100vw;
-    height: 100vh;
+nav#mobile_menu {
+    width: 100%;
     position: fixed;
-    top: -100vh;
-    left: 0;
-    z-index: 3;
-    transform: translateY(0);
-    transition: transform 250ms ease-in-out;
-
-    &.visible {
-        transform: translateY(100%);
-    }
-
-    &.hidden {
-        transform: translateY(200%);
-    }
-
-    @media only screen and (min-width: map-get($breakpoints, "md")) {
-        display: none;
-    }
-}
-
-#header_menu {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: -100vh;
+    top: 4.5em;
     left: 0;
     z-index: 1;
-    overflow-y: auto;
-    transform: translateY(0);
-    padding-bottom: 6em;
+    transform: translateY(-100%);
     background-color: map-get($colors, "white");
     transition: transform 250ms ease-in-out;
 
-    &.visible {
-        transform: translateY(100%);
-    }
+    ul {
+        list-style-type: none;
 
-    .container {
-        row-gap: 2em;
-        display: grid;
-        grid-template: auto 1fr / 100%;
-
-        header {
-            display: grid;
-            grid-template: 5em / auto 1fr 3em;
-            align-items: center;
-
-            a#logo {
-                color: map-get($colors, "black");
-                font-size: 1.6rem;
-                font-weight: map-get($font-weight, "semibold");
-                text-decoration: none;
-            }
-
-            #menu_close_btn {
-                height: 2.75em;
-                display: grid;
-                place-items: center;
-                grid-area: 1/3/1/3;
-                cursor: pointer;
-
-                svg {
-                    height: 100%;
-                }
-            }
-        }
-
-        ul {
-            list-style-type: none;
-
-            li {
-                margin: 1.5em 0;
-                font-size: 1.5rem;
-                cursor: pointer;
-
-                a {
-                    display: inline-block;
-                    color: inherit;
-                    text-decoration: none;
-
-                    &.btn-black {
-                        color: map-get($colors, "white");
-                    }
-                }
-
-                &:first-of-type {
-                    margin-top: 0;
-                }
-
-                &:last-of-type {
-                    margin-bottom: 0;
-                }
-
-                @media only screen and (min-width: map-get($breakpoints, "md")) and (orientation: portrait) {
-                    margin: 1.25em 0;
-                    font-size: 1.75rem;
-                }
-            }
-        }
-
-        nav.socials {
-            gap: 1.25em;
-            display: flex;
-            flex-wrap: nowrap;
-            margin-top: 1.75em;
+        li {
+            padding: 1.25em;
+            font-size: 1.15rem;
 
             a {
-                height: 2.5em;
-                display: block;
-
-                svg,
-                img {
-                    height: 100%;
-                    display: block;
-                }
-
-                @media only screen and (min-width: map-get($breakpoints, "md")) and (orientation: portrait) {
-                    height: 2.75em;
-                }
+                color: inherit;
+                text-decoration: none;
+                transition: color 200ms ease-in-out;
             }
 
-            @media only screen and (min-width: map-get($breakpoints, "md")) and (orientation: portrait) {
-                gap: 1.5;
+            span {
+                transition: color 200ms ease-in-out;
+                cursor: pointer;
             }
-        }
 
-        @media only screen and (min-width: map-get($breakpoints, "md")) and (orientation: portrait) {
-            row-gap: 3em;
+            a:hover,
+            span:hover {
+                color: map-get($colors, "system-blue");
+            }
         }
     }
 
-    @media only screen and (min-width: map-get($breakpoints, "md")) {
-        display: none;
+    &.open {
+        transform: translateY(0);
     }
-}*/
+}
 
 header#header-desktop {
     width: 100%;
@@ -189,7 +86,7 @@ header#header-desktop {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: map-get($colors, "white");
 
     .container {
@@ -242,7 +139,7 @@ header#header-desktop {
 }
 
 #header_space {
-    //height: 5em;
+    height: 4.5em;
 
     @media only screen and (min-width: map-get($breakpoints, "md")) {
         height: 6em;

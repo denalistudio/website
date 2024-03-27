@@ -47,6 +47,10 @@ h6 {
     }
 
     @media only screen and (min-width: map-get($breakpoints, "xl")) {
+        padding: 0 4em;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "2xl")) {
         max-width: 78em;
         margin: auto;
         padding: 0;
