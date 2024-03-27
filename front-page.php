@@ -17,7 +17,7 @@ get_header();
     <h1 class="front_page_title">Pomáháme firmám budovat <br>jejich <span class="gradient">přítomnost na internetu</span></h1>
 </div>
 <div id="hero_video">
-    <video src="<?php echo get_template_directory_uri(); ?>/assets/hero.mov" autoplay loop muted></video>
+    <video src="<?php echo get_template_directory_uri(); ?>/showreel.mov" autoplay loop muted></video>
 </div>
 <div class="container">
     <p class="hero_text">Jsme digitální agentura, která Vám pomůže s budováním značky a přítomnosti na internetu.</p>

@@ -1,0 +1,106 @@
+@import "variables";
+
+.hero {
+  padding-top: 10em;
+  padding-bottom: 12em;
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+
+    @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+      font-size: 4rem;
+    }
+  }
+
+  p {
+    max-width: 40%;
+    margin-top: 1.5em;
+    color: map-get($colors, "text");
+    line-height: 1.5;
+  }
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 10em;
+
+  .service {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    column-gap: 2em;
+
+    .content {
+      h2 {
+        font-size: 1.75rem;
+        font-weight: 500;
+
+        @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+          font-size: 2.75rem;
+        }
+      }
+
+      p {
+        width: 80%;
+        color: map-get($colors, "text");
+
+        @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+          margin-top: 2em;
+        }
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
+        padding-left: 1em;
+        list-style-type: none;
+
+        li {
+          display: flex;
+          gap: 1em;
+
+          span {
+            font-size: 1.15rem;
+            font-weight: 500;
+          }
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+          gap: 1.25em;
+          margin-top: 2.5em;
+        }
+      }
+    }
+
+    .image {
+      display: flex;
+
+      figure {
+        width: 70%;
+
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+
+    &.service-left .image {
+      justify-content: flex-end;
+
+      figure {
+        margin-right: 3em;
+      }
+    }
+
+    &.service-right .image {
+        justify-content: flex-start;
+
+        figure {
+            margin-left: 3em;
+        }
+    }
+  }
+}
