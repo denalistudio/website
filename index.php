@@ -20,7 +20,7 @@
     </header>
     <nav id="mobile_menu">
         <ul>
-            <li><a href="./sluzby.php">Služby</a></li>
+            <li><a href="./sluzby">Služby</a></li>
             <li><span id="mobile_menu_anchor">Naše práce</span></li>
             <li><a href="https://forms.clickup.com/9010068483/f/8cgnf03-7435/DPB8AH6HSY55BBXDTU" target="_blank" rel="noopener">Kontakt</a></li>
         </ul>
@@ -29,7 +29,7 @@
         <div class="container">
             <a href="./" id="logo">Denali studio</a>
             <nav>
-                <a href="./sluzby.php">Služby</a>
+                <a href="./sluzby">Služby</a>
                 <a href="#nase-prace">Naše práce</a>
                 <a href="https://forms.clickup.com/9010068483/f/8cgnf03-7435/DPB8AH6HSY55BBXDTU" target="_blank" rel="noopener">Kontakt</a>
             </nav>
@@ -59,11 +59,11 @@
                 <p>Díky naší široké škále služeb jsme schopni hledat přesahy a tvořit řešení na míru přesně.</p>
                 </div>
             <ul>
-                <li><a href="./sluzby.php#branding">Branding</a></li>
-                <li><a href="./sluzby.php#webove-stranky">Webové stránky</a></li>
-                <li><a href="./sluzby.php#e-shopy">E&dash;shopy</a></li>
-                <li><a href="./sluzby.php#marketing">Marketing</a></li>
-                <li><a href="./sluzby.php#rizeni-projektu">Řízení projektů</a></li>
+                <li><a href="./sluzby#branding">Branding</a></li>
+                <li><a href="./sluzby#webove-stranky">Webové stránky</a></li>
+                <li><a href="./sluzby#e-shopy">E&dash;shopy</a></li>
+                <li><a href="./sluzby#marketing">Marketing</a></li>
+                <li><a href="./sluzby#rizeni-projektu">Řízení projektů</a></li>
             </ul>
         </div>
     </div>
@@ -144,7 +144,37 @@
             </div>
         </div>
     </div>
+    <div class="partners">
+        <div class="container">
+            <h2>Strategický partner facilitující budoucí růst</h2>
+            <p>Společně s našimi partnery zúročíme naše letité zkušenosti a pomůžeme Vám ve Vaší cestě za úspěchem.</p>
+        </div>
+        <div class="partners_carousel">
+            <a href="" class="partner" target="_blank" rel="noopener">
+                <img src="./images/partners/webglobe.png" alt="Logo firmy Webglobe na červeném podkladě">
+            </a>
+            <a href="" class="partner" target="_blank" rel="noopener">
+                <img src="./images/partners/vyzkumak.png" alt="Logo UX laboratoře vyzkumak.cz">
+            </a>
+            <a href="" class="partner" target="_blank" rel="noopener">
+                <img src="./images/partners/ecomail.png" alt="Logo firmy Ecomail">
+            </a>
+            <a href="" class="partner" target="_blank" rel="noopener">
+                <img src="./images/partners/rokkr.png" alt="Logo digitální agentury Rokkr">
+            </a>
+            <a href="" class="partner" target="_blank" rel="noopener">
+                <img src="./images/partners/spolehlive_recenze.png" alt="Logo firmy Spolehlivé recenze na žlutém podkladě">
+            </a>
+            <a href="" class="partner" target="_blank" rel="noopener">
+                <img src="./images/partners/karvina.png" alt="Logo Statutárního města Karviná">
+            </a>
+            <a href="" class="partner" target="_blank" rel="noopener">
+                <img src="./images/partners/startup_msk.png" alt="Logo projektu Startup MSK">
+            </a>
+        </div>
+    </div>
     <?php require_once 'footer.php'; ?>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const menuBtn = document.getElementById("menu_btn");
@@ -168,6 +198,85 @@
                     document.getElementById("nase-prace").scrollIntoView({ behavior: 'smooth' });
                 }, 350);
             });
+
+            const boxes = gsap.utils.toArray(".partner");
+            const loop = horizontalLoop(boxes, {
+                paused: false,
+                repeat: -1,
+                speed: 0.5,
+            });
+
+            /*
+            This helper function makes a group of elements animate along the x-axis in a seamless, responsive loop.
+
+            Features:
+             - Uses xPercent so that even if the widths change (like if the window gets resized), it should still work in most cases.
+             - When each item animates to the left or right enough, it will loop back to the other side
+             - Optionally pass in a config object with values like "speed" (default: 1, which travels at roughly 100 pixels per second), paused (boolean),  repeat, reversed, and paddingRight.
+             - The returned timeline will have the following methods added to it:
+               - next() - animates to the next element using a timeline.tweenTo() which it returns. You can pass in a vars object to control duration, easing, etc.
+               - previous() - animates to the previous element using a timeline.tweenTo() which it returns. You can pass in a vars object to control duration, easing, etc.
+               - toIndex() - pass in a zero-based index value of the element that it should animate to, and optionally pass in a vars object to control duration, easing, etc. Always goes in the shortest direction
+               - current() - returns the current index (if an animation is in-progress, it reflects the final index)
+               - times - an Array of the times on the timeline where each element hits the "starting" spot. There's also a label added accordingly, so "label1" is when the 2nd element reaches the start.
+             */
+            function horizontalLoop(items, config) {
+                items = gsap.utils.toArray(items);
+                config = config || {};
+                let tl = gsap.timeline({repeat: config.repeat, paused: config.paused, defaults: {ease: "none"}, onReverseComplete: () => tl.totalTime(tl.rawTime() + tl.duration() * 100)}),
+                    length = items.length,
+                    startX = items[0].offsetLeft,
+                    times = [],
+                    widths = [],
+                    xPercents = [],
+                    curIndex = 0,
+                    pixelsPerSecond = (config.speed || 1) * 100,
+                    snap = config.snap === false ? v => v : gsap.utils.snap(config.snap || 1), // some browsers shift by a pixel to accommodate flex layouts, so for example if width is 20% the first element's width might be 242px, and the next 243px, alternating back and forth. So we snap to 5 percentage points to make things look more natural
+                    totalWidth, curX, distanceToStart, distanceToLoop, item, i;
+                gsap.set(items, { // convert "x" to "xPercent" to make things responsive, and populate the widths/xPercents Arrays to make lookups faster.
+                    xPercent: (i, el) => {
+                        let w = widths[i] = parseFloat(gsap.getProperty(el, "width", "px"));
+                        xPercents[i] = snap(parseFloat(gsap.getProperty(el, "x", "px")) / w * 100 + gsap.getProperty(el, "xPercent"));
+                        return xPercents[i];
+                    }
+                });
+                gsap.set(items, {x: 0});
+                totalWidth = items[length-1].offsetLeft + xPercents[length-1] / 100 * widths[length-1] - startX + items[length-1].offsetWidth * gsap.getProperty(items[length-1], "scaleX") + (parseFloat(config.paddingRight) || 0);
+                for (i = 0; i < length; i++) {
+                    item = items[i];
+                    curX = xPercents[i] / 100 * widths[i];
+                    distanceToStart = item.offsetLeft + curX - startX;
+                    distanceToLoop = distanceToStart + widths[i] * gsap.getProperty(item, "scaleX");
+                    tl.to(item, {xPercent: snap((curX - distanceToLoop) / widths[i] * 100), duration: distanceToLoop / pixelsPerSecond}, 0)
+                        .fromTo(item, {xPercent: snap((curX - distanceToLoop + totalWidth) / widths[i] * 100)}, {xPercent: xPercents[i], duration: (curX - distanceToLoop + totalWidth - curX) / pixelsPerSecond, immediateRender: false}, distanceToLoop / pixelsPerSecond)
+                        .add("label" + i, distanceToStart / pixelsPerSecond);
+                    times[i] = distanceToStart / pixelsPerSecond;
+                }
+                function toIndex(index, vars) {
+                    vars = vars || {};
+                    (Math.abs(index - curIndex) > length / 2) && (index += index > curIndex ? -length : length); // always go in the shortest direction
+                    let newIndex = gsap.utils.wrap(0, length, index),
+                        time = times[newIndex];
+                    if (time > tl.time() !== index > curIndex) { // if we're wrapping the timeline's playhead, make the proper adjustments
+                        vars.modifiers = {time: gsap.utils.wrap(0, tl.duration())};
+                        time += tl.duration() * (index > curIndex ? 1 : -1);
+                    }
+                    curIndex = newIndex;
+                    vars.overwrite = true;
+                    return tl.tweenTo(time, vars);
+                }
+                tl.next = vars => toIndex(curIndex+1, vars);
+                tl.previous = vars => toIndex(curIndex-1, vars);
+                tl.current = () => curIndex;
+                tl.toIndex = (index, vars) => toIndex(index, vars);
+                tl.times = times;
+                tl.progress(1, true).progress(0, true); // pre-render for performance
+                if (config.reversed) {
+                    tl.vars.onReverseComplete();
+                    tl.reverse();
+                }
+                return tl;
+            }
         });
     </script>
 </body>

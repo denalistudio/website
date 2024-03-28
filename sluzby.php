@@ -20,7 +20,7 @@
     </header>
     <nav id="mobile_menu">
         <ul>
-            <li><a href="./sluzby.php">Služby</a></li>
+            <li><a href="./sluzby">Služby</a></li>
             <li><a href="./#nase-prace">Naše práce</a></li>
             <li><a href="https://forms.clickup.com/9010068483/f/8cgnf03-7435/DPB8AH6HSY55BBXDTU" target="_blank" rel="noopener">Kontakt</a></li>
         </ul>
