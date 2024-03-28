@@ -67,6 +67,83 @@
             </ul>
         </div>
     </div>
+    <div id="nase-prace" class="projects">
+        <div id="alianas" class="project">
+            <a href="https://alianas.cz/cz/" class="image" target="_blank" rel="noopener">
+                <img src="./images/projects/alianas.jpg" alt="Šperk od firmy Alianas">
+            </a>
+            <div class="meta">
+                <h3>Alianas</h3>
+                <p class="labels">Ecommerce &bull; Design</p>
+            </div>
+        </div>
+        <div id="udime_doma" class="project">
+            <figure class="image">
+                <img src="./images/projects/udime_doma.jpg" alt="Web firmy Udíme doma na mobilním telefonu">
+            </figure>
+            <div class="meta">
+                <h3>Udíme doma</h3>
+                <p class="description">Inovativní e-commerce řešení a branding pro lídra na trhu s příslušenstvím pro udírny</p>
+                <p class="labels">Branding &bull; Design &bull; Ecommerce</p>
+            </div>
+        </div>
+        <div id="pps_kania" class="project fw-l">
+            <a href="https://www.pps-kania.cz/" class="image" target="_blank" rel="noopener">
+                <img src="./images/projects/pps_kania.png" alt="Snímek webu firmy PPS Kania">
+            </a>
+            <div class="meta">
+                <h3>PPS Kania</h3>
+                <p class="description">Moderní a elegantní webové stránky pro projekční firmu z Ostravy</p>
+                <p class="labels">Webové stránky</p>
+            </div>
+        </div>
+        <div id="abco" class="project fw-r">
+            <a href="https://www.abco.cz/" class="image" target="_blank" rel="noopener">
+                <img src="./images/projects/abco.png" alt="Snímek webu firmy ABCO expert">
+            </a>
+            <div class="meta">
+                <h3>ABCO expert</h3>
+                <p class="labels">Webové stránky</p>
+            </div>
+        </div>
+        <div id="zvoneckova" class="project">
+            <a href="https://www.zvoneckova.cz/" class="image" target="_blank" rel="noopener">
+                <img src="./images/projects/zvoneckova.jpg" alt="Koláž obrazů karvinské malířky Veroniky Zvonečkové">
+            </a>
+            <div class="meta">
+                <h3>Veronika Zvonečková</h3>
+                <p class="labels">Webové stránky</p>
+            </div>
+        </div>
+        <div id="umyjto" class="project">
+            <a href="https://umyj.to/" class="image" target="_blank" rel="noopener">
+                <img src="./images/projects/umyj_to.png" alt="Logo firmy Umyj to">
+            </a>
+            <div class="meta">
+                <h3>Umyj to</h3>
+                <p class="labels">Webové stránky &bull; Branding</p>
+            </div>
+        </div>
+        <div id="mesk" class="project fw-r">
+            <figure class="image">
+                <img src="./images/projects/mesk.png" alt="Snímek aplikace Mesk">
+            </figure>
+            <div class="meta">
+                <h3>Mesk &lpar;Pracovní název&rpar;</h3>
+                <p class="labels">Design aplikace &bull; Konzultace</p>
+            </div>
+        </div>
+        <div id="artyx" class="project fw-l">
+            <a href="https://artyx.cz/" class="image" target="_blank" rel="noopener">
+                <img src="./images/projects/artyx.png" alt="Snímek webu grafického studia Artyx">
+            </a>
+            <div class="meta">
+                <h3>Artyx</h3>
+                <p class="description">Extravagantní web pro kreativní grafické studio z Karviné</p>
+                <p class="labels">Webové stránky</p>
+            </div>
+        </div>
+    </div>
     <?php require_once 'footer.php'; ?>
     <script>
         document.addEventListener("DOMContentLoaded", function() {

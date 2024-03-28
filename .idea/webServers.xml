@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="208b36f2-186c-4021-a830-57ecc7d149cd" name="Denali studio" url="https://www.denali.studio">
+        <fileTransfer accessType="SFTP" host="wmsc1-sftp.wedos.net" port="22" sshConfigId="4539364d-67e0-44e8-aa3f-571cc9455972" sshConfig="denali.studio">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

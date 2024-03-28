@@ -126,9 +126,10 @@
   display: grid;
   grid-template: auto auto / 100%;
   row-gap: 1em;
-  margin: 2em 0;
+  margin: 2.5em 0;
 
   h2 {
+    margin-bottom: .5em;
     font-size: 1.75rem;
     font-weight: 500;
 
@@ -190,5 +191,281 @@
     grid-template: 1fr / 1fr 1fr;
     align-items: center;
     margin: 4em 0;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template:
+    "alianas" auto
+    "udime_doma" auto
+    "pps_kania" auto
+    "abco" auto
+    "zvoneckova" auto
+    "umyjto" auto
+    "mesk" auto
+    "artyx" auto
+    / 100%;
+  row-gap: 2em;
+  margin: 2.5em 0;
+  scroll-margin-top: 4.5em;
+
+  .project {
+    .image {
+      aspect-ratio: 16/9;
+
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        transition: all 200ms ease-in-out;
+
+        @media only screen and (min-width: map-get($breakpoints, "sm")) {
+          height: auto;
+          object-fit: contain;
+        }
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, "sm")) {
+        aspect-ratio: auto;
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, "sm")) and (pointer: fine) {
+        &:hover + .meta p.labels {
+          opacity: 1;
+        }
+      }
+    }
+
+    a.image {
+      display: block;
+    }
+
+    .meta {
+      padding-left: 1em;
+      padding-right: 1em;
+
+      h3 {
+        margin: .5em 0 .3em 0;
+        font-size: 1.8rem;
+        font-weight: 500;
+
+        @media only screen and (min-width: map-get($breakpoints, "sm")) {
+          margin: .75em 0 .3em 0;
+          font-size: 2rem;
+        }
+      }
+
+      p.description {
+        margin-bottom: .5em;
+        font-size: .9rem;
+
+        @media only screen and (min-width: map-get($breakpoints, "sm")) {
+          font-size: 1rem;
+        }
+      }
+
+      p.labels {
+        color: map-get($colors, "text");
+        font-size: .9rem;
+
+        @media only screen and (min-width: map-get($breakpoints, "sm")) {
+          font-size: 1rem;
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, "sm")) and (pointer: fine) {
+          opacity: 0;
+          transition: opacity 200ms ease-in-out;
+        }
+      }
+
+      @media only screen and (min-width: map-get($breakpoints, "sm")) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    &#alianas {
+      grid-area: alianas;
+    }
+
+    &#udime_doma {
+      grid-area: udime_doma;
+    }
+
+    &#pps_kania {
+      grid-area: pps_kania;
+    }
+
+    &#abco {
+      grid-area: abco;
+    }
+
+    &#zvoneckova {
+      grid-area: zvoneckova;
+    }
+
+    &#umyjto {
+      grid-area: umyjto;
+    }
+
+    &#mesk {
+      grid-area: mesk;
+    }
+
+    &#artyx {
+      grid-area: artyx;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "sm")) {
+      &:hover .image img {
+        transform: scale(1.02);
+      }
+
+      &.fw-l {
+        width: 80%;
+        margin-left: 5vw;
+      }
+
+      &.fw-r {
+        width: 80%;
+        margin-left: calc(20% - 5vw);
+        margin-right: 5vw;
+      }
+
+      &#alianas:hover .image img {
+        box-shadow: 0 0 2em #cfeef980;
+      }
+
+      &#udime_doma:hover .image img {
+          box-shadow: 0 0 2em #d0c6b780;
+      }
+
+      &#pps_kania:hover .image img {
+          box-shadow: 0 0 2em #00000080;
+      }
+
+      &#abco:hover .image img {
+          box-shadow: 0 0 2em #ffb50080;
+      }
+
+      &#zvoneckova:hover .image img {
+          box-shadow: 0 0 2em #f3f3f380;
+      }
+
+      &#umyjto:hover .image img {
+          box-shadow: 0 0 2em #ffeb5680;
+      }
+
+      &#mesk:hover .image img {
+          box-shadow: 0 0 2em #d8ecfb80;
+      }
+
+      &#artyx:hover .image img {
+          box-shadow: 0 0 2em #37373780;
+      }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "lg")) {
+      &.fw-l {
+        width: 75%;
+      }
+
+      &.fw-r {
+        width: 75%;
+        margin-left: calc(25% - 5vw);
+      }
+
+      &#alianas,
+      &#udime_doma,
+      &#zvoneckova,
+      &#umyjto {
+        width: 80%;
+        margin: 0 10%;
+      }
+    }
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, "sm")) {
+    grid-template:
+      "alianas ." 6em
+      "alianas udime_doma" auto
+      ". ." 4em
+      "pps_kania pps_kania" auto
+      ". ." 4em
+      "abco abco" auto
+      ". ." 4em
+      ". umyjto" 4em
+      "zvoneckova umyjto" auto
+      ". ." 4em
+      "mesk mesk" auto
+      ". ." 4em
+      "artyx artyx" auto
+      / 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 0;
+    margin: 3em 0;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    scroll-margin-top: 5.5em;
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, "md")) {
+    grid-template:
+      "alianas ." 6em
+      "alianas udime_doma" auto
+      ". ." 6em
+      "pps_kania pps_kania" auto
+      ". ." 6em
+      "abco abco" auto
+      ". ." 6em
+      ". umyjto" 4em
+      "zvoneckova umyjto" auto
+      ". ." 6em
+      "mesk mesk" auto
+      ". ." 6em
+      "artyx artyx" auto
+      / 1fr 1fr;
+    padding-left: 2em;
+    padding-right: 2em;
+    scroll-margin-top: 7em;
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, "lg")) {
+    margin: 4em 0;
+    padding-left: 3em;
+    padding-right: 3em;
+    scroll-margin-top: 8em;
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, "xl")) {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, "2xl")) {
+    max-width: 78em;
+    margin: auto;
+    padding: 0;
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+    grid-template:
+      "alianas ." 7em
+      "alianas udime_doma" auto
+      ". ." 8em
+      "pps_kania pps_kania" auto
+      ". ." 8em
+      "abco abco" auto
+      ". ." 8em
+      ". umyjto" 5em
+      "zvoneckova umyjto" auto
+      ". ." 8em
+      "mesk mesk" auto
+      ". ." 8em
+      "artyx artyx" auto
+      / 1fr 1fr;
   }
 }

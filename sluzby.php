@@ -60,9 +60,9 @@
                 <div class="image">
                     <figure>
                         <picture>
-                            <source srcset="./images/branding.webp" type="image/webp">
-                            <source srcset="./images/branding.jpg" type="image/jpeg">
-                            <img src="./images/branding.jpg" alt="Záběr na součást produktu GEKON od firmy Udíme doma">
+                            <source srcset="images/services/branding.webp" type="image/webp">
+                            <source srcset="images/services/branding.jpg" type="image/jpeg">
+                            <img src="images/services/branding.jpg" alt="Záběr na součást produktu GEKON od firmy Udíme doma">
                         </picture>
                     </figure>
                 </div>
@@ -71,9 +71,9 @@
                 <div class="image">
                     <figure>
                         <picture>
-                            <source srcset="./images/webove_stranky.webp" type="image/webp">
-                            <source srcset="./images/webove_stranky.png" type="image/png">
-                            <img src="./images/webove_stranky.png" alt="Mobil s webovými stránkami agentury Artyx položený na dřevěném stole">
+                            <source srcset="images/services/webove_stranky.webp" type="image/webp">
+                            <source srcset="images/services/webove_stranky.png" type="image/png">
+                            <img src="images/services/webove_stranky.png" alt="Mobil s webovými stránkami agentury Artyx položený na dřevěném stole">
                         </picture>
                     </figure>
                 </div>
@@ -105,9 +105,9 @@
                 <div class="image">
                     <figure>
                         <picture>
-                            <source srcset="./images/e-shopy.webp" type="image/webp">
-                            <source srcset="./images/e-shopy.jpg" type="image/jpeg">
-                            <img src="./images/e-shopy.jpg" alt="Snímek e-shopu se šperky Alianas">
+                            <source srcset="images/services/e-shopy.webp" type="image/webp">
+                            <source srcset="images/services/e-shopy.jpg" type="image/jpeg">
+                            <img src="images/services/e-shopy.jpg" alt="Snímek e-shopu se šperky Alianas">
                         </picture>
                     </figure>
                 </div>
@@ -116,9 +116,9 @@
                 <div class="image">
                     <figure>
                         <picture>
-                            <source srcset="./images/marketing.webp" type="image/webp">
-                            <source srcset="./images/marketing.jpg" type="image/jpeg">
-                            <img src="./images/marketing.jpg" alt="Bílá tabule s nákresy">
+                            <source srcset="images/services/marketing.webp" type="image/webp">
+                            <source srcset="images/services/marketing.jpg" type="image/jpeg">
+                            <img src="images/services/marketing.jpg" alt="Bílá tabule s nákresy">
                         </picture>
                     </figure>
                 </div>
@@ -151,9 +151,9 @@
                 <div class="image">
                     <figure>
                         <picture>
-                            <source srcset="./images/rizeni_projektu.webp" type="image/webp">
-                            <source srcset="./images/rizeni_projektu.png" type="image/jpeg">
-                            <img src="./images/rizeni_projektu.png" alt="Výřez aplikace">
+                            <source srcset="images/services/rizeni_projektu.webp" type="image/webp">
+                            <source srcset="images/services/rizeni_projektu.png" type="image/jpeg">
+                            <img src="images/services/rizeni_projektu.png" alt="Výřez aplikace">
                         </picture>
                     </figure>
                 </div>
