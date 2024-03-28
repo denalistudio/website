@@ -70,7 +70,11 @@
     <div id="nase-prace" class="projects">
         <div id="alianas" class="project">
             <a href="https://alianas.cz/cz/" class="image" target="_blank" rel="noopener">
-                <img src="./images/projects/alianas.jpg" alt="Šperk od firmy Alianas">
+                <picture>
+                    <source srcset="./images/projects/alianas.webp" type="image/webp">
+                    <source srcset="./images/projects/alianas.jpg" type="image/jpeg">
+                    <img src="./images/projects/alianas.jpg" alt="Šperk od firmy Alianas">
+                </picture>
             </a>
             <div class="meta">
                 <h3>Alianas</h3>
@@ -79,7 +83,11 @@
         </div>
         <div id="udime_doma" class="project">
             <figure class="image">
-                <img src="./images/projects/udime_doma.jpg" alt="Web firmy Udíme doma na mobilním telefonu">
+                <picture>
+                    <source srcset="./images/projects/udime_doma.webp" type="image/webp">
+                    <source srcset="./images/projects/udime_doma.jpg" type="image/jpeg">
+                    <img src="./images/projects/udime_doma.jpg" alt="Web firmy Udíme doma na mobilním telefonu">
+                </picture>
             </figure>
             <div class="meta">
                 <h3>Udíme doma</h3>
@@ -89,7 +97,11 @@
         </div>
         <div id="pps_kania" class="project fw-l">
             <a href="https://www.pps-kania.cz/" class="image" target="_blank" rel="noopener">
-                <img src="./images/projects/pps_kania.png" alt="Snímek webu firmy PPS Kania">
+                <picture>
+                    <source srcset="./images/projects/pps_kania.webp" type="image/webp">
+                    <source srcset="./images/projects/pps_kania.png" type="image/png">
+                    <img src="./images/projects/pps_kania.png" alt="Snímek webu firmy PPS Kania">
+                </picture>
             </a>
             <div class="meta">
                 <h3>PPS Kania</h3>
@@ -99,7 +111,11 @@
         </div>
         <div id="abco" class="project fw-r">
             <a href="https://www.abco.cz/" class="image" target="_blank" rel="noopener">
-                <img src="./images/projects/abco.png" alt="Snímek webu firmy ABCO expert">
+                <picture>
+                    <source srcset="./images/projects/abco.webp" type="image/webp">
+                    <source srcset="./images/projects/abco.png" type="image/png">
+                    <img src="./images/projects/abco.png" alt="Snímek webu firmy ABCO expert">
+                </picture>
             </a>
             <div class="meta">
                 <h3>ABCO expert</h3>
@@ -108,7 +124,11 @@
         </div>
         <div id="zvoneckova" class="project">
             <a href="https://www.zvoneckova.cz/" class="image" target="_blank" rel="noopener">
-                <img src="./images/projects/zvoneckova.jpg" alt="Koláž obrazů karvinské malířky Veroniky Zvonečkové">
+                <picture>
+                    <source srcset="./images/projects/zvoneckova.webp" type="image/webp">
+                    <source srcset="./images/projects/zvoneckova.jpg" type="image/jpeg">
+                    <img src="./images/projects/zvoneckova.jpg" alt="Koláž obrazů karvinské malířky Veroniky Zvonečkové">
+                </picture>
             </a>
             <div class="meta">
                 <h3>Veronika Zvonečková</h3>
@@ -117,7 +137,11 @@
         </div>
         <div id="umyjto" class="project">
             <a href="https://umyj.to/" class="image" target="_blank" rel="noopener">
-                <img src="./images/projects/umyj_to.png" alt="Logo firmy Umyj to">
+                <picture>
+                    <source srcset="./images/projects/umyj_to.webp" type="image/webp">
+                    <source srcset="./images/projects/umyj_to.png" type="image/png">
+                    <img src="./images/projects/umyj_to.png" alt="Logo firmy Umyj to">
+                </picture>
             </a>
             <div class="meta">
                 <h3>Umyj to</h3>
@@ -126,7 +150,11 @@
         </div>
         <div id="mesk" class="project fw-r">
             <figure class="image">
-                <img src="./images/projects/mesk.png" alt="Snímek aplikace Mesk">
+                <picture>
+                    <source srcset="./images/projects/mesk.webp" type="image/webp">
+                    <source srcset="./images/projects/mesk.png" type="image/png">
+                    <img src="./images/projects/mesk.png" alt="Snímek aplikace Mesk">
+                </picture>
             </figure>
             <div class="meta">
                 <h3>Mesk &lpar;Pracovní název&rpar;</h3>
@@ -135,7 +163,11 @@
         </div>
         <div id="artyx" class="project fw-l">
             <a href="https://artyx.cz/" class="image" target="_blank" rel="noopener">
-                <img src="./images/projects/artyx.png" alt="Snímek webu grafického studia Artyx">
+                <picture>
+                    <source srcset="./images/projects/artyx.webp" type="image/webp">
+                    <source srcset="./images/projects/artyx.png" type="image/png">
+                    <img src="./images/projects/artyx.png" alt="Snímek webu grafického studia Artyx">
+                </picture>
             </a>
             <div class="meta">
                 <h3>Artyx</h3>
@@ -150,26 +182,54 @@
             <p>Společně s našimi partnery zúročíme naše letité zkušenosti a pomůžeme Vám ve Vaší cestě za úspěchem.</p>
         </div>
         <div class="partners_carousel">
-            <a href="" class="partner" target="_blank" rel="noopener">
-                <img src="./images/partners/webglobe.png" alt="Logo firmy Webglobe na červeném podkladě">
+            <a href="https://www.webglobe.cz/" class="partner" target="_blank" rel="noopener">
+                <picture>
+                    <source srcset="./images/partners/webglobe.webp" type="image/webp">
+                    <source srcset="./images/partners/webglobe.png" type="image/png">
+                    <img src="./images/partners/webglobe.png" alt="Logo firmy Webglobe na červeném podkladě">
+                </picture>
             </a>
-            <a href="" class="partner" target="_blank" rel="noopener">
-                <img src="./images/partners/vyzkumak.png" alt="Logo UX laboratoře vyzkumak.cz">
+            <a href="https://www.vyzkumak.cz/" class="partner" target="_blank" rel="noopener">
+                <picture>
+                    <source srcset="./images/partners/vyzkumak.webp" type="image/webp">
+                    <source srcset="./images/partners/vyzkumak.png" type="image/png">
+                    <img src="./images/partners/vyzkumak.png" alt="Logo UX laboratoře vyzkumak.cz">
+                </picture>
             </a>
-            <a href="" class="partner" target="_blank" rel="noopener">
-                <img src="./images/partners/ecomail.png" alt="Logo firmy Ecomail">
+            <a href="https://ecomail.cz/" class="partner" target="_blank" rel="noopener">
+                <picture>
+                    <source srcset="./images/partners/ecomail.webp" type="image/webp">
+                    <source srcset="./images/partners/ecomail.png" type="image/png">
+                    <img src="./images/partners/ecomail.png" alt="Logo firmy Ecomail">
+                </picture>
             </a>
-            <a href="" class="partner" target="_blank" rel="noopener">
-                <img src="./images/partners/rokkr.png" alt="Logo digitální agentury Rokkr">
+            <a href="https://www.rokkr.cz/" class="partner" target="_blank" rel="noopener">
+                <picture>
+                    <source srcset="./images/partners/rokkr.webp" type="image/webp">
+                    <source srcset="./images/partners/rokkr.png" type="image/png">
+                    <img src="./images/partners/rokkr.png" alt="Logo digitální agentury Rokkr">
+                </picture>
             </a>
-            <a href="" class="partner" target="_blank" rel="noopener">
-                <img src="./images/partners/spolehlive_recenze.png" alt="Logo firmy Spolehlivé recenze na žlutém podkladě">
+            <a href="https://spolehliverecenze.cz/" class="partner" target="_blank" rel="noopener">
+                <picture>
+                    <source srcset="./images/partners/spolehlive_recenze.webp" type="image/webp">
+                    <source srcset="./images/partners/spolehlive_recenze.png" type="image/png">
+                    <img src="./images/partners/spolehlive_recenze.png" alt="Logo firmy Spolehlivé recenze na žlutém podkladě">
+                </picture>
             </a>
-            <a href="" class="partner" target="_blank" rel="noopener">
-                <img src="./images/partners/karvina.png" alt="Logo Statutárního města Karviná">
+            <a href="https://www.karvina.cz/" class="partner" target="_blank" rel="noopener">
+                <picture>
+                    <source srcset="./images/partners/karvina.webp" type="image/webp">
+                    <source srcset="./images/partners/karvina.png" type="image/png">
+                    <img src="./images/partners/karvina.png" alt="Logo Statutárního města Karviná">
+                </picture>
             </a>
-            <a href="" class="partner" target="_blank" rel="noopener">
-                <img src="./images/partners/startup_msk.png" alt="Logo projektu Startup MSK">
+            <a href="https://startovarna.eu/" class="partner" target="_blank" rel="noopener">
+                <picture>
+                    <source srcset="./images/partners/startup_msk.webp" type="image/webp">
+                    <source srcset="./images/partners/startup_msk.png" type="image/png">
+                    <img src="./images/partners/startup_msk.png" alt="Logo projektu Startup MSK">
+                </picture>
             </a>
         </div>
     </div>
