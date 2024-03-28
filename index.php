@@ -54,8 +54,10 @@
     </div>
     <div class="container">
         <div class="about_us">
-            <h2>Komplexní řešení na míru vašim potřebám</h2>
-            <p>Díky naší široké škále služeb jsme schopni hledat přesahy a tvořit řešení na míru přesně.</p>
+            <div class="col">
+                <h2>Komplexní řešení na míru vašim potřebám</h2>
+                <p>Díky naší široké škále služeb jsme schopni hledat přesahy a tvořit řešení na míru přesně.</p>
+                </div>
             <ul>
                 <li><a href="./sluzby.php#branding">Branding</a></li>
                 <li><a href="./sluzby.php#webove-stranky">Webové stránky</a></li>

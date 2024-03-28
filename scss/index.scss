@@ -126,7 +126,7 @@
   display: grid;
   grid-template: auto auto / 100%;
   row-gap: 1em;
-  margin-top: 2em;
+  margin: 2em 0;
 
   h2 {
     font-size: 1.75rem;
@@ -134,6 +134,14 @@
 
     @media only screen and (min-width: map-get($breakpoints, "sm")) {
       font-size: 2.5rem;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "lg")) {
+      margin-bottom: 1em;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, "3xl")) {
+      font-size: 2.75rem;
     }
   }
 
@@ -153,6 +161,11 @@
         font-size: 1.25rem;
         font-weight: 500;
         text-decoration: none;
+        transition: color 200ms ease-in-out;
+
+        &:hover {
+          color: map-get($colors, "system-blue");
+        }
 
         @media only screen and (min-width: map-get($breakpoints, "sm")) {
           font-size: 1.4rem;
@@ -163,5 +176,19 @@
     @media only screen and (min-width: map-get($breakpoints, "sm")) {
       row-gap: 1.25em;
     }
+
+    @media only screen and (min-width: map-get($breakpoints, "lg")) {
+      padding: 2em 0 2em 8em;
+    }
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, "sm")) {
+    margin: 3em 0;
+  }
+
+  @media only screen and (min-width: map-get($breakpoints, "lg")) {
+    grid-template: 1fr / 1fr 1fr;
+    align-items: center;
+    margin: 4em 0;
   }
 }
